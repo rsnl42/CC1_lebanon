@@ -1,0 +1,556 @@
+year,indicator_code,indicator_label,unit,source,angle,value
+2000,CME_MRY0T4,Under-5 mortality rate,per 1k,unicef,wellbeing,19.9514658284614
+2000,NY.GDP.PCAP.CD,GDP per capita (USD),USD,worldbank,economic,3986.83513941026
+2000,ROFST.1.CP,"Out-of-school rate, primary (%)",%,uis,access,24.4092903137207
+2000,SE.PRM.CMPT.FE.ZS,Female primary completion rate (%),%,worldbank,gender,73.9341812133789
+2000,SE.PRM.CMPT.MA.ZS,Male primary completion rate (%),%,worldbank,gender,71.8339920043945
+2000,SE.PRM.CMPT.ZS,Primary completion rate (%),%,worldbank,learning,72.859977722168
+2000,SE.PRM.ENRL.TC.ZS,"Pupil-teacher ratio, primary",ratio,worldbank,teacher,14.23481
+2000,SE.PRM.ENRR,"Primary enrollment, gross (%)",%,worldbank,access,85.1220779418945
+2000,SE.PRM.TCHR,Teachers in primary (count),count,worldbank,teacher,28393
+2000,SE.PRM.UNER,"Out-of-school children, primary (count)",count,worldbank,access,115898
+2000,SE.PRM.UNER.FE.ZS,"Out-of-school girls, primary (%)",%,worldbank,gender,24.307149887085
+2000,SE.PRM.UNER.MA.ZS,"Out-of-school boys, primary (%)",%,worldbank,gender,24.5069599151611
+2000,SE.PRM.UNER.ZS,"Out-of-school children, primary (%)",%,worldbank,access,24.4092903137207
+2000,SE.SEC.CMPT.LO.ZS,Lower secondary completion rate (%),%,worldbank,learning,59.3963813781738
+2000,SE.SEC.ENRR,"Secondary enrollment, gross (%)",%,worldbank,access,62.5770492553711
+2000,SL.UEM.1524.ZS,Youth unemployment rate (%),%,worldbank,economic,21.168
+2000,SL.UEM.TOTL.ZS,Unemployment rate (%),%,worldbank,economic,8.641
+2000,SM.POP.NETM,Net migration (count),count,worldbank,displacement,455
+2001,CME_MRY0T4,Under-5 mortality rate,per 1k,unicef,wellbeing,18.9489419180559
+2001,NY.GDP.PCAP.CD,GDP per capita (USD),USD,worldbank,economic,4009.55929751102
+2001,ROFST.1.CP,"Out-of-school rate, primary (%)",%,uis,access,24.14909934997559
+2001,SE.PRM.CMPT.FE.ZS,Female primary completion rate (%),%,worldbank,gender,73.1627197265625
+2001,SE.PRM.CMPT.MA.ZS,Male primary completion rate (%),%,worldbank,gender,69.5888977050781
+2001,SE.PRM.CMPT.ZS,Primary completion rate (%),%,worldbank,learning,71.3348617553711
+2001,SE.PRM.ENRL.TC.ZS,"Pupil-teacher ratio, primary",ratio,worldbank,teacher,17.34958
+2001,SE.PRM.ENRR,"Primary enrollment, gross (%)",%,worldbank,access,84.4280319213867
+2001,SE.PRM.TCHR,Teachers in primary (count),count,worldbank,teacher,27464
+2001,SE.PRM.UNER,"Out-of-school children, primary (count)",count,worldbank,access,136291
+2001,SE.PRM.UNER.FE.ZS,"Out-of-school girls, primary (%)",%,worldbank,gender,23.9833908081055
+2001,SE.PRM.UNER.MA.ZS,"Out-of-school boys, primary (%)",%,worldbank,gender,24.3076095581055
+2001,SE.PRM.UNER.ZS,"Out-of-school children, primary (%)",%,worldbank,access,24.1490993499756
+2001,SE.SEC.CMPT.LO.ZS,Lower secondary completion rate (%),%,worldbank,learning,53.972038269043
+2001,SE.SEC.ENRL.TC.ZS,"Pupil-teacher ratio, secondary",ratio,worldbank,teacher,7.53579
+2001,SE.SEC.ENRR,"Secondary enrollment, gross (%)",%,worldbank,access,60.7058296203613
+2001,SE.SEC.TCHR,Teachers in secondary (count),count,worldbank,teacher,44486
+2001,SE.XPD.TOTL.GB.ZS,Education expenditure (% of govt spend),%,worldbank,expenditure,7.4212498664856
+2001,SE.XPD.TOTL.GD.ZS,Education expenditure (% of GDP),%,worldbank,expenditure,2.84148001670837
+2001,SL.UEM.1524.ZS,Youth unemployment rate (%),%,worldbank,economic,20.912
+2001,SL.UEM.TOTL.ZS,Unemployment rate (%),%,worldbank,economic,8.499
+2001,SM.POP.NETM,Net migration (count),count,worldbank,displacement,-1094
+2002,CME_MRY0T4,Under-5 mortality rate,per 1k,unicef,wellbeing,17.9647936930119
+2002,NY.GDP.PCAP.CD,GDP per capita (USD),USD,worldbank,economic,4290.85283803266
+2002,ROFST.1.CP,"Out-of-school rate, primary (%)",%,uis,access,23.29566955566406
+2002,SE.PRM.CMPT.FE.ZS,Female primary completion rate (%),%,worldbank,gender,72.2617797851562
+2002,SE.PRM.CMPT.MA.ZS,Male primary completion rate (%),%,worldbank,gender,68.5222320556641
+2002,SE.PRM.CMPT.ZS,Primary completion rate (%),%,worldbank,learning,70.3497695922852
+2002,SE.PRM.ENRL.TC.ZS,"Pupil-teacher ratio, primary",ratio,worldbank,teacher,17.19698
+2002,SE.PRM.ENRR,"Primary enrollment, gross (%)",%,worldbank,access,85.5243682861328
+2002,SE.PRM.TCHR,Teachers in primary (count),count,worldbank,teacher,27586
+2002,SE.PRM.UNER,"Out-of-school children, primary (count)",count,worldbank,access,129219
+2002,SE.PRM.UNER.FE.ZS,"Out-of-school girls, primary (%)",%,worldbank,gender,23.1493701934814
+2002,SE.PRM.UNER.MA.ZS,"Out-of-school boys, primary (%)",%,worldbank,gender,23.4357204437256
+2002,SE.PRM.UNER.ZS,"Out-of-school children, primary (%)",%,worldbank,access,23.2956695556641
+2002,SE.SEC.CMPT.LO.ZS,Lower secondary completion rate (%),%,worldbank,learning,52.4632301330566
+2002,SE.SEC.ENRL.TC.ZS,"Pupil-teacher ratio, secondary",ratio,worldbank,teacher,7.3906
+2002,SE.SEC.ENRR,"Secondary enrollment, gross (%)",%,worldbank,access,62.5551910400391
+2002,SE.SEC.TCHR,Teachers in secondary (count),count,worldbank,teacher,47348
+2002,SE.XPD.TOTL.GB.ZS,Education expenditure (% of govt spend),%,worldbank,expenditure,7.05630016326904
+2002,SE.XPD.TOTL.GD.ZS,Education expenditure (% of GDP),%,worldbank,expenditure,2.55271005630493
+2002,SL.UEM.1524.ZS,Youth unemployment rate (%),%,worldbank,economic,20.473
+2002,SL.UEM.TOTL.ZS,Unemployment rate (%),%,worldbank,economic,8.248
+2002,SM.POP.NETM,Net migration (count),count,worldbank,displacement,-21543
+2003,CME_MRY0T4,Under-5 mortality rate,per 1k,unicef,wellbeing,17.0192420215892
+2003,NY.GDP.PCAP.CD,GDP per capita (USD),USD,worldbank,economic,4437.71588507526
+2003,ROFST.1.CP,"Out-of-school rate, primary (%)",%,uis,access,21.85791969299316
+2003,SE.PRM.CMPT.FE.ZS,Female primary completion rate (%),%,worldbank,gender,75.4977874755859
+2003,SE.PRM.CMPT.MA.ZS,Male primary completion rate (%),%,worldbank,gender,70.314208984375
+2003,SE.PRM.CMPT.ZS,Primary completion rate (%),%,worldbank,learning,72.8481597900391
+2003,SE.PRM.ENRL.TC.ZS,"Pupil-teacher ratio, primary",ratio,worldbank,teacher,17.36837
+2003,SE.PRM.ENRR,"Primary enrollment, gross (%)",%,worldbank,access,86.7726821899414
+2003,SE.PRM.TCHR,Teachers in primary (count),count,worldbank,teacher,27163
+2003,SE.PRM.UNER,"Out-of-school children, primary (count)",count,worldbank,access,118840
+2003,SE.PRM.UNER.FE.ZS,"Out-of-school girls, primary (%)",%,worldbank,gender,21.6756191253662
+2003,SE.PRM.UNER.MA.ZS,"Out-of-school boys, primary (%)",%,worldbank,gender,22.0325908660889
+2003,SE.PRM.UNER.ZS,"Out-of-school children, primary (%)",%,worldbank,access,21.8579196929932
+2003,SE.SEC.CMPT.LO.ZS,Lower secondary completion rate (%),%,worldbank,learning,54.7380905151367
+2003,SE.SEC.ENRL.TC.ZS,"Pupil-teacher ratio, secondary",ratio,worldbank,teacher,7.80251
+2003,SE.SEC.ENRR,"Secondary enrollment, gross (%)",%,worldbank,access,64.8559494018555
+2003,SE.SEC.TCHR,Teachers in secondary (count),count,worldbank,teacher,46721
+2003,SL.UEM.1524.ZS,Youth unemployment rate (%),%,worldbank,economic,20.15
+2003,SL.UEM.TOTL.ZS,Unemployment rate (%),%,worldbank,economic,8.061
+2003,SM.POP.NETM,Net migration (count),count,worldbank,displacement,1674
+2004,CME_MRY0T4,Under-5 mortality rate,per 1k,unicef,wellbeing,16.1402211831546
+2004,NY.GDP.PCAP.CD,GDP per capita (USD),USD,worldbank,economic,4600.68371412993
+2004,ROFST.1.CP,"Out-of-school rate, primary (%)",%,uis,access,20.27243041992188
+2004,SE.PRM.CMPT.FE.ZS,Female primary completion rate (%),%,worldbank,gender,75.8669128417969
+2004,SE.PRM.CMPT.MA.ZS,Male primary completion rate (%),%,worldbank,gender,71.403678894043
+2004,SE.PRM.CMPT.ZS,Primary completion rate (%),%,worldbank,learning,73.5863189697266
+2004,SE.PRM.ENRL.TC.ZS,"Pupil-teacher ratio, primary",ratio,worldbank,teacher,14.45002
+2004,SE.PRM.ENRR,"Primary enrollment, gross (%)",%,worldbank,access,88.6836776733398
+2004,SE.PRM.TCHR,Teachers in primary (count),count,worldbank,teacher,32972
+2004,SE.PRM.UNER,"Out-of-school children, primary (count)",count,worldbank,access,108912
+2004,SE.PRM.UNER.FE.ZS,"Out-of-school girls, primary (%)",%,worldbank,gender,20.0879001617432
+2004,SE.PRM.UNER.MA.ZS,"Out-of-school boys, primary (%)",%,worldbank,gender,20.4494094848633
+2004,SE.PRM.UNER.ZS,"Out-of-school children, primary (%)",%,worldbank,access,20.2724304199219
+2004,SE.SEC.CMPT.LO.ZS,Lower secondary completion rate (%),%,worldbank,learning,55.1838607788086
+2004,SE.SEC.ENRL.TC.ZS,"Pupil-teacher ratio, secondary",ratio,worldbank,teacher,8.50679
+2004,SE.SEC.ENRR,"Secondary enrollment, gross (%)",%,worldbank,access,66.0179901123047
+2004,SE.SEC.TCHR,Teachers in secondary (count),count,worldbank,teacher,43971
+2004,SE.XPD.TOTL.GB.ZS,Education expenditure (% of govt spend),%,worldbank,expenditure,7.93123006820679
+2004,SE.XPD.TOTL.GD.ZS,Education expenditure (% of GDP),%,worldbank,expenditure,2.64094996452331
+2004,SL.UEM.1524.ZS,Youth unemployment rate (%),%,worldbank,economic,19.785
+2004,SL.UEM.TOTL.ZS,Unemployment rate (%),%,worldbank,economic,7.85
+2004,SM.POP.NETM,Net migration (count),count,worldbank,displacement,4974
+2005,CME_MRY0T4,Under-5 mortality rate,per 1k,unicef,wellbeing,15.3283310068204
+2005,NY.GDP.PCAP.CD,GDP per capita (USD),USD,worldbank,economic,4602.19804637945
+2005,ROFST.1.CP,"Out-of-school rate, primary (%)",%,uis,access,20.32229995727539
+2005,SE.PRM.CMPT.FE.ZS,Female primary completion rate (%),%,worldbank,gender,74.2040863037109
+2005,SE.PRM.CMPT.MA.ZS,Male primary completion rate (%),%,worldbank,gender,71.0442276000977
+2005,SE.PRM.CMPT.ZS,Primary completion rate (%),%,worldbank,learning,72.5898818969727
+2005,SE.PRM.ENRL.TC.ZS,"Pupil-teacher ratio, primary",ratio,worldbank,teacher,14.57447
+2005,SE.PRM.ENRR,"Primary enrollment, gross (%)",%,worldbank,access,89.1887664794922
+2005,SE.PRM.TCHR,Teachers in primary (count),count,worldbank,teacher,32646
+2005,SE.PRM.UNER,"Out-of-school children, primary (count)",count,worldbank,access,108414
+2005,SE.PRM.UNER.FE.ZS,"Out-of-school girls, primary (%)",%,worldbank,gender,20.3443107604981
+2005,SE.PRM.UNER.MA.ZS,"Out-of-school boys, primary (%)",%,worldbank,gender,20.3011703491211
+2005,SE.PRM.UNER.ZS,"Out-of-school children, primary (%)",%,worldbank,access,20.3222999572754
+2005,SE.SEC.CMPT.LO.ZS,Lower secondary completion rate (%),%,worldbank,learning,56.1708183288574
+2005,SE.SEC.ENRL.TC.ZS,"Pupil-teacher ratio, secondary",ratio,worldbank,teacher,9.04021
+2005,SE.SEC.ENRR,"Secondary enrollment, gross (%)",%,worldbank,access,66.4239807128906
+2005,SE.SEC.TCHR,Teachers in secondary (count),count,worldbank,teacher,41801
+2005,SE.XPD.TOTL.GB.ZS,Education expenditure (% of govt spend),%,worldbank,expenditure,8.42131042480469
+2005,SE.XPD.TOTL.GD.ZS,Education expenditure (% of GDP),%,worldbank,expenditure,2.64619994163513
+2005,SL.UEM.1524.ZS,Youth unemployment rate (%),%,worldbank,economic,20.489
+2005,SL.UEM.TOTL.ZS,Unemployment rate (%),%,worldbank,economic,8.249
+2005,SM.POP.NETM,Net migration (count),count,worldbank,displacement,1224
+2006,CME_MRY0T4,Under-5 mortality rate,per 1k,unicef,wellbeing,14.6334398961097
+2006,NY.GDP.PCAP.CD,GDP per capita (USD),USD,worldbank,economic,4635.2514117486
+2006,ROFST.1.CP,"Out-of-school rate, primary (%)",%,uis,access,21.32147026062012
+2006,ROFST.2.CP,"Out-of-school rate, lower secondary (%)",%,uis,access,24.85128974914551
+2006,SE.PRM.CMPT.FE.ZS,Female primary completion rate (%),%,worldbank,gender,76.6528472900391
+2006,SE.PRM.CMPT.MA.ZS,Male primary completion rate (%),%,worldbank,gender,72.48486328125
+2006,SE.PRM.CMPT.ZS,Primary completion rate (%),%,worldbank,learning,74.5245513916016
+2006,SE.PRM.ENRL.TC.ZS,"Pupil-teacher ratio, primary",ratio,worldbank,teacher,14.22194
+2006,SE.PRM.ENRR,"Primary enrollment, gross (%)",%,worldbank,access,88.5270919799805
+2006,SE.PRM.TCHR,Teachers in primary (count),count,worldbank,teacher,33117
+2006,SE.PRM.UNER,"Out-of-school children, primary (count)",count,worldbank,access,113436
+2006,SE.PRM.UNER.FE.ZS,"Out-of-school girls, primary (%)",%,worldbank,gender,21.4850406646729
+2006,SE.PRM.UNER.MA.ZS,"Out-of-school boys, primary (%)",%,worldbank,gender,21.1641502380371
+2006,SE.PRM.UNER.ZS,"Out-of-school children, primary (%)",%,worldbank,access,21.3214702606201
+2006,SE.SEC.CMPT.LO.ZS,Lower secondary completion rate (%),%,worldbank,learning,58.9880485534668
+2006,SE.SEC.ENRL.TC.ZS,"Pupil-teacher ratio, secondary",ratio,worldbank,teacher,9.18398
+2006,SE.SEC.ENRR,"Secondary enrollment, gross (%)",%,worldbank,access,67.2385787963867
+2006,SE.SEC.TCHR,Teachers in secondary (count),count,worldbank,teacher,41536
+2006,SE.XPD.TOTL.GB.ZS,Education expenditure (% of govt spend),%,worldbank,expenditure,7.69319009780884
+2006,SE.XPD.TOTL.GD.ZS,Education expenditure (% of GDP),%,worldbank,expenditure,2.77976989746094
+2006,SL.UEM.1524.ZS,Youth unemployment rate (%),%,worldbank,economic,21.264
+2006,SL.UEM.TOTL.ZS,Unemployment rate (%),%,worldbank,economic,8.679
+2006,SM.POP.NETM,Net migration (count),count,worldbank,displacement,25126
+2007,CME_MRY0T4,Under-5 mortality rate,per 1k,unicef,wellbeing,14.0507241829351
+2007,NY.GDP.PCAP.CD,GDP per capita (USD),USD,worldbank,economic,5125.25809960149
+2007,ROFST.1.CP,"Out-of-school rate, primary (%)",%,uis,access,21.6821403503418
+2007,ROFST.2.CP,"Out-of-school rate, lower secondary (%)",%,uis,access,23.54994964599609
+2007,SE.ADT.1524.LT.ZS,Youth literacy rate 15–24 (%),%,worldbank,learning,98.7099990844727
+2007,SE.PRM.CMPT.FE.ZS,Female primary completion rate (%),%,worldbank,gender,79.3142700195312
+2007,SE.PRM.CMPT.MA.ZS,Male primary completion rate (%),%,worldbank,gender,75.0991821289062
+2007,SE.PRM.CMPT.ZS,Primary completion rate (%),%,worldbank,learning,77.1630706787109
+2007,SE.PRM.ENRL.TC.ZS,"Pupil-teacher ratio, primary",ratio,worldbank,teacher,14.25017
+2007,SE.PRM.ENRR,"Primary enrollment, gross (%)",%,worldbank,access,88.3269729614258
+2007,SE.PRM.TCHR,Teachers in primary (count),count,worldbank,teacher,33202
+2007,SE.PRM.UNER,"Out-of-school children, primary (count)",count,worldbank,access,116143
+2007,SE.PRM.UNER.FE.ZS,"Out-of-school girls, primary (%)",%,worldbank,gender,21.9282398223877
+2007,SE.PRM.UNER.MA.ZS,"Out-of-school boys, primary (%)",%,worldbank,gender,21.4451408386231
+2007,SE.PRM.UNER.ZS,"Out-of-school children, primary (%)",%,worldbank,access,21.6821403503418
+2007,SE.SEC.CMPT.LO.ZS,Lower secondary completion rate (%),%,worldbank,learning,59.4262390136719
+2007,SE.SEC.ENRL.TC.ZS,"Pupil-teacher ratio, secondary",ratio,worldbank,teacher,9.20215
+2007,SE.SEC.ENRR,"Secondary enrollment, gross (%)",%,worldbank,access,68.0434875488281
+2007,SE.SEC.TCHR,Teachers in secondary (count),count,worldbank,teacher,41747
+2007,SE.XPD.TOTL.GB.ZS,Education expenditure (% of govt spend),%,worldbank,expenditure,7.34104013442993
+2007,SE.XPD.TOTL.GD.ZS,Education expenditure (% of GDP),%,worldbank,expenditure,2.58357000350952
+2007,SL.UEM.1524.ZS,Youth unemployment rate (%),%,worldbank,economic,21.837
+2007,SL.UEM.TOTL.ZS,Unemployment rate (%),%,worldbank,economic,8.98
+2007,SM.POP.NETM,Net migration (count),count,worldbank,displacement,27944
+2008,CME_MRY0T4,Under-5 mortality rate,per 1k,unicef,wellbeing,13.5801984565362
+2008,NY.GDP.PCAP.CD,GDP per capita (USD),USD,worldbank,economic,5912.04532820842
+2008,ROFST.1.CP,"Out-of-school rate, primary (%)",%,uis,access,23.26396942138672
+2008,ROFST.2.CP,"Out-of-school rate, lower secondary (%)",%,uis,access,23.05731010437012
+2008,SE.PRM.CMPT.FE.ZS,Female primary completion rate (%),%,worldbank,gender,80.3069229125977
+2008,SE.PRM.CMPT.MA.ZS,Male primary completion rate (%),%,worldbank,gender,75.996208190918
+2008,SE.PRM.CMPT.ZS,Primary completion rate (%),%,worldbank,learning,78.1084899902344
+2008,SE.PRM.ENRL.TC.ZS,"Pupil-teacher ratio, primary",ratio,worldbank,teacher,14.21478
+2008,SE.PRM.ENRR,"Primary enrollment, gross (%)",%,worldbank,access,86.235969543457
+2008,SE.PRM.TCHR,Teachers in primary (count),count,worldbank,teacher,32875
+2008,SE.PRM.UNER,"Out-of-school children, primary (count)",count,worldbank,access,126067
+2008,SE.PRM.UNER.FE.ZS,"Out-of-school girls, primary (%)",%,worldbank,gender,23.5740203857422
+2008,SE.PRM.UNER.MA.ZS,"Out-of-school boys, primary (%)",%,worldbank,gender,22.9650993347168
+2008,SE.PRM.UNER.ZS,"Out-of-school children, primary (%)",%,worldbank,access,23.2639694213867
+2008,SE.SEC.CMPT.LO.ZS,Lower secondary completion rate (%),%,worldbank,learning,58.5656700134277
+2008,SE.SEC.ENRL.TC.ZS,"Pupil-teacher ratio, secondary",ratio,worldbank,teacher,9.1243
+2008,SE.SEC.ENRR,"Secondary enrollment, gross (%)",%,worldbank,access,68.8993988037109
+2008,SE.SEC.TCHR,Teachers in secondary (count),count,worldbank,teacher,42165
+2008,SE.XPD.TOTL.GB.ZS,Education expenditure (% of govt spend),%,worldbank,expenditure,5.86977005004883
+2008,SE.XPD.TOTL.GD.ZS,Education expenditure (% of GDP),%,worldbank,expenditure,2.01479005813599
+2008,SL.UEM.1524.ZS,Youth unemployment rate (%),%,worldbank,economic,18.543
+2008,SL.UEM.TOTL.ZS,Unemployment rate (%),%,worldbank,economic,7.666
+2008,SM.POP.NETM,Net migration (count),count,worldbank,displacement,430
+2009,CME_MRY0T4,Under-5 mortality rate,per 1k,unicef,wellbeing,13.2132317838909
+2009,FP.CPI.TOTL.ZG,Inflation (%),%,worldbank,economic,1.19509671165543
+2009,NY.GDP.PCAP.CD,GDP per capita (USD),USD,worldbank,economic,7090.85493856621
+2009,ROFST.1.CP,"Out-of-school rate, primary (%)",%,uis,access,24.08274078369141
+2009,ROFST.2.CP,"Out-of-school rate, lower secondary (%)",%,uis,access,21.37715911865234
+2009,SE.ADT.1524.LT.ZS,Youth literacy rate 15–24 (%),%,worldbank,learning,99.2399978637695
+2009,SE.PRM.CMPT.FE.ZS,Female primary completion rate (%),%,worldbank,gender,78.2984771728516
+2009,SE.PRM.CMPT.MA.ZS,Male primary completion rate (%),%,worldbank,gender,74.3959197998047
+2009,SE.PRM.CMPT.ZS,Primary completion rate (%),%,worldbank,learning,76.3097229003906
+2009,SE.PRM.ENRL.TC.ZS,"Pupil-teacher ratio, primary",ratio,worldbank,teacher,13.94637
+2009,SE.PRM.ENRR,"Primary enrollment, gross (%)",%,worldbank,access,85.3689270019531
+2009,SE.PRM.TCHR,Teachers in primary (count),count,worldbank,teacher,33302
+2009,SE.PRM.UNER,"Out-of-school children, primary (count)",count,worldbank,access,131020
+2009,SE.PRM.UNER.FE.ZS,"Out-of-school girls, primary (%)",%,worldbank,gender,24.7441291809082
+2009,SE.PRM.UNER.MA.ZS,"Out-of-school boys, primary (%)",%,worldbank,gender,23.4447402954102
+2009,SE.PRM.UNER.ZS,"Out-of-school children, primary (%)",%,worldbank,access,24.0827407836914
+2009,SE.SEC.CMPT.LO.ZS,Lower secondary completion rate (%),%,worldbank,learning,60.371150970459
+2009,SE.SEC.ENRL.TC.ZS,"Pupil-teacher ratio, secondary",ratio,worldbank,teacher,9.20378
+2009,SE.SEC.ENRR,"Secondary enrollment, gross (%)",%,worldbank,access,71.0917282104492
+2009,SE.SEC.TCHR,Teachers in secondary (count),count,worldbank,teacher,42492
+2009,SE.XPD.TOTL.GB.ZS,Education expenditure (% of govt spend),%,worldbank,expenditure,5.50299978256226
+2009,SE.XPD.TOTL.GD.ZS,Education expenditure (% of GDP),%,worldbank,expenditure,1.76570999622345
+2009,SL.UEM.1524.ZS,Youth unemployment rate (%),%,worldbank,economic,15.297
+2009,SL.UEM.TOTL.ZS,Unemployment rate (%),%,worldbank,economic,6.355
+2009,SM.POP.NETM,Net migration (count),count,worldbank,displacement,-2700
+2010,CME_MRY0T4,Under-5 mortality rate,per 1k,unicef,wellbeing,12.952134453388
+2010,FP.CPI.TOTL.ZG,Inflation (%),%,worldbank,economic,3.98347941855833
+2010,NY.GDP.PCAP.CD,GDP per capita (USD),USD,worldbank,economic,7625.81051551165
+2010,ROFST.1.CP,"Out-of-school rate, primary (%)",%,uis,access,23.83631131117343
+2010,ROFST.2.CP,"Out-of-school rate, lower secondary (%)",%,uis,access,22.30693897767055
+2010,SE.PRM.CMPT.FE.ZS,Female primary completion rate (%),%,worldbank,gender,79.3821904157985
+2010,SE.PRM.CMPT.MA.ZS,Male primary completion rate (%),%,worldbank,gender,75.6484716157205
+2010,SE.PRM.CMPT.ZS,Primary completion rate (%),%,worldbank,learning,77.481213037485
+2010,SE.PRM.ENRL.TC.ZS,"Pupil-teacher ratio, primary",ratio,worldbank,teacher,14.1419
+2010,SE.PRM.ENRR,"Primary enrollment, gross (%)",%,worldbank,access,84.7973450726083
+2010,SE.PRM.TCHR,Teachers in primary (count),count,worldbank,teacher,32649
+2010,SE.PRM.UNER,"Out-of-school children, primary (count)",count,worldbank,access,129788
+2010,SE.PRM.UNER.FE.ZS,"Out-of-school girls, primary (%)",%,worldbank,gender,24.2654840121008
+2010,SE.PRM.UNER.MA.ZS,"Out-of-school boys, primary (%)",%,worldbank,gender,23.4220935772135
+2010,SE.PRM.UNER.ZS,"Out-of-school children, primary (%)",%,worldbank,access,23.8363113111734
+2010,SE.SEC.CMPT.LO.ZS,Lower secondary completion rate (%),%,worldbank,learning,60.2311314347806
+2010,SE.SEC.ENRL.TC.ZS,"Pupil-teacher ratio, secondary",ratio,worldbank,teacher,8.94176
+2010,SE.SEC.ENRR,"Secondary enrollment, gross (%)",%,worldbank,access,70.562435785543
+2010,SE.SEC.TCHR,Teachers in secondary (count),count,worldbank,teacher,42858
+2010,SE.XPD.TOTL.GB.ZS,Education expenditure (% of govt spend),%,worldbank,expenditure,5.53428983688354
+2010,SE.XPD.TOTL.GD.ZS,Education expenditure (% of GDP),%,worldbank,expenditure,1.61330997943878
+2010,SL.UEM.1524.ZS,Youth unemployment rate (%),%,worldbank,economic,16.079
+2010,SL.UEM.TOTL.ZS,Unemployment rate (%),%,worldbank,economic,6.768
+2010,SM.POP.NETM,Net migration (count),count,worldbank,displacement,-40915
+2011,CME_MRY0T4,Under-5 mortality rate,per 1k,unicef,wellbeing,12.7823771041865
+2011,FP.CPI.TOTL.ZG,Inflation (%),%,worldbank,economic,4.97148571692384
+2011,NY.GDP.PCAP.CD,GDP per capita (USD),USD,worldbank,economic,7834.96257108993
+2011,ROFST.1.CP,"Out-of-school rate, primary (%)",%,uis,access,23.09931478239561
+2011,ROFST.2.CP,"Out-of-school rate, lower secondary (%)",%,uis,access,22.58046318513114
+2011,SE.PRM.CMPT.FE.ZS,Female primary completion rate (%),%,worldbank,gender,77.0157825713381
+2011,SE.PRM.CMPT.MA.ZS,Male primary completion rate (%),%,worldbank,gender,73.5083271407964
+2011,SE.PRM.CMPT.ZS,Primary completion rate (%),%,worldbank,learning,75.2322738386308
+2011,SE.PRM.ENRL.TC.ZS,"Pupil-teacher ratio, primary",ratio,worldbank,teacher,14.23097
+2011,SE.PRM.ENRR,"Primary enrollment, gross (%)",%,worldbank,access,84.8372167281463
+2011,SE.PRM.TCHR,Teachers in primary (count),count,worldbank,teacher,32112
+2011,SE.PRM.UNER,"Out-of-school children, primary (count)",count,worldbank,access,124427
+2011,SE.PRM.UNER.FE.ZS,"Out-of-school girls, primary (%)",%,worldbank,gender,23.5123164251755
+2011,SE.PRM.UNER.MA.ZS,"Out-of-school boys, primary (%)",%,worldbank,gender,22.7005528087428
+2011,SE.PRM.UNER.ZS,"Out-of-school children, primary (%)",%,worldbank,access,23.0993147823956
+2011,SE.SEC.CMPT.LO.ZS,Lower secondary completion rate (%),%,worldbank,learning,61.0758201370298
+2011,SE.SEC.ENRL.TC.ZS,"Pupil-teacher ratio, secondary",ratio,worldbank,teacher,9.30599
+2011,SE.SEC.ENRR,"Secondary enrollment, gross (%)",%,worldbank,access,73.8286148513332
+2011,SE.SEC.TCHR,Teachers in secondary (count),count,worldbank,teacher,42387
+2011,SE.XPD.TOTL.GB.ZS,Education expenditure (% of govt spend),%,worldbank,expenditure,5.73380994796753
+2011,SE.XPD.TOTL.GD.ZS,Education expenditure (% of GDP),%,worldbank,expenditure,1.65251994132996
+2011,SI.POV.DDAY,Poverty headcount ($2.15/day) (%),%,worldbank,economic,0.1
+2011,SL.UEM.1524.ZS,Youth unemployment rate (%),%,worldbank,economic,17.134
+2011,SL.UEM.TOTL.ZS,Unemployment rate (%),%,worldbank,economic,7.352
+2011,SM.POP.NETM,Net migration (count),count,worldbank,displacement,2246
+2012,CME_MRY0T4,Under-5 mortality rate,per 1k,unicef,wellbeing,12.6963857552318
+2012,FP.CPI.TOTL.ZG,Inflation (%),%,worldbank,economic,6.58147447683677
+2012,NY.GDP.PCAP.CD,GDP per capita (USD),USD,worldbank,economic,8406.98405608118
+2012,ROFST.1.CP,"Out-of-school rate, primary (%)",%,uis,access,21.79585198755035
+2012,ROFST.2.CP,"Out-of-school rate, lower secondary (%)",%,uis,access,27.81385483455382
+2012,SE.PRM.CMPT.FE.ZS,Female primary completion rate (%),%,worldbank,gender,75.8944876564085
+2012,SE.PRM.CMPT.MA.ZS,Male primary completion rate (%),%,worldbank,gender,73.8986592373324
+2012,SE.PRM.CMPT.ZS,Primary completion rate (%),%,worldbank,learning,74.879013056623
+2012,SE.PRM.ENRL.TC.ZS,"Pupil-teacher ratio, primary",ratio,worldbank,teacher,14.33889
+2012,SE.PRM.ENRR,"Primary enrollment, gross (%)",%,worldbank,access,85.2793225598415
+2012,SE.PRM.TCHR,Teachers in primary (count),count,worldbank,teacher,31816
+2012,SE.PRM.UNER,"Out-of-school children, primary (count)",count,worldbank,access,116598
+2012,SE.PRM.UNER.FE.ZS,"Out-of-school girls, primary (%)",%,worldbank,gender,22.2607352392838
+2012,SE.PRM.UNER.MA.ZS,"Out-of-school boys, primary (%)",%,worldbank,gender,21.3468612312543
+2012,SE.PRM.UNER.ZS,"Out-of-school children, primary (%)",%,worldbank,access,21.7958519875503
+2012,SE.SEC.CMPT.LO.ZS,Lower secondary completion rate (%),%,worldbank,learning,61.3987735604016
+2012,SE.SEC.ENRR,"Secondary enrollment, gross (%)",%,worldbank,access,72.2122774625477
+2012,SE.XPD.TOTL.GB.ZS,Education expenditure (% of govt spend),%,worldbank,expenditure,7.10915994644165
+2012,SE.XPD.TOTL.GD.ZS,Education expenditure (% of GDP),%,worldbank,expenditure,2.14902997016907
+2012,SL.UEM.1524.ZS,Youth unemployment rate (%),%,worldbank,economic,18.192
+2012,SL.UEM.TOTL.ZS,Unemployment rate (%),%,worldbank,economic,7.952
+2012,SM.POP.NETM,Net migration (count),count,worldbank,displacement,124427
+2013,CME_MRY0T4,Under-5 mortality rate,per 1k,unicef,wellbeing,12.6924088303564
+2013,FP.CPI.TOTL.ZG,Inflation (%),%,worldbank,economic,4.82101956297399
+2013,NY.GDP.PCAP.CD,GDP per capita (USD),USD,worldbank,economic,8162.37929361396
+2013,ROFST.1.CP,"Out-of-school rate, primary (%)",%,uis,access,19.68564224320395
+2013,ROFST.2.CP,"Out-of-school rate, lower secondary (%)",%,uis,access,28.67505851830916
+2013,SE.PRM.CMPT.FE.ZS,Female primary completion rate (%),%,worldbank,gender,74.7126436781609
+2013,SE.PRM.CMPT.MA.ZS,Male primary completion rate (%),%,worldbank,gender,72.8300133082659
+2013,SE.PRM.CMPT.ZS,Primary completion rate (%),%,worldbank,learning,73.7544885716129
+2013,SE.PRM.ENRL.TC.ZS,"Pupil-teacher ratio, primary",ratio,worldbank,teacher,12.04695
+2013,SE.PRM.ENRR,"Primary enrollment, gross (%)",%,worldbank,access,86.8028638212504
+2013,SE.PRM.TCHR,Teachers in primary (count),count,worldbank,teacher,39149
+2013,SE.PRM.UNER,"Out-of-school children, primary (count)",count,worldbank,access,106958
+2013,SE.PRM.UNER.FE.ZS,"Out-of-school girls, primary (%)",%,worldbank,gender,20.213447171825
+2013,SE.PRM.UNER.MA.ZS,"Out-of-school boys, primary (%)",%,worldbank,gender,19.1754890783068
+2013,SE.PRM.UNER.ZS,"Out-of-school children, primary (%)",%,worldbank,access,19.685642243204
+2013,SE.SEC.CMPT.LO.ZS,Lower secondary completion rate (%),%,worldbank,learning,60.9482739750016
+2013,SE.SEC.ENRL.TC.ZS,"Pupil-teacher ratio, secondary",ratio,worldbank,teacher,8.20747
+2013,SE.SEC.ENRR,"Secondary enrollment, gross (%)",%,worldbank,access,71.2231189680025
+2013,SE.SEC.TCHR,Teachers in secondary (count),count,worldbank,teacher,47439
+2013,SE.XPD.TOTL.GB.ZS,Education expenditure (% of govt spend),%,worldbank,expenditure,8.57551956176758
+2013,SE.XPD.TOTL.GD.ZS,Education expenditure (% of GDP),%,worldbank,expenditure,2.4339599609375
+2013,SL.UEM.1524.ZS,Youth unemployment rate (%),%,worldbank,economic,19.112
+2013,SL.UEM.TOTL.ZS,Unemployment rate (%),%,worldbank,economic,8.477
+2013,SM.POP.NETM,Net migration (count),count,worldbank,displacement,733500
+2014,CME_MRY0T4,Under-5 mortality rate,per 1k,unicef,wellbeing,12.7731146128949
+2014,FP.CPI.TOTL.ZG,Inflation (%),%,worldbank,economic,1.8546042134091
+2014,NY.GDP.PCAP.CD,GDP per capita (USD),USD,worldbank,economic,7577.6413302369
+2014,ROFST.1.CP,"Out-of-school rate, primary (%)",%,uis,access,26.27899420891341
+2014,ROFST.2.CP,"Out-of-school rate, lower secondary (%)",%,uis,access,37.08088097796287
+2014,SE.PRM.CMPT.FE.ZS,Female primary completion rate (%),%,worldbank,gender,63.2937582179596
+2014,SE.PRM.CMPT.MA.ZS,Male primary completion rate (%),%,worldbank,gender,60.8064486033624
+2014,SE.PRM.CMPT.ZS,Primary completion rate (%),%,worldbank,learning,62.027936833509
+2014,SE.PRM.ENRL.TC.ZS,"Pupil-teacher ratio, primary",ratio,worldbank,teacher,12.32599
+2014,SE.PRM.ENRR,"Primary enrollment, gross (%)",%,worldbank,access,78.51893817562
+2014,SE.PRM.TCHR,Teachers in primary (count),count,worldbank,teacher,39017
+2014,SE.PRM.UNER,"Out-of-school children, primary (count)",count,worldbank,access,160957
+2014,SE.PRM.UNER.FE.ZS,"Out-of-school girls, primary (%)",%,worldbank,gender,26.7744976959749
+2014,SE.PRM.UNER.MA.ZS,"Out-of-school boys, primary (%)",%,worldbank,gender,25.7995187627899
+2014,SE.PRM.UNER.ZS,"Out-of-school children, primary (%)",%,worldbank,access,26.2789942089134
+2014,SE.SEC.CMPT.LO.ZS,Lower secondary completion rate (%),%,worldbank,learning,46.8999245398363
+2014,SE.SEC.ENRL.TC.ZS,"Pupil-teacher ratio, secondary",ratio,worldbank,teacher,7.74275
+2014,SE.SEC.ENRR,"Secondary enrollment, gross (%)",%,worldbank,access,59.2622758017054
+2014,SE.SEC.TCHR,Teachers in secondary (count),count,worldbank,teacher,47833
+2014,SL.UEM.1524.ZS,Youth unemployment rate (%),%,worldbank,economic,19.772
+2014,SL.UEM.TOTL.ZS,Unemployment rate (%),%,worldbank,economic,8.84
+2014,SM.POP.NETM,Net migration (count),count,worldbank,displacement,301111
+2015,CME_MRY0T4,Under-5 mortality rate,per 1k,unicef,wellbeing,12.9303370474661
+2015,FP.CPI.TOTL.ZG,Inflation (%),%,worldbank,economic,-3.74914524799629
+2015,NY.GDP.PCAP.CD,GDP per capita (USD),USD,worldbank,economic,7714.1099998804
+2015,ROFST.1.CP,"Out-of-school rate, primary (%)",%,uis,access,29.27030311403908
+2015,ROFST.2.CP,"Out-of-school rate, lower secondary (%)",%,uis,access,38.9784086727276
+2015,SE.PRM.CMPT.FE.ZS,Female primary completion rate (%),%,worldbank,gender,64.3831537416485
+2015,SE.PRM.CMPT.MA.ZS,Male primary completion rate (%),%,worldbank,gender,62.5038173424111
+2015,SE.PRM.CMPT.ZS,Primary completion rate (%),%,worldbank,learning,63.426873857404
+2015,SE.PRM.ENRR,"Primary enrollment, gross (%)",%,worldbank,access,77.1609396441008
+2015,SE.PRM.UNER,"Out-of-school children, primary (count)",count,worldbank,access,186429
+2015,SE.PRM.UNER.FE.ZS,"Out-of-school girls, primary (%)",%,worldbank,gender,29.9201521033844
+2015,SE.PRM.UNER.MA.ZS,"Out-of-school boys, primary (%)",%,worldbank,gender,28.6405050533156
+2015,SE.PRM.UNER.ZS,"Out-of-school children, primary (%)",%,worldbank,access,29.2703031140391
+2015,SE.SEC.CMPT.LO.ZS,Lower secondary completion rate (%),%,worldbank,learning,50.0054436581383
+2015,SE.SEC.ENRR,"Secondary enrollment, gross (%)",%,worldbank,access,58.1075064918095
+2015,SL.UEM.1524.ZS,Youth unemployment rate (%),%,worldbank,economic,20.591
+2015,SL.UEM.TOTL.ZS,Unemployment rate (%),%,worldbank,economic,9.312
+2015,SM.POP.NETM,Net migration (count),count,worldbank,displacement,-239829
+2016,CME_MRY0T4,Under-5 mortality rate,per 1k,unicef,wellbeing,13.1839190317566
+2016,FP.CPI.TOTL.ZG,Inflation (%),%,worldbank,economic,-0.783359624361508
+2016,NY.GDP.PCAP.CD,GDP per capita (USD),USD,worldbank,economic,8089.012088155
+2016,ROFST.1.CP,"Out-of-school rate, primary (%)",%,uis,access,26.28625721840928
+2016,ROFST.2.CP,"Out-of-school rate, lower secondary (%)",%,uis,access,38.58166938436452
+2016,SE.PRM.CMPT.FE.ZS,Female primary completion rate (%),%,worldbank,gender,67.344630602308
+2016,SE.PRM.CMPT.MA.ZS,Male primary completion rate (%),%,worldbank,gender,64.9339481099279
+2016,SE.PRM.CMPT.ZS,Primary completion rate (%),%,worldbank,learning,66.1112151282531
+2016,SE.PRM.ENRL.TC.ZS,"Pupil-teacher ratio, primary",ratio,worldbank,teacher,12.17537
+2016,SE.PRM.ENRR,"Primary enrollment, gross (%)",%,worldbank,access,76.5474649245479
+2016,SE.PRM.TCHR,Teachers in primary (count),count,worldbank,teacher,39967
+2016,SE.PRM.UNER,"Out-of-school children, primary (count)",count,worldbank,access,167102
+2016,SE.PRM.UNER.FE.ZS,"Out-of-school girls, primary (%)",%,worldbank,gender,26.6455527638997
+2016,SE.PRM.UNER.MA.ZS,"Out-of-school boys, primary (%)",%,worldbank,gender,25.9407266600423
+2016,SE.PRM.UNER.ZS,"Out-of-school children, primary (%)",%,worldbank,access,26.2862572184093
+2016,SE.SEC.CMPT.LO.ZS,Lower secondary completion rate (%),%,worldbank,learning,50.092559334678
+2016,SE.SEC.ENRL.TC.ZS,"Pupil-teacher ratio, secondary",ratio,worldbank,teacher,7.67398
+2016,SE.SEC.ENRR,"Secondary enrollment, gross (%)",%,worldbank,access,59.4640916311345
+2016,SE.SEC.TCHR,Teachers in secondary (count),count,worldbank,teacher,50049
+2016,SE.XPD.TOTL.GB.ZS,Education expenditure (% of govt spend),%,worldbank,expenditure,7.1489617762739
+2016,SE.XPD.TOTL.GD.ZS,Education expenditure (% of GDP),%,worldbank,expenditure,2.17820270841405
+2016,SL.UEM.1524.ZS,Youth unemployment rate (%),%,worldbank,economic,21.37
+2016,SL.UEM.TOTL.ZS,Unemployment rate (%),%,worldbank,economic,9.794
+2016,SM.POP.NETM,Net migration (count),count,worldbank,displacement,-247921
+2017,CME_MRY0T4,Under-5 mortality rate,per 1k,unicef,wellbeing,13.5334147463236
+2017,FP.CPI.TOTL.ZG,Inflation (%),%,worldbank,economic,4.32135218303191
+2017,NY.GDP.PCAP.CD,GDP per capita (USD),USD,worldbank,economic,8608.21084982387
+2017,ROFST.1.CP,"Out-of-school rate, primary (%)",%,uis,access,24.73990560112433
+2017,ROFST.2.CP,"Out-of-school rate, lower secondary (%)",%,uis,access,36.05046733074349
+2017,SE.PRM.CMPT.FE.ZS,Female primary completion rate (%),%,worldbank,gender,69.5545038526225
+2017,SE.PRM.CMPT.MA.ZS,Male primary completion rate (%),%,worldbank,gender,65.3441505519745
+2017,SE.PRM.CMPT.ZS,Primary completion rate (%),%,worldbank,learning,67.3921729038641
+2017,SE.PRM.ENRL.TC.ZS,"Pupil-teacher ratio, primary",ratio,worldbank,teacher,12.48274
+2017,SE.PRM.ENRR,"Primary enrollment, gross (%)",%,worldbank,access,78.1223765134602
+2017,SE.PRM.TCHR,Teachers in primary (count),count,worldbank,teacher,40256
+2017,SE.PRM.UNER,"Out-of-school children, primary (count)",count,worldbank,access,159134
+2017,SE.PRM.UNER.FE.ZS,"Out-of-school girls, primary (%)",%,worldbank,gender,24.8794805260882
+2017,SE.PRM.UNER.MA.ZS,"Out-of-school boys, primary (%)",%,worldbank,gender,24.6063950163647
+2017,SE.PRM.UNER.ZS,"Out-of-school children, primary (%)",%,worldbank,access,24.7399056011243
+2017,SE.SEC.CMPT.LO.ZS,Lower secondary completion rate (%),%,worldbank,learning,51.650640273934
+2017,SE.SEC.ENRR,"Secondary enrollment, gross (%)",%,worldbank,access,63.1400703776303
+2017,SE.XPD.TOTL.GB.ZS,Education expenditure (% of govt spend),%,worldbank,expenditure,7.14753618338492
+2017,SE.XPD.TOTL.GD.ZS,Education expenditure (% of GDP),%,worldbank,expenditure,2.21606844423238
+2017,SL.UEM.1524.ZS,Youth unemployment rate (%),%,worldbank,economic,22.039
+2017,SL.UEM.TOTL.ZS,Unemployment rate (%),%,worldbank,economic,10.258
+2017,SM.POP.NETM,Net migration (count),count,worldbank,displacement,-253664
+2018,CME_MRY0T4,Under-5 mortality rate,per 1k,unicef,wellbeing,13.9669362826597
+2018,CR.1,"Completion rate, primary (%)",%,uis,learning,96.85648345947266
+2018,CR.2,"Completion rate, lower secondary (%)",%,uis,learning,83.52851104736328
+2018,FP.CPI.TOTL.ZG,Inflation (%),%,worldbank,economic,6.07698907889607
+2018,NY.GDP.PCAP.CD,GDP per capita (USD),USD,worldbank,economic,9174.53666204759
+2018,ROFST.1.CP,"Out-of-school rate, primary (%)",%,uis,access,25.29924112025396
+2018,ROFST.2.CP,"Out-of-school rate, lower secondary (%)",%,uis,access,34.63611731408805
+2018,SE.ADT.1524.LT.ZS,Youth literacy rate 15–24 (%),%,worldbank,learning,96.7600021362305
+2018,SE.PRM.CMPT.FE.ZS,Female primary completion rate (%),%,worldbank,gender,68.8675188616551
+2018,SE.PRM.CMPT.MA.ZS,Male primary completion rate (%),%,worldbank,gender,64.9944690265487
+2018,SE.PRM.CMPT.ZS,Primary completion rate (%),%,worldbank,learning,66.8744426101971
+2018,SE.PRM.ENRR,"Primary enrollment, gross (%)",%,worldbank,access,77.5757280340719
+2018,SE.PRM.UNER,"Out-of-school children, primary (count)",count,worldbank,access,166088
+2018,SE.PRM.UNER.FE.ZS,"Out-of-school girls, primary (%)",%,worldbank,gender,25.382575048368
+2018,SE.PRM.UNER.MA.ZS,"Out-of-school boys, primary (%)",%,worldbank,gender,25.2197694280936
+2018,SE.PRM.UNER.ZS,"Out-of-school children, primary (%)",%,worldbank,access,25.299241120254
+2018,SE.SEC.CMPT.LO.ZS,Lower secondary completion rate (%),%,worldbank,learning,53.5620706411441
+2018,SE.SEC.ENRR,"Secondary enrollment, gross (%)",%,worldbank,access,64.2435656996928
+2018,SE.XPD.TOTL.GB.ZS,Education expenditure (% of govt spend),%,worldbank,expenditure,8.04745452306935
+2018,SE.XPD.TOTL.GD.ZS,Education expenditure (% of GDP),%,worldbank,expenditure,2.6165251225734
+2018,SL.UEM.1524.ZS,Youth unemployment rate (%),%,worldbank,economic,22.668
+2018,SL.UEM.TOTL.ZS,Unemployment rate (%),%,worldbank,economic,10.755
+2018,SM.POP.NETM,Net migration (count),count,worldbank,displacement,-259700
+2019,CME_MRY0T4,Under-5 mortality rate,per 1k,unicef,wellbeing,14.4798321948313
+2019,FP.CPI.TOTL.ZG,Inflation (%),%,worldbank,economic,3.00538949390383
+2019,NY.GDP.PCAP.CD,GDP per capita (USD),USD,worldbank,economic,8905.88005497437
+2019,ROFST.1.CP,"Out-of-school rate, primary (%)",%,uis,access,25.93979014612158
+2019,ROFST.2.CP,"Out-of-school rate, lower secondary (%)",%,uis,access,33.91533734912922
+2019,SE.ADT.1524.LT.ZS,Youth literacy rate 15–24 (%),%,worldbank,learning,96.6653219716309
+2019,SE.PRM.CMPT.FE.ZS,Female primary completion rate (%),%,worldbank,gender,69.3005831691963
+2019,SE.PRM.CMPT.MA.ZS,Male primary completion rate (%),%,worldbank,gender,66.0770826509444
+2019,SE.PRM.CMPT.ZS,Primary completion rate (%),%,worldbank,learning,67.6409968146899
+2019,SE.PRM.ENRR,"Primary enrollment, gross (%)",%,worldbank,access,77.0927924297378
+2019,SE.PRM.TCHR,Teachers in primary (count),count,worldbank,teacher,40600
+2019,SE.PRM.UNER,"Out-of-school children, primary (count)",count,worldbank,access,173794
+2019,SE.PRM.UNER.FE.ZS,"Out-of-school girls, primary (%)",%,worldbank,gender,25.9854202165248
+2019,SE.PRM.UNER.MA.ZS,"Out-of-school boys, primary (%)",%,worldbank,gender,25.8963156406751
+2019,SE.PRM.UNER.ZS,"Out-of-school children, primary (%)",%,worldbank,access,25.9397901461216
+2019,SE.SEC.CMPT.LO.ZS,Lower secondary completion rate (%),%,worldbank,learning,55.7753651037663
+2019,SE.SEC.ENRR,"Secondary enrollment, gross (%)",%,worldbank,access,65.2767643910733
+2019,SE.XPD.TOTL.GB.ZS,Education expenditure (% of govt spend),%,worldbank,expenditure,8.14395344750151
+2019,SE.XPD.TOTL.GD.ZS,Education expenditure (% of GDP),%,worldbank,expenditure,2.51957250612723
+2019,SL.UEM.1524.ZS,Youth unemployment rate (%),%,worldbank,economic,23.28
+2019,SL.UEM.TOTL.ZS,Unemployment rate (%),%,worldbank,economic,11.301
+2019,SM.POP.NETM,Net migration (count),count,worldbank,displacement,-266992
+2020,CME_MRY0T4,Under-5 mortality rate,per 1k,unicef,wellbeing,15.0597838146133
+2020,FP.CPI.TOTL.ZG,Inflation (%),%,worldbank,economic,84.8643330472041
+2020,NY.GDP.PCAP.CD,GDP per capita (USD),USD,worldbank,economic,5561.19166950397
+2020,ROFST.1.CP,"Out-of-school rate, primary (%)",%,uis,access,26.80922771257221
+2020,ROFST.2.CP,"Out-of-school rate, lower secondary (%)",%,uis,access,35.08559113494506
+2020,SE.PRM.CMPT.FE.ZS,Female primary completion rate (%),%,worldbank,gender,69.6094178114548
+2020,SE.PRM.CMPT.MA.ZS,Male primary completion rate (%),%,worldbank,gender,65.6966175998859
+2020,SE.PRM.CMPT.ZS,Primary completion rate (%),%,worldbank,learning,67.5957261429816
+2020,SE.PRM.ENRR,"Primary enrollment, gross (%)",%,worldbank,access,76.1016961624784
+2020,SE.PRM.TCHR,Teachers in primary (count),count,worldbank,teacher,40911
+2020,SE.PRM.UNER,"Out-of-school children, primary (count)",count,worldbank,access,182162
+2020,SE.PRM.UNER.FE.ZS,"Out-of-school girls, primary (%)",%,worldbank,gender,26.8980699638118
+2020,SE.PRM.UNER.MA.ZS,"Out-of-school boys, primary (%)",%,worldbank,gender,26.7245418613008
+2020,SE.PRM.UNER.ZS,"Out-of-school children, primary (%)",%,worldbank,access,26.8092277125722
+2020,SE.SEC.CMPT.LO.ZS,Lower secondary completion rate (%),%,worldbank,learning,54.4841201387691
+2020,SE.SEC.ENRR,"Secondary enrollment, gross (%)",%,worldbank,access,65.89697761206
+2020,SE.XPD.TOTL.GB.ZS,Education expenditure (% of govt spend),%,worldbank,expenditure,9.89828549998226
+2020,SE.XPD.TOTL.GD.ZS,Education expenditure (% of GDP),%,worldbank,expenditure,2.4354185601396
+2020,SL.UEM.1524.ZS,Youth unemployment rate (%),%,worldbank,economic,26.576
+2020,SL.UEM.TOTL.ZS,Unemployment rate (%),%,worldbank,economic,13.252
+2020,SM.POP.NETM,Net migration (count),count,worldbank,displacement,-47787
+2021,CME_MRY0T4,Under-5 mortality rate,per 1k,unicef,wellbeing,15.6887325185686
+2021,FP.CPI.TOTL.ZG,Inflation (%),%,worldbank,economic,154.756096023393
+2021,NY.GDP.PCAP.CD,GDP per capita (USD),USD,worldbank,economic,4045.37391066234
+2021,ROFST.1.CP,"Out-of-school rate, primary (%)",%,uis,access,28.00069783670621
+2021,ROFST.2.CP,"Out-of-school rate, lower secondary (%)",%,uis,access,33.94071702625941
+2021,SE.PRM.CMPT.FE.ZS,Female primary completion rate (%),%,worldbank,gender,66.6327135343359
+2021,SE.PRM.CMPT.MA.ZS,Male primary completion rate (%),%,worldbank,gender,67.8492356352135
+2021,SE.PRM.CMPT.ZS,Primary completion rate (%),%,worldbank,learning,67.2569563414062
+2021,SE.PRM.ENRR,"Primary enrollment, gross (%)",%,worldbank,access,74.7292217654682
+2021,SE.PRM.TCAQ.ZS,"Trained teachers, primary (%)",%,worldbank,teacher,22.573051948052
+2021,SE.PRM.TCHR,Teachers in primary (count),count,worldbank,teacher,36960
+2021,SE.PRM.UNER,"Out-of-school children, primary (count)",count,worldbank,access,190995
+2021,SE.PRM.UNER.FE.ZS,"Out-of-school girls, primary (%)",%,worldbank,gender,28.2079748913047
+2021,SE.PRM.UNER.MA.ZS,"Out-of-school boys, primary (%)",%,worldbank,gender,27.8026700149353
+2021,SE.PRM.UNER.ZS,"Out-of-school children, primary (%)",%,worldbank,access,28.0006978367062
+2021,SE.SEC.CMPT.LO.ZS,Lower secondary completion rate (%),%,worldbank,learning,61.0882674137031
+2021,SE.SEC.ENRR,"Secondary enrollment, gross (%)",%,worldbank,access,67.5143617766569
+2021,SL.UEM.1524.ZS,Youth unemployment rate (%),%,worldbank,economic,25.203
+2021,SL.UEM.TOTL.ZS,Unemployment rate (%),%,worldbank,economic,12.715
+2021,SM.POP.NETM,Net migration (count),count,worldbank,displacement,-27290
+2021,TRTP.1,"Trained teachers, primary (%)",%,uis,teacher,22.57305194805195
+2022,CME_MRY0T4,Under-5 mortality rate,per 1k,unicef,wellbeing,16.3292840259845
+2022,FP.CPI.TOTL.ZG,Inflation (%),%,worldbank,economic,171.205491336641
+2022,NY.GDP.PCAP.CD,GDP per capita (USD),USD,worldbank,economic,3654.35845534878
+2022,ROFST.1.CP,"Out-of-school rate, primary (%)",%,uis,access,27.19800787495385
+2022,ROFST.2.CP,"Out-of-school rate, lower secondary (%)",%,uis,access,32.32502874664623
+2022,SE.PRM.CMPT.FE.ZS,Female primary completion rate (%),%,worldbank,gender,69.2872155384838
+2022,SE.PRM.CMPT.MA.ZS,Male primary completion rate (%),%,worldbank,gender,67.0202107445155
+2022,SE.PRM.CMPT.ZS,Primary completion rate (%),%,worldbank,learning,68.126669142746
+2022,SE.PRM.ENRR,"Primary enrollment, gross (%)",%,worldbank,access,76.4541233193651
+2022,SE.PRM.TCAQ.ZS,"Trained teachers, primary (%)",%,worldbank,teacher,34.8860505885299
+2022,SE.PRM.TCHR,Teachers in primary (count),count,worldbank,teacher,35937
+2022,SE.PRM.UNER,"Out-of-school children, primary (count)",count,worldbank,access,184913
+2022,SE.PRM.UNER.FE.ZS,"Out-of-school girls, primary (%)",%,worldbank,gender,27.4740782196867
+2022,SE.PRM.UNER.MA.ZS,"Out-of-school boys, primary (%)",%,worldbank,gender,26.9340001323623
+2022,SE.PRM.UNER.ZS,"Out-of-school children, primary (%)",%,worldbank,access,27.1980078749538
+2022,SE.SEC.CMPT.LO.ZS,Lower secondary completion rate (%),%,worldbank,learning,56.0278837054596
+2022,SE.SEC.ENRR,"Secondary enrollment, gross (%)",%,worldbank,access,64.5017084327233
+2022,SE.XPD.TOTL.GB.ZS,Education expenditure (% of govt spend),%,worldbank,expenditure,8.85817043035745
+2022,SE.XPD.TOTL.GD.ZS,Education expenditure (% of GDP),%,worldbank,expenditure,1.33151427628711
+2022,SI.POV.DDAY,Poverty headcount ($2.15/day) (%),%,worldbank,economic,5.8
+2022,SL.UEM.1524.ZS,Youth unemployment rate (%),%,worldbank,economic,22.9
+2022,SL.UEM.TOTL.ZS,Unemployment rate (%),%,worldbank,economic,11.105
+2022,SM.POP.NETM,Net migration (count),count,worldbank,displacement,-27507
+2022,TRTP.1,"Trained teachers, primary (%)",%,uis,teacher,34.88605058852993
+2023,CME_MRY0T4,Under-5 mortality rate,per 1k,unicef,wellbeing,16.9865139158175
+2023,FP.CPI.TOTL.ZG,Inflation (%),%,worldbank,economic,221.341644023365
+2023,NY.GDP.PCAP.CD,GDP per capita (USD),USD,worldbank,economic,3477.72489842684
+2023,ROFST.1.CP,"Out-of-school rate, primary (%)",%,uis,access,25.6683486662867
+2023,ROFST.2.CP,"Out-of-school rate, lower secondary (%)",%,uis,access,32.73297520735856
+2023,SE.PRM.CMPT.FE.ZS,Female primary completion rate (%),%,worldbank,gender,68.6275558407758
+2023,SE.PRM.CMPT.MA.ZS,Male primary completion rate (%),%,worldbank,gender,65.9647387805211
+2023,SE.PRM.CMPT.ZS,Primary completion rate (%),%,worldbank,learning,67.2665475619853
+2023,SE.PRM.ENRR,"Primary enrollment, gross (%)",%,worldbank,access,78.2026874196176
+2023,SE.PRM.TCAQ.ZS,"Trained teachers, primary (%)",%,worldbank,teacher,40.7967488665266
+2023,SE.PRM.TCHR,Teachers in primary (count),count,worldbank,teacher,36172
+2023,SE.PRM.UNER,"Out-of-school children, primary (count)",count,worldbank,access,172038
+2023,SE.PRM.UNER.FE.ZS,"Out-of-school girls, primary (%)",%,worldbank,gender,25.789195675339
+2023,SE.PRM.UNER.MA.ZS,"Out-of-school boys, primary (%)",%,worldbank,gender,25.5528613987634
+2023,SE.PRM.UNER.ZS,"Out-of-school children, primary (%)",%,worldbank,access,25.6683486662867
+2023,SE.SEC.CMPT.LO.ZS,Lower secondary completion rate (%),%,worldbank,learning,52.9191388840188
+2023,SE.SEC.ENRR,"Secondary enrollment, gross (%)",%,worldbank,access,62.8279212477627
+2023,SE.SEC.TCAQ.ZS,"Trained teachers, secondary (%)",%,worldbank,teacher,42.4003358967559
+2023,SE.SEC.TCHR,Teachers in secondary (count),count,worldbank,teacher,45252
+2023,SE.XPD.TOTL.GD.ZS,Education expenditure (% of GDP),%,worldbank,expenditure,1.50416361108086
+2023,SL.UEM.1524.ZS,Youth unemployment rate (%),%,worldbank,economic,22.744
+2023,SL.UEM.TOTL.ZS,Unemployment rate (%),%,worldbank,economic,10.985
+2023,SM.POP.NETM,Net migration (count),count,worldbank,displacement,-34193
+2023,TRTP.1,"Trained teachers, primary (%)",%,uis,teacher,40.79674886652659
+2024,CME_MRY0T4,Under-5 mortality rate,per 1k,unicef,wellbeing,17.6006070344969
+2024,FP.CPI.TOTL.ZG,Inflation (%),%,worldbank,economic,45.2430422716718
+2024,ROFST.1.CP,"Out-of-school rate, primary (%)",%,uis,access,22.51252091928375
+2024,ROFST.2.CP,"Out-of-school rate, lower secondary (%)",%,uis,access,32.49454963387758
+2024,SE.PRM.ENRR,"Primary enrollment, gross (%)",%,worldbank,access,81.7691124093498
+2024,SE.PRM.TCAQ.ZS,"Trained teachers, primary (%)",%,worldbank,teacher,53.7480585302052
+2024,SE.PRM.TCHR,Teachers in primary (count),count,worldbank,teacher,36699
+2024,SE.PRM.UNER,"Out-of-school children, primary (count)",count,worldbank,access,146896
+2024,SE.PRM.UNER.FE.ZS,"Out-of-school girls, primary (%)",%,worldbank,gender,22.3638019279681
+2024,SE.PRM.UNER.MA.ZS,"Out-of-school boys, primary (%)",%,worldbank,gender,22.6543087912154
+2024,SE.PRM.UNER.ZS,"Out-of-school children, primary (%)",%,worldbank,access,22.5125209192838
+2024,SE.SEC.ENRR,"Secondary enrollment, gross (%)",%,worldbank,access,63.7923011779785
+2024,SE.XPD.TOTL.GB.ZS,Education expenditure (% of govt spend),%,worldbank,expenditure,6.11399088041832
+2024,SE.XPD.TOTL.GD.ZS,Education expenditure (% of GDP),%,worldbank,expenditure,1.22490869993085
+2024,SM.POP.NETM,Net migration (count),count,worldbank,displacement,-17267
+2024,TRTP.1,"Trained teachers, primary (%)",%,uis,teacher,53.74805853020518
+2025,SE.XPD.TOTL.GB.ZS,Education expenditure (% of govt spend),%,worldbank,expenditure,8.59284340785173
+2025,SM.POP.NETM,Net migration (count),count,worldbank,displacement,-10230

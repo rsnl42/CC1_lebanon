@@ -157,51 +157,45 @@ async function fetchWorldBank() {
   console.log('\n📦 Fetching World Bank...');
   const results = {};
   const errors  = [];
-  const codes   = WB_INDICATORS.map(i => i.code);
-  const meta    = Object.fromEntries(WB_INDICATORS.map(i => [i.code, i]));
 
-  // WB supports semicolon-batched indicators
-  const BATCH = 5;
-  for (let i = 0; i < codes.length; i += BATCH) {
-    const batch    = codes.slice(i, i + BATCH);
-    const joined   = batch.join(';');
-    const url      = `https://api.worldbank.org/v2/country/${CONFIG.country.worldbank}` +
-                     `/indicator/${joined}` +
-                     `?format=json&date=${CONFIG.startYear}:${CONFIG.endYear}&per_page=500`;
+  for (const ind of WB_INDICATORS) {
+    const url = `https://api.worldbank.org/v2/country/${CONFIG.country.worldbank}` +
+                `/indicator/${ind.code}` +
+                `?format=json&date=${CONFIG.startYear}:${CONFIG.endYear}&per_page=500`;
     try {
       const res        = await fetch(url);
-      const [, data]   = await res.json();
+      const json       = await res.json();
+      
+      if (json[0] && json[0].message) {
+        throw new Error(json[0].message[0].value || 'Unknown WB error');
+      }
+      
+      const data       = json[1];
 
-      (data || []).forEach(d => {
-        const code = d.indicator.id;
-        if (!results[code]) {
-          results[code] = {
-            source:  'worldbank',
-            label:   meta[code]?.label || d.indicator.value,
-            unit:    meta[code]?.unit  || '',
-            angle:   meta[code]?.angle || 'other',
-            series:  []
-          };
-        }
-        if (d.value !== null) {
-          results[code].series.push({ year: +d.date, value: d.value });
-        }
-      });
-
-      batch.forEach(c => {
-        if (results[c]) {
-          results[c].series = cleanSeries(results[c].series);
-          logProgress('WB', c, 'ok');
+      if (data && data.length > 0) {
+        results[ind.code] = {
+          source:  'worldbank',
+          label:   ind.label,
+          unit:    ind.unit,
+          angle:   ind.angle,
+          series:  cleanSeries(
+            data
+              .filter(d => d.value !== null)
+              .map(d => ({ year: +d.date, value: d.value }))
+          )
+        };
+        if (results[ind.code].series.length > 0) {
+          logProgress('WB', ind.code, 'ok');
         } else {
-          logProgress('WB', c, 'skip');
+          logProgress('WB', ind.code, 'skip');
         }
-      });
+      } else {
+        logProgress('WB', ind.code, 'skip');
+      }
 
     } catch (e) {
-      batch.forEach(c => {
-        errors.push({ source: 'worldbank', indicator: c, message: e.message });
-        logProgress('WB', c, 'error');
-      });
+      errors.push({ source: 'worldbank', indicator: ind.code, url, message: e.message, type: e.name || 'APIError' });
+      logProgress('WB', ind.code, 'error');
     }
 
     await sleep(CONFIG.delay.worldbank);
@@ -228,8 +222,12 @@ async function fetchUIS() {
       const res  = await fetch(url);
       const data = await res.json();
 
-      // UIS response shape: { data: [{ geoUnit, indicator, year, value }] }
-      const rows = data?.data || data?.value || [];
+      if (data.errors && data.errors.length > 0) {
+        throw new Error(data.errors[0].message || 'Unknown UIS error');
+      }
+
+      // UIS response shape: { records: [{ geoUnit, indicatorId, year, value }] }
+      const rows = (data?.records || []).filter(r => r.geoUnit === CONFIG.country.uis);
 
       if (rows.length > 0) {
         results[ind.code] = {
@@ -249,7 +247,7 @@ async function fetchUIS() {
       }
 
     } catch (e) {
-      errors.push({ source: 'uis', indicator: ind.code, message: e.message });
+      errors.push({ source: 'uis', indicator: ind.code, url, message: e.message, type: e.name || 'APIError' });
       logProgress('UIS', ind.code, 'error');
     }
 
@@ -268,7 +266,7 @@ async function fetchUNICEF() {
 
   for (const ind of UNICEF_INDICATORS) {
     const url = `https://sdmx.data.unicef.org/ws/public/sdmxapi/rest/data/` +
-                `UNICEF,${ind.code},1.0/${CONFIG.country.unicef}..` +
+                `UNICEF,GLOBAL_DATAFLOW,1.0/${CONFIG.country.unicef}.${ind.code}..` +
                 `?format=sdmx-json` +
                 `&startPeriod=${CONFIG.startYear}` +
                 `&endPeriod=${CONFIG.endYear}`;
@@ -276,17 +274,36 @@ async function fetchUNICEF() {
       const res  = await fetch(url);
       const data = await res.json();
 
-      // SDMX JSON shape — extract observations
-      const obs     = data?.data?.dataSets?.[0]?.observations || {};
-      const periods = data?.data?.structure?.dimensions?.observation
-                       ?.find(d => d.id === 'TIME_PERIOD')?.values || [];
+      if (data.errors && data.errors.length > 0) {
+        throw new Error(data.errors[0].message || 'Unknown UNICEF error');
+      }
+
+      // SDMX JSON shape — extract observations from series
+      const seriesList = data?.data?.dataSets?.[0]?.series || {};
+      const structure  = data?.data?.structure?.dimensions;
+      const periods    = structure?.observation?.find(d => d.id === 'TIME_PERIOD')?.values || [];
+      const sexValues  = structure?.series?.find(d => d.id === 'SEX')?.values || [];
+
+      // Find the "Total" series index if SEX exists
+      let targetSeriesKey = Object.keys(seriesList)[0]; // Default to first
+      const sexDimIdx = structure?.series?.findIndex(d => d.id === 'SEX');
+      
+      if (sexDimIdx !== -1) {
+        const totalIdx = sexValues.findIndex(v => v.id === '_T' || v.id === 'ALL' || v.id === 'TOTAL');
+        if (totalIdx !== -1) {
+          const foundKey = Object.keys(seriesList).find(k => k.split(':')[sexDimIdx] === String(totalIdx));
+          if (foundKey) targetSeriesKey = foundKey;
+        }
+      }
+
+      const obs = seriesList[targetSeriesKey]?.observations || {};
 
       const series = Object.entries(obs)
         .map(([key, val]) => {
-          const timeIdx = +key.split(':').pop();
+          const timeIdx = +key;
           const period  = periods[timeIdx];
           return period
-            ? { year: +period.id.slice(0, 4), value: val[0] }
+            ? { year: +period.id.slice(0, 4), value: +val[0] }
             : null;
         })
         .filter(Boolean);
@@ -305,7 +322,7 @@ async function fetchUNICEF() {
       }
 
     } catch (e) {
-      errors.push({ source: 'unicef', indicator: ind.code, message: e.message });
+      errors.push({ source: 'unicef', indicator: ind.code, url, message: e.message, type: e.name || 'APIError' });
       logProgress('UNICEF', ind.code, 'error');
     }
 
@@ -322,13 +339,12 @@ async function fetchUNHCR() {
   const results = {};
   const errors  = [];
 
+  // Syrian refugees in Lebanon by year
+  const url = `https://api.unhcr.org/population/v1/population/` +
+              `?limit=100&dataset=population&displayType=totals` +
+              `&yearFrom=${CONFIG.startYear}&yearTo=${CONFIG.endYear}` +
+              `&coo=SYR&coa=LBN&cf_type=REF`;
   try {
-    // Syrian refugees in Lebanon by year
-    const url = `https://api.unhcr.org/population/v1/population/` +
-                `?limit=100&dataset=population&displayType=totals` +
-                `&yearFrom=${CONFIG.startYear}&yearTo=${CONFIG.endYear}` +
-                `&coo=SYR&coa=LBN&cf_type=REF`;
-
     const res  = await fetch(url);
     const data = await res.json();
     const rows = data?.items || [];
@@ -345,13 +361,17 @@ async function fetchUNHCR() {
       };
       logProgress('UNHCR', 'SYR_REFUGEES_LBN', 'ok');
     }
+  } catch (e) {
+    errors.push({ source: 'unhcr', indicator: 'SYR_REFUGEES_LBN', url, message: e.message, type: e.name });
+    logProgress('UNHCR', 'SYR_REFUGEES_LBN', 'error');
+  }
 
-    // All refugees in Lebanon (all origins)
-    const url2 = `https://api.unhcr.org/population/v1/population/` +
-                 `?limit=100&dataset=population&displayType=totals` +
-                 `&yearFrom=${CONFIG.startYear}&yearTo=${CONFIG.endYear}` +
-                 `&coa=LBN&cf_type=REF`;
-
+  // All refugees in Lebanon (all origins)
+  const url2 = `https://api.unhcr.org/population/v1/population/` +
+               `?limit=100&dataset=population&displayType=totals` +
+               `&yearFrom=${CONFIG.startYear}&yearTo=${CONFIG.endYear}` +
+               `&coa=LBN&cf_type=REF`;
+  try {
     const res2  = await fetch(url2);
     const data2 = await res2.json();
 
@@ -374,8 +394,8 @@ async function fetchUNHCR() {
     logProgress('UNHCR', 'ALL_REFUGEES_LBN', 'ok');
 
   } catch (e) {
-    errors.push({ source: 'unhcr', indicator: 'refugees', message: e.message });
-    logProgress('UNHCR', 'refugees', 'error');
+    errors.push({ source: 'unhcr', indicator: 'ALL_REFUGEES_LBN', url: url2, message: e.message, type: e.name });
+    logProgress('UNHCR', 'ALL_REFUGEES_LBN', 'error');
   }
 
   await sleep(CONFIG.delay.unhcr);
