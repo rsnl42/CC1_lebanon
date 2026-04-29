@@ -1,0 +1,1985 @@
+Country,Admin1,Admin2,ISO3,Admin2 Pcode,Admin1 Pcode,Month,Year,Events,Fatalities
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,January,2016,0,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,January,2016,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,January,2016,1,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,January,2016,3,2
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,January,2016,1,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,January,2016,4,3
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,January,2016,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,January,2016,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,January,2016,1,1
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,January,2016,1,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,January,2016,1,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,January,2016,1,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,January,2016,5,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,January,2016,3,2
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,January,2016,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,January,2016,1,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,February,2016,0,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,February,2016,1,1
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,February,2016,1,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,February,2016,0,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,February,2016,2,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,February,2016,1,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,February,2016,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,February,2016,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,February,2016,4,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,February,2016,2,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,February,2016,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,February,2016,1,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,February,2016,3,2
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,February,2016,4,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,February,2016,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,February,2016,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,March,2016,1,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,March,2016,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,March,2016,2,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,March,2016,1,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,March,2016,2,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,March,2016,1,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,March,2016,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,March,2016,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,March,2016,3,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,March,2016,1,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,March,2016,1,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,March,2016,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,March,2016,5,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,March,2016,3,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,March,2016,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,March,2016,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,April,2016,0,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,April,2016,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,April,2016,3,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,April,2016,0,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,April,2016,1,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,April,2016,0,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,April,2016,3,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,April,2016,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,April,2016,0,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,April,2016,2,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,April,2016,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,April,2016,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,April,2016,6,1
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,April,2016,3,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,April,2016,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,April,2016,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,May,2016,0,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,May,2016,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,May,2016,0,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,May,2016,0,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,May,2016,0,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,May,2016,1,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,May,2016,1,1
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,May,2016,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,May,2016,5,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,May,2016,5,6
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,May,2016,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,May,2016,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,May,2016,7,1
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,May,2016,2,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,May,2016,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,May,2016,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,June,2016,0,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,June,2016,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,June,2016,0,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,June,2016,0,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,June,2016,3,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,June,2016,4,1
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,June,2016,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,June,2016,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,June,2016,1,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,June,2016,2,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,June,2016,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,June,2016,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,June,2016,6,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,June,2016,6,3
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,June,2016,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,June,2016,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,July,2016,0,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,July,2016,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,July,2016,2,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,July,2016,1,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,July,2016,2,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,July,2016,3,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,July,2016,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,July,2016,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,July,2016,4,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,July,2016,3,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,July,2016,1,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,July,2016,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,July,2016,1,1
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,July,2016,4,3
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,July,2016,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,July,2016,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,August,2016,0,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,August,2016,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,August,2016,2,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,August,2016,1,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,August,2016,1,1
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,August,2016,2,1
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,August,2016,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,August,2016,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,August,2016,1,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,August,2016,2,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,August,2016,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,August,2016,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,August,2016,1,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,August,2016,3,1
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,August,2016,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,August,2016,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,September,2016,2,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,September,2016,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,September,2016,0,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,September,2016,0,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,September,2016,3,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,September,2016,0,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,September,2016,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,September,2016,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,September,2016,2,1
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,September,2016,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,September,2016,1,1
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,September,2016,2,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,September,2016,5,2
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,September,2016,5,2
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,September,2016,1,1
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,September,2016,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,October,2016,0,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,October,2016,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,October,2016,1,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,October,2016,0,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,October,2016,3,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,October,2016,0,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,October,2016,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,October,2016,2,2
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,October,2016,2,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,October,2016,4,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,October,2016,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,October,2016,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,October,2016,2,3
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,October,2016,4,2
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,October,2016,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,October,2016,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,November,2016,0,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,November,2016,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,November,2016,3,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,November,2016,0,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,November,2016,0,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,November,2016,3,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,November,2016,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,November,2016,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,November,2016,1,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,November,2016,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,November,2016,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,November,2016,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,November,2016,2,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,November,2016,1,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,November,2016,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,November,2016,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,December,2016,0,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,December,2016,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,December,2016,2,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,December,2016,0,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,December,2016,2,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,December,2016,3,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,December,2016,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,December,2016,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,December,2016,2,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,December,2016,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,December,2016,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,December,2016,1,1
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,December,2016,1,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,December,2016,0,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,December,2016,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,December,2016,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,January,2017,1,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,January,2017,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,January,2017,0,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,January,2017,0,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,January,2017,3,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,January,2017,3,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,January,2017,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,January,2017,1,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,January,2017,1,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,January,2017,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,January,2017,1,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,January,2017,6,1
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,January,2017,1,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,January,2017,2,1
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,January,2017,2,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,January,2017,1,1
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,February,2017,0,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,February,2017,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,February,2017,0,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,February,2017,1,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,February,2017,3,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,February,2017,2,1
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,February,2017,1,2
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,February,2017,1,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,February,2017,3,1
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,February,2017,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,February,2017,2,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,February,2017,1,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,February,2017,4,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,February,2017,3,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,February,2017,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,February,2017,1,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,March,2017,0,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,March,2017,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,March,2017,2,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,March,2017,0,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,March,2017,4,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,March,2017,2,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,March,2017,1,1
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,March,2017,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,March,2017,1,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,March,2017,2,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,March,2017,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,March,2017,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,March,2017,4,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,March,2017,1,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,March,2017,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,March,2017,1,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,April,2017,2,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,April,2017,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,April,2017,0,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,April,2017,0,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,April,2017,4,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,April,2017,1,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,April,2017,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,April,2017,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,April,2017,2,1
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,April,2017,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,April,2017,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,April,2017,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,April,2017,2,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,April,2017,4,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,April,2017,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,April,2017,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,May,2017,0,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,May,2017,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,May,2017,0,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,May,2017,0,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,May,2017,2,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,May,2017,2,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,May,2017,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,May,2017,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,May,2017,1,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,May,2017,1,1
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,May,2017,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,May,2017,3,1
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,May,2017,3,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,May,2017,4,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,May,2017,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,May,2017,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,June,2017,0,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,June,2017,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,June,2017,0,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,June,2017,0,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,June,2017,2,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,June,2017,3,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,June,2017,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,June,2017,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,June,2017,2,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,June,2017,2,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,June,2017,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,June,2017,1,1
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,June,2017,8,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,June,2017,0,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,June,2017,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,June,2017,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,July,2017,1,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,July,2017,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,July,2017,0,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,July,2017,1,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,July,2017,4,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,July,2017,6,3
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,July,2017,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,July,2017,1,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,July,2017,4,1
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,July,2017,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,July,2017,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,July,2017,1,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,July,2017,3,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,July,2017,8,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,July,2017,1,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,July,2017,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,August,2017,1,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,August,2017,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,August,2017,0,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,August,2017,0,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,August,2017,2,1
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,August,2017,3,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,August,2017,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,August,2017,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,August,2017,0,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,August,2017,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,August,2017,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,August,2017,1,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,August,2017,4,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,August,2017,6,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,August,2017,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,August,2017,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,September,2017,0,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,September,2017,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,September,2017,2,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,September,2017,0,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,September,2017,1,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,September,2017,0,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,September,2017,1,1
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,September,2017,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,September,2017,0,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,September,2017,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,September,2017,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,September,2017,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,September,2017,1,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,September,2017,5,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,September,2017,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,September,2017,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,October,2017,0,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,October,2017,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,October,2017,1,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,October,2017,0,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,October,2017,5,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,October,2017,2,1
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,October,2017,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,October,2017,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,October,2017,1,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,October,2017,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,October,2017,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,October,2017,1,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,October,2017,2,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,October,2017,7,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,October,2017,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,October,2017,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,November,2017,0,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,November,2017,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,November,2017,1,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,November,2017,0,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,November,2017,5,1
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,November,2017,1,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,November,2017,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,November,2017,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,November,2017,2,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,November,2017,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,November,2017,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,November,2017,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,November,2017,2,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,November,2017,2,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,November,2017,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,November,2017,1,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,December,2017,2,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,December,2017,1,1
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,December,2017,0,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,December,2017,1,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,December,2017,0,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,December,2017,2,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,December,2017,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,December,2017,1,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,December,2017,3,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,December,2017,2,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,December,2017,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,December,2017,1,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,December,2017,8,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,December,2017,3,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,December,2017,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,December,2017,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,January,2018,1,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,January,2018,3,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,January,2018,4,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,January,2018,5,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,January,2018,24,2
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,January,2018,6,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,January,2018,4,2
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,January,2018,8,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,January,2018,10,1
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,January,2018,7,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,January,2018,3,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,January,2018,6,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,January,2018,13,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,January,2018,15,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,January,2018,2,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,January,2018,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,February,2018,3,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,February,2018,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,February,2018,6,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,February,2018,10,1
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,February,2018,22,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,February,2018,10,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,February,2018,2,2
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,February,2018,6,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,February,2018,10,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,February,2018,4,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,February,2018,3,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,February,2018,2,1
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,February,2018,9,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,February,2018,15,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,February,2018,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,February,2018,3,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,March,2018,0,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,March,2018,3,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,March,2018,5,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,March,2018,1,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,March,2018,11,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,March,2018,7,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,March,2018,1,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,March,2018,8,2
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,March,2018,7,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,March,2018,4,3
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,March,2018,2,3
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,March,2018,4,5
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,March,2018,16,2
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,March,2018,26,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,March,2018,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,March,2018,1,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,April,2018,3,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,April,2018,1,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,April,2018,6,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,April,2018,6,1
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,April,2018,15,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,April,2018,11,1
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,April,2018,25,1
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,April,2018,23,3
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,April,2018,11,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,April,2018,26,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,April,2018,27,1
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,April,2018,30,3
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,April,2018,10,1
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,April,2018,14,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,April,2018,1,1
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,April,2018,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,May,2018,0,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,May,2018,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,May,2018,2,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,May,2018,3,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,May,2018,7,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,May,2018,8,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,May,2018,15,1
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,May,2018,13,3
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,May,2018,8,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,May,2018,11,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,May,2018,18,1
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,May,2018,14,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,May,2018,13,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,May,2018,11,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,May,2018,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,May,2018,1,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,June,2018,0,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,June,2018,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,June,2018,4,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,June,2018,0,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,June,2018,16,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,June,2018,4,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,June,2018,3,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,June,2018,17,3
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,June,2018,8,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,June,2018,6,2
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,June,2018,6,1
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,June,2018,5,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,June,2018,9,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,June,2018,14,1
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,June,2018,1,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,June,2018,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,July,2018,2,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,July,2018,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,July,2018,3,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,July,2018,0,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,July,2018,7,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,July,2018,7,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,July,2018,3,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,July,2018,7,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,July,2018,3,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,July,2018,5,1
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,July,2018,5,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,July,2018,2,1
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,July,2018,11,1
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,July,2018,11,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,July,2018,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,July,2018,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,August,2018,1,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,August,2018,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,August,2018,1,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,August,2018,9,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,August,2018,12,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,August,2018,10,1
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,August,2018,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,August,2018,7,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,August,2018,10,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,August,2018,6,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,August,2018,6,2
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,August,2018,1,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,August,2018,11,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,August,2018,13,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,August,2018,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,August,2018,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,September,2018,1,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,September,2018,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,September,2018,5,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,September,2018,0,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,September,2018,15,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,September,2018,12,1
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,September,2018,11,1
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,September,2018,11,2
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,September,2018,4,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,September,2018,14,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,September,2018,12,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,September,2018,22,2
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,September,2018,11,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,September,2018,17,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,September,2018,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,September,2018,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,October,2018,0,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,October,2018,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,October,2018,8,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,October,2018,12,3
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,October,2018,22,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,October,2018,10,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,October,2018,5,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,October,2018,12,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,October,2018,10,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,October,2018,10,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,October,2018,15,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,October,2018,15,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,October,2018,13,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,October,2018,14,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,October,2018,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,October,2018,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,November,2018,1,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,November,2018,2,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,November,2018,3,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,November,2018,4,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,November,2018,24,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,November,2018,19,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,November,2018,7,2
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,November,2018,5,1
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,November,2018,5,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,November,2018,4,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,November,2018,11,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,November,2018,13,3
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,November,2018,10,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,November,2018,21,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,November,2018,1,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,November,2018,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,December,2018,5,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,December,2018,2,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,December,2018,9,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,December,2018,13,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,December,2018,47,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,December,2018,39,2
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,December,2018,2,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,December,2018,1,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,December,2018,22,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,December,2018,2,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,December,2018,1,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,December,2018,8,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,December,2018,20,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,December,2018,23,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,December,2018,1,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,December,2018,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,January,2019,3,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,January,2019,2,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,January,2019,5,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,January,2019,12,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,January,2019,10,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,January,2019,15,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,January,2019,1,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,January,2019,2,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,January,2019,18,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,January,2019,2,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,January,2019,9,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,January,2019,7,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,January,2019,11,1
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,January,2019,18,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,January,2019,1,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,January,2019,3,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,February,2019,4,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,February,2019,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,February,2019,4,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,February,2019,3,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,February,2019,15,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,February,2019,21,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,February,2019,3,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,February,2019,7,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,February,2019,12,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,February,2019,6,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,February,2019,8,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,February,2019,8,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,February,2019,12,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,February,2019,22,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,February,2019,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,February,2019,1,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,March,2019,2,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,March,2019,2,1
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,March,2019,9,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,March,2019,9,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,March,2019,19,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,March,2019,13,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,March,2019,5,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,March,2019,9,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,March,2019,10,2
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,March,2019,12,1
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,March,2019,20,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,March,2019,25,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,March,2019,9,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,March,2019,13,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,March,2019,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,March,2019,1,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,April,2019,0,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,April,2019,1,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,April,2019,7,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,April,2019,3,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,April,2019,7,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,April,2019,19,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,April,2019,1,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,April,2019,2,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,April,2019,8,1
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,April,2019,3,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,April,2019,1,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,April,2019,3,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,April,2019,9,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,April,2019,13,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,April,2019,1,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,April,2019,1,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,May,2019,3,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,May,2019,1,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,May,2019,3,1
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,May,2019,2,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,May,2019,11,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,May,2019,4,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,May,2019,3,3
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,May,2019,4,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,May,2019,5,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,May,2019,7,6
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,May,2019,1,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,May,2019,8,8
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,May,2019,13,1
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,May,2019,18,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,May,2019,1,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,May,2019,1,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,June,2019,2,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,June,2019,1,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,June,2019,1,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,June,2019,6,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,June,2019,8,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,June,2019,7,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,June,2019,2,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,June,2019,2,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,June,2019,0,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,June,2019,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,June,2019,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,June,2019,1,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,June,2019,13,1
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,June,2019,14,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,June,2019,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,June,2019,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,July,2019,2,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,July,2019,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,July,2019,1,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,July,2019,3,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,July,2019,5,1
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,July,2019,11,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,July,2019,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,July,2019,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,July,2019,0,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,July,2019,2,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,July,2019,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,July,2019,3,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,July,2019,11,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,July,2019,7,2
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,July,2019,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,July,2019,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,August,2019,1,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,August,2019,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,August,2019,2,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,August,2019,2,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,August,2019,11,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,August,2019,16,1
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,August,2019,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,August,2019,2,1
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,August,2019,8,1
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,August,2019,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,August,2019,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,August,2019,2,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,August,2019,13,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,August,2019,12,1
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,August,2019,2,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,August,2019,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,September,2019,1,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,September,2019,1,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,September,2019,4,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,September,2019,4,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,September,2019,7,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,September,2019,21,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,September,2019,1,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,September,2019,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,September,2019,1,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,September,2019,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,September,2019,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,September,2019,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,September,2019,5,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,September,2019,10,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,September,2019,2,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,September,2019,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,October,2019,16,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,October,2019,2,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,October,2019,5,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,October,2019,7,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,October,2019,19,1
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,October,2019,11,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,October,2019,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,October,2019,4,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,October,2019,9,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,October,2019,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,October,2019,1,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,October,2019,1,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,October,2019,5,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,October,2019,10,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,October,2019,9,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,October,2019,1,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,November,2019,4,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,November,2019,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,November,2019,2,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,November,2019,5,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,November,2019,6,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,November,2019,10,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,November,2019,1,2
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,November,2019,2,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,November,2019,9,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,November,2019,4,7
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,November,2019,2,17
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,November,2019,2,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,November,2019,5,1
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,November,2019,17,1
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,November,2019,5,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,November,2019,1,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,December,2019,7,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,December,2019,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,December,2019,5,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,December,2019,1,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,December,2019,8,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,December,2019,3,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,December,2019,7,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,December,2019,4,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,December,2019,8,1
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,December,2019,7,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,December,2019,1,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,December,2019,7,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,December,2019,10,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,December,2019,13,1
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,December,2019,5,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,December,2019,2,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,January,2020,0,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,January,2020,3,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,January,2020,4,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,January,2020,4,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,January,2020,8,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,January,2020,13,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,January,2020,1,1
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,January,2020,3,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,January,2020,10,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,January,2020,1,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,January,2020,1,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,January,2020,3,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,January,2020,13,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,January,2020,16,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,January,2020,0,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,January,2020,1,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,February,2020,1,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,February,2020,2,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,February,2020,10,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,February,2020,3,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,February,2020,6,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,February,2020,23,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,February,2020,1,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,February,2020,3,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,February,2020,9,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,February,2020,2,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,February,2020,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,February,2020,1,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,February,2020,7,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,February,2020,12,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,February,2020,2,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,February,2020,5,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,March,2020,3,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,March,2020,1,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,March,2020,3,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,March,2020,3,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,March,2020,14,1
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,March,2020,21,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,March,2020,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,March,2020,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,March,2020,5,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,March,2020,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,March,2020,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,March,2020,2,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,March,2020,12,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,March,2020,14,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,March,2020,4,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,March,2020,2,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,April,2020,2,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,April,2020,2,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,April,2020,5,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,April,2020,5,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,April,2020,2,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,April,2020,14,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,April,2020,1,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,April,2020,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,April,2020,6,1
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,April,2020,1,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,April,2020,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,April,2020,3,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,April,2020,8,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,April,2020,10,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,April,2020,3,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,April,2020,1,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,May,2020,3,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,May,2020,1,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,May,2020,9,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,May,2020,1,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,May,2020,18,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,May,2020,11,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,May,2020,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,May,2020,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,May,2020,3,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,May,2020,1,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,May,2020,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,May,2020,3,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,May,2020,12,1
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,May,2020,11,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,May,2020,11,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,May,2020,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,June,2020,1,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,June,2020,1,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,June,2020,5,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,June,2020,3,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,June,2020,14,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,June,2020,9,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,June,2020,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,June,2020,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,June,2020,3,1
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,June,2020,1,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,June,2020,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,June,2020,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,June,2020,7,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,June,2020,11,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,June,2020,5,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,June,2020,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,July,2020,3,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,July,2020,2,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,July,2020,7,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,July,2020,11,1
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,July,2020,7,1
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,July,2020,7,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,July,2020,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,July,2020,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,July,2020,3,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,July,2020,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,July,2020,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,July,2020,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,July,2020,3,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,July,2020,14,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,July,2020,1,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,July,2020,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,August,2020,3,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,August,2020,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,August,2020,5,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,August,2020,1,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,August,2020,14,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,August,2020,6,1
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,August,2020,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,August,2020,2,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,August,2020,2,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,August,2020,2,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,August,2020,2,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,August,2020,4,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,August,2020,6,1
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,August,2020,5,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,August,2020,6,1
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,August,2020,2,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,September,2020,3,1
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,September,2020,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,September,2020,3,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,September,2020,1,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,September,2020,9,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,September,2020,6,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,September,2020,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,September,2020,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,September,2020,7,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,September,2020,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,September,2020,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,September,2020,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,September,2020,1,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,September,2020,10,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,September,2020,1,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,September,2020,1,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,October,2020,8,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,October,2020,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,October,2020,3,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,October,2020,3,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,October,2020,21,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,October,2020,12,2
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,October,2020,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,October,2020,1,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,October,2020,3,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,October,2020,1,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,October,2020,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,October,2020,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,October,2020,7,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,October,2020,9,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,October,2020,3,1
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,October,2020,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,November,2020,6,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,November,2020,1,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,November,2020,7,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,November,2020,7,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,November,2020,13,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,November,2020,8,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,November,2020,1,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,November,2020,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,November,2020,10,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,November,2020,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,November,2020,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,November,2020,2,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,November,2020,7,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,November,2020,13,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,November,2020,2,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,November,2020,1,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,December,2020,10,1
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,December,2020,1,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,December,2020,5,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,December,2020,8,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,December,2020,30,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,December,2020,20,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,December,2020,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,December,2020,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,December,2020,7,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,December,2020,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,December,2020,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,December,2020,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,December,2020,10,1
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,December,2020,22,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,December,2020,2,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,December,2020,1,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,January,2021,6,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,January,2021,2,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,January,2021,15,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,January,2021,11,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,January,2021,29,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,January,2021,26,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,January,2021,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,January,2021,1,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,January,2021,17,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,January,2021,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,January,2021,1,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,January,2021,1,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,January,2021,10,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,January,2021,26,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,January,2021,5,1
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,January,2021,2,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,February,2021,6,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,February,2021,2,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,February,2021,6,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,February,2021,2,1
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,February,2021,15,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,February,2021,21,2
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,February,2021,1,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,February,2021,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,February,2021,9,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,February,2021,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,February,2021,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,February,2021,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,February,2021,12,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,February,2021,13,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,February,2021,2,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,February,2021,2,1
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,March,2021,2,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,March,2021,1,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,March,2021,5,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,March,2021,8,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,March,2021,15,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,March,2021,10,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,March,2021,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,March,2021,1,3
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,March,2021,6,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,March,2021,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,March,2021,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,March,2021,1,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,March,2021,20,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,March,2021,13,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,March,2021,2,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,March,2021,2,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,April,2021,4,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,April,2021,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,April,2021,1,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,April,2021,5,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,April,2021,13,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,April,2021,13,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,April,2021,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,April,2021,3,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,April,2021,6,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,April,2021,4,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,April,2021,3,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,April,2021,2,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,April,2021,46,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,April,2021,16,1
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,April,2021,1,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,April,2021,2,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,May,2021,12,2
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,May,2021,6,1
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,May,2021,20,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,May,2021,19,1
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,May,2021,35,2
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,May,2021,44,2
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,May,2021,9,12
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,May,2021,21,14
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,May,2021,19,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,May,2021,26,66
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,May,2021,20,14
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,May,2021,28,71
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,May,2021,84,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,May,2021,71,3
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,May,2021,9,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,May,2021,4,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,June,2021,7,1
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,June,2021,1,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,June,2021,5,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,June,2021,5,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,June,2021,31,2
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,June,2021,13,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,June,2021,1,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,June,2021,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,June,2021,13,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,June,2021,2,1
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,June,2021,1,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,June,2021,1,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,June,2021,41,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,June,2021,22,1
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,June,2021,1,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,June,2021,1,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,July,2021,3,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,July,2021,1,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,July,2021,3,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,July,2021,6,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,July,2021,22,1
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,July,2021,13,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,July,2021,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,July,2021,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,July,2021,8,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,July,2021,1,1
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,July,2021,1,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,July,2021,1,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,July,2021,21,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,July,2021,20,1
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,July,2021,2,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,July,2021,1,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,August,2021,4,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,August,2021,1,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,August,2021,7,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,August,2021,6,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,August,2021,10,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,August,2021,14,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,August,2021,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,August,2021,1,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,August,2021,11,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,August,2021,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,August,2021,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,August,2021,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,August,2021,15,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,August,2021,11,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,August,2021,1,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,August,2021,2,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,September,2021,1,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,September,2021,1,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,September,2021,2,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,September,2021,4,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,September,2021,5,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,September,2021,10,1
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,September,2021,1,3
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,September,2021,1,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,September,2021,7,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,September,2021,3,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,September,2021,1,1
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,September,2021,2,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,September,2021,15,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,September,2021,23,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,September,2021,1,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,September,2021,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,October,2021,7,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,October,2021,2,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,October,2021,6,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,October,2021,6,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,October,2021,18,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,October,2021,10,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,October,2021,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,October,2021,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,October,2021,7,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,October,2021,1,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,October,2021,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,October,2021,1,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,October,2021,20,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,October,2021,17,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,October,2021,1,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,October,2021,3,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,November,2021,9,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,November,2021,2,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,November,2021,5,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,November,2021,6,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,November,2021,27,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,November,2021,27,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,November,2021,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,November,2021,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,November,2021,3,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,November,2021,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,November,2021,1,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,November,2021,2,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,November,2021,28,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,November,2021,28,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,November,2021,2,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,November,2021,1,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,December,2021,6,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,December,2021,1,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,December,2021,8,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,December,2021,8,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,December,2021,38,1
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,December,2021,21,1
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,December,2021,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,December,2021,2,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,December,2021,10,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,December,2021,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,December,2021,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,December,2021,1,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,December,2021,24,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,December,2021,17,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,December,2021,2,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,December,2021,3,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,January,2022,3,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,January,2022,2,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,January,2022,8,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,January,2022,6,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,January,2022,36,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,January,2022,18,2
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,January,2022,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,January,2022,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,January,2022,13,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,January,2022,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,January,2022,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,January,2022,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,January,2022,18,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,January,2022,21,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,January,2022,2,1
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,January,2022,2,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,February,2022,1,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,February,2022,0,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,February,2022,13,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,February,2022,19,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,February,2022,24,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,February,2022,18,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,February,2022,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,February,2022,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,February,2022,20,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,February,2022,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,February,2022,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,February,2022,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,February,2022,15,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,February,2022,27,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,February,2022,1,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,February,2022,2,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,March,2022,5,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,March,2022,4,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,March,2022,21,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,March,2022,17,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,March,2022,28,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,March,2022,41,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,March,2022,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,March,2022,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,March,2022,16,2
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,March,2022,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,March,2022,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,March,2022,1,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,March,2022,23,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,March,2022,36,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,March,2022,4,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,March,2022,3,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,April,2022,16,1
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,April,2022,2,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,April,2022,11,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,April,2022,10,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,April,2022,17,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,April,2022,33,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,April,2022,1,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,April,2022,2,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,April,2022,15,2
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,April,2022,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,April,2022,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,April,2022,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,April,2022,17,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,April,2022,29,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,April,2022,19,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,April,2022,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,May,2022,7,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,May,2022,3,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,May,2022,29,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,May,2022,18,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,May,2022,41,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,May,2022,28,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,May,2022,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,May,2022,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,May,2022,11,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,May,2022,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,May,2022,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,May,2022,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,May,2022,16,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,May,2022,28,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,May,2022,8,1
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,May,2022,2,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,June,2022,12,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,June,2022,2,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,June,2022,13,1
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,June,2022,9,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,June,2022,25,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,June,2022,14,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,June,2022,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,June,2022,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,June,2022,12,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,June,2022,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,June,2022,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,June,2022,2,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,June,2022,11,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,June,2022,20,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,June,2022,3,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,June,2022,3,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,July,2022,1,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,July,2022,5,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,July,2022,7,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,July,2022,14,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,July,2022,18,1
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,July,2022,18,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,July,2022,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,July,2022,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,July,2022,9,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,July,2022,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,July,2022,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,July,2022,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,July,2022,11,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,July,2022,24,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,July,2022,6,1
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,July,2022,1,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,August,2022,7,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,August,2022,3,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,August,2022,11,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,August,2022,11,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,August,2022,21,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,August,2022,12,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,August,2022,5,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,August,2022,3,2
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,August,2022,11,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,August,2022,4,5
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,August,2022,2,4
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,August,2022,14,16
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,August,2022,15,1
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,August,2022,17,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,August,2022,3,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,August,2022,1,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,September,2022,1,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,September,2022,1,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,September,2022,11,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,September,2022,11,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,September,2022,52,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,September,2022,24,1
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,September,2022,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,September,2022,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,September,2022,22,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,September,2022,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,September,2022,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,September,2022,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,September,2022,8,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,September,2022,26,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,September,2022,4,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,September,2022,2,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,October,2022,5,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,October,2022,3,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,October,2022,17,2
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,October,2022,24,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,October,2022,44,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,October,2022,49,1
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,October,2022,1,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,October,2022,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,October,2022,13,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,October,2022,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,October,2022,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,October,2022,1,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,October,2022,13,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,October,2022,38,2
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,October,2022,9,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,October,2022,3,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,November,2022,4,1
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,November,2022,3,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,November,2022,21,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,November,2022,18,4
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,November,2022,32,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,November,2022,30,1
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,November,2022,1,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,November,2022,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,November,2022,15,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,November,2022,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,November,2022,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,November,2022,1,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,November,2022,9,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,November,2022,33,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,November,2022,7,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,November,2022,1,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,December,2022,4,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,December,2022,2,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,December,2022,14,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,December,2022,9,2
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,December,2022,32,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,December,2022,20,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,December,2022,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,December,2022,1,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,December,2022,12,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,December,2022,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,December,2022,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,December,2022,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,December,2022,5,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,December,2022,26,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,December,2022,2,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,December,2022,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,January,2023,9,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,January,2023,5,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,January,2023,14,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,January,2023,15,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,January,2023,40,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,January,2023,27,2
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,January,2023,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,January,2023,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,January,2023,23,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,January,2023,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,January,2023,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,January,2023,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,January,2023,9,8
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,January,2023,33,2
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,January,2023,6,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,January,2023,2,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,February,2023,8,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,February,2023,8,1
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,February,2023,7,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,February,2023,16,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,February,2023,42,3
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,February,2023,38,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,February,2023,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,February,2023,2,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,February,2023,5,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,February,2023,2,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,February,2023,2,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,February,2023,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,February,2023,13,4
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,February,2023,22,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,February,2023,5,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,February,2023,5,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,March,2023,6,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,March,2023,3,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,March,2023,9,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,March,2023,19,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,March,2023,27,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,March,2023,43,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,March,2023,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,March,2023,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,March,2023,18,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,March,2023,2,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,March,2023,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,March,2023,0,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,March,2023,11,1
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,March,2023,37,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,March,2023,5,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,March,2023,4,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,April,2023,12,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,April,2023,4,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,April,2023,8,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,April,2023,7,1
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,April,2023,30,4
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,April,2023,29,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,April,2023,1,1
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,April,2023,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,April,2023,19,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,April,2023,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,April,2023,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,April,2023,2,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,April,2023,9,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,April,2023,20,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,April,2023,1,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,April,2023,7,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,May,2023,13,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,May,2023,5,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,May,2023,13,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,May,2023,8,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,May,2023,32,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,May,2023,17,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,May,2023,3,1
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,May,2023,1,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,May,2023,12,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,May,2023,2,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,May,2023,1,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,May,2023,2,1
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,May,2023,11,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,May,2023,18,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,May,2023,5,1
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,May,2023,2,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,June,2023,5,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,June,2023,4,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,June,2023,20,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,June,2023,14,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,June,2023,36,5
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,June,2023,51,1
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,June,2023,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,June,2023,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,June,2023,16,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,June,2023,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,June,2023,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,June,2023,1,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,June,2023,17,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,June,2023,26,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,June,2023,2,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,June,2023,2,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,July,2023,4,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,July,2023,3,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,July,2023,12,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,July,2023,16,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,July,2023,29,1
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,July,2023,30,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,July,2023,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,July,2023,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,July,2023,12,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,July,2023,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,July,2023,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,July,2023,1,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,July,2023,8,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,July,2023,30,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,July,2023,9,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,July,2023,4,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,August,2023,9,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,August,2023,4,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,August,2023,20,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,August,2023,5,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,August,2023,22,2
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,August,2023,37,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,August,2023,0,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,August,2023,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,August,2023,8,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,August,2023,0,0
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,August,2023,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,August,2023,2,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,August,2023,16,2
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,August,2023,19,1
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,August,2023,7,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,August,2023,8,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,September,2023,4,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,September,2023,6,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,September,2023,15,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,September,2023,11,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,September,2023,21,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,September,2023,24,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,September,2023,2,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,September,2023,0,0
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,September,2023,9,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,September,2023,2,7
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,September,2023,0,0
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,September,2023,2,0
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,September,2023,16,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,September,2023,14,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,September,2023,3,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,September,2023,3,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,October,2023,13,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,October,2023,15,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,October,2023,25,1
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,October,2023,37,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,October,2023,83,7
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,October,2023,69,1
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,October,2023,79,947
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,October,2023,115,1047
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,October,2023,28,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,October,2023,244,3384
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,October,2023,99,1305
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,October,2023,123,1176
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,October,2023,18,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,October,2023,127,4
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,October,2023,15,3
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,October,2023,11,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,November,2023,11,5
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,November,2023,11,1
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,November,2023,16,1
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,November,2023,19,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,November,2023,53,1
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,November,2023,29,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,November,2023,58,263
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,November,2023,126,609
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,November,2023,13,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,November,2023,260,2013
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,November,2023,111,811
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,November,2023,145,1894
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,November,2023,8,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,November,2023,44,2
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,November,2023,21,9
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,November,2023,13,1
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,December,2023,9,1
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,December,2023,5,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,December,2023,14,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,December,2023,8,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,December,2023,25,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,December,2023,18,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,December,2023,78,491
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,December,2023,171,1345
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,December,2023,12,1
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,December,2023,136,1626
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,December,2023,119,1275
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,December,2023,83,1152
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,December,2023,5,1
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,December,2023,27,3
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,December,2023,7,1
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,December,2023,2,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,January,2024,13,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,January,2024,1,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,January,2024,12,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,January,2024,7,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,January,2024,27,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,January,2024,15,2
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,January,2024,52,219
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,January,2024,141,1303
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,January,2024,12,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,January,2024,92,1140
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,January,2024,123,1301
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,January,2024,42,345
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,January,2024,11,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,January,2024,37,2
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,January,2024,7,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,January,2024,1,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,February,2024,11,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,February,2024,4,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,February,2024,5,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,February,2024,8,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,February,2024,26,4
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,February,2024,22,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,February,2024,81,426
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,February,2024,113,457
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,February,2024,18,1
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,February,2024,118,826
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,February,2024,92,637
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,February,2024,26,81
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,February,2024,7,1
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,February,2024,34,2
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,February,2024,8,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,February,2024,0,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,March,2024,11,3
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,March,2024,5,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,March,2024,14,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,March,2024,5,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,March,2024,44,2
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,March,2024,24,2
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,March,2024,58,201
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,March,2024,69,304
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,March,2024,14,1
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,March,2024,149,559
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,March,2024,89,481
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,March,2024,39,130
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,March,2024,12,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,March,2024,35,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,March,2024,8,6
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,March,2024,6,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,April,2024,13,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,April,2024,7,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,April,2024,21,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,April,2024,10,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,April,2024,36,2
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,April,2024,27,1
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,April,2024,56,322
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,April,2024,31,139
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,April,2024,9,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,April,2024,102,368
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,April,2024,103,501
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,April,2024,29,233
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,April,2024,8,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,April,2024,25,1
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,April,2024,6,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,April,2024,3,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,May,2024,13,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,May,2024,10,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,May,2024,12,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,May,2024,15,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,May,2024,43,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,May,2024,32,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,May,2024,105,274
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,May,2024,25,36
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,May,2024,14,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,May,2024,126,371
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,May,2024,77,231
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,May,2024,73,361
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,May,2024,13,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,May,2024,31,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,May,2024,7,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,May,2024,4,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,June,2024,8,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,June,2024,6,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,June,2024,4,2
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,June,2024,7,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,June,2024,40,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,June,2024,21,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,June,2024,88,203
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,June,2024,33,100
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,June,2024,5,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,June,2024,123,390
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,June,2024,97,548
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,June,2024,12,40
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,June,2024,13,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,June,2024,35,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,June,2024,6,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,June,2024,3,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,July,2024,17,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,July,2024,6,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,July,2024,16,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,July,2024,10,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,July,2024,37,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,July,2024,46,2
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,July,2024,70,151
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,July,2024,104,294
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,July,2024,16,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,July,2024,146,476
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,July,2024,107,443
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,July,2024,23,54
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,July,2024,11,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,July,2024,43,1
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,July,2024,12,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,July,2024,2,1
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,August,2024,8,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,August,2024,10,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,August,2024,23,2
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,August,2024,24,2
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,August,2024,38,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,August,2024,33,1
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,August,2024,37,95
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,August,2024,136,318
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,August,2024,15,1
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,August,2024,87,252
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,August,2024,142,337
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,August,2024,35,83
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,August,2024,7,1
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,August,2024,34,1
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,August,2024,15,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,August,2024,10,1
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,September,2024,14,3
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,September,2024,11,4
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,September,2024,13,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,September,2024,9,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,September,2024,31,2
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,September,2024,23,2
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,September,2024,57,136
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,September,2024,58,126
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,September,2024,19,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,September,2024,93,235
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,September,2024,94,250
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,September,2024,43,104
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,September,2024,6,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,September,2024,48,1
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,September,2024,6,1
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,September,2024,6,1
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,October,2024,17,1
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,October,2024,4,1
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,October,2024,12,1
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,October,2024,23,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,October,2024,77,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,October,2024,36,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,October,2024,53,110
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,October,2024,54,184
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,October,2024,20,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,October,2024,107,273
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,October,2024,84,274
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,October,2024,105,835
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,October,2024,12,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,October,2024,33,1
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,October,2024,23,1
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,October,2024,9,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,November,2024,5,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,November,2024,4,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,November,2024,10,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,November,2024,21,1
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,November,2024,28,1
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,November,2024,22,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,November,2024,53,92
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,November,2024,45,187
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,November,2024,14,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,November,2024,99,310
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,November,2024,109,270
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,November,2024,94,696
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,November,2024,10,1
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,November,2024,34,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,November,2024,12,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,November,2024,2,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,December,2024,5,2
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,December,2024,6,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,December,2024,8,2
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,December,2024,9,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,December,2024,22,1
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,December,2024,21,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,December,2024,58,99
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,December,2024,38,70
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,December,2024,11,2
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,December,2024,129,381
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,December,2024,89,276
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,December,2024,76,382
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,December,2024,7,1
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,December,2024,19,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,December,2024,3,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,December,2024,7,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,January,2025,12,2
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,January,2025,10,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,January,2025,32,3
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,January,2025,32,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,January,2025,59,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,January,2025,41,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,January,2025,39,83
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,January,2025,50,99
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,January,2025,17,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,January,2025,117,405
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,January,2025,80,258
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,January,2025,23,84
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,January,2025,7,1
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,January,2025,37,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,January,2025,4,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,January,2025,7,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,February,2025,36,1
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,February,2025,8,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,February,2025,12,2
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,February,2025,12,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,February,2025,27,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,February,2025,25,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,February,2025,29,50
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,February,2025,13,33
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,February,2025,16,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,February,2025,19,12
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,February,2025,8,19
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,February,2025,3,3
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,February,2025,11,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,February,2025,22,1
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,February,2025,35,3
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,February,2025,18,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,March,2025,35,2
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,March,2025,4,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,March,2025,14,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,March,2025,15,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,March,2025,45,1
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,March,2025,23,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,March,2025,81,176
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,March,2025,80,343
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,March,2025,12,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,March,2025,67,305
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,March,2025,46,114
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,March,2025,44,175
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,March,2025,16,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,March,2025,45,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,March,2025,34,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,March,2025,6,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,April,2025,29,1
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,April,2025,11,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,April,2025,7,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,April,2025,24,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,April,2025,26,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,April,2025,30,3
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,April,2025,36,59
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,April,2025,195,474
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,April,2025,23,1
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,April,2025,119,387
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,April,2025,80,172
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,April,2025,65,170
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,April,2025,16,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,April,2025,31,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,April,2025,38,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,April,2025,11,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,May,2025,39,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,May,2025,13,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,May,2025,9,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,May,2025,36,1
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,May,2025,36,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,May,2025,31,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,May,2025,20,44
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,May,2025,214,550
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,May,2025,21,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,May,2025,169,445
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,May,2025,114,313
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,May,2025,114,463
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,May,2025,9,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,May,2025,35,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,May,2025,36,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,May,2025,9,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,June,2025,35,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,June,2025,2,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,June,2025,7,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,June,2025,9,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,June,2025,47,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,June,2025,36,4
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,June,2025,35,370
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,June,2025,163,463
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,June,2025,12,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,June,2025,170,792
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,June,2025,120,280
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,June,2025,44,216
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,June,2025,20,1
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,June,2025,31,2
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,June,2025,38,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,June,2025,8,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,July,2025,36,2
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,July,2025,8,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,July,2025,5,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,July,2025,12,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,July,2025,38,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,July,2025,39,3
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,July,2025,40,285
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,July,2025,130,626
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,July,2025,32,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,July,2025,248,1073
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,July,2025,109,379
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,July,2025,28,296
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,July,2025,17,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,July,2025,38,3
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,July,2025,42,1
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,July,2025,10,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,August,2025,38,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,August,2025,11,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,August,2025,0,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,August,2025,17,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,August,2025,26,1
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,August,2025,33,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,August,2025,31,185
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,August,2025,111,329
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,August,2025,13,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,August,2025,227,939
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,August,2025,100,277
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,August,2025,49,267
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,August,2025,13,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,August,2025,49,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,August,2025,32,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,August,2025,11,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,September,2025,40,2
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,September,2025,11,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,September,2025,13,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,September,2025,17,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,September,2025,49,1
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,September,2025,48,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,September,2025,31,120
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,September,2025,102,167
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,September,2025,17,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,September,2025,339,1047
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,September,2025,109,323
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,September,2025,18,113
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,September,2025,19,9
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,September,2025,31,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,September,2025,31,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,September,2025,12,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,October,2025,46,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,October,2025,6,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,October,2025,17,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,October,2025,33,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,October,2025,92,1
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,October,2025,77,1
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,October,2025,13,30
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,October,2025,53,78
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,October,2025,16,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,October,2025,108,212
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,October,2025,38,91
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,October,2025,6,6
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,October,2025,34,1
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,October,2025,48,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,October,2025,44,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,October,2025,7,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,November,2025,37,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,November,2025,6,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,November,2025,10,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,November,2025,18,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,November,2025,51,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,November,2025,43,1
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,November,2025,7,3
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,November,2025,25,25
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,November,2025,19,3
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,November,2025,16,9
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,November,2025,12,14
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,November,2025,7,3
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,November,2025,38,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,November,2025,46,2
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,November,2025,38,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,November,2025,11,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,December,2025,33,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,December,2025,20,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,December,2025,9,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,December,2025,19,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,December,2025,43,1
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,December,2025,38,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,December,2025,11,4
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,December,2025,21,11
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,December,2025,25,1
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,December,2025,31,24
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,December,2025,13,3
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,December,2025,24,13
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,December,2025,41,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,December,2025,40,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,December,2025,34,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,December,2025,6,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,January,2026,13,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,January,2026,12,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,January,2026,11,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,January,2026,11,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,January,2026,71,2
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,January,2026,52,1
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,January,2026,10,5
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,January,2026,41,25
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,January,2026,19,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,January,2026,29,33
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,January,2026,19,17
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,January,2026,31,12
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,January,2026,25,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,January,2026,50,1
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,January,2026,14,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,January,2026,17,0
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,February,2026,8,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,February,2026,3,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,February,2026,12,4
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,February,2026,14,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,February,2026,51,1
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,February,2026,45,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,February,2026,6,0
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,February,2026,35,14
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,February,2026,20,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,February,2026,30,28
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,February,2026,10,6
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,February,2026,24,10
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,February,2026,31,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,February,2026,51,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,February,2026,8,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,February,2026,21,2
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,March,2026,6,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,March,2026,7,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,March,2026,12,0
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,March,2026,34,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,March,2026,91,2
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,March,2026,41,5
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,March,2026,4,1
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,March,2026,11,9
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,March,2026,22,1
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,March,2026,16,14
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,March,2026,19,15
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,March,2026,18,10
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,March,2026,29,1
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,March,2026,65,6
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,March,2026,13,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,March,2026,32,4
+Palestine,West Bank,Jenin,PSE,PS0101,PS01,April,2026,12,0
+Palestine,West Bank,Jericho,PSE,PS0135,PS01,April,2026,4,0
+Palestine,West Bank,Qalqilya,PSE,PS0120,PS01,April,2026,11,1
+Palestine,West Bank,Salfit,PSE,PS0125,PS01,April,2026,11,0
+Palestine,West Bank,Nablus,PSE,PS0115,PS01,April,2026,58,0
+Palestine,West Bank,Ramallah and Al Bireh,PSE,PS0130,PS01,April,2026,36,0
+Palestine,Gaza Strip,Rafah,PSE,PS0275,PS02,April,2026,5,2
+Palestine,Gaza Strip,Khan Yunis,PSE,PS0270,PS02,April,2026,15,7
+Palestine,West Bank,Bethlehem,PSE,PS0145,PS01,April,2026,20,0
+Palestine,Gaza Strip,Gaza City,PSE,PS0260,PS02,April,2026,21,19
+Palestine,Gaza Strip,Deir El Balah,PSE,PS0265,PS02,April,2026,10,1
+Palestine,Gaza Strip,North Gaza,PSE,PS0255,PS02,April,2026,18,8
+Palestine,West Bank,Al Quds,PSE,PS0140,PS01,April,2026,9,0
+Palestine,West Bank,Hebron,PSE,PS0150,PS01,April,2026,38,0
+Palestine,West Bank,Tulkarm,PSE,PS0110,PS01,April,2026,8,0
+Palestine,West Bank,Tubas,PSE,PS0105,PS01,April,2026,9,0
