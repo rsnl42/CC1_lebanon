@@ -23,7 +23,8 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # --- Define Viridis Color Palette ---
 def get_viridis_colors(n):
-    cmap = cm.get_cmap('viridis', n)
+    import matplotlib.pyplot as plt
+    cmap = plt.get_cmap('viridis', n)
     return [mcolors.to_hex(cmap(i)) for i in range(n)]
 
 category_hex_colors = get_viridis_colors(NUM_CATEGORIES)
@@ -115,12 +116,6 @@ def create_pwd_map(csv_file_path, output_html_path):
         m.get_root().html.add_child(folium.Element(legend_html))
 
         # --- Save with Full HTML Structure ---
-        map_html_content = m._get_name()
-        
-        # We need to save the map to a temporary string to get the full HTML including scripts
-        # But for GitHub Pages and the static viewer, we want the title in the head.
-        # m.save() generates a full document. We can read it and inject the title or use a custom template.
-        
         m.save(output_html_path)
         
         # Inject the title into the head after saving
