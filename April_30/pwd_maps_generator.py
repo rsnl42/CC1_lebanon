@@ -1,8 +1,8 @@
 import pandas as pd
 import folium
-from folium.plugins import TimestampedGeoJson # Not used here, but good to keep if extending
 import os
 import numpy as np
+import matplotlib.cm as cm
 import matplotlib.colors as mcolors
 
 # --- Configuration ---
@@ -11,19 +11,22 @@ OUTPUT_DIR = 'April_30/'
 LAT_COL = 'pwc_lat'
 LON_COL = 'pwc_lon'
 VALUE_COL = 'pwd_m'
+COUNTRY_COL = 'country_n'
+PLACE_COL = 'adm_n'
+POP_COL = 'pop'
+AREA_COL = 'area'
+
 NUM_CATEGORIES = 5
-COLOR_SCHEME_NAME = "PWD_Density_Scheme" # Custom name for the colormap
 
 # --- Ensure output directory exists ---
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# --- Define a sequential color map ---
-# Using a perceptually uniform colormap like viridis, or a custom one
-# Define 5 distinct colors for the 5 categories.
-custom_colors = ['#edf8fb', '#b2e2e2', '#66c2a4', '#2ca25f', '#006d2c'] # Example: YlGnBu-like
-# Get hex colors for each category
-category_hex_colors = [mcolors.to_hex(color) for color in custom_colors]
+# --- Define Viridis Color Palette ---
+def get_viridis_colors(n):
+    cmap = cm.get_cmap('viridis', n)
+    return [mcolors.to_hex(cmap(i)) for i in range(n)]
 
+category_hex_colors = get_viridis_colors(NUM_CATEGORIES)
 
 # --- Function to create map for a single CSV ---
 def create_pwd_map(csv_file_path, output_html_path):
@@ -31,15 +34,15 @@ def create_pwd_map(csv_file_path, output_html_path):
         df = pd.read_csv(csv_file_path, encoding='latin1')
         df.columns = df.columns.str.lower() # Lowercase columns
 
-        # Check if required columns exist
-        if not all(col in df.columns for col in [LAT_COL, LON_COL, VALUE_COL]):
-            print(f"Error: Missing one or more required columns ({LAT_COL}, {LON_COL}, {VALUE_COL}) in {csv_file_path}. Skipping file.")
+        required_cols = [LAT_COL, LON_COL, VALUE_COL, COUNTRY_COL, PLACE_COL, POP_COL, AREA_COL]
+        if not all(col in df.columns for col in required_cols):
+            missing = [col for col in required_cols if col not in df.columns]
+            print(f"Error: Missing columns {missing} in {csv_file_path}. Skipping file.")
             return
 
-        # Convert critical columns to numeric, coercing errors to NaN
-        df[LAT_COL] = pd.to_numeric(df[LAT_COL], errors='coerce')
-        df[LON_COL] = pd.to_numeric(df[LON_COL], errors='coerce')
-        df[VALUE_COL] = pd.to_numeric(df[VALUE_COL], errors='coerce')
+        # Convert critical columns to numeric
+        for col in [LAT_COL, LON_COL, VALUE_COL, POP_COL, AREA_COL]:
+            df[col] = pd.to_numeric(df[col], errors='coerce')
 
         # Drop rows with NaN in critical columns
         df.dropna(subset=[LAT_COL, LON_COL, VALUE_COL], inplace=True)
@@ -49,34 +52,15 @@ def create_pwd_map(csv_file_path, output_html_path):
             return
 
         # --- Categorize PWD_M values ---
-        # Use qcut for N quantile bins if possible. If not enough unique values, fall back.
-        actual_num_categories = 0
         try:
-            # Attempt to create NUM_CATEGORIES quantile bins
             df['pwd_m_category'] = pd.qcut(df[VALUE_COL], q=NUM_CATEGORIES, labels=False, duplicates='drop')
-            actual_num_categories = df['pwd_m_category'].nunique()
-            if actual_num_categories < NUM_CATEGORIES:
-                print(f"Warning: Only {actual_num_categories} unique categories created for {VALUE_COL} in {csv_file_path} using qcut. Adjusting legend.")
-        except ValueError as ve:
-            print(f"Warning: Could not create {NUM_CATEGORIES} quantiles for {VALUE_COL} in {csv_file_path} (Error: {ve}). Attempting fixed-width bins.")
-            # Fallback to pd.cut if qcut fails
-            try:
-                df['pwd_m_category'] = pd.cut(df[VALUE_COL], bins=NUM_CATEGORIES, labels=False, duplicates='drop')
-                actual_num_categories = df['pwd_m_category'].nunique()
-                if actual_num_categories < NUM_CATEGORIES:
-                    print(f"Warning: Only {actual_num_categories} unique categories created for {VALUE_COL} in {csv_file_path} using cut. Adjusting legend.")
-            except ValueError as ve_cut:
-                print(f"Error: Could not create bins for {VALUE_COL} in {csv_file_path} (Error: {ve_cut}). Skipping file.")
-                return
+        except ValueError:
+            df['pwd_m_category'] = pd.cut(df[VALUE_COL], bins=NUM_CATEGORIES, labels=False, duplicates='drop')
         
-        # If after both attempts, no categories are created, skip the file
-        if actual_num_categories == 0:
-            print(f"Error: No categories could be created for {VALUE_COL} in {csv_file_path}. Skipping file.")
-            return
-
+        actual_num_categories = df['pwd_m_category'].nunique()
+        
         # --- Map categories to colors ---
-        # Ensure we only use as many colors as there are actual categories
-        current_category_colors = {i: category_hex_colors[i % len(category_hex_colors)] for i in range(actual_num_categories)}
+        current_category_colors = {i: category_hex_colors[i] for i in range(actual_num_categories)}
         df['color'] = df['pwd_m_category'].map(current_category_colors)
 
         # --- Create Folium map ---
@@ -86,93 +70,94 @@ def create_pwd_map(csv_file_path, output_html_path):
         # --- Add markers to the map ---
         marker_group = folium.FeatureGroup(name="Population Density Points")
         for _, row in df.iterrows():
+            # Format numbers for hover labels
+            pop_fmt = f"{int(row[POP_COL]):,}" if not np.isnan(row[POP_COL]) else "N/A"
+            area_fmt = f"{row[AREA_COL]:,.2f}" if not np.isnan(row[AREA_COL]) else "N/A"
+            pwd_fmt = f"{row[VALUE_COL]:,.2f}"
+
+            tooltip_text = (
+                f"<b>Country:</b> {row[COUNTRY_COL]}<br>"
+                f"<b>Place:</b> {row[PLACE_COL]}<br>"
+                f"<b>Population:</b> {pop_fmt}<br>"
+                f"<b>Area:</b> {area_fmt}<br>"
+                f"<b>Population Weighted Density (Median):</b> {pwd_fmt}"
+            )
+
             folium.CircleMarker(
                 location=[row[LAT_COL], row[LON_COL]],
-                radius=3, # Small, consistent radius
+                radius=4,
                 color=row['color'],
                 fill=True,
                 fill_color=row['color'],
                 fill_opacity=0.7,
-                tooltip=f"Lat: {row[LAT_COL]:.4f}, Lon: {row[LON_COL]:.4f}<br>{VALUE_COL.upper()}: {row[VALUE_COL]:.2f}<br>Category: {row['pwd_m_category']}"
+                tooltip=tooltip_text
             ).add_to(marker_group)
         marker_group.add_to(m)
 
         # --- Add Legend ---
         generic_legend_labels = ["Very Low", "Low", "Medium", "High", "Very High"]
-
-        display_legend_labels = []
-        display_legend_colors = []
-        # Iterate up to the actual number of categories
-        for i in range(actual_num_categories):
-            # Map the integer category index (0 to actual_num_categories-1) to a label and color
-            if i < len(generic_legend_labels):
-                display_legend_labels.append(generic_legend_labels[i])
-            else:
-                display_legend_labels.append(f"Category {i+1}") # Fallback label
-            display_legend_colors.append(current_category_colors[i])
-
-        legend_html = """
+        
+        legend_html = f"""
             <div style="position: fixed;
                         bottom: 50px; left: 50px; width: auto; height: auto;
                         border: 2px solid grey; border-radius: 5px; z-index:9999;
-                        background-color: rgba(255, 255, 255, 0.8);
+                        background-color: rgba(255, 255, 255, 0.9);
                         padding: 10px; font-size: 12px;
                         ">
               <b>Population Weighted Density (Global)</b> <br>
         """
-        for label, color in zip(display_legend_labels, display_legend_colors):
+        for i in range(actual_num_categories):
+            label = generic_legend_labels[i] if i < len(generic_legend_labels) else f"Category {i+1}"
+            color = current_category_colors[i]
             legend_html += f'<i style="background:{color}; width: 14px; height: 14px; display: inline-block; margin-right: 5px; border-radius: 3px;"></i> {label}<br>'
         legend_html += "</div>"
 
         m.get_root().html.add_child(folium.Element(legend_html))
 
-        # --- Create a full HTML document with the map and title ---
-        map_html_content = m._repr_html_()
-        full_html = f"""
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Population Weighted Density Map: Global</title>
-            <style>
-                /* Basic styling to make the map responsive and fit the iframe */
-                html, body {{ height: 100%; margin: 0; padding: 0; overflow: hidden; }}
-                .folium-map {{ width: 100%; height: 100%; }}
-            </style>
-        </head>
-        <body>
-            {map_html_content}
-        </body>
-        </html>
-        """
+        # --- Save with Full HTML Structure ---
+        map_html_content = m._get_name()
         
+        # We need to save the map to a temporary string to get the full HTML including scripts
+        # But for GitHub Pages and the static viewer, we want the title in the head.
+        # m.save() generates a full document. We can read it and inject the title or use a custom template.
+        
+        m.save(output_html_path)
+        
+        # Inject the title into the head after saving
+        with open(output_html_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        title_tag = "<title>Population Weighted Density Map: Global</title>"
+        if "<title>" in content:
+            # Replace existing title if any
+            import re
+            content = re.sub(r'<title>.*?</title>', title_tag, content)
+        else:
+            # Insert after <head>
+            content = content.replace('<head>', f'<head>\n    {title_tag}')
+            
         with open(output_html_path, 'w', encoding='utf-8') as f:
-            f.write(full_html)
+            f.write(content)
 
         print(f"Map generated for {os.path.basename(csv_file_path)} -> {output_html_path}")
 
-    except FileNotFoundError:
-        print(f"Error: CSV file not found at {csv_file_path}. Skipping.")
     except Exception as e:
         print(f"An unexpected error occurred while processing {csv_file_path}: {e}")
 
 # --- Main execution loop ---
 print(f"Starting script execution to generate maps in '{OUTPUT_DIR}'...")
-print(f"Reading PWD CSVs from '{CSV_DIR}'...")
 
-# Get list of CSV files in the specified directory that start with 'PWD_'
 try:
     all_files = os.listdir(CSV_DIR)
     csv_files = [f for f in all_files if f.endswith('.csv') and f.startswith('PWD_')]
-    csv_files.sort() # Sort by year for consistent output filenames
+    csv_files.sort()
 
     if not csv_files:
         print(f"No CSV files starting with 'PWD_' found in {CSV_DIR}.")
     else:
         for csv_file in csv_files:
             csv_full_path = os.path.join(CSV_DIR, csv_file)
-            file_base_name = os.path.splitext(csv_file)[0] # e.g., 'PWD_2020_sub_national_100m'
+            file_base_name = os.path.splitext(csv_file)[0]
             output_filename = f"{file_base_name}_map.html"
             output_path = os.path.join(OUTPUT_DIR, output_filename)
 
@@ -180,7 +165,5 @@ try:
 
         print("All map generation processes completed.")
 
-except FileNotFoundError:
-    print(f"Error: The directory '{CSV_DIR}' was not found. Please ensure it exists.")
 except Exception as e:
-    print(f"An error occurred during file listing or initial processing: {e}")
+    print(f"An error occurred: {e}")
