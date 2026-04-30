@@ -2,7 +2,7 @@ import pandas as pd
 import folium
 import os
 import numpy as np
-import matplotlib.cm as cm
+import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
 
 # --- Configuration ---
@@ -23,7 +23,6 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # --- Define Viridis Color Palette ---
 def get_viridis_colors(n):
-    import matplotlib.pyplot as plt
     cmap = plt.get_cmap('viridis', n)
     return [mcolors.to_hex(cmap(i)) for i in range(n)]
 
@@ -72,9 +71,13 @@ def create_pwd_map(csv_file_path, output_html_path):
         marker_group = folium.FeatureGroup(name="Population Density Points")
         for _, row in df.iterrows():
             # Format numbers for hover labels
-            pop_fmt = f"{int(row[POP_COL]):,}" if not np.isnan(row[POP_COL]) else "N/A"
-            area_fmt = f"{row[AREA_COL]:,.2f}" if not np.isnan(row[AREA_COL]) else "N/A"
-            pwd_fmt = f"{row[VALUE_COL]:,.2f}"
+            pop_val = row[POP_COL]
+            area_val = row[AREA_COL]
+            pwd_val = row[VALUE_COL]
+            
+            pop_fmt = f"{int(pop_val):,}" if not np.isnan(pop_val) else "N/A"
+            area_fmt = f"{area_val:,.2f}" if not np.isnan(area_val) else "N/A"
+            pwd_fmt = f"{pwd_val:,.2f}"
 
             tooltip_text = (
                 f"<b>Country:</b> {row[COUNTRY_COL]}<br>"
@@ -99,13 +102,13 @@ def create_pwd_map(csv_file_path, output_html_path):
         generic_legend_labels = ["Very Low", "Low", "Medium", "High", "Very High"]
         
         legend_html = f"""
-            <div style="position: fixed;
-                        bottom: 50px; left: 50px; width: auto; height: auto;
-                        border: 2px solid grey; border-radius: 5px; z-index:9999;
-                        background-color: rgba(255, 255, 255, 0.9);
-                        padding: 10px; font-size: 12px;
-                        ">
-              <b>Population Weighted Density (Global)</b> <br>
+             <div style="position: fixed; 
+                         bottom: 50px; left: 50px; width: auto; height: auto; 
+                         border:2px solid grey; z-index:9999; font-size:14px;
+                         background-color:rgba(255, 255, 255, 0.8);
+                         padding: 10px;
+                         ">
+             <b>Population Weighted Density (Global)</b><br>
         """
         for i in range(actual_num_categories):
             label = generic_legend_labels[i] if i < len(generic_legend_labels) else f"Category {i+1}"
@@ -115,25 +118,8 @@ def create_pwd_map(csv_file_path, output_html_path):
 
         m.get_root().html.add_child(folium.Element(legend_html))
 
-        # --- Save with Full HTML Structure ---
+        # --- Save ---
         m.save(output_html_path)
-        
-        # Inject the title into the head after saving
-        with open(output_html_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-        
-        title_tag = "<title>Population Weighted Density Map: Global</title>"
-        if "<title>" in content:
-            # Replace existing title if any
-            import re
-            content = re.sub(r'<title>.*?</title>', title_tag, content)
-        else:
-            # Insert after <head>
-            content = content.replace('<head>', f'<head>\n    {title_tag}')
-            
-        with open(output_html_path, 'w', encoding='utf-8') as f:
-            f.write(content)
-
         print(f"Map generated for {os.path.basename(csv_file_path)} -> {output_html_path}")
 
     except Exception as e:
