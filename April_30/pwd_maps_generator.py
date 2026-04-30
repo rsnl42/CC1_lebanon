@@ -26,8 +26,13 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # --- Define Viridis Color Palette ---
 def get_viridis_colors(n):
-    cmap = cm.get_cmap('viridis', n) # Using standard cm.get_cmap
-    return [mcolors.to_hex(cmap(i)) for i in range(n)]
+    try:
+        cmap = cm.get_cmap('viridis', n) # Using standard cm.get_cmap
+        return [mcolors.to_hex(cmap(i)) for i in range(n)]
+    except Exception as e:
+        print(f"Error getting viridis colormap: {e}. Falling back to default.")
+        # Fallback if viridis is not available or causes issues
+        return ['#edf8fb', '#b2e2e2', '#66c2a4', '#2ca25f', '#006d2c']
 
 category_hex_colors = get_viridis_colors(NUM_CATEGORIES)
 
@@ -122,7 +127,7 @@ def create_pwd_map(csv_file_path, output_html_path):
             legend_html += f'<i style="background:{color}; width: 14px; height: 14px; display: inline-block; margin-right: 5px; border-radius: 3px;"></i> {label}<br>'
         legend_html += "</div>"
 
-        m.get_root().html.add_child(folium.Element(legend_html))
+        m.add_child(folium.Element(legend_html)) # Using add_child for legend
         m.get_root().title = "Population Weighted Density Map: Global"
 
         m.save(output_html_path)
