@@ -25,21 +25,21 @@ COUNTRY_COL_NAME = None # e.g., "Country", "Nation", "ISO3"
 ADMIN1_COL_NAME = None  # e.g., "State", "Province", "Governorate"
 ADMIN2_COL_NAME = None  # e.g., "District", "City", "LGA", "County"
 
-print("--- Geocoding Preparation Script ---")
+print("--- Geocoding Execution Script ---")
 print(f"HRP Data Directory: {HRP_DATA_DIR}")
 print(f"Geocoder Script: {GEOCODER_SCRIPT}")
 print(f"Output Directory: {OUTPUT_DIR}")
 print(f"Shared Cache File: {CACHE_FILE}
 ")
 
-print("IMPORTANT: This script will only PREPARE and PRINT the commands.")
-print("It will NOT execute the geocoding process. You will need to copy and paste")
-print("the generated commands into your terminal to run them.
+print("IMPORTANT: This script will now EXECUTE the geocoding commands.")
+print("Geocoding can take a significant amount of time due to API rate limits (1 request/sec).")
+print("Ensure column names are correctly set above or will be auto-detected by the script.
 ")
 
-print("Note: The script assumes standard column names for Country, Admin1, and Admin2.")
-print("If your CSV files use different names, you will need to edit the command")
-print("template below or modify the COUNTRY_COL_NAME, ADMIN1_COL_NAME, ADMIN2_COL_NAME variables.
+print("Note: If auto-detection fails for Admin1/Admin2, you will need to manually")
+print("edit this script to set COUNTRY_COL_NAME, ADMIN1_COL_NAME, and ADMIN2_COL_NAME")
+print("before running it again.
 ")
 
 # List all CSV files in the HRP_1_countries directory
@@ -53,7 +53,7 @@ except FileNotFoundError:
 if not hrp_files:
     print("No CSV files found in the specified HRP_1_countries directory.")
 else:
-    print(f"Found {len(hrp_files)} CSV files. Preparing commands for each:
+    print(f"Found {len(hrp_files)} CSV files. Executing geocoding for each:
 ")
 
     for filename in hrp_files:
@@ -62,7 +62,7 @@ else:
         output_filename = filename.replace(".csv", "_geocoded.csv")
         output_filepath = os.path.join(OUTPUT_DIR, output_filename)
 
-        print(f"--- Preparing command for: {filename} ---")
+        print(f"--- Processing: {filename} ---")
         
         # Construct the command to run geocode_admin.py
         # Use sys.executable to ensure we use the same Python interpreter
@@ -82,13 +82,38 @@ else:
         if ADMIN2_COL_NAME:
             command_parts.append(f"--admin2-col={ADMIN2_COL_NAME}")
         
-        # Add --dry-run by default as it's safer for initial runs
-        command_parts.append("--dry-run")
-
-        # Print the command as a string
-        print(f"Command: {' '.join(command_parts)}
-")
+        # Execute the command (no --dry-run anymore)
+        command_str = ' '.join(command_parts)
+        print(f"Executing: {command_str}")
         
-print("--- Preparation complete. Review the commands above. ---")
-print("To execute, copy and paste the 'Command:' lines into your terminal.")
-print("Remember to adjust --country-col, --admin1-col, --admin2-col if needed after inspecting your CSVs.")
+        try:
+            # Run the command, capture output, check for errors
+            result = subprocess.run(command_parts, check=True, capture_output=True, text=True)
+            print("STDOUT:
+", result.stdout)
+            if result.stderr:
+                print("STDERR:
+", result.stderr)
+            print(f"Successfully geocoded {filename}
+")
+        except FileNotFoundError:
+            print(f"Error: Geocoder script not found at {GEOCODER_SCRIPT}. Please ensure it exists.")
+            break # Stop if the script itself isn't found
+        except subprocess.CalledProcessError as e:
+            print(f"Error executing geocoding for {filename}:")
+            print("STDOUT:
+", e.stdout)
+            print("STDERR:
+", e.stderr)
+            print(f"Exit code: {e.returncode}
+")
+            # Decide whether to continue or stop on error.
+            # If critical error (like missing columns), it might be better to stop.
+            # We'll print the error and continue with the next file.
+        except Exception as e:
+            print(f"An unexpected error occurred while processing {filename}: {e}")
+        
+        print("-" * 50)
+
+    print("--- Geocoding process finished. ---")
+    print(f"Check '{OUTPUT_DIR}' for geocoded CSV files.")
