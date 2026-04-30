@@ -1,0 +1,32 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Population Weighted Density : Global</title>
+        <style>
+            body { font-family: sans-serif; margin: 0; display: flex; flex-direction: column; height: 100vh; }
+            header { padding: 10px; background: #333; color: white; display: flex; justify-content: space-between; align-items: center; }
+            select { padding: 5px; font-size: 16px; }
+            iframe { flex-grow: 1; border: none; width: 100%; }
+        </style>
+    </head>
+    <body>
+        <header>
+            <span>Population Weighted Density : Global</span>
+            <div>
+                <label>Year: </label>
+                <select id="yearSelect" onchange="updateMap()">
+                    <option value="2020">2020</option><option value="2015">2015</option><option value="2010">2010</option><option value="2005">2005</option><option value="2000">2000</option>
+                </select>
+            </div>
+        </header>
+        <iframe id="mapFrame" src="./maps/PWD_2020_sub_national_100m_map.html"></iframe>
+        <script>
+            function updateMap() {
+                var year = document.getElementById('yearSelect').value;
+                document.getElementById('mapFrame').src = './maps/PWD_' + year + '_sub_national_100m_map.html';
+            }
+        </script>
+    </body>
+    </html>
+    
