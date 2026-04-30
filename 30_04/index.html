@@ -20,11 +20,11 @@
                 </select>
             </div>
         </header>
-        <iframe id="mapFrame" src="maps/PWD_2020_sub_national_100m_map.html"></iframe>
+        <iframe id="mapFrame" src="./maps/PWD_2020_sub_national_100m_map.html"></iframe>
         <script>
             function updateMap() {
                 var year = document.getElementById('yearSelect').value;
-                document.getElementById('mapFrame').src = 'maps/PWD_' + year + '_sub_national_100m_map.html';
+                document.getElementById('mapFrame').src = './maps/PWD_' + year + '_sub_national_100m_map.html';
             }
         </script>
     </body>
