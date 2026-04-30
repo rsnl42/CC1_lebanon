@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Population Weighted Density Maps: Global</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
+        .header { background-color: #f4f4f4; padding: 10px 20px; border-bottom: 1px solid #ddd; display: flex; align-items: center; justify-content: space-between; }
+        .header h1 { margin: 0; font-size: 24px; }
+        .map-selector { display: flex; align-items: center; }
+        .map-selector label { margin-right: 10px; }
+        .map-selector select { padding: 5px; font-size: 16px; }
+        .map-container { flex-grow: 1; border: none; width: 100%; height: 100%; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Population Weighted Density Map: Global</h1>
+        <div class="map-selector">
+            <label for="year-select">Select Year:</label>
+            <select id="year-select">
+                <option value="PWD_2020_sub_national_100m_map.html" selected>2020</option>
+                <option value="PWD_2015_sub_national_100m_map.html">2015</option>
+                <option value="PWD_2010_sub_national_100m_map.html">2010</option>
+                <option value="PWD_2005_sub_national_100m_map.html">2005</option>
+                <option value="PWD_2000_sub_national_100m_map.html">2000</option>
+            </select>
+        </div>
+    </div>
+    <iframe id="map-frame" class="map-container" frameborder="0"></iframe>
+
+    <script>
+        const yearSelect = document.getElementById('year-select');
+        const mapFrame = document.getElementById('map-frame');
+        const header = document.querySelector('.header');
+
+        // Function to update the iframe source based on selected year
+        function updateMap() {
+            const selectedYearFile = yearSelect.value;
+            // Assuming map files are in the same directory or an 'April_30' subfolder relative to the index.html
+            // For GitHub Pages, it's common to put everything in the root or a docs folder.
+            // Let's assume the maps are in a 'maps' folder for clarity, or same dir as index.html
+            // If the static HTML file will be in the root, and maps are in April_30, need to adjust path.
+            // For simplicity, let's assume maps are in the same directory as the index.html for now.
+            // If they are in April_30, the path would be './April_30/' + selectedYearFile
+            mapFrame.src = selectedYearFile;
+        }
+
+        // Event listener for year selection changes
+        yearSelect.addEventListener('change', updateMap);
+
+        // Initial load: set the default map (2020)
+        updateMap();
+
+        // Adjust iframe height on resize
+        window.addEventListener('resize', () => {
+            mapFrame.style.height = `calc(100vh - ${header.offsetHeight}px)`;
+        });
+        window.dispatchEvent(new Event('resize')); // Trigger on initial load
+    </script>
+</body>
+</html>
