@@ -126,8 +126,30 @@ def create_pwd_map(csv_file_path, output_html_path):
 
         m.get_root().html.add_child(folium.Element(legend_html))
 
-        # Save map
-        m.save(output_html_path)
+        # --- Create a full HTML document with the map and title ---
+        map_html_content = m._repr_html_()
+        full_html = f"""
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Population Weighted Density Map: Global</title>
+            <style>
+                /* Basic styling to make the map responsive and fit the iframe */
+                html, body {{ height: 100%; margin: 0; padding: 0; overflow: hidden; }}
+                .folium-map {{ width: 100%; height: 100%; }}
+            </style>
+        </head>
+        <body>
+            {map_html_content}
+        </body>
+        </html>
+        """
+        
+        with open(output_html_path, 'w', encoding='utf-8') as f:
+            f.write(full_html)
+
         print(f"Map generated for {os.path.basename(csv_file_path)} -> {output_html_path}")
 
     except FileNotFoundError:
