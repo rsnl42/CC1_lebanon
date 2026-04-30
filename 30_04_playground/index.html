@@ -12,7 +12,7 @@
     </head>
     <body>
         <header>
-            <span>Population Weighted Density : Global</span>
+            <span>Population Weighted Density : Global (Playground)</span>
             <div>
                 <label>Year: </label>
                 <select id="yearSelect" onchange="updateMap()">
@@ -20,11 +20,11 @@
                 </select>
             </div>
         </header>
-        <iframe id="mapFrame" src="./maps/PWD_2020_sub_national_100m_map.html"></iframe>
+        <iframe id="mapFrame" src="maps/PWD_2020_sub_national_100m_map.html"></iframe>
         <script>
             function updateMap() {
                 var year = document.getElementById('yearSelect').value;
-                document.getElementById('mapFrame').src = './maps/PWD_' + year + '_sub_national_100m_map.html';
+                document.getElementById('mapFrame').src = 'maps/PWD_' + year + '_sub_national_100m_map.html';
             }
         </script>
     </body>
