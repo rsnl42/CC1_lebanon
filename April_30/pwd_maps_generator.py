@@ -3,9 +3,10 @@ import folium
 from folium.plugins import MarkerCluster
 import os
 import numpy as np
-import matplotlib.pyplot as plt
+import matplotlib.cm as cm # Reverted to standard import
 import matplotlib.colors as mcolors
 import json
+import re # For escaping special characters
 
 # --- Configuration ---
 CSV_DIR = 'DATA/PWD_100m_sub_national_CSV/'
@@ -25,10 +26,19 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # --- Define Viridis Color Palette ---
 def get_viridis_colors(n):
-    cmap = plt.get_cmap('viridis', n)
+    cmap = cm.get_cmap('viridis', n) # Using standard cm.get_cmap
     return [mcolors.to_hex(cmap(i)) for i in range(n)]
 
 category_hex_colors = get_viridis_colors(NUM_CATEGORIES)
+
+# --- Function to escape strings for JavaScript tooltips ---
+def escape_js_string(text):
+    if pd.isna(text):
+        return "N/A"
+    text = str(text)
+    # Escape backslashes, double quotes, and single quotes
+    text = text.replace('', '').replace('"', '"').replace("'", "'")
+    return text
 
 # --- Function to create map for a single CSV ---
 def create_pwd_map(csv_file_path, output_html_path):
@@ -57,28 +67,28 @@ def create_pwd_map(csv_file_path, output_html_path):
             df['pwd_m_category'] = pd.cut(df[VALUE_COL], bins=NUM_CATEGORIES, labels=False)
         
         actual_num_categories = df['pwd_m_category'].nunique()
-        current_category_colors = {i: category_hex_colors[i] for i in range(actual_num_categories)}
+        
+        current_category_colors = {i: category_hex_colors[i % len(category_hex_colors)] for i in range(actual_num_categories)}
         df['color'] = df['pwd_m_category'].map(current_category_colors)
 
         # --- Create Folium map ---
-        # Centering at [20, 0] for a global view
         m = folium.Map(location=[20, 0], zoom_start=2, tiles='OpenStreetMap')
 
         # --- Use MarkerCluster for performance ---
         marker_cluster = MarkerCluster(name="Population Weighted Density Clusters").add_to(m)
 
         for _, row in df.iterrows():
-            pop_fmt = f"{int(row[POP_COL]):,}" if not np.isnan(row[POP_COL]) else "N/A"
-            area_fmt = f"{row[AREA_COL]:,.2f}" if not np.isnan(row[AREA_COL]) else "N/A"
-            pwd_fmt = f"{row[VALUE_COL]:,.2f}"
-
-            # Escape strings to prevent JS errors
-            country_esc = str(row[COUNTRY_COL]).replace("'", "\\'")
-            place_esc = str(row[PLACE_COL]).replace("'", "\\'")
+            pop_val = row[POP_COL]
+            area_val = row[AREA_COL]
+            pwd_val = row[VALUE_COL]
+            
+            pop_fmt = f"{int(pop_val):,}" if pd.notna(pop_val) else "N/A"
+            area_fmt = f"{area_val:,.2f}" if pd.notna(area_val) else "N/A"
+            pwd_fmt = f"{pwd_val:,.2f}"
 
             tooltip_text = (
-                f"<b>Country:</b> {country_esc}<br>"
-                f"<b>Place:</b> {place_esc}<br>"
+                f"<b>Country:</b> {escape_js_string(row[COUNTRY_COL])}<br>"
+                f"<b>Place:</b> {escape_js_string(row[PLACE_COL])}<br>"
                 f"<b>Population:</b> {pop_fmt}<br>"
                 f"<b>Area:</b> {area_fmt}<br>"
                 f"<b>Population Weighted Density (Median):</b> {pwd_fmt}"
@@ -96,6 +106,7 @@ def create_pwd_map(csv_file_path, output_html_path):
 
         # --- Add Legend ---
         generic_legend_labels = ["Very Low", "Low", "Medium", "High", "Very High"]
+        
         legend_html = f"""
              <div style="position: fixed; 
                          bottom: 50px; left: 50px; width: auto; height: auto; 
