@@ -118,6 +118,9 @@ def create_pwd_map(csv_file_path, output_html_path):
 
         m.get_root().html.add_child(folium.Element(legend_html))
 
+        # --- Set Title ---
+        m.get_root().title = "Population Weighted Density Map: Global"
+
         # --- Save ---
         m.save(output_html_path)
         print(f"Map generated for {os.path.basename(csv_file_path)} -> {output_html_path}")
