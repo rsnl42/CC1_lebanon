@@ -35,29 +35,29 @@
         const mapFrame = document.getElementById('map-frame');
         const header = document.querySelector('.header');
 
-        // Function to update the iframe source based on selected year
         function updateMap() {
             const selectedYearFile = yearSelect.value;
-            // Assuming map files are in the same directory or an 'April_30' subfolder relative to the index.html
-            // For GitHub Pages, it's common to put everything in the root or a docs folder.
-            // Let's assume the maps are in a 'maps' folder for clarity, or same dir as index.html
-            // If the static HTML file will be in the root, and maps are in April_30, need to adjust path.
-            // For simplicity, let's assume maps are in the same directory as the index.html for now.
-            // If they are in April_30, the path would be './April_30/' + selectedYearFile
-            mapFrame.src = selectedYearFile;
+            const fullPath = './' + selectedYearFile;
+            console.log('Loading map:', fullPath);
+            mapFrame.src = fullPath;
         }
 
-        // Event listener for year selection changes
         yearSelect.addEventListener('change', updateMap);
 
-        // Initial load: set the default map (2020)
-        updateMap();
-
-        // Adjust iframe height on resize
-        window.addEventListener('resize', () => {
-            mapFrame.style.height = `calc(100vh - ${header.offsetHeight}px)`;
+        // Initial load
+        window.addEventListener('load', () => {
+            console.log('Page loaded, initializing map...');
+            updateMap();
+            resizeIframe();
         });
-        window.dispatchEvent(new Event('resize')); // Trigger on initial load
+
+        function resizeIframe() {
+            if (header && mapFrame) {
+                mapFrame.style.height = (window.innerHeight - header.offsetHeight) + 'px';
+            }
+        }
+
+        window.addEventListener('resize', resizeIframe);
     </script>
 </body>
 </html>
