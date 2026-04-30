@@ -5,12 +5,14 @@ import os
 import matplotlib.cm as cm
 import matplotlib.colors as mcolors
 import json
+import html
 
 # --- Configuration ---
 CSV_DIR = 'DATA/PWD_100m_sub_national_CSV/'
+# CRITICAL: Point to the production folder
 OUTPUT_DIR = '30_04/'
 MAP_FILES_SUBDIR = 'maps/'
-VIEWER_HTML_FILE = 'viewer.html'
+VIEWER_HTML_FILE = 'index.html' # Renamed to index.html for easier access
 
 os.makedirs(os.path.join(OUTPUT_DIR, MAP_FILES_SUBDIR), exist_ok=True)
 
@@ -36,9 +38,12 @@ def get_rgba_color(hex_color, opacity=0.5):
     rgb = mcolors.to_rgb(hex_color)
     return f"rgba({int(rgb[0]*255)}, {int(rgb[1]*255)}, {int(rgb[2]*255)}, {opacity})"
 
-def escape_js_string(text):
+def escape_data_for_js(text):
     if pd.isna(text): return "N/A"
-    return str(text).replace("'", "\\'")
+    text = str(text)
+    text = html.escape(text)
+    text = text.replace('`', '\\`').replace('${', '\\${')
+    return text
 
 def format_number(num):
     if pd.isna(num): return "N/A"
@@ -53,7 +58,6 @@ def create_advanced_map(csv_file_path, output_html_path, year_str):
         df = pd.read_csv(csv_file_path, encoding='latin1')
         df.columns = df.columns.str.lower()
         
-        cols = [LAT_COL, LON_COL, VALUE_COL, COUNTRY_COL, PLACE_COL, POP_COL, AREA_COL]
         df = df.dropna(subset=[LAT_COL, LON_COL, VALUE_COL])
         for col in [LAT_COL, LON_COL, VALUE_COL, POP_COL, AREA_COL]:
             df[col] = pd.to_numeric(df[col], errors='coerce')
@@ -73,11 +77,35 @@ def create_advanced_map(csv_file_path, output_html_path, year_str):
         title_html = f'<h3 align="center" style="font-size:16px"><b>{MAP_TITLE} ({year_str})</b></h3>'
         m.get_root().html.add_child(folium.Element(title_html))
 
+        # --- Custom CSS to move legend up and add swatches ---
+        legend_style = """
+        <style>
+            .leaflet-control-layers-list { font-size: 14px; }
+            /* Move the Layer Control (Legend) up from the bottom */
+            .leaflet-bottom.leaflet-left { bottom: 60px !important; left: 20px !important; }
+            
+            /* Legend Swatches */
+            .legend-swatch { 
+                width: 14px; height: 14px; 
+                display: inline-block; 
+                margin-right: 8px; 
+                border: 1px solid #333;
+                vertical-align: middle;
+            }
+        </style>
+        """
+        m.get_root().header.add_child(folium.Element(legend_style))
+
         # Groups for filtering
         groups = []
         for i in range(actual_n):
             group_name = CATEGORIES[i] if i < len(CATEGORIES) else f"Category {i+1}"
-            group = folium.FeatureGroup(name=group_name)
+            hex_color = colors[i]
+            
+            # Embed color swatch directly into the layer name
+            swatch_html = f'<span class="legend-swatch" style="background: {hex_color};"></span>{group_name}'
+            
+            group = folium.FeatureGroup(name=swatch_html)
             groups.append(group)
 
         for _, row in df.iterrows():
@@ -95,8 +123,8 @@ def create_advanced_map(csv_file_path, output_html_path, year_str):
                 color: #333;
                 min-width: 200px;
             ">
-                <b>Country:</b> {escape_js_string(row[COUNTRY_COL])}<br>
-                <b>Place:</b> {escape_js_string(row[PLACE_COL])}<br>
+                <b>Country:</b> {escape_data_for_js(row[COUNTRY_COL])}<br>
+                <b>Place:</b> {escape_data_for_js(row[PLACE_COL])}<br>
                 <b>Population:</b> {format_number(row[POP_COL])}<br>
                 <b>Area:</b> {format_number(row[AREA_COL])}<br>
                 <b>Density:</b> {format_number(row[VALUE_COL])}
@@ -105,12 +133,13 @@ def create_advanced_map(csv_file_path, output_html_path, year_str):
             
             folium.CircleMarker(
                 location=[row[LAT_COL], row[LON_COL]],
-                radius=6,
+                radius=4, # Reduced size
                 color=hex_color,
                 fill=True,
                 fill_color=hex_color,
-                fill_opacity=0.7,
-                tooltip=tooltip_html
+                fill_opacity=0.4, # Reduced opacity
+                tooltip=tooltip_html,
+                weight=1 # Thinner border
             ).add_to(groups[c_idx])
 
         for g in groups:
@@ -142,7 +171,7 @@ def generate_viewer(years):
     </head>
     <body>
         <header>
-            <span>{MAP_TITLE}</span>
+            <span>{MAP_TITLE} (Playground)</span>
             <div>
                 <label>Year: </label>
                 <select id="yearSelect" onchange="updateMap()">
@@ -172,4 +201,4 @@ if __name__ == "__main__":
         create_advanced_map(os.path.join(CSV_DIR, f), os.path.join(OUTPUT_DIR, MAP_FILES_SUBDIR, f.replace('.csv', '_map.html')), year)
     
     generate_viewer(years)
-    print("Done. Open 30_04/viewer.html")
+    print(f"Done. Open {OUTPUT_DIR}{VIEWER_HTML_FILE}")
