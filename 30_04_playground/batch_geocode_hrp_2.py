@@ -4,11 +4,11 @@ import subprocess # To construct command strings, though not executing them
 
 # --- Configuration ---
 # Directory containing the HRP CSV files
-HRP_DATA_DIR = "DATA/HRP_1_countries/"
+HRP_DATA_DIR = "DATA/HRP_2_countries/"
 # Path to the geocoding script
 GEOCODER_SCRIPT = "30_04_playground/geocode_cities/geocode_admin.py"
 # Directory to save the geocoded output files
-OUTPUT_DIR = "DATA/HRP_1_countries_geocoded/"
+OUTPUT_DIR = "DATA/HRP_2_countries_geocoded/"
 # Shared cache file for all runs
 CACHE_FILE = os.path.join(OUTPUT_DIR, "shared_geocode_cache.json")
 
@@ -39,7 +39,7 @@ print("Note: If auto-detection fails for Admin1/Admin2, you will need to manuall
 print("edit this script to set COUNTRY_COL_NAME, ADMIN1_COL_NAME, and ADMIN2_COL_NAME")
 print("before running it again.")
 
-# List all CSV files in the HRP_1_countries directory
+# List all CSV files in the HRP_2_countries directory
 try:
     hrp_files = [f for f in os.listdir(HRP_DATA_DIR) if f.endswith('.csv')]
     hrp_files.sort() # Process them alphabetically
@@ -48,7 +48,7 @@ except FileNotFoundError:
     hrp_files = []
 
 if not hrp_files:
-    print("No CSV files found in the specified HRP_1_countries directory.")
+    print("No CSV files found in the specified HRP_2_countries directory.")
 else:
     print(f"Found {len(hrp_files)} CSV files. Executing geocoding for each:")
 
