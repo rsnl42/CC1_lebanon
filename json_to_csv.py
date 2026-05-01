@@ -25,8 +25,13 @@ def convert_json_to_csv(json_path, csv_path):
         series = info.get('series', [])
 
         for point in series:
+            try:
+                year_val = int(point.get('year'))
+            except (ValueError, TypeError):
+                year_val = 0
+                
             records.append({
-                'year': point.get('year'),
+                'year': year_val,
                 'indicator_code': code,
                 'indicator_label': label,
                 'unit': unit,

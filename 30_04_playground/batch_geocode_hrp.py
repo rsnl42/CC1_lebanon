@@ -29,18 +29,15 @@ print("--- Geocoding Execution Script ---")
 print(f"HRP Data Directory: {HRP_DATA_DIR}")
 print(f"Geocoder Script: {GEOCODER_SCRIPT}")
 print(f"Output Directory: {OUTPUT_DIR}")
-print(f"Shared Cache File: {CACHE_FILE}
-")
+print(f"Shared Cache File: {CACHE_FILE}")
 
 print("IMPORTANT: This script will now EXECUTE the geocoding commands.")
 print("Geocoding can take a significant amount of time due to API rate limits (1 request/sec).")
-print("Ensure column names are correctly set above or will be auto-detected by the script.
-")
+print("Ensure column names are correctly set above or will be auto-detected by the script.")
 
 print("Note: If auto-detection fails for Admin1/Admin2, you will need to manually")
 print("edit this script to set COUNTRY_COL_NAME, ADMIN1_COL_NAME, and ADMIN2_COL_NAME")
-print("before running it again.
-")
+print("before running it again.")
 
 # List all CSV files in the HRP_1_countries directory
 try:
@@ -53,8 +50,7 @@ except FileNotFoundError:
 if not hrp_files:
     print("No CSV files found in the specified HRP_1_countries directory.")
 else:
-    print(f"Found {len(hrp_files)} CSV files. Executing geocoding for each:
-")
+    print(f"Found {len(hrp_files)} CSV files. Executing geocoding for each:")
 
     for filename in hrp_files:
         input_filepath = os.path.join(HRP_DATA_DIR, filename)
@@ -89,24 +85,18 @@ else:
         try:
             # Run the command, capture output, check for errors
             result = subprocess.run(command_parts, check=True, capture_output=True, text=True)
-            print("STDOUT:
-", result.stdout)
+            print("STDOUT:", result.stdout)
             if result.stderr:
-                print("STDERR:
-", result.stderr)
-            print(f"Successfully geocoded {filename}
-")
+                print("STDERR:", result.stderr)
+            print(f"Successfully geocoded {filename}")
         except FileNotFoundError:
             print(f"Error: Geocoder script not found at {GEOCODER_SCRIPT}. Please ensure it exists.")
             break # Stop if the script itself isn't found
         except subprocess.CalledProcessError as e:
             print(f"Error executing geocoding for {filename}:")
-            print("STDOUT:
-", e.stdout)
-            print("STDERR:
-", e.stderr)
-            print(f"Exit code: {e.returncode}
-")
+            print("STDOUT:", e.stdout)
+            print("STDERR:", e.stderr)
+            print(f"Exit code: {e.returncode}")
             # Decide whether to continue or stop on error.
             # If critical error (like missing columns), it might be better to stop.
             # We'll print the error and continue with the next file.
