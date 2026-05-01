@@ -178,6 +178,7 @@ def generate_viewer(years):
                     <select id="viewSelect" onchange="updateMap()">
                         <option value="standard">Standard PWD</option>
                         <option value="global_events">Global Events</option>
+                        <option value="schools_conflict">Schools Near Conflict</option>
                     </select>
                 </div>
                 <div id="yearContainer">
@@ -194,14 +195,21 @@ def generate_viewer(years):
                 var view = document.getElementById('viewSelect').value;
                 var year = document.getElementById('yearSelect').value;
                 var iframe = document.getElementById('mapFrame');
+                var yearContainer = document.getElementById('yearContainer');
 
-                if (view === 'global_events') {{
+                if (view === 'schools_conflict') {{
+                    yearContainer.style.visibility = 'hidden';
+                    iframe.src = 'maps/Schools_Conflict_Proximity_2020.html';
+                }} else if (view === 'global_events') {{
+                    yearContainer.style.visibility = 'visible';
                     iframe.src = 'maps/PWD_' + year + '_Global_Events.html';
                 }} else {{
+                    yearContainer.style.visibility = 'visible';
                     iframe.src = 'maps/PWD_' + year + '_sub_national_100m_map.html';
                 }}
             }}
         </script>
+
     </body>
     </html>
     """
