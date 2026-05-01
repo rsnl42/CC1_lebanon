@@ -172,18 +172,41 @@ def generate_viewer(years):
     <body>
         <header>
             <span>{MAP_TITLE} (Playground)</span>
-            <div>
-                <label>Year: </label>
-                <select id="yearSelect" onchange="updateMap()">
-                    {options}
-                </select>
+            <div style="display: flex; gap: 20px; align-items: center;">
+                <div>
+                    <label>View: </label>
+                    <select id="viewSelect" onchange="updateMap()">
+                        <option value="standard">Standard PWD</option>
+                        <option value="nigeria_events">Nigeria 2020 Events</option>
+                        <option value="global_events">Global 2020 Events</option>
+                    </select>
+                </div>
+                <div id="yearContainer">
+                    <label>Year: </label>
+                    <select id="yearSelect" onchange="updateMap()">
+                        {options}
+                    </select>
+                </div>
             </div>
         </header>
         <iframe id="mapFrame" src="maps/PWD_{DEFAULT_YEAR}_sub_national_100m_map.html"></iframe>
         <script>
             function updateMap() {{
+                var view = document.getElementById('viewSelect').value;
                 var year = document.getElementById('yearSelect').value;
-                document.getElementById('mapFrame').src = 'maps/PWD_' + year + '_sub_national_100m_map.html';
+                var yearContainer = document.getElementById('yearContainer');
+                var iframe = document.getElementById('mapFrame');
+
+                if (view === 'nigeria_events') {{
+                    yearContainer.style.visibility = 'hidden';
+                    iframe.src = 'maps/PWD_2020_Nigeria_events.html';
+                }} else if (view === 'global_events') {{
+                    yearContainer.style.visibility = 'hidden';
+                    iframe.src = 'maps/PWD_2020_Global_Events.html';
+                }} else {{
+                    yearContainer.style.visibility = 'visible';
+                    iframe.src = 'maps/PWD_' + year + '_sub_national_100m_map.html';
+                }}
             }}
         </script>
     </body>
