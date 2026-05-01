@@ -33,7 +33,11 @@ def get_rgba_color(hex_color, opacity=0.5):
 
 def escape_data(text):
     if pd.isna(text): return "N/A"
-    return html.escape(str(text))
+    text = str(text)
+    text = html.escape(text)
+    # Escape backticks and ${ to prevent issues with JS template literals
+    text = text.replace('`', '\\`').replace('${', '\\${')
+    return text
 
 def format_number(num):
     if pd.isna(num): return "N/A"
