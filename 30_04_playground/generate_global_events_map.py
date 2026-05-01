@@ -103,14 +103,23 @@ def generate_map(year):
     """
     m.get_root().header.add_child(folium.Element(legend_style))
 
-    # 6. PWD Layer
+    # 6. PWD Layers (Categorized for Legend)
     try:
         df_pwd['cat_idx'] = pd.qcut(df_pwd['pwd_m'], q=NUM_CATEGORIES, labels=False, duplicates='drop')
     except:
         df_pwd['cat_idx'] = pd.cut(df_pwd['pwd_m'], bins=NUM_CATEGORIES, labels=False)
         
-    colors = get_viridis_colors(df_pwd['cat_idx'].nunique())
-    pwd_layer = folium.FeatureGroup(name="Population Weighted Density", show=True)
+    actual_n = df_pwd['cat_idx'].nunique()
+    colors = get_viridis_colors(actual_n)
+    
+    # Create groups for each category to serve as a legend in the LayerControl
+    pwd_groups = []
+    for i in range(actual_n):
+        group_name = CATEGORIES[i] if i < len(CATEGORIES) else f"Category {i+1}"
+        hex_color = colors[i]
+        swatch_html = f'<span class="legend-swatch" style="background: {hex_color};"></span>{group_name} (PWD)'
+        group = folium.FeatureGroup(name=swatch_html, show=True)
+        pwd_groups.append(group)
 
     for _, row in df_pwd.iterrows():
         c_idx = int(row['cat_idx'])
@@ -127,8 +136,10 @@ def generate_map(year):
             location=[row['pwc_lat'], row['pwc_lon']],
             radius=3, color=hex_color, fill=True, fill_color=hex_color,
             fill_opacity=0.4, tooltip=tooltip_html, weight=1
-        ).add_to(pwd_layer)
-    pwd_layer.add_to(m)
+        ).add_to(pwd_groups[c_idx])
+    
+    for g in pwd_groups:
+        g.add_to(m)
 
     # 7. Events Layer (Cluster)
     event_layer = folium.FeatureGroup(name=f"Global Events ({year})", show=True)

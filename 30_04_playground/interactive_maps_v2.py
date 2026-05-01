@@ -177,7 +177,6 @@ def generate_viewer(years):
                     <label>View: </label>
                     <select id="viewSelect" onchange="updateMap()">
                         <option value="standard">Standard PWD</option>
-                        <option value="nigeria_events">Nigeria 2020 Events</option>
                         <option value="global_events">Global Events</option>
                     </select>
                 </div>
@@ -194,17 +193,11 @@ def generate_viewer(years):
             function updateMap() {{
                 var view = document.getElementById('viewSelect').value;
                 var year = document.getElementById('yearSelect').value;
-                var yearContainer = document.getElementById('yearContainer');
                 var iframe = document.getElementById('mapFrame');
 
-                if (view === 'nigeria_events') {{
-                    yearContainer.style.visibility = 'hidden';
-                    iframe.src = 'maps/PWD_2020_Nigeria_events.html';
-                }} else if (view === 'global_events') {{
-                    yearContainer.style.visibility = 'visible';
+                if (view === 'global_events') {{
                     iframe.src = 'maps/PWD_' + year + '_Global_Events.html';
                 }} else {{
-                    yearContainer.style.visibility = 'visible';
                     iframe.src = 'maps/PWD_' + year + '_sub_national_100m_map.html';
                 }}
             }}
