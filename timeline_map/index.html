@@ -3,108 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conflict & Education Timeline Map</title>
+    <title>Conflict & Education Choropleth Map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
     <style>
-        body { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f4f9; }
         #map { height: 100vh; width: 100%; }
+        
         #loading-overlay {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background: rgba(255, 255, 255, 0.9);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
             z-index: 2000;
         }
         .spinner {
-            border: 8px solid #f3f3f3;
-            border-top: 8px solid #3498db;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
+            border: 8px solid #f3f3f3; border-top: 8px solid #3498db;
+            border-radius: 50%; width: 50px; height: 50px;
             animation: spin 1s linear infinite;
         }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
         .control-panel {
-            position: absolute;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1000;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 80%;
-            max-width: 600px;
+            position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
+            z-index: 1000; background: white; padding: 20px; border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15); width: 90%; max-width: 700px;
         }
-        .timeline-controls {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            gap: 15px;
+        .timeline-controls { display: flex; align-items: center; width: 100%; gap: 20px; }
+        #year-slider { flex-grow: 1; height: 8px; border-radius: 5px; cursor: pointer; }
+        .data-toggle { margin-top: 15px; display: flex; justify-content: center; gap: 30px; font-weight: bold; }
+        
+        .info-box {
+            position: absolute; top: 20px; left: 20px; z-index: 1000;
+            background: white; padding: 15px; border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); max-width: 250px;
         }
-        #year-slider { flex-grow: 1; }
-        .data-toggle {
-            margin-top: 10px;
-            display: flex;
-            gap: 20px;
-        }
+        
         .legend {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
-            background: white;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: absolute; bottom: 130px; right: 20px; z-index: 1000;
+            background: white; padding: 15px; border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); line-height: 18px; color: #555;
         }
-        .legend-item { display: flex; align-items: center; margin-bottom: 5px; }
-        .legend-color { width: 15px; height: 15px; border-radius: 50%; margin-right: 8px; }
-        #current-year { font-weight: bold; font-size: 1.2em; min-width: 50px; text-align: center; }
+        .legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }
+        
         #play-button { 
-            padding: 5px 15px; 
-            cursor: pointer; 
-            background: #007bff; 
-            color: white; 
-            border: none; 
-            border-radius: 4px;
+            padding: 8px 20px; cursor: pointer; background: #3498db; 
+            color: white; border: none; border-radius: 6px; font-weight: bold; transition: 0.3s;
         }
-        #play-button:hover { background: #0056b3; }
+        #play-button:hover { background: #2980b9; }
+        #current-year { font-size: 1.5em; font-weight: bold; color: #2c3e50; min-width: 60px; text-align: center; }
     </style>
 </head>
 <body>
 
 <div id="loading-overlay">
     <div class="spinner"></div>
-    <h2 style="margin-top: 20px;">Loading Data...</h2>
-    <p>Processing conflict records and 100,000+ school markers</p>
+    <h2 style="margin-top: 20px;">Building Choropleth Map...</h2>
+    <p>Loading conflict data and 100,000+ school markers</p>
 </div>
 
 <div id="map"></div>
 
-<div class="legend">
-    <h4>Legend</h4>
-    <div class="legend-item">
-        <div class="legend-color" style="background: rgba(255, 0, 0, 0.6); border: 1px solid red;"></div>
-        <span id="legend-label">Conflict Events</span>
-    </div>
-    <div class="legend-item">
-        <img src="https://cdn-icons-png.flaticon.com/512/167/167707.png" width="20" height="20" style="margin-right: 8px;">
-        <span>Schools</span>
-    </div>
+<div class="info-box">
+    <h3 style="margin: 0 0 10px 0;">Conflict & Education</h3>
+    <p style="margin: 0; font-size: 0.9em; color: #666;">
+        Visualizing the intensity of conflict events and fatalities globally, overlaid with school locations.
+    </p>
 </div>
+
+<div class="legend" id="map-legend"></div>
 
 <div class="control-panel">
     <div class="timeline-controls">
@@ -113,7 +80,7 @@
         <input type="range" id="year-slider" min="1997" max="2024" value="2000" step="1">
     </div>
     <div class="data-toggle">
-        <label><input type="radio" name="dataType" value="Events" checked> Events</label>
+        <label><input type="radio" name="dataType" value="Events" checked> Conflict Events</label>
         <label><input type="radio" name="dataType" value="Fatalities"> Fatalities</label>
     </div>
 </div>
@@ -124,119 +91,144 @@
 
 <script>
     const map = L.map('map').setView([15, 20], 3);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap contributors'
+    L.tileLayer('https://{s}.tile.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '© OpenStreetMap, © CARTO'
     }).addTo(map);
 
-    let conflictData = [];
+    let countryData = [];
     let schoolData = [];
-    let conflictLayer = L.layerGroup().addTo(map);
+    let geoJsonData = null;
+    let choroplethLayer;
     let schoolCluster = L.markerClusterGroup({
         chunkedLoading: true,
-        maxClusterRadius: 50
+        maxClusterRadius: 50,
+        disableClusteringAtZoom: 14
     }).addTo(map);
 
     const yearSlider = document.getElementById('year-slider');
     const currentYearDisplay = document.getElementById('current-year');
     const playButton = document.getElementById('play-button');
     const dataTypeRadios = document.getElementsByName('dataType');
-    const legendLabel = document.getElementById('legend-label');
+    const legendDiv = document.getElementById('map-legend');
 
     let isPlaying = false;
     let animationTimer;
 
     const schoolIcon = L.icon({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/167/167707.png',
-        iconSize: [25, 25],
-        iconAnchor: [12, 12],
+        iconSize: [20, 20],
+        iconAnchor: [10, 10],
         popupAnchor: [0, -10]
     });
 
+    // Color scales
+    function getColor(d, type) {
+        if (type === 'Events') {
+            return d > 5000 ? '#800026' :
+                   d > 1000 ? '#BD0026' :
+                   d > 500  ? '#E31A1C' :
+                   d > 100  ? '#FC4E2A' :
+                   d > 50   ? '#FD8D3C' :
+                   d > 10   ? '#FEB24C' :
+                   d > 0    ? '#FED976' :
+                              '#FFEDA0';
+        } else {
+            return d > 10000 ? '#4a1486' :
+                   d > 5000  ? '#6a51a3' :
+                   d > 1000  ? '#807dba' :
+                   d > 500   ? '#9e9ac8' :
+                   d > 100   ? '#bcbddc' :
+                   d > 10    ? '#dadaeb' :
+                   d > 0     ? '#f2f0f7' :
+                               '#ffffff';
+        }
+    }
+
+    function style(feature) {
+        const year = parseInt(yearSlider.value);
+        const dataType = Array.from(dataTypeRadios).find(r => r.checked).value;
+        const countryName = feature.properties.name;
+        
+        // Match country name (basic match)
+        const record = countryData.find(d => d.Country === countryName && d.Year === year);
+        const val = record ? record[dataType] : 0;
+
+        return {
+            fillColor: getColor(val, dataType),
+            weight: 1,
+            opacity: 1,
+            color: 'white',
+            fillOpacity: 0.7
+        };
+    }
+
     // Load Data
     Promise.all([
-        fetch('data/conflict_data.csv').then(res => {
-            if (!res.ok) throw new Error('Failed to load conflict data');
-            return res.text();
-        }),
-        fetch('data/schools_data.csv').then(res => {
-            if (!res.ok) throw new Error('Failed to load school data');
-            return res.text();
-        })
-    ]).then(([conflictCsv, schoolCsv]) => {
-        conflictData = Papa.parse(conflictCsv, { header: true, dynamicTyping: true, skipEmptyLines: true }).data;
+        fetch('data/countries.geojson').then(res => res.json()),
+        fetch('data/country_yearly_conflict.csv').then(res => res.text()),
+        fetch('data/schools_data.csv').then(res => res.text())
+    ]).then(([geoJson, countryCsv, schoolCsv]) => {
+        geoJsonData = geoJson;
+        countryData = Papa.parse(countryCsv, { header: true, dynamicTyping: true, skipEmptyLines: true }).data;
         schoolData = Papa.parse(schoolCsv, { header: true, dynamicTyping: true, skipEmptyLines: true }).data;
 
-        // Filter out rows with null lat/lon just in case
-        conflictData = conflictData.filter(d => d.Latitude != null && d.Longitude != null);
-        schoolData = schoolData.filter(d => d.latitude != null && d.longitude != null);
-
-        // Populate slider range based on data
-        const years = [...new Set(conflictData.map(d => d.Year))].filter(y => y).sort((a, b) => a - b);
-        if (years.length > 0) {
-            yearSlider.min = years[0];
-            yearSlider.max = years[years.length - 1];
-            yearSlider.value = years[0];
-            currentYearDisplay.innerText = years[0];
-        }
+        // Fix name mismatches (Example)
+        countryData.forEach(d => {
+            if (d.Country === "DR Congo") d.Country = "Democratic Republic of the Congo";
+            if (d.Country === "Congo") d.Country = "Republic of the Congo";
+            if (d.Country === "Central African Republic") d.Country = "Central African Republic";
+        });
 
         addSchools();
         updateMap();
         document.getElementById('loading-overlay').style.display = 'none';
-    }).catch(err => {
-        console.error(err);
-        alert('Error loading data: ' + err.message);
     });
 
     function addSchools() {
-        schoolCluster.clearLayers();
         schoolData.forEach(school => {
-            const marker = L.marker([school.latitude, school.longitude], { icon: schoolIcon });
-            marker.bindPopup(`<b>School:</b> ${school.name || 'Unknown'}`);
-            schoolCluster.addLayer(marker);
+            if (school.latitude && school.longitude) {
+                const marker = L.marker([school.latitude, school.longitude], { icon: schoolIcon });
+                marker.bindPopup(`<b>School:</b> ${school.name || 'Unknown'}`);
+                schoolCluster.addLayer(marker);
+            }
         });
-    }
-
-    function getRadius(value, type) {
-        if (type === 'Events') {
-            return Math.sqrt(value) * 2 + 3;
-        } else {
-            // Fatalities can be higher, use different scale
-            return Math.sqrt(value) * 4 + 3;
-        }
     }
 
     function updateMap() {
         const year = parseInt(yearSlider.value);
         const dataType = Array.from(dataTypeRadios).find(r => r.checked).value;
         currentYearDisplay.innerText = year;
-        legendLabel.innerText = `Conflict ${dataType}`;
 
-        conflictLayer.clearLayers();
+        if (choroplethLayer) {
+            map.removeLayer(choroplethLayer);
+        }
 
-        const filtered = conflictData.filter(d => d.Year === year && d[dataType] > 0);
-        
-        filtered.forEach(d => {
-            const radius = getRadius(d[dataType], dataType);
-            const marker = L.circleMarker([d.Latitude, d.Longitude], {
-                radius: radius,
-                fillColor: "red",
-                color: "#900",
-                weight: 1,
-                opacity: 0.8,
-                fillOpacity: 0.5
-            });
+        choroplethLayer = L.geoJson(geoJsonData, {
+            style: style,
+            onEachFeature: (feature, layer) => {
+                const record = countryData.find(d => d.Country === feature.properties.name && d.Year === year);
+                const val = record ? record[dataType] : 0;
+                layer.bindTooltip(`<b>${feature.properties.name}</b><br>${dataType}: ${val}`);
+            }
+        }).addTo(map);
 
-            marker.bindPopup(`
-                <div style="font-family: Arial, sans-serif;">
-                    <b style="font-size: 1.1em;">${d.Country}</b><br>
-                    <i>${d.Admin2} (${d.Admin1})</i><hr style="margin: 5px 0;">
-                    <b>Year:</b> ${d.Year}<br>
-                    <b>Events:</b> ${d.Events}<br>
-                    <b>Fatalities:</b> ${d.Fatalities}
-                </div>
-            `);
-            marker.addTo(conflictLayer);
-        });
+        updateLegend(dataType);
+    }
+
+    function updateLegend(type) {
+        let grades, colors;
+        if (type === 'Events') {
+            grades = [0, 10, 50, 100, 500, 1000, 5000];
+        } else {
+            grades = [0, 10, 100, 500, 1000, 5000, 10000];
+        }
+
+        let html = `<h4>${type}</h4>`;
+        for (let i = 0; i < grades.length; i++) {
+            html += '<i style="background:' + getColor(grades[i] + 1, type) + '"></i> ' +
+                grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+        }
+        legendDiv.innerHTML = html;
     }
 
     yearSlider.oninput = updateMap;
@@ -255,12 +247,10 @@
         playButton.innerText = "Pause";
         animationTimer = setInterval(() => {
             let nextYear = parseInt(yearSlider.value) + 1;
-            if (nextYear > parseInt(yearSlider.max)) {
-                nextYear = parseInt(yearSlider.min);
-            }
+            if (nextYear > 2024) nextYear = 1997;
             yearSlider.value = nextYear;
             updateMap();
-        }, 1000);
+        }, 800);
     }
 
     function pause() {
