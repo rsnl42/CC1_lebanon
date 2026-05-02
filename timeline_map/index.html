@@ -34,7 +34,7 @@
         .info-box {
             position: absolute; top: 15px; left: 15px; z-index: 1000;
             background: white; padding: 10px; border-radius: 4px; border-left: 4px solid #e74c3c;
-            box-shadow: 0 1px 5px rgba(0,0,0,0.1); max-width: 220px;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.1); max-width: 250px;
         }
         
         .legend {
@@ -73,8 +73,8 @@
 
 <div id="loading-overlay">
     <div class="spinner"></div>
-    <h2 style="margin-top: 15px; font-size: 1.2em;">Updating Visualization...</h2>
-    <p id="loading-status" style="font-size: 0.9em;">Calculating proximity data</p>
+    <h2 style="margin-top: 15px; font-size: 1.2em;">Processing Proximity Logic...</h2>
+    <p id="loading-status" style="font-size: 0.9em;">Calculating school vulnerability statuses</p>
 </div>
 
 <div id="map"></div>
@@ -82,9 +82,9 @@
 <div class="info-box">
     <h4 style="margin: 0 0 4px 0;">Conflict & Education</h4>
     <p style="margin: 0; font-size: 0.75em; color: #444;">
-        <span style="color:#e74c3c; font-weight:bold;">●</span> Vulnerable Schools<br>
-        <span style="color:#3498db; font-weight:bold;">●</span> Regular Schools<br>
-        <span style="color:#000000; font-weight:bold;">●</span> Conflict Sites
+        <span style="color:#e74c3c; font-weight:bold;">●</span> Vulnerable Schools (<50km event)<br>
+        <span style="color:#3498db; font-weight:bold;">●</span> Regular Schools (Safe)<br>
+        <span style="color:#000000; font-weight:bold;">●</span> Conflict Sites (Proportional)
     </p>
 </div>
 
@@ -100,9 +100,9 @@
         <label><input type="radio" name="dataType" value="Events" checked> Events</label>
         <label><input type="radio" name="dataType" value="Fatalities"> Fatalities</label>
         <div style="border-left: 1px solid #ccc; height: 12px; margin: 0 10px;"></div>
-        <label title="Schools near hotspots or high conflict regions"><input type="checkbox" id="show-vulnerable" checked> Vulnerable Schools</label>
-        <label title="All other schools"><input type="checkbox" id="show-regular"> Regular Schools</label>
-        <label title="Show conflict sites on map"><input type="checkbox" id="show-conflict-pins" checked> Conflict Pins</label>
+        <label title="Schools within 50km of a current or historical conflict"><input type="checkbox" id="show-vulnerable" checked> Vulnerable Schools</label>
+        <label title="Schools with no conflict events within 50km"><input type="checkbox" id="show-regular"> Regular Schools</label>
+        <label title="Show individual conflict sites"><input type="checkbox" id="show-conflict-pins" checked> Conflict Pins</label>
     </div>
 </div>
 
@@ -150,7 +150,7 @@
         fetch('data/countries.geojson').then(res => res.json()),
         fetch('data/country_yearly_conflict.csv').then(res => res.text()),
         fetch('data/conflict_data.csv').then(res => res.text()),
-        fetch('data/schools_data.csv').then(res => res.text()),
+        fetch('data/schools_vulnerability.csv').then(res => res.text()),
         fetch('data/school_stats.csv').then(res => res.text())
     ]).then(([geoJson, countryCsv, conflictCsv, schoolCsv, statsCsv]) => {
         geoJsonData = geoJson;
@@ -171,7 +171,6 @@
     });
 
     function getConflictRadius(val) {
-        // Proportional scale with a reasonable cap
         return Math.min(Math.sqrt(val) * 2 + 2, 25);
     }
 
@@ -190,14 +189,14 @@
             style: (f) => ({
                 fillColor: getColor(conflictLookup[f.properties.name] || 0, dataType),
                 weight: 0.5, opacity: 1, color: '#fff', 
-                fillOpacity: zoom > 5.5 ? 0 : 0.35
+                fillOpacity: zoom > 5.5 ? 0 : 0.3 
             }),
             onEachFeature: (feature, layer) => {
                 layer.bindTooltip(`<b>${feature.properties.name}</b><br>${dataType}: ${conflictLookup[feature.properties.name] || 0}`, { sticky: true });
             }
         }).addTo(map);
 
-        // 2. Conflict Pins (Proportional Scaling)
+        // 2. Conflict Pins
         conflictLayer.clearLayers();
         if (showConflictCheck.checked) {
             if (zoom < 5) {
@@ -229,25 +228,26 @@
         if (showVuln || showReg) {
             if (zoom < 5) {
                 schoolStats.forEach(s => {
+                    // Summary counts are harder to do dynamically for vulnerability years without heavy JS,
+                    // so we'll stick to a country-level conflict indicator for the summary pins.
                     const conflictVal = conflictLookup[s.country] || 0;
-                    const isVuln = conflictVal > (dataType === 'Events' ? 50 : 100);
-                    if (isVuln && !showVuln) return;
-                    if (!isVuln && !showReg) return;
+                    const isCountryVuln = conflictVal > 0;
+                    
+                    if (isCountryVuln && !showVuln) return;
+                    if (!isCountryVuln && !showReg) return;
                     
                     L.marker([s.lat, s.lon], {
                         icon: L.divIcon({ 
-                            className: `aggregate-icon ${isVuln ? 'vulnerable' : 'regular'}`, 
+                            className: `aggregate-icon ${isCountryVuln ? 'vulnerable' : 'regular'}`, 
                             html: s.count > 1000 ? Math.round(s.count/1000)+'k' : s.count, 
                             iconSize: [26, 26] 
                         })
-                    }).bindTooltip(`<b>${s.country}</b><br>Schools: ${s.count}<br>Status: ${isVuln ? 'Vulnerable Area' : 'Stable Region'}`, { sticky: true }).addTo(schoolLayer);
+                    }).bindTooltip(`<b>${s.country}</b><br>Total Schools: ${s.count}<br>Status: ${isCountryVuln ? 'Active Conflict in Country' : 'Stable'}`, { sticky: true }).addTo(schoolLayer);
                 });
             } else {
                 schoolData.forEach(s => {
-                    const countryConflict = conflictLookup[s.country] || 0;
-                    const isCurrentlyVuln = countryConflict > (dataType === 'Events' ? 100 : 200);
-                    const isStaticHotspot = s.near_hotspot === true || s.near_hotspot === "True";
-                    const isVuln = isCurrentlyVuln || isStaticHotspot;
+                    // Logic: Vulnerable if current year >= first year an event happened within 50km
+                    const isVuln = year >= s.vulnerable_year;
 
                     if (isVuln && !showVuln) return;
                     if (!isVuln && !showReg) return;
@@ -261,8 +261,7 @@
                             <b>${s.name || 'Unknown School'}</b><br>
                             Country: ${s.country}<br>
                             Status: ${isVuln ? '<span style="color:#e74c3c; font-weight:bold;">VULNERABLE</span>' : '<span style="color:#3498db;">STABLE</span>'}<br>
-                            ${isStaticHotspot ? '<hr style="margin:4px 0;"><i>Nearby Hotspot: ' + (s.hotspot_info || 'Yes') + '</i>' : ''}
-                            ${!isStaticHotspot && isCurrentlyVuln ? '<hr style="margin:4px 0;"><i>Active Conflict Zone (' + year + ')</i>' : ''}
+                            ${isVuln ? '<hr style="margin:4px 0;"><i>First proximity event: ' + s.vulnerable_year + '</i>' : '<hr style="margin:4px 0;"><i>No events within 50km as of ' + year + '</i>'}
                         </div>
                     `, { sticky: true, className: 'leaflet-tooltip-custom' }).addTo(schoolLayer);
                 });
