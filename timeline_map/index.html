@@ -3,86 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conflict & Education Choropleth Map</title>
+    <title>Conflict & Education Timeline Map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
     <style>
-        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f4f9; }
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #fff; }
         #map { height: 100vh; width: 100%; }
         
         #loading-overlay {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.9);
             display: flex; flex-direction: column; justify-content: center; align-items: center;
             z-index: 2000;
         }
         .spinner {
-            border: 8px solid #f3f3f3; border-top: 8px solid #3498db;
-            border-radius: 50%; width: 50px; height: 50px;
+            border: 6px solid #f3f3f3; border-top: 6px solid #e67e22;
+            border-radius: 50%; width: 40px; height: 40px;
             animation: spin 1s linear infinite;
         }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 
         .control-panel {
-            position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
-            z-index: 1000; background: white; padding: 12px; border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.15); width: 90%; max-width: 950px;
+            position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
+            z-index: 1000; background: rgba(255, 255, 255, 0.95); padding: 12px; border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.2); width: 95%; max-width: 900px;
         }
         .timeline-controls { display: flex; align-items: center; width: 100%; gap: 15px; }
-        #year-slider { flex-grow: 1; height: 8px; border-radius: 5px; cursor: pointer; }
-        .data-toggle { margin-top: 10px; display: flex; justify-content: center; gap: 12px; font-weight: bold; align-items: center; font-size: 0.8em; flex-wrap: wrap; }
+        #year-slider { flex-grow: 1; cursor: pointer; }
+        .data-toggle { margin-top: 8px; display: flex; justify-content: center; gap: 12px; font-weight: bold; align-items: center; font-size: 0.8em; }
         
         .info-box {
-            position: absolute; top: 20px; left: 20px; z-index: 1000;
-            background: white; padding: 10px; border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1); max-width: 250px;
+            position: absolute; top: 15px; left: 15px; z-index: 1000;
+            background: white; padding: 10px; border-radius: 4px; border-left: 4px solid #e67e22;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.1); max-width: 220px;
         }
         
         .legend {
-            position: absolute; bottom: 140px; right: 20px; z-index: 1000;
-            background: white; padding: 12px; border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1); line-height: 1.4; color: #555; font-size: 0.8em;
+            position: absolute; bottom: 120px; right: 15px; z-index: 1000;
+            background: white; padding: 10px; border-radius: 4px;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.1); line-height: 1.3; font-size: 0.75em;
         }
-        .legend h4 { margin: 0 0 5px 0; }
-        .legend i { width: 14px; height: 14px; float: left; margin-right: 8px; opacity: 0.8; }
+        .legend i { width: 12px; height: 12px; float: left; margin-right: 6px; opacity: 0.8; }
         
         #play-button { 
-            padding: 6px 12px; cursor: pointer; background: #3498db; 
-            color: white; border: none; border-radius: 4px; font-weight: bold; min-width: 65px;
+            padding: 5px 12px; cursor: pointer; background: #e67e22; 
+            color: white; border: none; border-radius: 4px; font-weight: bold; min-width: 60px;
         }
-        #play-button:hover { background: #2980b9; }
-        #current-year { font-size: 1.2em; font-weight: bold; color: #2c3e50; min-width: 50px; text-align: center; }
+        #current-year { font-size: 1.2em; font-weight: bold; min-width: 50px; text-align: center; }
 
-        .country-label {
-            background: transparent; border: none; box-shadow: none; font-size: 10px;
-            font-weight: 600; color: #2c3e50; text-shadow: 0 0 3px #fff;
-            text-align: center; pointer-events: none;
+        .country-label-subtle {
+            background: transparent; border: none; box-shadow: none; font-size: 9px;
+            color: #555; text-shadow: 0 0 2px #fff; pointer-events: none; opacity: 0.8;
         }
-
-        .summary-icon {
-            background: white; border: 2px solid #3498db; border-radius: 50%;
-            text-align: center; line-height: 22px; font-weight: bold; font-size: 9px; color: #3498db;
+        
+        .aggregate-icon {
+            background: #fff; border: 2px solid #333; border-radius: 50%;
+            text-align: center; line-height: 20px; font-weight: bold; font-size: 9px;
         }
-        .summary-icon.conflict { border-color: #000; color: #fff; background: #000; }
-        .summary-icon.school-hotspot { border-color: #e74c3c; color: #e74c3c; background: #fff; }
+        .aggregate-icon.vulnerable { border-color: #e74c3c; color: #e74c3c; box-shadow: 0 0 8px rgba(231, 76, 60, 0.5); }
     </style>
 </head>
 <body>
 
 <div id="loading-overlay">
     <div class="spinner"></div>
-    <h2 style="margin-top: 20px;">Updating Map...</h2>
-    <p id="loading-status">Loading granular datasets</p>
+    <h2 style="margin-top: 15px; font-size: 1.2em;">Optimizing Map Engine...</h2>
+    <p id="loading-status" style="font-size: 0.9em;">Loading assets</p>
 </div>
 
 <div id="map"></div>
 
 <div class="info-box">
-    <h3 style="margin: 0 0 5px 0; font-size: 1em;">Conflict & Education</h3>
-    <p style="margin: 0; font-size: 0.75em; color: #666;">
-        <b>Black Pins:</b> Conflict Intensity<br>
-        <b>Red Circles:</b> Vulnerable Schools
+    <h4 style="margin: 0 0 4px 0;">Conflict & Education</h4>
+    <p style="margin: 0; font-size: 0.75em; color: #444;">
+        <span style="color:#e74c3c; font-weight:bold;">●</span> Vulnerable Schools<br>
+        <span style="color:#7f8c8d; font-weight:bold;">●</span> Regular Schools
     </p>
 </div>
 
@@ -95,43 +89,32 @@
         <input type="range" id="year-slider" min="1997" max="2024" value="2000" step="1">
     </div>
     <div class="data-toggle">
-        <div style="display: flex; gap: 8px;">
-            <label><input type="radio" name="dataType" value="Events" checked> Events</label>
-            <label><input type="radio" name="dataType" value="Fatalities"> Fatalities</label>
-        </div>
-        <div style="border-left: 1px solid #ccc; height: 15px; margin: 0 5px;"></div>
-        <label title="Show black pins for conflict locations"><input type="checkbox" id="show-conflict-pins"> Conflict Pins</label>
-        <label title="Show aggregate counts of schools"><input type="checkbox" id="show-vulnerable" checked> Vulnerable Schools</label>
-        <label title="Show individual stable schools (laggy)"><input type="checkbox" id="show-regular"> Regular Schools</label>
-        <div style="border-left: 1px solid #ccc; height: 15px; margin: 0 5px;"></div>
-        <label><input type="checkbox" id="show-labels" checked> Labels</label>
+        <label><input type="radio" name="dataType" value="Events" checked> Events</label>
+        <label><input type="radio" name="dataType" value="Fatalities"> Fatalities</label>
+        <div style="border-left: 1px solid #ccc; height: 12px; margin: 0 5px;"></div>
+        <label><input type="checkbox" id="show-vulnerable" checked> Vulnerable Schools</label>
+        <label><input type="checkbox" id="show-regular"> Regular Schools</label>
+        <label><input type="checkbox" id="show-conflict-pins"> Conflict Pins</label>
+        <label><input type="checkbox" id="show-names" checked> Country Names</label>
     </div>
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 
 <script>
-    const map = L.map('map', { preferCanvas: true }).setView([10, 10], 3);
-    L.tileLayer('https://{s}.tile.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-        attribution: '© OpenStreetMap, © CARTO'
+    // Initialize map with preferCanvas for massive performance boost
+    const map = L.map('map', { preferCanvas: true, zoomSnap: 0.5 }).setView([15, 15], 3);
+    
+    // Standard Basemap
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap'
     }).addTo(map);
 
-    let countryData = [];
-    let conflictData = [];
-    let schoolData = [];
-    let schoolStats = [];
-    let geoJsonData = null;
-    let choroplethLayer;
-    let labelLayer = L.layerGroup().addTo(map);
-    let schoolSummaryLayer = L.layerGroup();
-    let conflictMarkerLayer = L.layerGroup();
-    let schoolCluster = L.markerClusterGroup({
-        chunkedLoading: true,
-        maxClusterRadius: 40,
-        disableClusteringAtZoom: 9
-    });
+    let countryData, conflictData, schoolData, schoolStats, geoJsonData;
+    let choroplethLayer, labelLayer = L.layerGroup().addTo(map);
+    let schoolLayer = L.layerGroup().addTo(map);
+    let conflictLayer = L.layerGroup().addTo(map);
 
     const yearSlider = document.getElementById('year-slider');
     const currentYearDisplay = document.getElementById('current-year');
@@ -140,9 +123,8 @@
     const showVulnerableCheck = document.getElementById('show-vulnerable');
     const showRegularCheck = document.getElementById('show-regular');
     const showConflictCheck = document.getElementById('show-conflict-pins');
-    const showLabelsCheck = document.getElementById('show-labels');
+    const showNamesCheck = document.getElementById('show-names');
     const legendDiv = document.getElementById('map-legend');
-    const loadingStatus = document.getElementById('loading-status');
 
     let isPlaying = false;
     let animationTimer;
@@ -155,7 +137,12 @@
         }
     }
 
-    // Load Data
+    // Optimization: Cache normalized names
+    const normalize = (name) => {
+        if (!name) return "";
+        return name.replace("DR Congo", "Democratic Republic of the Congo").replace("Congo", "Republic of the Congo").trim();
+    };
+
     Promise.all([
         fetch('data/countries.geojson').then(res => res.json()),
         fetch('data/country_yearly_conflict.csv').then(res => res.text()),
@@ -169,12 +156,6 @@
         schoolData = Papa.parse(schoolCsv, { header: true, dynamicTyping: true, skipEmptyLines: true }).data;
         schoolStats = Papa.parse(statsCsv, { header: true, dynamicTyping: true, skipEmptyLines: true }).data;
 
-        // Normalization
-        const normalize = (name) => {
-            if (!name) return "";
-            return name.replace("DR Congo", "Democratic Republic of the Congo").replace("Congo", "Republic of the Congo").trim();
-        };
-
         [countryData, conflictData, schoolData, schoolStats].forEach(arr => {
             arr.forEach(d => {
                 if (d.Country) d.Country = normalize(d.Country);
@@ -182,141 +163,134 @@
             });
         });
 
-        addLabels();
         updateMap();
         document.getElementById('loading-overlay').style.display = 'none';
     });
 
-    function addLabels() {
-        labelLayer.clearLayers();
-        if (!showLabelsCheck.checked) return;
-        geoJsonData.features.forEach(feature => {
-            let bounds = L.geoJSON(feature).getBounds();
-            L.marker(bounds.getCenter(), {
-                icon: L.divIcon({ className: 'country-label', html: feature.properties.name, iconSize: [80, 20], iconAnchor: [40, 10] })
-            }).addTo(labelLayer);
-        });
-    }
-
     function updateMap() {
         const year = parseInt(yearSlider.value);
         const dataType = Array.from(dataTypeRadios).find(r => r.checked).value;
+        const zoom = map.getZoom();
         currentYearDisplay.innerText = year;
 
         const conflictLookup = {};
         countryData.forEach(d => { if (d.Year === year) conflictLookup[d.Country] = d[dataType]; });
 
+        // 1. Choropleth (Only visible when zoomed out)
         if (choroplethLayer) map.removeLayer(choroplethLayer);
         choroplethLayer = L.geoJson(geoJsonData, {
             style: (f) => ({
                 fillColor: getColor(conflictLookup[f.properties.name] || 0, dataType),
-                weight: 1, opacity: 1, color: 'white', fillOpacity: 0.6
+                weight: 0.5, opacity: 1, color: '#fff', 
+                fillOpacity: zoom > 5.5 ? 0 : 0.5 // Hide fill when zoomed in
             }),
             onEachFeature: (feature, layer) => {
                 layer.bindTooltip(`<b>${feature.properties.name}</b><br>${dataType}: ${conflictLookup[feature.properties.name] || 0}`);
             }
         }).addTo(map);
 
-        updateVisualLayers(year, dataType, conflictLookup);
-        updateLegend(dataType);
-    }
+        // 2. Labels (Subtle)
+        labelLayer.clearLayers();
+        if (showNamesCheck.checked && zoom < 6) {
+            geoJsonData.features.forEach(f => {
+                const center = L.geoJSON(f).getBounds().getCenter();
+                L.marker(center, {
+                    icon: L.divIcon({ className: 'country-label-subtle', html: f.properties.name, iconSize: [60, 10] })
+                }).addTo(labelLayer);
+            });
+        }
 
-    function updateVisualLayers(year, dataType, conflictLookup) {
-        schoolSummaryLayer.clearLayers();
-        conflictMarkerLayer.clearLayers();
-        schoolCluster.clearLayers();
-        map.removeLayer(schoolSummaryLayer);
-        map.removeLayer(conflictMarkerLayer);
-        map.removeLayer(schoolCluster);
-
-        const zoom = map.getZoom();
-        const showSchools = showVulnerableCheck.checked || showRegularCheck.checked;
-        const showConflict = showConflictCheck.checked;
-
-        // 1. Conflict Pins (Black)
-        if (showConflict) {
+        // 3. Conflict Pins
+        conflictLayer.clearLayers();
+        if (showConflictCheck.checked) {
             if (zoom < 5) {
-                // Country Aggregate Conflict Pin
-                schoolStats.forEach(stat => {
-                    const val = conflictLookup[stat.country] || 0;
+                schoolStats.forEach(s => {
+                    const val = conflictLookup[s.country] || 0;
                     if (val > 0) {
-                        const icon = L.divIcon({
-                            className: 'summary-icon conflict',
-                            html: val > 1000 ? Math.round(val/1000)+'k' : val,
-                            iconSize: [24, 24], iconAnchor: [12, 12]
-                        });
-                        L.marker([stat.lat, stat.lon], { icon: icon })
-                            .bindPopup(`<b>${stat.country}</b><br>Total ${dataType} (${year}): ${val}`)
-                            .addTo(conflictMarkerLayer);
+                        L.marker([s.lat, s.lon], {
+                            icon: L.divIcon({ className: 'aggregate-icon', html: val, iconSize: [20, 20] })
+                        }).bindPopup(`<b>${s.country}</b>: ${val} ${dataType}`).addTo(conflictLayer);
                     }
                 });
             } else {
-                // Granular Conflict Pins
                 conflictData.forEach(d => {
                     if (d.Year === year && d[dataType] > 0) {
                         L.circleMarker([d.Latitude, d.Longitude], {
-                            radius: Math.sqrt(d[dataType]) * 2 + 2,
-                            fillColor: "black", color: "white", weight: 1, opacity: 1, fillOpacity: 0.8
-                        }).bindPopup(`<b>${d.Country} - ${d.Admin2}</b><br>${dataType}: ${d[dataType]}`)
-                          .addTo(conflictMarkerLayer);
+                            radius: 4, fillColor: '#000', color: '#fff', weight: 1, fillOpacity: 0.8
+                        }).bindPopup(`<b>Conflict</b><br>${d.Admin2}: ${d[dataType]}`).addTo(conflictLayer);
                     }
                 });
             }
-            conflictMarkerLayer.addTo(map);
         }
 
-        // 2. School Layers
-        if (showSchools) {
-            if (zoom < 6) {
-                schoolStats.forEach(stat => {
-                    const conflictVal = conflictLookup[stat.country] || 0;
-                    const isHotspot = conflictVal > (dataType === 'Events' ? 50 : 100);
-                    if (isHotspot && !showVulnerableCheck.checked) return;
-                    if (!isHotspot && !showRegularCheck.checked) return;
-
-                    const icon = L.divIcon({
-                        className: `summary-icon ${isHotspot ? 'school-hotspot' : ''}`,
-                        html: stat.count > 1000 ? Math.round(stat.count/1000)+'k' : stat.count,
-                        iconSize: [26, 26], iconAnchor: [13, 13]
-                    });
-                    L.marker([stat.lat, stat.lon], { icon: icon }).addTo(schoolSummaryLayer);
+        // 4. Schools (Optimized)
+        schoolLayer.clearLayers();
+        const showVuln = showVulnerableCheck.checked;
+        const showReg = showRegularCheck.checked;
+        
+        if (showVuln || showReg) {
+            if (zoom < 5) {
+                schoolStats.forEach(s => {
+                    const conflictVal = conflictLookup[s.country] || 0;
+                    const isVuln = conflictVal > (dataType === 'Events' ? 20 : 50);
+                    if (isVuln && !showVuln) return;
+                    if (!isVuln && !showReg) return;
+                    
+                    L.marker([s.lat, s.lon], {
+                        icon: L.divIcon({ 
+                            className: `aggregate-icon ${isVuln ? 'vulnerable' : ''}`, 
+                            html: s.count > 1000 ? Math.round(s.count/1000)+'k' : s.count, 
+                            iconSize: [24, 24] 
+                        })
+                    }).bindPopup(`<b>${s.country}</b><br>Schools: ${s.count}`).addTo(schoolLayer);
                 });
-                schoolSummaryLayer.addTo(map);
             } else {
-                schoolData.forEach(school => {
-                    const conflictVal = conflictLookup[school.country] || 0;
-                    const isHotspot = conflictVal > (dataType === 'Events' ? 100 : 200);
-                    if (isHotspot && !showVulnerableCheck.checked) return;
-                    if (!isHotspot && !showRegularCheck.checked) return;
+                // High-performance canvas circles
+                schoolData.forEach(s => {
+                    const conflictVal = conflictLookup[s.country] || 0;
+                    const isVuln = conflictVal > (dataType === 'Events' ? 50 : 100);
+                    
+                    if (isVuln && !showVuln) return;
+                    if (!isVuln && !showReg) return;
 
-                    const marker = L.circleMarker([school.latitude, school.longitude], {
-                        radius: isHotspot ? 5 : 3,
-                        fillColor: isHotspot ? "#e74c3c" : "#3498db",
-                        color: "white", weight: 1, opacity: 1, fillOpacity: 0.8
-                    }).bindPopup(`<b>${school.name}</b><br>Country: ${school.country}<br>Status: ${isHotspot ? 'Vulnerable' : 'Stable'}`);
-                    schoolCluster.addLayer(marker);
+                    L.circleMarker([s.latitude, s.longitude], {
+                        radius: isVuln ? 6 : 3,
+                        fillColor: isVuln ? '#e67e22' : '#7f8c8d',
+                        color: isVuln ? '#fff' : '#bdc3c7',
+                        weight: isVuln ? 2 : 1,
+                        fillOpacity: isVuln ? 0.9 : 0.4
+                    }).bindPopup(`<b>${s.name}</b><br>${isVuln ? '⚠️ Vulnerable Area' : 'Stable Region'}`).addTo(schoolLayer);
                 });
-                schoolCluster.addTo(map);
             }
         }
+
+        updateLegend(dataType);
+    }
+
+    function updateLegend(type) {
+        let grades = type === 'Events' ? [0, 50, 200, 1000, 5000] : [0, 100, 500, 2000, 10000];
+        let html = `<b>${type} Intensity</b><br>`;
+        grades.forEach(g => html += `<i style="background:${getColor(g + 1, type)}"></i> ${g}+<br>`);
+        legendDiv.innerHTML = html;
     }
 
     map.on('zoomend', updateMap);
     yearSlider.oninput = updateMap;
     dataTypeRadios.forEach(r => r.onchange = updateMap);
-    [showVulnerableCheck, showRegularCheck, showConflictCheck, showLabelsCheck].forEach(c => c.onchange = updateMap);
+    [showVulnerableCheck, showRegularCheck, showConflictCheck, showNamesCheck].forEach(c => c.onchange = updateMap);
 
-    function updateLegend(type) {
-        let grades = type === 'Events' ? [0, 10, 50, 100, 500, 1000, 5000] : [0, 10, 100, 500, 1000, 5000, 10000];
-        let html = `<h4>Intensity (${type})</h4>`;
-        grades.forEach(g => html += `<i style="background:${getColor(g + 1, type)}"></i> ${g}${grades[grades.indexOf(g)+1] ? '&ndash;'+grades[grades.indexOf(g)+1]+'<br>' : '+'}`);
-        html += `<hr><b>Conflict</b><br><i style="background:black; border-radius:50%; border:1px solid white;"></i> Granular Pin<br>`;
-        html += `<b>Schools</b><br><i style="background:#e74c3c; border-radius:50%; border:1px solid white;"></i> Vulnerable<br>`;
-        html += `<i style="background:#3498db; border-radius:50%; border:1px solid white;"></i> Regular`;
-        legendDiv.innerHTML = html;
-    }
-
-    playButton.onclick = () => { isPlaying ? (isPlaying=false, playButton.innerText="Play", clearInterval(animationTimer)) : (isPlaying=true, playButton.innerText="Pause", animationTimer=setInterval(()=>{ let next=parseInt(yearSlider.value)+1; if(next>2024)next=1997; yearSlider.value=next; updateMap(); }, 1000)); };
+    playButton.onclick = () => {
+        if (isPlaying) {
+            isPlaying = false; playButton.innerText = "Play"; clearInterval(animationTimer);
+        } else {
+            isPlaying = true; playButton.innerText = "Pause";
+            animationTimer = setInterval(() => {
+                let next = parseInt(yearSlider.value) + 1;
+                if (next > 2024) next = 1997;
+                yearSlider.value = next; updateMap();
+            }, 1200);
+        }
+    };
 </script>
 
 </body>
