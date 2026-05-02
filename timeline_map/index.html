@@ -13,7 +13,7 @@
         
         #loading-overlay {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.95);
             display: flex; flex-direction: column; justify-content: center; align-items: center;
             z-index: 2000;
         }
@@ -27,76 +27,61 @@
         .control-panel {
             position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
             z-index: 1000; background: white; padding: 15px; border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.15); width: 90%; max-width: 800px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15); width: 90%; max-width: 900px;
         }
         .timeline-controls { display: flex; align-items: center; width: 100%; gap: 15px; }
         #year-slider { flex-grow: 1; height: 8px; border-radius: 5px; cursor: pointer; }
-        .data-toggle { margin-top: 10px; display: flex; justify-content: center; gap: 20px; font-weight: bold; align-items: center; font-size: 0.9em; }
+        .data-toggle { margin-top: 10px; display: flex; justify-content: center; gap: 15px; font-weight: bold; align-items: center; font-size: 0.85em; flex-wrap: wrap; }
         
         .info-box {
             position: absolute; top: 20px; left: 20px; z-index: 1000;
-            background: white; padding: 15px; border-radius: 8px;
+            background: white; padding: 12px; border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1); max-width: 250px;
         }
         
         .legend {
             position: absolute; bottom: 140px; right: 20px; z-index: 1000;
-            background: white; padding: 15px; border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1); line-height: 18px; color: #555;
+            background: white; padding: 12px; border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); line-height: 1.4; color: #555; font-size: 0.85em;
         }
-        .legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }
+        .legend h4 { margin: 0 0 5px 0; }
+        .legend i { width: 16px; height: 16px; float: left; margin-right: 8px; opacity: 0.8; }
         
         #play-button { 
             padding: 8px 15px; cursor: pointer; background: #3498db; 
-            color: white; border: none; border-radius: 6px; font-weight: bold; transition: 0.3s;
-            min-width: 70px;
+            color: white; border: none; border-radius: 6px; font-weight: bold; min-width: 70px;
         }
         #play-button:hover { background: #2980b9; }
-        #current-year { font-size: 1.4em; font-weight: bold; color: #2c3e50; min-width: 60px; text-align: center; }
+        #current-year { font-size: 1.3em; font-weight: bold; color: #2c3e50; min-width: 55px; text-align: center; }
 
-        /* Country Label Style */
         .country-label {
-            background: transparent;
-            border: none;
-            box-shadow: none;
-            font-size: 11px;
-            font-weight: 600;
-            color: #2c3e50;
-            text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-            text-align: center;
-            pointer-events: none;
+            background: transparent; border: none; box-shadow: none; font-size: 10px;
+            font-weight: 600; color: #2c3e50; text-shadow: 0 0 3px #fff;
+            text-align: center; pointer-events: none;
         }
 
         .school-summary-icon {
-            background: white;
-            border: 2px solid #3498db;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 24px;
-            font-weight: bold;
-            font-size: 10px;
-            color: #3498db;
+            background: white; border: 2px solid #3498db; border-radius: 50%;
+            text-align: center; line-height: 24px; font-weight: bold; font-size: 10px; color: #3498db;
         }
-        .school-summary-icon.hotspot {
-            border-color: #e74c3c;
-            color: #e74c3c;
-        }
+        .school-summary-icon.hotspot { border-color: #e74c3c; color: #e74c3c; background: #fff5f5; }
     </style>
 </head>
 <body>
 
 <div id="loading-overlay">
     <div class="spinner"></div>
-    <h2 style="margin-top: 20px;">Refining Map...</h2>
-    <p>Loading country labels and school data</p>
+    <h2 style="margin-top: 20px;">Optimizing Visualization...</h2>
+    <p id="loading-status">Loading data...</p>
 </div>
 
 <div id="map"></div>
 
 <div class="info-box">
-    <h3 style="margin: 0 0 10px 0;">Conflict & Education</h3>
-    <p style="margin: 0; font-size: 0.85em; color: #666;">
-        Visualizing conflict intensity vs school locations. Zoom in to see individual schools.
+    <h3 style="margin: 0 0 5px 0; font-size: 1.1em;">Conflict & Education</h3>
+    <p style="margin: 0; font-size: 0.8em; color: #666;">
+        <b>Red Circles:</b> Schools in Vulnerable regions<br>
+        <b>Blue Dots:</b> Regular schools (toggleable)
     </p>
 </div>
 
@@ -109,13 +94,15 @@
         <input type="range" id="year-slider" min="1997" max="2024" value="2000" step="1">
     </div>
     <div class="data-toggle">
-        <div style="display: flex; gap: 15px;">
+        <div style="display: flex; gap: 10px;">
             <label><input type="radio" name="dataType" value="Events" checked> Events</label>
             <label><input type="radio" name="dataType" value="Fatalities"> Fatalities</label>
         </div>
-        <div style="border-left: 1px solid #ccc; height: 20px; margin: 0 10px;"></div>
-        <label><input type="checkbox" id="show-schools" checked> Show Schools</label>
-        <label><input type="checkbox" id="show-labels" checked> Country Names</label>
+        <div style="border-left: 1px solid #ccc; height: 15px; margin: 0 5px;"></div>
+        <label title="Schools in countries with high conflict"><input type="checkbox" id="show-vulnerable" checked> Vulnerable Schools</label>
+        <label title="Schools in stable regions (hiding improves performance)"><input type="checkbox" id="show-regular"> Regular Schools</label>
+        <div style="border-left: 1px solid #ccc; height: 15px; margin: 0 5px;"></div>
+        <label><input type="checkbox" id="show-labels" checked> Labels</label>
     </div>
 </div>
 
@@ -124,7 +111,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 
 <script>
-    const map = L.map('map').setView([15, 20], 3);
+    const map = L.map('map', { preferCanvas: true }).setView([10, 10], 3);
     L.tileLayer('https://{s}.tile.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
         attribution: '© OpenStreetMap, © CARTO'
     }).addTo(map);
@@ -138,68 +125,40 @@
     let schoolSummaryLayer = L.layerGroup();
     let schoolCluster = L.markerClusterGroup({
         chunkedLoading: true,
-        maxClusterRadius: 50,
-        disableClusteringAtZoom: 7 // Clusters only at zoom < 7
+        maxClusterRadius: 40,
+        disableClusteringAtZoom: 8
     });
 
     const yearSlider = document.getElementById('year-slider');
     const currentYearDisplay = document.getElementById('current-year');
     const playButton = document.getElementById('play-button');
     const dataTypeRadios = document.getElementsByName('dataType');
-    const showSchoolsCheck = document.getElementById('show-schools');
+    const showVulnerableCheck = document.getElementById('show-vulnerable');
+    const showRegularCheck = document.getElementById('show-regular');
     const showLabelsCheck = document.getElementById('show-labels');
     const legendDiv = document.getElementById('map-legend');
+    const loadingStatus = document.getElementById('loading-status');
 
     let isPlaying = false;
     let animationTimer;
 
-    const schoolIcon = L.icon({
-        iconUrl: 'https://cdn-icons-png.flaticon.com/512/167/167707.png',
-        iconSize: [16, 16],
-        iconAnchor: [8, 8],
-        popupAnchor: [0, -8]
-    });
-
-    const hotspotSchoolIcon = L.icon({
-        iconUrl: 'https://cdn-icons-png.flaticon.com/512/595/595067.png', // Fire icon or similar
-        iconSize: [20, 20],
-        iconAnchor: [10, 10],
-        popupAnchor: [0, -10]
-    });
-
     // Color scales
     function getColor(d, type) {
         if (type === 'Events') {
-            return d > 5000 ? '#800026' :
-                   d > 1000 ? '#BD0026' :
-                   d > 500  ? '#E31A1C' :
-                   d > 100  ? '#FC4E2A' :
-                   d > 50   ? '#FD8D3C' :
-                   d > 10   ? '#FEB24C' :
-                   d > 0    ? '#FED976' :
-                              '#FFEDA0';
+            return d > 5000 ? '#800026' : d > 1000 ? '#BD0026' : d > 500 ? '#E31A1C' : d > 100 ? '#FC4E2A' : d > 50 ? '#FD8D3C' : d > 10 ? '#FEB24C' : d > 0 ? '#FED976' : '#FFEDA0';
         } else {
-            return d > 10000 ? '#4a1486' :
-                   d > 5000  ? '#6a51a3' :
-                   d > 1000  ? '#807dba' :
-                   d > 500   ? '#9e9ac8' :
-                   d > 100   ? '#bcbddc' :
-                   d > 10    ? '#dadaeb' :
-                   d > 0     ? '#f2f0f7' :
-                               '#ffffff';
+            return d > 10000 ? '#4a1486' : d > 5000 ? '#6a51a3' : d > 1000 ? '#807dba' : d > 500 ? '#9e9ac8' : d > 100 ? '#bcbddc' : d > 10 ? '#dadaeb' : d > 0 ? '#f2f0f7' : '#ffffff';
         }
     }
 
-    function style(feature) {
-        const year = parseInt(yearSlider.value);
-        const dataType = Array.from(dataTypeRadios).find(r => r.checked).value;
+    function style(feature, conflictLookup) {
         const countryName = feature.properties.name;
-        const record = countryData.find(d => d.Country === countryName && d.Year === year);
-        const val = record ? record[dataType] : 0;
+        const val = conflictLookup[countryName] || 0;
+        const dataType = Array.from(dataTypeRadios).find(r => r.checked).value;
 
         return {
             fillColor: getColor(val, dataType),
-            weight: 1, opacity: 1, color: 'white', fillOpacity: 0.7
+            weight: 1, opacity: 1, color: 'white', fillOpacity: 0.6
         };
     }
 
@@ -215,11 +174,18 @@
         schoolData = Papa.parse(schoolCsv, { header: true, dynamicTyping: true, skipEmptyLines: true }).data;
         schoolStats = Papa.parse(statsCsv, { header: true, dynamicTyping: true, skipEmptyLines: true }).data;
 
-        // Fix name mismatches
-        countryData.forEach(d => {
-            if (d.Country === "DR Congo") d.Country = "Democratic Republic of the Congo";
-            if (d.Country === "Congo") d.Country = "Republic of the Congo";
-        });
+        loadingStatus.innerText = "Normalizing names...";
+        // Normalize Country Names for matching
+        const normalize = (name) => {
+            if (!name) return "";
+            return name.replace("DR Congo", "Democratic Republic of the Congo")
+                       .replace("Congo", "Republic of the Congo")
+                       .trim();
+        };
+
+        countryData.forEach(d => d.Country = normalize(d.Country));
+        schoolData.forEach(d => d.country = normalize(d.country));
+        schoolStats.forEach(d => d.country = normalize(d.country));
 
         addLabels();
         updateMap();
@@ -231,25 +197,17 @@
         if (!showLabelsCheck.checked) return;
 
         geoJsonData.features.forEach(feature => {
-            const centroid = getCentroid(feature);
-            if (centroid) {
-                L.marker([centroid[1], centroid[0]], {
-                    icon: L.divIcon({
-                        className: 'country-label',
-                        html: feature.properties.name,
-                        iconSize: [100, 20],
-                        iconAnchor: [50, 10]
-                    })
-                }).addTo(labelLayer);
-            }
+            let bounds = L.geoJSON(feature).getBounds();
+            let center = bounds.getCenter();
+            L.marker(center, {
+                icon: L.divIcon({
+                    className: 'country-label',
+                    html: feature.properties.name,
+                    iconSize: [80, 20],
+                    iconAnchor: [40, 10]
+                })
+            }).addTo(labelLayer);
         });
-    }
-
-    function getCentroid(feature) {
-        if (feature.properties.center) return feature.properties.center; // Some geojsons have this
-        // Simple bounding box center as fallback
-        let bounds = L.geoJSON(feature).getBounds();
-        return [bounds.getCenter().lng, bounds.getCenter().lat];
     }
 
     function updateMap() {
@@ -257,91 +215,103 @@
         const dataType = Array.from(dataTypeRadios).find(r => r.checked).value;
         currentYearDisplay.innerText = year;
 
+        // Create a fast lookup for country conflict status
+        const conflictLookup = {};
+        countryData.forEach(d => {
+            if (d.Year === year) {
+                conflictLookup[d.Country] = d[dataType];
+            }
+        });
+
         if (choroplethLayer) map.removeLayer(choroplethLayer);
         choroplethLayer = L.geoJson(geoJsonData, {
-            style: style,
+            style: (f) => style(f, conflictLookup),
             onEachFeature: (feature, layer) => {
-                const record = countryData.find(d => d.Country === feature.properties.name && d.Year === year);
-                const val = record ? record[dataType] : 0;
+                const val = conflictLookup[feature.properties.name] || 0;
                 layer.bindTooltip(`<b>${feature.properties.name}</b><br>${dataType}: ${val}`);
             }
         }).addTo(map);
 
-        updateSchoolVisualization(year, dataType);
+        updateSchoolVisualization(conflictLookup, dataType);
         updateLegend(dataType);
     }
 
-    function updateSchoolVisualization(year, dataType) {
+    function updateSchoolVisualization(conflictLookup, dataType) {
         schoolSummaryLayer.clearLayers();
         schoolCluster.clearLayers();
         map.removeLayer(schoolSummaryLayer);
         map.removeLayer(schoolCluster);
 
-        if (!showSchoolsCheck.checked) return;
-
         const zoom = map.getZoom();
+        const showVulnerable = showVulnerableCheck.checked;
+        const showRegular = showRegularCheck.checked;
+
+        if (!showVulnerable && !showRegular) return;
 
         if (zoom < 6) {
-            // Show aggregate country markers
+            // Country Level Aggregation
             schoolStats.forEach(stat => {
-                const record = countryData.find(d => d.Country === stat.country && d.Year === year);
-                const conflictVal = record ? record[dataType] : 0;
+                const conflictVal = conflictLookup[stat.country] || 0;
                 const isHotspot = conflictVal > (dataType === 'Events' ? 50 : 100);
+
+                if (isHotspot && !showVulnerable) return;
+                if (!isHotspot && !showRegular) return;
 
                 const icon = L.divIcon({
                     className: `school-summary-icon ${isHotspot ? 'hotspot' : ''}`,
                     html: stat.count > 1000 ? Math.round(stat.count/1000)+'k' : stat.count,
-                    iconSize: [30, 30],
-                    iconAnchor: [15, 15]
+                    iconSize: [26, 26],
+                    iconAnchor: [13, 13]
                 });
 
-                const marker = L.marker([stat.lat, stat.lon], { icon: icon });
-                marker.bindPopup(`
-                    <b>${stat.country}</b><br>
-                    Total Schools: ${stat.count.toLocaleString()}<br>
-                    ${dataType} in ${year}: ${conflictVal}<br>
-                    <span style="color:${isHotspot ? 'red' : 'green'}">${isHotspot ? '⚠️ HIGH CONFLICT ZONE' : 'Relatively Stable'}</span>
-                `);
-                marker.addTo(schoolSummaryLayer);
+                L.marker([stat.lat, stat.lon], { icon: icon })
+                    .bindPopup(`<b>${stat.country}</b><br>Total Schools: ${stat.count.toLocaleString()}<br>Conflict Intensity: ${conflictVal}`)
+                    .addTo(schoolSummaryLayer);
             });
             schoolSummaryLayer.addTo(map);
         } else {
-            // Show individual markers (clustered)
+            // Individual Schools (using CircleMarkers for performance)
             schoolData.forEach(school => {
-                const record = countryData.find(d => d.Country === school.country && d.Year === year);
-                const isHotspot = record && record[dataType] > (dataType === 'Events' ? 100 : 200);
-                
-                const marker = L.marker([school.latitude, school.longitude], { 
-                    icon: isHotspot ? hotspotSchoolIcon : schoolIcon 
+                const conflictVal = conflictLookup[school.country] || 0;
+                const isHotspot = conflictVal > (dataType === 'Events' ? 100 : 200);
+
+                if (isHotspot && !showVulnerable) return;
+                if (!isHotspot && !showRegular) return;
+
+                const marker = L.circleMarker([school.latitude, school.longitude], {
+                    radius: isHotspot ? 5 : 3,
+                    fillColor: isHotspot ? "#e74c3c" : "#3498db",
+                    color: "white",
+                    weight: 1,
+                    opacity: 1,
+                    fillOpacity: 0.8
                 });
-                marker.bindPopup(`<b>${school.name || 'School'}</b><br>Country: ${school.country}<br>Status: ${isHotspot ? 'In Conflict Zone' : 'Normal'}`);
+
+                marker.bindPopup(`<b>${school.name || 'School'}</b><br>Country: ${school.country || 'Unknown'}<br>Status: ${isHotspot ? 'Vulnerable Area' : 'Stable'}`);
                 schoolCluster.addLayer(marker);
             });
             schoolCluster.addTo(map);
         }
     }
 
-    map.on('zoomend', () => {
-        const year = parseInt(yearSlider.value);
-        const dataType = Array.from(dataTypeRadios).find(r => r.checked).value;
-        updateSchoolVisualization(year, dataType);
-    });
+    map.on('zoomend', updateMap);
+    yearSlider.oninput = updateMap;
+    dataTypeRadios.forEach(r => r.onchange = updateMap);
+    showVulnerableCheck.onchange = updateMap;
+    showRegularCheck.onchange = updateMap;
+    showLabelsCheck.onchange = addLabels;
 
     function updateLegend(type) {
         let grades = type === 'Events' ? [0, 10, 50, 100, 500, 1000, 5000] : [0, 10, 100, 500, 1000, 5000, 10000];
-        let html = `<h4>${type}</h4>`;
+        let html = `<h4>Intensity (${type})</h4>`;
         for (let i = 0; i < grades.length; i++) {
             html += `<i style="background:${getColor(grades[i] + 1, type)}"></i> ${grades[i]}${grades[i+1] ? '&ndash;'+grades[i+1]+'<br>' : '+'}`;
         }
-        html += `<hr><i style="background:white; border:2px solid #3498db; border-radius:50%; width:14px; height:14px;"></i> Schools (Stable)<br>`;
-        html += `<i style="background:white; border:2px solid #e74c3c; border-radius:50%; width:14px; height:14px;"></i> Schools (Conflict)`;
+        html += `<hr><b>Schools</b><br>`;
+        html += `<i style="background:#e74c3c; border-radius:50%; border:1px solid white;"></i> Vulnerable<br>`;
+        html += `<i style="background:#3498db; border-radius:50%; border:1px solid white;"></i> Regular`;
         legendDiv.innerHTML = html;
     }
-
-    yearSlider.oninput = updateMap;
-    dataTypeRadios.forEach(r => r.onchange = updateMap);
-    showSchoolsCheck.onchange = updateMap;
-    showLabelsCheck.onchange = addLabels;
 
     playButton.onclick = () => { isPlaying ? pause() : play(); };
     function play() {
@@ -350,7 +320,7 @@
             let nextYear = parseInt(yearSlider.value) + 1;
             if (nextYear > 2024) nextYear = 1997;
             yearSlider.value = nextYear; updateMap();
-        }, 800);
+        }, 1000);
     }
     function pause() { isPlaying = false; playButton.innerText = "Play"; clearInterval(animationTimer); }
 </script>
