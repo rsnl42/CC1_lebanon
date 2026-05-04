@@ -10,7 +10,8 @@ OUTPUT_HTML = "conflict_edu_analysis.html"
 
 # Key Indicators
 # Gross enrolment ratio is more dense and provides better overlap
-EDU_INDICATOR = "Gross enrolment ratio, primary, both sexes (%)"
+EDU_INDICATOR_1 = "Gross enrolment ratio, primary, both sexes (%)"
+EDU_INDICATOR_2 = "Survival rate to the last grade of primary education, both sexes (%)"
 
 def cross_analyze():
     if not os.path.exists(EDU_FILE):
@@ -58,15 +59,29 @@ def cross_analyze():
     for country in sorted(countries):
         country_data = merged[merged["COUNTRY_NAME"] == country].sort_values("YEAR")
         
-        # Education Line (might have NaNs, Plotly will handle gaps or we can connect them)
+        # Education Line 1: Gross Enrolment
         fig.add_trace(
             go.Scatter(
                 x=country_data["YEAR"], 
-                y=country_data[EDU_INDICATOR], 
+                y=country_data[EDU_INDICATOR_1], 
                 name="Gross Enrolment Ratio (%)", 
                 mode='lines+markers',
                 line=dict(width=3, color='royalblue'),
-                connectgaps=True, # Connect gaps in education data
+                connectgaps=True,
+                visible=False
+            ),
+            secondary_y=False,
+        )
+
+        # Education Line 2: Survival Rate
+        fig.add_trace(
+            go.Scatter(
+                x=country_data["YEAR"], 
+                y=country_data[EDU_INDICATOR_2], 
+                name="Survival Rate (%)", 
+                mode='lines+markers',
+                line=dict(width=3, color='forestgreen', dash='dot'),
+                connectgaps=True,
                 visible=False
             ),
             secondary_y=False,
@@ -98,8 +113,8 @@ def cross_analyze():
             secondary_y=True,
         )
         
-        country_traces[country] = [trace_idx, trace_idx + 1, trace_idx + 2]
-        trace_idx += 3
+        country_traces[country] = [trace_idx, trace_idx + 1, trace_idx + 2, trace_idx + 3]
+        trace_idx += 4
 
     # Create dropdown buttons
     buttons = []
@@ -113,7 +128,7 @@ def cross_analyze():
             label=country,
             method="update",
             args=[{"visible": visibility},
-                  {"title": f"Conflict Impact in {country}: Education Survival vs Conflict Events"}]
+                  {"title": f"Conflict vs Education in {country}"}]
         ))
 
     # Set the first country as visible by default
@@ -133,7 +148,7 @@ def cross_analyze():
             y=1.15,
             yanchor="top"
         )],
-        title_text=f"Conflict Impact in {first_country}: Education Survival vs Conflict Events",
+        title_text=f"Conflict vs Education in {first_country}",
         xaxis=dict(title="Year", tickmode='linear', dtick=1),
         template="plotly_white",
         hovermode="x unified",
@@ -141,7 +156,7 @@ def cross_analyze():
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
     )
 
-    fig.update_yaxes(title_text="Edu Survival Rate (%)", secondary_y=False, range=[0, 110])
+    fig.update_yaxes(title_text="Education Metrics (%)", secondary_y=False, range=[0, 150])
     fig.update_yaxes(title_text="Conflict Metrics (Count)", secondary_y=True)
 
     print(f"Saving to {OUTPUT_HTML}...")
