@@ -26,7 +26,8 @@ def create_oos_percentage_analysis():
         return
 
     print("Loading Education Data...")
-    df = pd.read_csv(EDU_FILE)
+    df_raw = pd.read_csv(EDU_FILE)
+    df = df_raw.copy() # Avoid fragmentation warnings
     
     # Pre-calculate combined populations
     df["Total_Pop_Both"] = df[INDICATORS["Pop_P_Both"]].fillna(0) + df[INDICATORS["Pop_S_Both"]].fillna(0)
@@ -38,13 +39,13 @@ def create_oos_percentage_analysis():
     df.loc[mask_both, "Total_Pop_Both"] = pd.NA
     
     # Calculate Percentages
-    # Rate (%) = (OOS Number / Total Pop) * 100
     df["OOS_Rate_Both"] = (df[INDICATORS["OOS_PS_Both"]] / df["Total_Pop_Both"]) * 100
     df["OOS_Rate_Female"] = (df[INDICATORS["OOS_PS_Female"]] / df["Total_Pop_Female"]) * 100
     df["OOS_Rate_Male"] = (df[INDICATORS["OOS_PS_Male"]] / df["Total_Pop_Male"]) * 100
 
-    relevant_cols = ["COUNTRY_NAME", "YEAR", "OOS_Rate_Both", "OOS_Rate_Female", "OOS_Rate_Male", INDICATORS["OOS_PS_Both"]]
-    df_subset = df[relevant_cols].dropna(subset=["OOS_Rate_Both"])
+    relevant_cols = ["COUNTRY_NAME", "YEAR", "OOS_Rate_Both", "OOS_Rate_Female", "OOS_Rate_Male", INDICATORS["OOS_PS_Both"], "Total_Pop_Both"]
+    # Relaxed filter: keep any row that has either OOS Rate OR Total Pop data
+    df_subset = df[relevant_cols].dropna(how='all', subset=["OOS_Rate_Both", "Total_Pop_Both"])
     
     countries = sorted(df_subset["COUNTRY_NAME"].unique())
     print(f"Found data for {len(countries)} countries.")
@@ -57,7 +58,17 @@ def create_oos_percentage_analysis():
     for country in countries:
         country_data = df_subset[df_subset["COUNTRY_NAME"] == country].sort_values("YEAR")
         
-        # 1. OOS Rate (%) - Both (Main Line)
+        # 1. Total Pop (Area on Secondary Y)
+        fig.add_trace(go.Scatter(
+            x=country_data["YEAR"], y=country_data["Total_Pop_Both"],
+            name="Total School-Age Pop (P+S)", mode='lines',
+            line=dict(width=0.5, color='rgba(200, 200, 200, 0.4)'),
+            fill='toself', fillcolor='rgba(200, 200, 200, 0.15)',
+            visible=False,
+            hoverinfo='skip' # Don't clutter hover
+        ), secondary_y=True)
+
+        # 2. OOS Rate (%) - Both (Main Line)
         fig.add_trace(go.Scatter(
             x=country_data["YEAR"], y=country_data["OOS_Rate_Both"],
             name="Out-of-School Rate (%)", mode='lines+markers',
@@ -65,7 +76,7 @@ def create_oos_percentage_analysis():
             visible=False
         ), secondary_y=False)
 
-        # 2. OOS Rate (%) - Female
+        # 3. OOS Rate (%) - Female
         fig.add_trace(go.Scatter(
             x=country_data["YEAR"], y=country_data["OOS_Rate_Female"],
             name="Female OOS Rate (%)", mode='lines+markers',
@@ -73,7 +84,7 @@ def create_oos_percentage_analysis():
             visible=False
         ), secondary_y=False)
 
-        # 3. OOS Rate (%) - Male
+        # 4. OOS Rate (%) - Male
         fig.add_trace(go.Scatter(
             x=country_data["YEAR"], y=country_data["OOS_Rate_Male"],
             name="Male OOS Rate (%)", mode='lines+markers',
@@ -81,18 +92,17 @@ def create_oos_percentage_analysis():
             visible=False
         ), secondary_y=False)
 
-        # 4. Total OOS Count (Bar for context)
+        # 5. Total OOS Count (Bar for context on Secondary Y)
         fig.add_trace(go.Bar(
             x=country_data["YEAR"], y=country_data[INDICATORS["OOS_PS_Both"]],
             name="Total OOS Count",
-            marker_color='rgba(200, 200, 200, 0.4)',
+            marker_color='rgba(150, 150, 150, 0.3)',
             visible=False
         ), secondary_y=True)
 
-        country_traces[country] = [trace_idx, trace_idx + 1, trace_idx + 2, trace_idx + 3]
-        trace_idx += 4
+        country_traces[country] = list(range(trace_idx, trace_idx + 5))
+        trace_idx += 5
 
-    # Dropdown
     buttons = []
     for country, indices in country_traces.items():
         visibility = [False] * len(fig.data)
@@ -103,7 +113,7 @@ def create_oos_percentage_analysis():
             label=country,
             method="update",
             args=[{"visible": visibility},
-                  {"title": f"Out-of-School Rate (%): {country}"}]
+                  {"title": f"Out-of-School Analysis: {country}"}]
         ))
 
     if countries:
@@ -115,10 +125,10 @@ def create_oos_percentage_analysis():
             active=0, buttons=buttons, direction="down",
             x=0.1, xanchor="left", y=1.15, yanchor="top"
         )],
-        title_text=f"Out-of-School Rate (%): {countries[0] if countries else 'N/A'}",
+        title_text=f"Out-of-School Analysis: {countries[0] if countries else 'N/A'}",
         xaxis=dict(title="Year", tickmode='linear', dtick=1),
-        yaxis=dict(title="Out-of-School Rate (%)", range=[0, 100]),
-        yaxis2=dict(title="Absolute OOS Count", overlaying='y', side='right', showgrid=False),
+        yaxis=dict(title="Out-of-School Rate (%)", range=[0, 105]),
+        yaxis2=dict(title="Absolute Counts (Population & OOS)", overlaying='y', side='right', showgrid=False),
         template="plotly_white",
         hovermode="x unified",
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
