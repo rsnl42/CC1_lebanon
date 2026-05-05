@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conflict & Education Timeline Map</title>
+    <title>Conflict & Education Integrated Timeline</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <style>
-        body { margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #fff; }
-        #map { height: 100vh; width: 100%; }
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #F7F4EF; color: #1A1A2E; }
+        #map { height: 100vh; width: 100%; background: #F7F4EF; }
         
         #loading-overlay {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(247, 244, 239, 0.95);
             display: flex; flex-direction: column; justify-content: center; align-items: center;
             z-index: 2000;
         }
         .spinner {
-            border: 6px solid #f3f3f3; border-top: 6px solid #e74c3c;
+            border: 6px solid #F4D7B3; border-top: 6px solid #C0392B;
             border-radius: 50%; width: 40px; height: 40px;
             animation: spin 1s linear infinite;
         }
@@ -24,48 +24,48 @@
 
         .control-panel {
             position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
-            z-index: 1000; background: rgba(255, 255, 255, 0.95); padding: 12px; border-radius: 8px;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.2); width: 95%; max-width: 800px;
+            z-index: 1000; background: rgba(255, 255, 255, 0.98); padding: 15px; border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15); width: 95%; max-width: 800px;
+            border: 1px solid rgba(0,0,0,0.05);
         }
         .timeline-controls { display: flex; align-items: center; width: 100%; gap: 15px; }
-        #year-slider { flex-grow: 1; cursor: pointer; }
-        .data-toggle { margin-top: 8px; display: flex; justify-content: center; gap: 12px; font-weight: bold; align-items: center; font-size: 0.85em; }
+        #year-slider { flex-grow: 1; cursor: pointer; accent-color: #1CABE2; }
+        .data-toggle { margin-top: 12px; display: flex; justify-content: center; gap: 15px; font-weight: 600; align-items: center; font-size: 0.85em; color: #6B7280; }
         
         .info-box {
             position: absolute; top: 15px; left: 15px; z-index: 1000;
-            background: white; padding: 10px; border-radius: 4px; border-left: 4px solid #e74c3c;
-            box-shadow: 0 1px 5px rgba(0,0,0,0.1); max-width: 250px;
+            background: white; padding: 12px; border-radius: 8px; border-left: 4px solid #C0392B;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-width: 260px;
         }
         
         .legend {
-            position: absolute; bottom: 120px; right: 15px; z-index: 1000;
-            background: white; padding: 10px; border-radius: 4px;
-            box-shadow: 0 1px 5px rgba(0,0,0,0.1); line-height: 1.3; font-size: 0.75em;
+            position: absolute; bottom: 130px; right: 15px; z-index: 1000;
+            background: white; padding: 12px; border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1); line-height: 1.4; font-size: 0.75em;
+            color: #1A1A2E;
         }
-        .legend i { width: 12px; height: 12px; float: left; margin-right: 6px; opacity: 0.8; }
+        .legend i { width: 14px; height: 14px; float: left; margin-right: 8px; opacity: 0.9; border-radius: 2px; }
         
         #play-button { 
-            padding: 5px 12px; cursor: pointer; background: #3498db; 
-            color: white; border: none; border-radius: 4px; font-weight: bold; min-width: 60px;
+            padding: 8px 16px; cursor: pointer; background: #1A1A2E; 
+            color: white; border: none; border-radius: 6px; font-weight: 600; min-width: 70px;
+            transition: background 0.2s;
         }
-        #current-year { font-size: 1.2em; font-weight: bold; min-width: 50px; text-align: center; }
+        #play-button:hover { background: #E83F6F; }
+        #current-year { font-size: 1.4em; font-weight: 700; min-width: 60px; text-align: center; color: #1A1A2E; }
 
         .aggregate-icon {
-            background: #fff; border: 2px solid #333; border-radius: 50%;
+            background: #fff; border: 2px solid #1A1A2E; border-radius: 50%;
             text-align: center; line-height: 20px; font-weight: bold; font-size: 9px;
+            color: #1A1A2E;
         }
-        .aggregate-icon.vulnerable { border-color: #e74c3c; color: #e74c3c; box-shadow: 0 0 8px rgba(231, 76, 60, 0.4); }
-        .aggregate-icon.regular { border-color: #3498db; color: #3498db; }
+        .aggregate-icon.vulnerable { border-color: #7B0000; color: #7B0000; box-shadow: 0 0 8px rgba(123, 0, 0, 0.4); }
+        .aggregate-icon.regular { border-color: #1CABE2; color: #1CABE2; }
 
         .leaflet-tooltip-custom {
-            background: rgba(255, 255, 255, 0.95);
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            padding: 8px;
-            font-size: 11px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            max-width: 200px;
-            white-space: normal;
+            background: white; border: none; border-radius: 8px; padding: 12px;
+            font-size: 11px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            max-width: 220px; color: #1A1A2E;
         }
     </style>
 </head>
@@ -73,18 +73,18 @@
 
 <div id="loading-overlay">
     <div class="spinner"></div>
-    <h2 style="margin-top: 15px; font-size: 1.2em;">Processing Conflict & Education Data...</h2>
-    <p id="loading-status" style="font-size: 0.9em;">Calculating school vulnerability statuses</p>
+    <h2 style="margin-top: 20px; font-size: 1.3em; color: #1A1A2E;">Processing Conflict & Education Data...</h2>
+    <p id="loading-status" style="font-size: 0.9em; color: #6B7280;">Calculating school vulnerability statuses</p>
 </div>
 
 <div id="map"></div>
 
 <div class="info-box">
-    <h4 style="margin: 0 0 4px 0;">Conflict & Education</h4>
-    <p style="margin: 0; font-size: 0.75em; color: #444;">
-        <span style="color:#e74c3c; font-weight:bold;">●</span> Vulnerable Schools (<50km event)<br>
-        <span style="color:#3498db; font-weight:bold;">●</span> Regular Schools (Safe)<br>
-        <span style="color:#000000; font-weight:bold;">●</span> Conflict Sites (Proportional)
+    <h4 style="margin: 0 0 6px 0; color: #1A1A2E;">Conflict & Education</h4>
+    <p style="margin: 0; font-size: 0.8em; color: #6B7280; line-height: 1.5;">
+        <span style="color:#7B0000; font-weight:bold;">●</span> Vulnerable Schools (<50km event)<br>
+        <span style="color:#1CABE2; font-weight:bold;">●</span> Regular Schools (Safe)<br>
+        <span style="color:#1A1A2E; font-weight:bold;">●</span> Conflict Sites (Proportional)
     </p>
 </div>
 
@@ -97,11 +97,13 @@
         <input type="range" id="year-slider" min="1997" max="2024" value="2000" step="1">
     </div>
     <div class="data-toggle">
-        <label><input type="radio" name="dataType" value="Events" checked> Conflict Events</label>
+        <label><input type="radio" name="dataType" value="Events" checked> Events</label>
+        <label><input type="radio" name="dataType" value="Fatalities"> Fatalities</label>
         <label><input type="radio" name="dataType" value="OOS_Rate"> OOS Rate (%)</label>
         <div style="border-left: 1px solid #ccc; height: 12px; margin: 0 10px;"></div>
-        <label title="Schools within 50km of a current or historical conflict"><input type="checkbox" id="show-vulnerable" checked> Vulnerable Schools</label>
-        <label title="Schools with no conflict events within 50km"><input type="checkbox" id="show-regular"> Regular Schools</label>
+        <label title="Schools within 50km of conflict"><input type="checkbox" id="show-vulnerable" checked> Vulnerable Schools</label>
+        <label title="Schools with no nearby conflict"><input type="checkbox" id="show-regular"> Regular Schools</label>
+        <label title="Show individual conflict sites"><input type="checkbox" id="show-conflict-pins" checked> Conflict Pins</label>
     </div>
 </div>
 
@@ -111,8 +113,8 @@
 <script>
     const map = L.map('map', { preferCanvas: true, zoomSnap: 0.5 }).setView([15, 20], 3);
     
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap'
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '© OpenStreetMap contributors © CARTO'
     }).addTo(map);
 
     let countryData, conflictData, schoolData, schoolStats, geoJsonData;
@@ -126,6 +128,7 @@
     const dataTypeRadios = document.getElementsByName('dataType');
     const showVulnerableCheck = document.getElementById('show-vulnerable');
     const showRegularCheck = document.getElementById('show-regular');
+    const showConflictCheck = document.getElementById('show-conflict-pins');
     const legendDiv = document.getElementById('map-legend');
 
     let isPlaying = false;
@@ -134,8 +137,10 @@
     function getColor(d, type) {
         if (type === 'Events') {
             return d > 1000 ? '#7B0000' : d > 500 ? '#C0392B' : d > 100 ? '#E07B3B' : d > 10 ? '#F6AA61' : d > 0 ? '#F4D7B3' : '#F7F4EF';
+        } else if (type === 'Fatalities') {
+            return d > 5000 ? '#7B0000' : d > 1000 ? '#C0392B' : d > 500 ? '#E07B3B' : d > 100 ? '#F6AA61' : d > 0 ? '#F4D7B3' : '#F7F4EF';
         } else {
-            // OOS Rate %: 0-10 (Min), 10-20 (Stress), 20-30 (Crisis), 30-50 (Emergency), 50+ (Catastrophe)
+            // OOS Rate %
             return d > 50 ? '#7B0000' : d > 30 ? '#C0392B' : d > 20 ? '#E07B3B' : d > 10 ? '#F6AA61' : d > 0 ? '#F4D7B3' : '#F7F4EF';
         }
     }
@@ -182,7 +187,6 @@
         const lookup = {};
         countryData.forEach(d => { if (d.Year === year) lookup[d.Country] = d[dataType]; });
 
-        // 1. Background Shading
         if (choroplethLayer) map.removeLayer(choroplethLayer);
         choroplethLayer = L.geoJson(geoJsonData, {
             style: (f) => ({
@@ -196,7 +200,18 @@
             }
         }).addTo(map);
 
-        // 2. Schools
+        conflictLayer.clearLayers();
+        if (showConflictCheck.checked && (dataType === 'Events' || dataType === 'Fatalities')) {
+            conflictData.forEach(d => {
+                if (d.Year === year && d[dataType] > 0) {
+                    const radius = getConflictRadius(d[dataType]);
+                    L.circleMarker([d.Latitude, d.Longitude], {
+                        radius: radius, fillColor: '#1A1A2E', color: '#fff', weight: 1, fillOpacity: 0.8
+                    }).bindTooltip(`<b>Conflict Site</b><br>${d.Country}<br>${dataType}: ${d[dataType]}`, { sticky: true }).addTo(conflictLayer);
+                }
+            });
+        }
+
         schoolLayer.clearLayers();
         const showVuln = showVulnerableCheck.checked;
         const showReg = showRegularCheck.checked;
@@ -204,15 +219,13 @@
         if (showVuln || showReg) {
             if (zoom < 5) {
                 schoolStats.forEach(s => {
-                    const conflictVal = lookup[s.country] || 0;
-                    const isCountryImpacted = conflictVal > 0;
-                    
-                    if (isCountryImpacted && !showVuln) return;
-                    if (!isCountryImpacted && !showReg) return;
-                    
+                    const impactVal = lookup[s.country] || 0;
+                    const isImpacted = impactVal > 0;
+                    if (isImpacted && !showVuln) return;
+                    if (!isImpacted && !showReg) return;
                     L.marker([s.lat, s.lon], {
                         icon: L.divIcon({ 
-                            className: `aggregate-icon ${isCountryImpacted ? 'vulnerable' : 'regular'}`, 
+                            className: `aggregate-icon ${isImpacted ? 'vulnerable' : 'regular'}`, 
                             html: s.count > 1000 ? Math.round(s.count/1000)+'k' : s.count, 
                             iconSize: [26, 26] 
                         })
@@ -221,13 +234,10 @@
             } else {
                 schoolData.forEach(s => {
                     const isVuln = year >= s.vulnerable_year;
-
                     if (isVuln && !showVuln) return;
                     if (!isVuln && !showReg) return;
-
                     L.circleMarker([s.latitude, s.longitude], {
-                        radius: isVuln ? 6 : 3,
-                        fillColor: isVuln ? '#7B0000' : '#1CABE2',
+                        radius: isVuln ? 6 : 3, fillColor: isVuln ? '#7B0000' : '#1CABE2',
                         color: '#fff', weight: 1, fillOpacity: isVuln ? 0.9 : 0.7
                     }).bindTooltip(`
                         <div class="leaflet-tooltip-custom">
@@ -240,29 +250,27 @@
                 });
             }
         }
-
         updateLegend(dataType);
     }
 
     function updateLegend(type) {
-        let grades = type === 'Events' ? [0, 10, 100, 500, 1000] : [0, 10, 20, 30, 50];
+        let grades = type === 'OOS_Rate' ? [0, 10, 20, 30, 50] : (type === 'Fatalities' ? [0, 100, 500, 1000, 5000] : [0, 10, 100, 500, 1000]);
         let labels = ['Minimal', 'Stress', 'Crisis', 'Emergency', 'Catastrophe'];
-        let html = `<b>${type === 'Events' ? 'Conflict Intensity' : 'OOS Rate (%)'}</b><br>`;
-        
+        let html = `<b>${type.replace('_', ' ')} Intensity</b><br>`;
         grades.forEach((g, i) => {
             html += `<i style="background:${getColor(g + 1, type)}"></i> ${labels[i]}<br>`;
         });
-        
-        html += `<hr style="margin:8px 0; border:0; border-top:1px solid #eee;"><b>Schools</b><br>`;
-        html += `<i style="background:#7B0000; border-radius:50%; border:1px solid white;"></i> Vulnerable<br>`;
-        html += `<i style="background:#1CABE2; border-radius:50%; border:1px solid white;"></i> Regular`;
+        html += `<hr style="margin:8px 0; border:0; border-top:1px solid #eee;"><b>Markers</b><br>`;
+        html += `<i style="background:#1A1A2E; border-radius:50%; border:1px solid white;"></i> Conflict Site<br>`;
+        html += `<i style="background:#7B0000; border-radius:50%; border:1px solid white;"></i> Vulnerable School<br>`;
+        html += `<i style="background:#1CABE2; border-radius:50%; border:1px solid white;"></i> Regular School`;
         legendDiv.innerHTML = html;
     }
 
-    map.on('zoomend', updateMap);
     yearSlider.oninput = updateMap;
     dataTypeRadios.forEach(r => r.onchange = updateMap);
-    [showVulnerableCheck, showRegularCheck].forEach(c => c.onchange = updateMap);
+    [showVulnerableCheck, showRegularCheck, showConflictCheck].forEach(c => c.onchange = updateMap);
+    map.on('zoomend', updateMap);
 
     playButton.onclick = () => {
         if (isPlaying) {
@@ -277,6 +285,5 @@
         }
     };
 </script>
-
 </body>
 </html>
