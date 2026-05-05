@@ -18,13 +18,13 @@ INDICATORS = {
 
 # Colors
 PALETTE = {
+    "Male": "#1CABE2",
+    "Female": "#E83F6F",
     "Both": "#6A1E74",
     "Background": "#F7F4EF",
     "Text": "#1A1A2E",
     "Grey": "#6B7280",
-    "OOS": "#C0392B", # Red
-    "Primary": "#0058A5",
-    "Secondary": "#00833D"
+    "OOS": "#C0392B"
 }
 
 def create_comprehensive_oos():
@@ -35,16 +35,21 @@ def create_comprehensive_oos():
     print("Loading Education Data...")
     df = pd.read_csv(EDU_FILE)
     
-    # Calculate Combined Metrics
+    # Pre-calculate Combined Metrics
     df["Total_Pop"] = df[INDICATORS["Pop_P"]].fillna(0) + df[INDICATORS["Pop_S"]].fillna(0)
-    # Filter out rows where population is not known
-    mask_pop = df[INDICATORS["Pop_P"]].isna() & df[INDICATORS["Pop_S"]].isna()
-    df.loc[mask_pop, "Total_Pop"] = pd.NA
+    df["Total_Pop_F"] = df["School age population, primary education, female (number)"].fillna(0) + df["School age population, secondary education, female (number)"].fillna(0)
+    df["Total_Pop_M"] = df["School age population, primary education, male (number)"].fillna(0) + df["School age population, secondary education, male (number)"].fillna(0)
+    
+    # OOS Counts (using existing columns or calculating if needed - assuming we use the provided ones)
+    oos_f_col = "Out-of-school children, adolescents and youth of primary and secondary school age, female (number)"
+    oos_m_col = "Out-of-school children, adolescents and youth of primary and secondary school age, male (number)"
     
     df["OOS_Rate"] = (df[INDICATORS["OOS_PS"]] / df["Total_Pop"]) * 100
+    df["OOS_Rate_F"] = (df[oos_f_col] / df["Total_Pop_F"]) * 100
+    df["OOS_Rate_M"] = (df[oos_m_col] / df["Total_Pop_M"]) * 100
 
     # Subset to countries with at least some data
-    relevant_cols = ["COUNTRY_NAME", "YEAR", "Total_Pop", INDICATORS["OOS_PS"], "OOS_Rate"]
+    relevant_cols = ["COUNTRY_NAME", "YEAR", "Total_Pop", INDICATORS["OOS_PS"], oos_f_col, oos_m_col, "OOS_Rate", "OOS_Rate_F", "OOS_Rate_M"]
     df_subset = df[relevant_cols].dropna(subset=["Total_Pop", INDICATORS["OOS_PS"]], how='all')
     
     countries = sorted(df_subset["COUNTRY_NAME"].unique())
@@ -61,32 +66,49 @@ def create_comprehensive_oos():
         # 1. Total Population (Area)
         fig.add_trace(go.Scatter(
             x=c_data["YEAR"], y=c_data["Total_Pop"],
-            name="Total School-Age Pop", mode='lines',
+            name="Total Pop", mode='lines',
             line=dict(width=0.5, color=PALETTE["Grey"]),
-            fill='toself', fillcolor='rgba(107, 114, 128, 0.1)',
+            fill='toself', fillcolor='rgba(107, 114, 128, 0.05)',
             visible=False, hoverinfo='skip'
         ), secondary_y=False)
 
-        # 2. Absolute OOS Count (Bars)
+        # 2. OOS Bars (Stacked or Grouped? Let's do Grouped for gender)
         fig.add_trace(go.Bar(
-            x=c_data["YEAR"], y=c_data[INDICATORS["OOS_PS"]],
-            name="Out-of-School Children (Count)",
-            marker_color=PALETTE["OOS"],
-            opacity=0.6,
-            visible=False
+            x=c_data["YEAR"], y=c_data[oos_f_col],
+            name="Female OOS (Count)", marker_color=PALETTE["Female"],
+            opacity=0.4, visible=False
         ), secondary_y=False)
 
-        # 3. OOS Rate (%) (Line)
+        fig.add_trace(go.Bar(
+            x=c_data["YEAR"], y=c_data[oos_m_col],
+            name="Male OOS (Count)", marker_color=PALETTE["Male"],
+            opacity=0.4, visible=False
+        ), secondary_y=False)
+
+        # 3. OOS Rates (Lines)
         fig.add_trace(go.Scatter(
             x=c_data["YEAR"], y=c_data["OOS_Rate"],
-            name="Out-of-School Rate (%)",
-            mode='lines+markers',
+            name="Total OOS Rate (%)", mode='lines+markers',
             line=dict(width=4, color=PALETTE["Both"]),
             visible=False
         ), secondary_y=True)
 
-        country_traces[country] = [trace_idx, trace_idx + 1, trace_idx + 2]
-        trace_idx += 3
+        fig.add_trace(go.Scatter(
+            x=c_data["YEAR"], y=c_data["OOS_Rate_F"],
+            name="Female OOS Rate (%)", mode='lines+markers',
+            line=dict(width=2, color=PALETTE["Female"]),
+            visible=False
+        ), secondary_y=True)
+
+        fig.add_trace(go.Scatter(
+            x=c_data["YEAR"], y=c_data["OOS_Rate_M"],
+            name="Male OOS Rate (%)", mode='lines+markers',
+            line=dict(width=2, color=PALETTE["Male"], dash='dash'),
+            visible=False
+        ), secondary_y=True)
+
+        country_traces[country] = list(range(trace_idx, trace_idx + 6))
+        trace_idx += 6
 
     # Dropdown
     buttons = []
@@ -101,20 +123,21 @@ def create_comprehensive_oos():
     fig.update_layout(
         updatemenus=[dict(
             active=0, buttons=buttons, direction="down",
-            x=0.0, xanchor="left", y=1.08, yanchor="top",
+            x=0.0, xanchor="left", y=1.1, yanchor="top",
             font=dict(color=PALETTE["Text"]), bgcolor="white", bordercolor=PALETTE["Grey"]
         )],
         paper_bgcolor=PALETTE["Background"],
         plot_bgcolor=PALETTE["Background"],
         title=dict(
-            text="Comprehensive OOS Profile: Absolute Counts & Percentage",
+            text="Comprehensive OOS Profile: Gendered Trends & Scale",
             x=0.5, xanchor="center", font=dict(color=PALETTE["Text"], size=22)
         ),
-        margin=dict(t=100, b=50, l=50, r=50),
+        margin=dict(t=120, b=50, l=50, r=50),
         xaxis=dict(title="Year", tickmode='linear', dtick=1, color=PALETTE["Grey"], gridcolor='rgba(0,0,0,0.05)'),
-        yaxis=dict(title="Number of Children (Population & OOS)", color=PALETTE["Grey"], gridcolor='rgba(0,0,0,0.05)'),
+        yaxis=dict(title="Number of Children (Absolute)", color=PALETTE["Grey"], gridcolor='rgba(0,0,0,0.05)'),
         yaxis2=dict(title="Out-of-School Rate (%)", range=[0, 105], overlaying='y', side='right', showgrid=False, color=PALETTE["Both"]),
         template="plotly_white",
+        barmode='group',
         hovermode="x unified",
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1, font=dict(color=PALETTE["Text"]))
     )

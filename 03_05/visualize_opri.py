@@ -84,7 +84,7 @@ def create_visualizations():
     fig.update_layout(
         updatemenus=[dict(
             active=0, buttons=buttons, direction="down",
-            x=0.0, xanchor="left", y=1.08, yanchor="top",
+            x=0.0, xanchor="left", y=1.1, yanchor="top",
             font=dict(color=PALETTE["Text"]),
             bgcolor="white", bordercolor=PALETTE["Grey"]
         )],
@@ -95,12 +95,19 @@ def create_visualizations():
             x=0.5, xanchor="center",
             font=dict(color=PALETTE["Text"], size=22)
         ),
-        margin=dict(t=100, b=50, l=50, r=50),
+        margin=dict(t=120, b=100, l=50, r=50),
         xaxis=dict(title="Year", color=PALETTE["Grey"], gridcolor='rgba(0,0,0,0.05)'),
         yaxis=dict(title="Value (%)", color=PALETTE["Grey"], gridcolor='rgba(0,0,0,0.05)'),
         template="plotly_white",
         hovermode="x unified",
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1, font=dict(color=PALETTE["Text"]))
+        legend=dict(
+            orientation="h", 
+            yanchor="top", 
+            y=-0.2, 
+            xanchor="center", 
+            x=0.5, 
+            font=dict(color=PALETTE["Text"])
+        )
     )
 
     print(f"Saving to {OUTPUT_HTML}...")

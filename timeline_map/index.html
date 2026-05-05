@@ -97,12 +97,11 @@
         <input type="range" id="year-slider" min="1997" max="2024" value="2000" step="1">
     </div>
     <div class="data-toggle">
-        <label><input type="radio" name="dataType" value="Events" checked> Events</label>
-        <label><input type="radio" name="dataType" value="Fatalities"> Fatalities</label>
+        <label><input type="radio" name="dataType" value="Events" checked> Conflict Events</label>
+        <label><input type="radio" name="dataType" value="OOS_Rate"> OOS Rate (%)</label>
         <div style="border-left: 1px solid #ccc; height: 12px; margin: 0 10px;"></div>
         <label title="Schools within 50km of a current or historical conflict"><input type="checkbox" id="show-vulnerable" checked> Vulnerable Schools</label>
         <label title="Schools with no conflict events within 50km"><input type="checkbox" id="show-regular"> Regular Schools</label>
-        <label title="Show individual conflict sites"><input type="checkbox" id="show-conflict-pins" checked> Conflict Pins</label>
     </div>
 </div>
 
@@ -127,7 +126,6 @@
     const dataTypeRadios = document.getElementsByName('dataType');
     const showVulnerableCheck = document.getElementById('show-vulnerable');
     const showRegularCheck = document.getElementById('show-regular');
-    const showConflictCheck = document.getElementById('show-conflict-pins');
     const legendDiv = document.getElementById('map-legend');
 
     let isPlaying = false;
@@ -135,9 +133,10 @@
 
     function getColor(d, type) {
         if (type === 'Events') {
-            return d > 5000 ? '#800026' : d > 1000 ? '#BD0026' : d > 500 ? '#E31A1C' : d > 100 ? '#FC4E2A' : d > 50 ? '#FD8D3C' : d > 10 ? '#FEB24C' : d > 0 ? '#FED976' : '#FFEDA0';
+            return d > 1000 ? '#7B0000' : d > 500 ? '#C0392B' : d > 100 ? '#E07B3B' : d > 10 ? '#F6AA61' : d > 0 ? '#F4D7B3' : '#F7F4EF';
         } else {
-            return d > 10000 ? '#4a1486' : d > 5000 ? '#6a51a3' : d > 1000 ? '#807dba' : d > 500 ? '#9e9ac8' : d > 100 ? '#bcbddc' : d > 10 ? '#dadaeb' : d > 0 ? '#f2f0f7' : '#ffffff';
+            // OOS Rate %: 0-10 (Min), 10-20 (Stress), 20-30 (Crisis), 30-50 (Emergency), 50+ (Catastrophe)
+            return d > 50 ? '#7B0000' : d > 30 ? '#C0392B' : d > 20 ? '#E07B3B' : d > 10 ? '#F6AA61' : d > 0 ? '#F4D7B3' : '#F7F4EF';
         }
     }
 
@@ -148,7 +147,7 @@
 
     Promise.all([
         fetch('data/countries.geojson').then(res => res.json()),
-        fetch('data/country_yearly_conflict.csv').then(res => res.text()),
+        fetch('data/country_yearly_enriched.csv').then(res => res.text()),
         fetch('data/conflict_data.csv').then(res => res.text()),
         fetch('data/schools_vulnerability.csv').then(res => res.text()),
         fetch('data/school_stats.csv').then(res => res.text())
@@ -180,47 +179,24 @@
         const zoom = map.getZoom();
         currentYearDisplay.innerText = year;
 
-        const conflictLookup = {};
-        countryData.forEach(d => { if (d.Year === year) conflictLookup[d.Country] = d[dataType]; });
+        const lookup = {};
+        countryData.forEach(d => { if (d.Year === year) lookup[d.Country] = d[dataType]; });
 
         // 1. Background Shading
         if (choroplethLayer) map.removeLayer(choroplethLayer);
         choroplethLayer = L.geoJson(geoJsonData, {
             style: (f) => ({
-                fillColor: getColor(conflictLookup[f.properties.name] || 0, dataType),
+                fillColor: getColor(lookup[f.properties.name] || 0, dataType),
                 weight: 0.5, opacity: 1, color: '#fff', 
-                fillOpacity: zoom > 5.5 ? 0 : 0.3 
+                fillOpacity: zoom > 5.5 ? 0 : 0.4 
             }),
             onEachFeature: (feature, layer) => {
-                layer.bindTooltip(`<b>${feature.properties.name}</b><br>${dataType}: ${conflictLookup[feature.properties.name] || 0}`, { sticky: true });
+                const val = lookup[feature.properties.name] || 0;
+                layer.bindTooltip(`<b>${feature.properties.name}</b><br>${dataType}: ${val.toFixed ? val.toFixed(1) : val}`, { sticky: true });
             }
         }).addTo(map);
 
-        // 2. Conflict Pins
-        conflictLayer.clearLayers();
-        if (showConflictCheck.checked) {
-            if (zoom < 5) {
-                schoolStats.forEach(s => {
-                    const val = conflictLookup[s.country] || 0;
-                    if (val > 0) {
-                        L.marker([s.lat, s.lon], {
-                            icon: L.divIcon({ className: 'aggregate-icon', html: val, iconSize: [24, 24] })
-                        }).bindTooltip(`<b>${s.country}</b><br>Total ${dataType} (${year}): ${val}`, { sticky: true }).addTo(conflictLayer);
-                    }
-                });
-            } else {
-                conflictData.forEach(d => {
-                    if (d.Year === year && d[dataType] > 0) {
-                        const radius = getConflictRadius(d[dataType]);
-                        L.circleMarker([d.Latitude, d.Longitude], {
-                            radius: radius, fillColor: '#000', color: '#fff', weight: 1, fillOpacity: 0.8
-                        }).bindTooltip(`<b>Conflict Site</b><br>${d.Country} - ${d.Admin2}<br>${dataType}: ${d[dataType]}`, { sticky: true }).addTo(conflictLayer);
-                    }
-                });
-            }
-        }
-
-        // 3. Schools
+        // 2. Schools
         schoolLayer.clearLayers();
         const showVuln = showVulnerableCheck.checked;
         const showReg = showRegularCheck.checked;
@@ -228,19 +204,19 @@
         if (showVuln || showReg) {
             if (zoom < 5) {
                 schoolStats.forEach(s => {
-                    const conflictVal = conflictLookup[s.country] || 0;
-                    const isCountryVuln = conflictVal > 0;
+                    const conflictVal = lookup[s.country] || 0;
+                    const isCountryImpacted = conflictVal > 0;
                     
-                    if (isCountryVuln && !showVuln) return;
-                    if (!isCountryVuln && !showReg) return;
+                    if (isCountryImpacted && !showVuln) return;
+                    if (!isCountryImpacted && !showReg) return;
                     
                     L.marker([s.lat, s.lon], {
                         icon: L.divIcon({ 
-                            className: `aggregate-icon ${isCountryVuln ? 'vulnerable' : 'regular'}`, 
+                            className: `aggregate-icon ${isCountryImpacted ? 'vulnerable' : 'regular'}`, 
                             html: s.count > 1000 ? Math.round(s.count/1000)+'k' : s.count, 
                             iconSize: [26, 26] 
                         })
-                    }).bindTooltip(`<b>${s.country}</b><br>Total Schools: ${s.count}<br>Status: ${isCountryVuln ? 'Active Conflict in Country' : 'Stable'}`, { sticky: true }).addTo(schoolLayer);
+                    }).bindTooltip(`<b>${s.country}</b><br>Total Schools: ${s.count}`, { sticky: true }).addTo(schoolLayer);
                 });
             } else {
                 schoolData.forEach(s => {
@@ -251,14 +227,14 @@
 
                     L.circleMarker([s.latitude, s.longitude], {
                         radius: isVuln ? 6 : 3,
-                        fillColor: isVuln ? '#e74c3c' : '#3498db',
-                        color: '#fff', weight: 1, fillOpacity: isVuln ? 0.9 : 0.6
+                        fillColor: isVuln ? '#7B0000' : '#1CABE2',
+                        color: '#fff', weight: 1, fillOpacity: isVuln ? 0.9 : 0.7
                     }).bindTooltip(`
                         <div class="leaflet-tooltip-custom">
-                            <b>${s.name || 'Unknown School'}</b><br>
-                            Country: ${s.country}<br>
-                            Status: ${isVuln ? '<span style="color:#e74c3c; font-weight:bold;">VULNERABLE</span>' : '<span style="color:#3498db;">STABLE</span>'}<br>
-                            ${isVuln ? '<hr style="margin:4px 0;"><i>Vulnerable since: ' + s.vulnerable_year + '</i><br><b>Nearby Event:</b> ' + (s.trigger_event || 'Unknown') : '<hr style="margin:4px 0;"><i>No events within 50km as of ' + year + '</i>'}
+                            <b style="font-size:1.1em">${s.name || 'Unknown School'}</b><br>
+                            <span style="color:#6B7280">${s.country}</span><br>
+                            Status: ${isVuln ? '<span style="color:#7B0000; font-weight:bold;">VULNERABLE</span>' : '<span style="color:#1CABE2; font-weight:bold;">STABLE</span>'}<br>
+                            ${isVuln ? '<hr style="margin:6px 0; border:0; border-top:1px solid #eee;"><i>Vulnerable since: ' + s.vulnerable_year + '</i>' : ''}
                         </div>
                     `, { sticky: true, className: 'leaflet-tooltip-custom' }).addTo(schoolLayer);
                 });
@@ -269,19 +245,24 @@
     }
 
     function updateLegend(type) {
-        let grades = type === 'Events' ? [0, 50, 200, 1000, 5000] : [0, 100, 500, 2000, 10000];
-        let html = `<b>${type} Intensity</b><br>`;
-        grades.forEach(g => html += `<i style="background:${getColor(g + 1, type)}"></i> ${g}${grades[grades.indexOf(g)+1] ? '&ndash;'+grades[grades.indexOf(g)+1]+'<br>' : '+'}`);
-        html += `<hr><b>Conflict</b><br><i style="background:black; border-radius:50%; border:1px solid white;"></i> Granular Pin<br>`;
-        html += `<b>Schools</b><br><i style="background:#e74c3c; border-radius:50%; border:1px solid white;"></i> Vulnerable<br>`;
-        html += `<i style="background:#3498db; border-radius:50%; border:1px solid white;"></i> Regular`;
+        let grades = type === 'Events' ? [0, 10, 100, 500, 1000] : [0, 10, 20, 30, 50];
+        let labels = ['Minimal', 'Stress', 'Crisis', 'Emergency', 'Catastrophe'];
+        let html = `<b>${type === 'Events' ? 'Conflict Intensity' : 'OOS Rate (%)'}</b><br>`;
+        
+        grades.forEach((g, i) => {
+            html += `<i style="background:${getColor(g + 1, type)}"></i> ${labels[i]}<br>`;
+        });
+        
+        html += `<hr style="margin:8px 0; border:0; border-top:1px solid #eee;"><b>Schools</b><br>`;
+        html += `<i style="background:#7B0000; border-radius:50%; border:1px solid white;"></i> Vulnerable<br>`;
+        html += `<i style="background:#1CABE2; border-radius:50%; border:1px solid white;"></i> Regular`;
         legendDiv.innerHTML = html;
     }
 
     map.on('zoomend', updateMap);
     yearSlider.oninput = updateMap;
     dataTypeRadios.forEach(r => r.onchange = updateMap);
-    [showVulnerableCheck, showRegularCheck, showConflictCheck].forEach(c => c.onchange = updateMap);
+    [showVulnerableCheck, showRegularCheck].forEach(c => c.onchange = updateMap);
 
     playButton.onclick = () => {
         if (isPlaying) {
