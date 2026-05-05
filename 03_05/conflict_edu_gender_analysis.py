@@ -161,8 +161,7 @@ def create_gender_analysis():
         buttons.append(dict(
             label=country,
             method="update",
-            args=[{"visible": visibility},
-                  {"title": f"Gendered Conflict-Education Impact: {country}"}]
+            args=[{"visible": visibility}] # Removed title update
         ))
 
     first_country = sorted(countries)[0]
@@ -187,7 +186,7 @@ def create_gender_analysis():
         paper_bgcolor=PALETTE["Background"],
         plot_bgcolor=PALETTE["Background"],
         title=dict(
-            text=f"Gendered Conflict-Education Impact: {first_country}",
+            text="Gendered Impact of Conflict on Education Survival",
             x=0.5,
             xanchor="center",
             font=dict(color=PALETTE["Text"], size=22)

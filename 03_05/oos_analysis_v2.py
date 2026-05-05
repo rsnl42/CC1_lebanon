@@ -15,6 +15,16 @@ INDICATORS = {
     "OOS_PS_Male": "Out-of-school children, adolescents and youth of primary and secondary school age, male (number)"
 }
 
+# Colors and Styling
+PALETTE = {
+    "Male": "#1CABE2",
+    "Female": "#E83F6F",
+    "Both": "#6A1E74",
+    "Background": "#F7F4EF",
+    "Text": "#1A1A2E",
+    "Grey": "#6B7280"
+}
+
 def create_oos_analysis_v2():
     if not os.path.exists(EDU_FILE):
         print(f"Error: {EDU_FILE} not found.")
@@ -46,33 +56,36 @@ def create_oos_analysis_v2():
         # 1. Total Population (Area)
         fig.add_trace(go.Scatter(
             x=country_data["YEAR"], y=country_data["Total_Pop_PS"],
-            name="Total School-Age Pop (P+S)", mode='lines',
-            line=dict(width=0.5, color='rgba(200, 200, 200, 0.5)'),
-            fill='toself', fillcolor='rgba(200, 200, 200, 0.2)',
-            visible=False
+            name="Total School-Age Pop", mode='lines',
+            line=dict(width=0.5, color=PALETTE["Grey"]),
+            fill='toself', fillcolor='rgba(107, 114, 128, 0.1)',
+            visible=False,
+            hoverinfo='skip'
         ))
 
         # 2. Total Out-of-School (Line)
         fig.add_trace(go.Scatter(
             x=country_data["YEAR"], y=country_data[INDICATORS["OOS_PS_Both"]],
             name="Total Out-of-School", mode='lines+markers',
-            line=dict(width=3, color='black'),
+            line=dict(width=4, color=PALETTE["Both"]),
             visible=False
         ))
 
         # 3. OOS Female (Bar)
         fig.add_trace(go.Bar(
             x=country_data["YEAR"], y=country_data[INDICATORS["OOS_PS_Female"]],
-            name="OOS Female (P+S)",
-            marker_color='rgba(255, 20, 147, 0.7)', # DeepPink
+            name="Female OOS",
+            marker_color=PALETTE["Female"],
+            opacity=0.8,
             visible=False
         ))
 
         # 4. OOS Male (Bar)
         fig.add_trace(go.Bar(
             x=country_data["YEAR"], y=country_data[INDICATORS["OOS_PS_Male"]],
-            name="OOS Male (P+S)",
-            marker_color='rgba(0, 191, 255, 0.7)', # DeepSkyBlue
+            name="Male OOS",
+            marker_color=PALETTE["Male"],
+            opacity=0.8,
             visible=False
         ))
 
@@ -89,8 +102,7 @@ def create_oos_analysis_v2():
         buttons.append(dict(
             label=country,
             method="update",
-            args=[{"visible": visibility},
-                  {"title": f"School-Age Pop vs Out-of-School (P+S): {country}"}]
+            args=[{"visible": visibility}]
         ))
 
     if countries:
@@ -100,15 +112,45 @@ def create_oos_analysis_v2():
     fig.update_layout(
         updatemenus=[dict(
             active=0, buttons=buttons, direction="down",
-            x=0.1, xanchor="left", y=1.15, yanchor="top"
+            x=0.0, xanchor="left", y=1.08, yanchor="top",
+            font=dict(color=PALETTE["Text"]),
+            bgcolor="white",
+            bordercolor=PALETTE["Grey"]
         )],
-        title_text=f"School-Age Pop vs Out-of-School (P+S): {countries[0] if countries else 'N/A'}",
-        xaxis=dict(title="Year", tickmode='linear', dtick=1),
-        yaxis=dict(title="Number of Children"),
+        paper_bgcolor=PALETTE["Background"],
+        plot_bgcolor=PALETTE["Background"],
+        title=dict(
+            text="National Profiles: School-Age Population vs. Out-of-School Children",
+            x=0.5,
+            xanchor="center",
+            font=dict(color=PALETTE["Text"], size=22)
+        ),
+        margin=dict(t=100, b=50, l=50, r=50),
+        xaxis=dict(
+            title="Year", 
+            tickmode='linear', 
+            dtick=1,
+            color=PALETTE["Grey"],
+            title_font=dict(color=PALETTE["Text"]),
+            gridcolor='rgba(0,0,0,0.05)'
+        ),
+        yaxis=dict(
+            title="Number of Children",
+            color=PALETTE["Grey"],
+            title_font=dict(color=PALETTE["Text"]),
+            gridcolor='rgba(0,0,0,0.05)'
+        ),
         template="plotly_white",
         barmode='group',
         hovermode="x unified",
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
+        legend=dict(
+            orientation="h", 
+            yanchor="bottom", 
+            y=1.02, 
+            xanchor="right", 
+            x=1,
+            font=dict(color=PALETTE["Text"])
+        )
     )
 
     print(f"Saving to {OUTPUT_HTML}...")

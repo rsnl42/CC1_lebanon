@@ -124,8 +124,7 @@ def create_oos_percentage_analysis():
         buttons.append(dict(
             label=country,
             method="update",
-            args=[{"visible": visibility},
-                  {"title": f"Out-of-School Analysis: {country}"}]
+            args=[{"visible": visibility}] # Removed title update to keep it generic
         ))
 
     if countries:
@@ -143,7 +142,7 @@ def create_oos_percentage_analysis():
         paper_bgcolor=PALETTE["Background"],
         plot_bgcolor=PALETTE["Background"],
         title=dict(
-            text=f"Out-of-School Analysis: {countries[0] if countries else 'N/A'}",
+            text="Global Out-of-School Rate Analysis by Country",
             x=0.5,
             xanchor="center",
             font=dict(color=PALETTE["Text"], size=22)

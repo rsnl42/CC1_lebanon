@@ -13,6 +13,20 @@ OUTPUT_HTML = "conflict_edu_analysis.html"
 EDU_INDICATOR_1 = "Gross enrolment ratio, primary, both sexes (%)"
 EDU_INDICATOR_2 = "Survival rate to the last grade of primary education, both sexes (%)"
 
+# Colors and Styling
+PALETTE = {
+    "Male": "#1CABE2",
+    "Female": "#E83F6F",
+    "Both": "#6A1E74",
+    "Background": "#F7F4EF",
+    "Text": "#1A1A2E",
+    "Grey": "#6B7280",
+    "Fatalities": "#7B0000", # Catastrophe
+    "Events": "#E07B3B",     # Crisis
+    "Primary": "#0058A5",    # Primary school age
+    "Secondary": "#00833D"   # Secondary school age
+}
+
 def cross_analyze():
     if not os.path.exists(EDU_FILE):
         print(f"Error: {EDU_FILE} not found.")
@@ -66,7 +80,7 @@ def cross_analyze():
                 y=country_data[EDU_INDICATOR_1], 
                 name="Gross Enrolment Ratio (%)", 
                 mode='lines+markers',
-                line=dict(width=3, color='royalblue'),
+                line=dict(width=3, color=PALETTE["Primary"]),
                 connectgaps=True,
                 visible=False
             ),
@@ -80,7 +94,7 @@ def cross_analyze():
                 y=country_data[EDU_INDICATOR_2], 
                 name="Survival Rate (%)", 
                 mode='lines+markers',
-                line=dict(width=3, color='forestgreen', dash='dot'),
+                line=dict(width=3, color=PALETTE["Secondary"], dash='dot'),
                 connectgaps=True,
                 visible=False
             ),
@@ -93,7 +107,7 @@ def cross_analyze():
                 x=country_data["YEAR"], 
                 y=country_data["Fatalities"], 
                 name="Fatalities", 
-                marker_color='crimson',
+                marker_color=PALETTE["Fatalities"],
                 opacity=0.7,
                 visible=False
             ),
@@ -106,7 +120,7 @@ def cross_analyze():
                 x=country_data["YEAR"], 
                 y=country_data["Events"], 
                 name="Events", 
-                marker_color='orange',
+                marker_color=PALETTE["Events"],
                 opacity=0.7,
                 visible=False
             ),
@@ -127,8 +141,7 @@ def cross_analyze():
         buttons.append(dict(
             label=country,
             method="update",
-            args=[{"visible": visibility},
-                  {"title": f"Conflict vs Education in {country}"}]
+            args=[{"visible": visibility}]
         ))
 
     # Set the first country as visible by default
@@ -143,17 +156,58 @@ def cross_analyze():
             direction="down",
             pad={"r": 10, "t": 10},
             showactive=True,
-            x=0.1,
+            x=0.0,
             xanchor="left",
-            y=1.15,
-            yanchor="top"
+            y=1.08,
+            yanchor="top",
+            font=dict(color=PALETTE["Text"]),
+            bgcolor="white",
+            bordercolor=PALETTE["Grey"]
         )],
-        title_text=f"Conflict vs Education in {first_country}",
-        xaxis=dict(title="Year", tickmode='linear', dtick=1),
+        paper_bgcolor=PALETTE["Background"],
+        plot_bgcolor=PALETTE["Background"],
+        title=dict(
+            text="Conflict Intensity vs. Education Metrics",
+            x=0.5,
+            xanchor="center",
+            font=dict(color=PALETTE["Text"], size=22)
+        ),
+        margin=dict(t=100, b=50, l=50, r=50),
+        xaxis=dict(
+            title="Year", 
+            tickmode='linear', 
+            dtick=1,
+            color=PALETTE["Grey"],
+            title_font=dict(color=PALETTE["Text"]),
+            gridcolor='rgba(0,0,0,0.05)'
+        ),
         template="plotly_white",
         hovermode="x unified",
         barmode='group',
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
+        legend=dict(
+            orientation="h", 
+            yanchor="bottom", 
+            y=1.02, 
+            xanchor="right", 
+            x=1,
+            font=dict(color=PALETTE["Text"])
+        )
+    )
+
+    fig.update_yaxes(
+        title_text="Education Metrics (%)", 
+        secondary_y=False, 
+        range=[0, 150],
+        color=PALETTE["Grey"],
+        title_font=dict(color=PALETTE["Text"]),
+        gridcolor='rgba(0,0,0,0.05)'
+    )
+    fig.update_yaxes(
+        title_text="Conflict Metrics (Count)", 
+        secondary_y=True,
+        color=PALETTE["Grey"],
+        title_font=dict(color=PALETTE["Text"]),
+        showgrid=False
     )
 
     fig.update_yaxes(title_text="Education Metrics (%)", secondary_y=False, range=[0, 150])
