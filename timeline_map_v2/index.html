@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conflict & Education Integrated Timeline (Prototype)</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #F7F4EF; color: #1A1A2E; }
+        #map { height: 100vh; width: 100%; background: #F7F4EF; }
+        
+        .control-panel {
+            position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
+            z-index: 1000; background: rgba(255, 255, 255, 0.98); padding: 15px; border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15); width: 95%; max-width: 800px;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .timeline-controls { display: flex; align-items: center; width: 100%; gap: 15px; }
+        #year-slider { flex-grow: 1; cursor: pointer; accent-color: #1CABE2; }
+        .data-toggle { margin-top: 12px; display: flex; justify-content: center; gap: 15px; font-weight: 600; align-items: center; font-size: 0.85em; color: #6B7280; }
+        
+        .info-box {
+            position: absolute; top: 15px; left: 15px; z-index: 1000;
+            background: white; padding: 12px; border-radius: 8px; border-left: 4px solid #C0392B;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-width: 260px;
+        }
+        
+        .legend {
+            position: absolute; bottom: 130px; right: 15px; z-index: 1000;
+            background: white; padding: 12px; border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1); line-height: 1.4; font-size: 0.75em;
+            color: #1A1A2E;
+        }
+        .legend i { width: 14px; height: 14px; float: left; margin-right: 8px; opacity: 0.9; border-radius: 2px; }
+        
+        #play-button { 
+            padding: 8px 16px; cursor: pointer; background: #1A1A2E; 
+            color: white; border: none; border-radius: 6px; font-weight: 600; min-width: 70px;
+        }
+        #current-year { font-size: 1.4em; font-weight: 700; min-width: 60px; text-align: center; }
+
+        .aggregate-icon {
+            background: #fff; border: 2px solid #1A1A2E; border-radius: 50%;
+            text-align: center; line-height: 20px; font-weight: bold; font-size: 9px;
+        }
+        .aggregate-icon.vulnerable { border-color: #7B0000; color: #7B0000; }
+        .aggregate-icon.regular { border-color: #1CABE2; color: #1CABE2; }
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<div class="info-box">
+    <h4 style="margin: 0 0 6px 0;">Integrated Analysis</h4>
+    <p style="margin: 0; font-size: 0.8em; color: #6B7280;">
+        Toggle between <b>Conflict</b> and <b>Education Gaps</b> to see correlations in real-time.
+    </p>
+</div>
+
+<div class="legend" id="map-legend"></div>
+
+<div class="control-panel">
+    <div class="timeline-controls">
+        <button id="play-button">Play</button>
+        <div id="current-year">2000</div>
+        <input type="range" id="year-slider" min="1997" max="2024" value="2000" step="1">
+    </div>
+    <div class="data-toggle">
+        <label><input type="radio" name="dataType" value="Events" checked> Conflict Events</label>
+        <label><input type="radio" name="dataType" value="OOS_Rate"> OOS Rate (%)</label>
+        <div style="border-left: 1px solid #ccc; height: 12px; margin: 0 10px;"></div>
+        <label><input type="checkbox" id="show-vulnerable" checked> Vulnerable Schools</label>
+    </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+
+<script>
+    const map = L.map('map', { preferCanvas: true }).setView([15, 20], 3);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png').addTo(map);
+
+    let countryData, schoolData, geoJsonData;
+    let choroplethLayer;
+    let schoolLayer = L.layerGroup().addTo(map);
+
+    const yearSlider = document.getElementById('year-slider');
+    const currentYearDisplay = document.getElementById('current-year');
+    const playButton = document.getElementById('play-button');
+    const dataTypeRadios = document.getElementsByName('dataType');
+    const showVulnerableCheck = document.getElementById('show-vulnerable');
+    const legendDiv = document.getElementById('map-legend');
+
+    function getColor(d, type) {
+        if (type === 'Events') {
+            return d > 1000 ? '#7B0000' : d > 500 ? '#C0392B' : d > 100 ? '#E07B3B' : d > 10 ? '#F6AA61' : d > 0 ? '#F4D7B3' : '#F7F4EF';
+        } else {
+            // OOS Rate %
+            return d > 50 ? '#7B0000' : d > 30 ? '#C0392B' : d > 20 ? '#E07B3B' : d > 10 ? '#F6AA61' : d > 0 ? '#F4D7B3' : '#F7F4EF';
+        }
+    }
+
+    Promise.all([
+        fetch('data/countries.geojson').then(res => res.json()),
+        fetch('data/country_yearly_enriched.csv').then(res => res.text()),
+        fetch('data/schools_vulnerability.csv').then(res => res.text())
+    ]).then(([geoJson, countryCsv, schoolCsv]) => {
+        geoJsonData = geoJson;
+        countryData = Papa.parse(countryCsv, { header: true, dynamicTyping: true }).data;
+        schoolData = Papa.parse(schoolCsv, { header: true, dynamicTyping: true }).data;
+        updateMap();
+    });
+
+    function updateMap() {
+        const year = parseInt(yearSlider.value);
+        const dataType = Array.from(dataTypeRadios).find(r => r.checked).value;
+        currentYearDisplay.innerText = year;
+
+        const lookup = {};
+        countryData.forEach(d => { if (d.Year === year) lookup[d.Country] = d[dataType]; });
+
+        if (choroplethLayer) map.removeLayer(choroplethLayer);
+        choroplethLayer = L.geoJson(geoJsonData, {
+            style: (f) => ({
+                fillColor: getColor(lookup[f.properties.name] || 0, dataType),
+                weight: 0.5, opacity: 1, color: '#fff', fillOpacity: 0.4
+            })
+        }).addTo(map);
+
+        schoolLayer.clearLayers();
+        if (showVulnerableCheck.checked) {
+            schoolData.forEach(s => {
+                const isVuln = year >= s.vulnerable_year;
+                if (isVuln) {
+                    L.circleMarker([s.latitude, s.longitude], {
+                        radius: 4, fillColor: '#7B0000', color: '#fff', weight: 1, fillOpacity: 0.8
+                    }).addTo(schoolLayer);
+                }
+            });
+        }
+        updateLegend(dataType);
+    }
+
+    function updateLegend(type) {
+        let grades = type === 'Events' ? [0, 10, 100, 500, 1000] : [0, 10, 20, 30, 50];
+        let labels = ['Minimal', 'Stress', 'Crisis', 'Emergency', 'Catastrophe'];
+        let html = `<b>${type === 'Events' ? 'Conflict Intensity' : 'OOS Rate (%)'}</b><br>`;
+        grades.forEach((g, i) => {
+            html += `<i style="background:${getColor(g + 1, type)}"></i> ${labels[i]}<br>`;
+        });
+        legendDiv.innerHTML = html;
+    }
+
+    yearSlider.oninput = updateMap;
+    dataTypeRadios.forEach(r => r.onchange = updateMap);
+    showVulnerableCheck.onchange = updateMap;
+</script>
+
+</body>
+</html>
