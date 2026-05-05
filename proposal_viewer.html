@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal Viewer - EBI Education Continuity</title>
+    <!-- Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Marked.js for Markdown rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .prose h1 { @apply text-3xl font-bold mb-6 text-slate-900 border-b pb-4; }
+        .prose h2 { @apply text-2xl font-semibold mt-8 mb-4 text-slate-800; }
+        .prose h3 { @apply text-xl font-medium mt-6 mb-2 text-slate-700; }
+        .prose p { @apply mb-4 leading-relaxed text-slate-600; }
+        .prose ul { @apply list-disc ml-6 mb-4 text-slate-600; }
+        .prose table { @apply w-full text-left border-collapse mb-8; }
+        .prose th { @apply bg-slate-100 p-3 border font-semibold text-slate-700; }
+        .prose td { @apply p-3 border text-slate-600; }
+        .prose blockquote { @apply border-l-4 border-blue-500 bg-blue-50 p-4 my-6 italic text-blue-800 rounded-r; }
+        .active-tab { @apply bg-blue-600 text-white shadow-lg; }
+    </style>
+</head>
+<body class="bg-slate-50 min-h-screen">
+
+    <div class="flex flex-col md:flex-row">
+        <!-- Sidebar -->
+        <aside class="w-full md:w-64 bg-slate-900 text-slate-300 md:h-screen md:sticky top-0 p-6">
+            <div class="mb-10">
+                <h1 class="text-xl font-bold text-white mb-2">Proposal Hub</h1>
+                <p class="text-xs text-slate-500 uppercase tracking-widest">EBI Project 2026</p>
+            </div>
+            
+            <nav class="space-y-2">
+                <button onclick="loadDoc('proposal_final.md', this)" class="nav-item w-full text-left px-4 py-3 rounded-lg transition-all hover:bg-slate-800 active-tab">
+                    <span class="block text-sm font-semibold">Final Proposal</span>
+                    <span class="text-xs opacity-60">Clean version</span>
+                </button>
+                <button onclick="loadDoc('proposal_with_commentary.md', this)" class="nav-item w-full text-left px-4 py-3 rounded-lg transition-all hover:bg-slate-800">
+                    <span class="block text-sm font-semibold">With Commentary</span>
+                    <span class="text-xs opacity-60">Strategic rationale</span>
+                </button>
+            </nav>
+
+            <div class="mt-20 pt-10 border-t border-slate-800">
+                <a href="index.html" class="text-sm hover:text-white flex items-center transition-colors">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                    Back to Dashboard
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 md:p-12 lg:p-20">
+            <div id="content" class="max-w-4xl mx-auto bg-white shadow-sm border border-slate-200 rounded-2xl p-8 md:p-16 prose prose-slate">
+                <div class="animate-pulse flex space-y-4 flex-col">
+                    <div class="h-8 bg-slate-100 rounded w-3/4"></div>
+                    <div class="h-4 bg-slate-100 rounded w-full"></div>
+                    <div class="h-4 bg-slate-100 rounded w-5/6"></div>
+                    <div class="h-4 bg-slate-100 rounded w-full"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        async function loadDoc(fileName, el) {
+            const contentDiv = document.getElementById('content');
+            
+            // Update UI tabs
+            document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active-tab'));
+            el.classList.add('active-tab');
+
+            try {
+                const response = await fetch(fileName);
+                if (!response.ok) throw new Error('Failed to load file');
+                const text = await response.text();
+                contentDiv.innerHTML = marked.parse(text);
+                
+                // Add a smooth fade-in effect
+                contentDiv.classList.add('opacity-0');
+                setTimeout(() => {
+                    contentDiv.classList.remove('opacity-0');
+                    contentDiv.classList.add('transition-opacity', 'duration-500', 'opacity-100');
+                }, 10);
+
+            } catch (err) {
+                contentDiv.innerHTML = `<div class="p-10 text-red-500 font-semibold text-center bg-red-50 rounded-xl border border-red-100">
+                    Error loading document: ${fileName}<br>
+                    <span class="text-sm font-normal text-red-400">Make sure the file exists in the same directory as this viewer.</span>
+                </div>`;
+            }
+        }
+
+        // Initial Load
+        window.onload = () => {
+            const firstTab = document.querySelector('.nav-item');
+            loadDoc('proposal_final.md', firstTab);
+        };
+    </script>
+</body>
+</html>
