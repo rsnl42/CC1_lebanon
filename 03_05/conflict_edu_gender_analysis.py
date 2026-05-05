@@ -176,16 +176,23 @@ def create_gender_analysis():
             direction="down",
             pad={"r": 10, "t": 10},
             showactive=True,
-            x=0.1,
+            x=0.0,
             xanchor="left",
-            y=1.15,
+            y=1.08,
             yanchor="top",
-            font=dict(color=PALETTE["Text"])
+            font=dict(color=PALETTE["Text"]),
+            bgcolor="white",
+            bordercolor=PALETTE["Grey"]
         )],
         paper_bgcolor=PALETTE["Background"],
         plot_bgcolor=PALETTE["Background"],
-        title_text=f"Gendered Conflict-Education Impact: {first_country}",
-        title_font=dict(color=PALETTE["Text"], size=20),
+        title=dict(
+            text=f"Gendered Conflict-Education Impact: {first_country}",
+            x=0.5,
+            xanchor="center",
+            font=dict(color=PALETTE["Text"], size=22)
+        ),
+        margin=dict(t=100, b=50, l=50, r=50),
         xaxis=dict(
             title="Year", 
             tickmode='linear', 

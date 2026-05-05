@@ -135,13 +135,20 @@ def create_oos_percentage_analysis():
     fig.update_layout(
         updatemenus=[dict(
             active=0, buttons=buttons, direction="down",
-            x=0.1, xanchor="left", y=1.15, yanchor="top",
-            font=dict(color=PALETTE["Text"])
+            x=0.0, xanchor="left", y=1.08, yanchor="top",
+            font=dict(color=PALETTE["Text"]),
+            bgcolor="white",
+            bordercolor=PALETTE["Grey"]
         )],
         paper_bgcolor=PALETTE["Background"],
         plot_bgcolor=PALETTE["Background"],
-        title_text=f"Out-of-School Analysis: {countries[0] if countries else 'N/A'}",
-        title_font=dict(color=PALETTE["Text"], size=20),
+        title=dict(
+            text=f"Out-of-School Analysis: {countries[0] if countries else 'N/A'}",
+            x=0.5,
+            xanchor="center",
+            font=dict(color=PALETTE["Text"], size=22)
+        ),
+        margin=dict(t=100, b=50, l=50, r=50),
         xaxis=dict(
             title="Year", 
             tickmode='linear', 
