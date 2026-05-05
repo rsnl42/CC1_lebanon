@@ -26,6 +26,8 @@ We will begin by harmonizing EBI’s existing school registries with open-source
 ### Phase 2: Build (The Monitoring Infrastructure)
 We will build a scalable pipeline that introduces AI-assisted tools to clean and pivot disparate data sources into a unified format, powering an **Early Warning System**.
 
+> **Why this works:** By providing a [Geospatial Timeline](https://htmlpreview.github.io/?https://github.com/rsnl42/CC1_lebanon/blob/main/timeline_map/index.html), we move from static reports to a dynamic narrative. This allows stakeholders to *see* the progression of vulnerability, making the case for early intervention much more visceral and data-backed.
+
 ### Phase 3: Transfer (Capacity & Sustainability)
 We will deliver a **Methodology Guide** and conduct training sessions. The goal is to ensure EBI can pivot the analysis to new metrics or countries without external support.
 

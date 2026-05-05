@@ -27,7 +27,8 @@ We will begin by harmonizing EBI’s existing school registries with open-source
 *   **Proof of Concept:** [Conflict vs. Education Survival Dashboard](https://htmlpreview.github.io/?https://github.com/rsnl42/CC1_lebanon/blob/main/conflict_edu_analysis.html)
 
 ### Phase 2: Build (The Monitoring Infrastructure)
-Once validated, we will build a scalable pipeline that automates the ingestion of fragmented reports. This phase introduces AI-assisted tools to clean and pivot disparate data sources into a unified format, powering an **Early Warning System** that flags risks to school attendance a full quarter in advance.
+Once validated, we will build a scalable pipeline that automates the ingestion of fragmented reports. This phase introduces AI-assisted tools to clean and pivot disparate data sources into a unified format, powering an **Early Warning System**.
+*   **Narrative Enabler:** [Interactive Vulnerability Timeline](https://htmlpreview.github.io/?https://github.com/rsnl42/CC1_lebanon/blob/main/timeline_map/index.html) – Demonstrating our ability to track risk migration across borders over two decades.
 
 ### Phase 3: Transfer (Capacity & Sustainability)
 The final phase focuses on hand-over. We will deliver a **Methodology Guide** and conduct training sessions for EBI field staff. The goal is to ensure the system is "indicator-agnostic"—allowing EBI to pivot the analysis to new metrics or countries without external support.
