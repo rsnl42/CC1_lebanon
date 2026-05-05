@@ -64,7 +64,8 @@ def create_visualizations():
                 name=indicator, mode='lines+markers',
                 line=dict(width=3, color=PALETTE.get(color_key, "#333")),
                 connectgaps=True,
-                visible=False
+                visible=False,
+                hovertemplate=f"<b>{indicator}</b><br>Year: %{{x}}<br>Value: %{{y:.2f}}%<extra></extra>"
             ))
         
         country_traces[country] = list(range(trace_idx, trace_idx + len(available_indicators)))
@@ -97,7 +98,12 @@ def create_visualizations():
         ),
         margin=dict(t=120, b=100, l=50, r=50),
         xaxis=dict(title="Year", color=PALETTE["Grey"], gridcolor='rgba(0,0,0,0.05)'),
-        yaxis=dict(title="Value (%)", color=PALETTE["Grey"], gridcolor='rgba(0,0,0,0.05)'),
+        yaxis=dict(
+            title="Value (%)", 
+            color=PALETTE["Grey"], 
+            gridcolor='rgba(0,0,0,0.05)',
+            tickformat=".2f"
+        ),
         template="plotly_white",
         hovermode="x unified",
         legend=dict(

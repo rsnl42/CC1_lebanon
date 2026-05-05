@@ -78,14 +78,14 @@ def create_comprehensive_oos():
             x=c_data["YEAR"], y=c_data[INDICATORS["OOS_F"]],
             name="Female OOS", marker_color=PALETTE["Female"],
             opacity=0.4, visible=False,
-            hovertemplate="Female OOS: %{y:,.0f}<extra></extra>"
+            hovertemplate="Female OOS: %{y:,.2f}<extra></extra>"
         ), secondary_y=False)
 
         fig.add_trace(go.Bar(
             x=c_data["YEAR"], y=c_data[INDICATORS["OOS_M"]],
             name="Male OOS", marker_color=PALETTE["Male"],
             opacity=0.4, visible=False,
-            hovertemplate="Male OOS: %{y:,.0f}<extra></extra>"
+            hovertemplate="Male OOS: %{y:,.2f}<extra></extra>"
         ), secondary_y=False)
 
         # 3. OOS Rates (Lines)
@@ -140,7 +140,12 @@ def create_comprehensive_oos():
         ),
         margin=dict(t=120, b=50, l=50, r=50),
         xaxis=dict(title="Year", tickmode='linear', dtick=1, color=PALETTE["Grey"], gridcolor='rgba(0,0,0,0.05)'),
-        yaxis=dict(title="Number of Children (Absolute)", color=PALETTE["Grey"], gridcolor='rgba(0,0,0,0.05)'),
+        yaxis=dict(
+            title="Number of Children (Absolute)", 
+            color=PALETTE["Grey"], 
+            gridcolor='rgba(0,0,0,0.05)',
+            tickformat=".2f"
+        ),
         yaxis2=dict(
             title="Out-of-School Rate (%)", 
             range=[0, 105], 

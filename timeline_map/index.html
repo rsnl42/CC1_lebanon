@@ -196,18 +196,24 @@
             }),
             onEachFeature: (feature, layer) => {
                 const val = lookup[feature.properties.name] || 0;
-                layer.bindTooltip(`<b>${feature.properties.name}</b><br>${dataType}: ${val.toFixed ? val.toFixed(1) : val}`, { sticky: true });
+                const displayVal = typeof val === 'number' ? val.toFixed(2) : val;
+                layer.bindTooltip(`<b>${feature.properties.name}</b><br>${dataType}: ${displayVal}`, { sticky: true });
             }
         }).addTo(map);
 
         conflictLayer.clearLayers();
-        if (showConflictCheck.checked && (dataType === 'Events' || dataType === 'Fatalities')) {
+        if (showConflictCheck.checked) {
+            const conflictMetric = (dataType === 'Events' || dataType === 'Fatalities') ? dataType : 'Events';
             conflictData.forEach(d => {
-                if (d.Year === year && d[dataType] > 0) {
-                    const radius = getConflictRadius(d[dataType]);
+                if (d.Year === year && d[conflictMetric] > 0) {
+                    const radius = getConflictRadius(d[conflictMetric]);
                     L.circleMarker([d.Latitude, d.Longitude], {
-                        radius: radius, fillColor: '#1A1A2E', color: '#fff', weight: 1, fillOpacity: 0.8
-                    }).bindTooltip(`<b>Conflict Site</b><br>${d.Country}<br>${dataType}: ${d[dataType]}`, { sticky: true }).addTo(conflictLayer);
+                        radius: radius, 
+                        fillColor: '#1A1A2E', 
+                        color: '#E83F6F', 
+                        weight: 2, 
+                        fillOpacity: 0.8
+                    }).bindTooltip(`<b>Conflict Site</b><br>${d.Country}<br>${conflictMetric}: ${d[conflictMetric]}`, { sticky: true }).addTo(conflictLayer);
                 }
             });
         }
@@ -226,10 +232,10 @@
                     L.marker([s.lat, s.lon], {
                         icon: L.divIcon({ 
                             className: `aggregate-icon ${isImpacted ? 'vulnerable' : 'regular'}`, 
-                            html: s.count > 1000 ? Math.round(s.count/1000)+'k' : s.count, 
+                            html: s.count > 1000 ? (s.count/1000).toFixed(1)+'k' : s.count, 
                             iconSize: [26, 26] 
                         })
-                    }).bindTooltip(`<b>${s.country}</b><br>Total Schools: ${s.count}`, { sticky: true }).addTo(schoolLayer);
+                    }).bindTooltip(`<b>${s.country}</b><br>Total Schools: ${s.count.toLocaleString()}`, { sticky: true }).addTo(schoolLayer);
                 });
             } else {
                 schoolData.forEach(s => {
