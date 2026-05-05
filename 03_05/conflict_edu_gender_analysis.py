@@ -16,6 +16,18 @@ INDICATORS = {
     "Survival Male": "Survival rate to the last grade of primary education, male (%)"
 }
 
+# Colors and Styling
+PALETTE = {
+    "Male": "#1CABE2",
+    "Female": "#E83F6F",
+    "Both": "#6A1E74",
+    "Background": "#F7F4EF",
+    "Text": "#1A1A2E",
+    "Grey": "#6B7280",
+    "Fatalities": "#7B0000", # Catastrophe
+    "Events": "#E07B3B"       # Crisis
+}
+
 def create_gender_analysis():
     if not os.path.exists(EDU_FILE):
         print(f"Error: {EDU_FILE} not found.")
@@ -62,7 +74,7 @@ def create_gender_analysis():
                 y=country_data[INDICATORS["GER Female"]], 
                 name="GER Female (%)", 
                 mode='lines+markers',
-                line=dict(width=2, color='rgba(30, 144, 255, 1)'), # DodgerBlue
+                line=dict(width=2, color=PALETTE["Female"]),
                 connectgaps=True,
                 visible=False
             ),
@@ -76,7 +88,7 @@ def create_gender_analysis():
                 y=country_data[INDICATORS["GER Male"]], 
                 name="GER Male (%)", 
                 mode='lines+markers',
-                line=dict(width=2, color='rgba(30, 144, 255, 0.5)', dash='dash'), 
+                line=dict(width=2, color=PALETTE["Male"], dash='dash'), 
                 connectgaps=True,
                 visible=False
             ),
@@ -90,7 +102,7 @@ def create_gender_analysis():
                 y=country_data[INDICATORS["Survival Female"]], 
                 name="Survival Female (%)", 
                 mode='lines+markers',
-                line=dict(width=2, color='rgba(34, 139, 34, 1)'), # ForestGreen
+                line=dict(width=3, color=PALETTE["Female"], dash='dot'),
                 connectgaps=True,
                 visible=False
             ),
@@ -104,7 +116,7 @@ def create_gender_analysis():
                 y=country_data[INDICATORS["Survival Male"]], 
                 name="Survival Male (%)", 
                 mode='lines+markers',
-                line=dict(width=2, color='rgba(34, 139, 34, 0.5)', dash='dash'), 
+                line=dict(width=3, color=PALETTE["Male"], dash='longdashdot'), 
                 connectgaps=True,
                 visible=False
             ),
@@ -117,8 +129,8 @@ def create_gender_analysis():
                 x=country_data["YEAR"], 
                 y=country_data["Fatalities"], 
                 name="Fatalities", 
-                marker_color='crimson',
-                opacity=0.6,
+                marker_color=PALETTE["Fatalities"],
+                opacity=0.7,
                 visible=False
             ),
             secondary_y=True,
@@ -130,8 +142,8 @@ def create_gender_analysis():
                 x=country_data["YEAR"], 
                 y=country_data["Events"], 
                 name="Events", 
-                marker_color='orange',
-                opacity=0.6,
+                marker_color=PALETTE["Events"],
+                opacity=0.7,
                 visible=False
             ),
             secondary_y=True,
@@ -167,18 +179,49 @@ def create_gender_analysis():
             x=0.1,
             xanchor="left",
             y=1.15,
-            yanchor="top"
+            yanchor="top",
+            font=dict(color=PALETTE["Text"])
         )],
+        paper_bgcolor=PALETTE["Background"],
+        plot_bgcolor=PALETTE["Background"],
         title_text=f"Gendered Conflict-Education Impact: {first_country}",
-        xaxis=dict(title="Year", tickmode='linear', dtick=1),
+        title_font=dict(color=PALETTE["Text"], size=20),
+        xaxis=dict(
+            title="Year", 
+            tickmode='linear', 
+            dtick=1,
+            color=PALETTE["Grey"],
+            title_font=dict(color=PALETTE["Text"]),
+            gridcolor='rgba(0,0,0,0.05)'
+        ),
         template="plotly_white",
         hovermode="x unified",
         barmode='group',
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
+        legend=dict(
+            orientation="h", 
+            yanchor="bottom", 
+            y=1.02, 
+            xanchor="right", 
+            x=1,
+            font=dict(color=PALETTE["Text"])
+        )
     )
 
-    fig.update_yaxes(title_text="Education Metrics (%)", secondary_y=False, range=[0, 150])
-    fig.update_yaxes(title_text="Conflict Metrics (Count)", secondary_y=True)
+    fig.update_yaxes(
+        title_text="Education Metrics (%)", 
+        secondary_y=False, 
+        range=[0, 150],
+        color=PALETTE["Grey"],
+        title_font=dict(color=PALETTE["Text"]),
+        gridcolor='rgba(0,0,0,0.05)'
+    )
+    fig.update_yaxes(
+        title_text="Conflict Metrics (Count)", 
+        secondary_y=True,
+        color=PALETTE["Grey"],
+        title_font=dict(color=PALETTE["Text"]),
+        showgrid=False
+    )
 
     print(f"Saving to {OUTPUT_HTML}...")
     fig.write_html(OUTPUT_HTML)

@@ -20,6 +20,17 @@ INDICATORS = {
     "OOS_PS_Male": "Out-of-school children, adolescents and youth of primary and secondary school age, male (number)"
 }
 
+# Colors and Styling
+PALETTE = {
+    "Male": "#1CABE2",
+    "Female": "#E83F6F",
+    "Both": "#6A1E74",
+    "Background": "#F7F4EF",
+    "Text": "#1A1A2E",
+    "Grey": "#6B7280",
+    "OOS": "#C0392B"
+}
+
 def create_oos_percentage_analysis():
     if not os.path.exists(EDU_FILE):
         print(f"Error: {EDU_FILE} not found.")
@@ -61,18 +72,18 @@ def create_oos_percentage_analysis():
         # 1. Total Pop (Area on Secondary Y)
         fig.add_trace(go.Scatter(
             x=country_data["YEAR"], y=country_data["Total_Pop_Both"],
-            name="Total School-Age Pop (P+S)", mode='lines',
-            line=dict(width=0.5, color='rgba(200, 200, 200, 0.4)'),
-            fill='toself', fillcolor='rgba(200, 200, 200, 0.15)',
+            name="Total School-Age Pop", mode='lines',
+            line=dict(width=0.5, color=PALETTE["Grey"]),
+            fill='toself', fillcolor='rgba(107, 114, 128, 0.1)', # Grey with opacity
             visible=False,
-            hoverinfo='skip' # Don't clutter hover
+            hoverinfo='skip'
         ), secondary_y=True)
 
         # 2. OOS Rate (%) - Both (Main Line)
         fig.add_trace(go.Scatter(
             x=country_data["YEAR"], y=country_data["OOS_Rate_Both"],
-            name="Out-of-School Rate (%)", mode='lines+markers',
-            line=dict(width=4, color='black'),
+            name="Total OOS Rate (%)", mode='lines+markers',
+            line=dict(width=4, color=PALETTE["Both"]),
             visible=False
         ), secondary_y=False)
 
@@ -80,7 +91,7 @@ def create_oos_percentage_analysis():
         fig.add_trace(go.Scatter(
             x=country_data["YEAR"], y=country_data["OOS_Rate_Female"],
             name="Female OOS Rate (%)", mode='lines+markers',
-            line=dict(width=2, color='rgba(255, 20, 147, 1)'), # DeepPink
+            line=dict(width=2, color=PALETTE["Female"]),
             visible=False
         ), secondary_y=False)
 
@@ -88,7 +99,7 @@ def create_oos_percentage_analysis():
         fig.add_trace(go.Scatter(
             x=country_data["YEAR"], y=country_data["OOS_Rate_Male"],
             name="Male OOS Rate (%)", mode='lines+markers',
-            line=dict(width=2, color='rgba(0, 191, 255, 1)', dash='dash'), # DeepSkyBlue
+            line=dict(width=2, color=PALETTE["Male"], dash='dash'),
             visible=False
         ), secondary_y=False)
 
@@ -96,7 +107,8 @@ def create_oos_percentage_analysis():
         fig.add_trace(go.Bar(
             x=country_data["YEAR"], y=country_data[INDICATORS["OOS_PS_Both"]],
             name="Total OOS Count",
-            marker_color='rgba(150, 150, 150, 0.3)',
+            marker_color=PALETTE["OOS"],
+            opacity=0.4,
             visible=False
         ), secondary_y=True)
 
@@ -123,15 +135,46 @@ def create_oos_percentage_analysis():
     fig.update_layout(
         updatemenus=[dict(
             active=0, buttons=buttons, direction="down",
-            x=0.1, xanchor="left", y=1.15, yanchor="top"
+            x=0.1, xanchor="left", y=1.15, yanchor="top",
+            font=dict(color=PALETTE["Text"])
         )],
+        paper_bgcolor=PALETTE["Background"],
+        plot_bgcolor=PALETTE["Background"],
         title_text=f"Out-of-School Analysis: {countries[0] if countries else 'N/A'}",
-        xaxis=dict(title="Year", tickmode='linear', dtick=1),
-        yaxis=dict(title="Out-of-School Rate (%)", range=[0, 105]),
-        yaxis2=dict(title="Absolute Counts (Population & OOS)", overlaying='y', side='right', showgrid=False),
+        title_font=dict(color=PALETTE["Text"], size=20),
+        xaxis=dict(
+            title="Year", 
+            tickmode='linear', 
+            dtick=1,
+            color=PALETTE["Grey"],
+            title_font=dict(color=PALETTE["Text"]),
+            gridcolor='rgba(0,0,0,0.05)'
+        ),
+        yaxis=dict(
+            title="Out-of-School Rate (%)", 
+            range=[0, 105],
+            color=PALETTE["Grey"],
+            title_font=dict(color=PALETTE["Text"]),
+            gridcolor='rgba(0,0,0,0.05)'
+        ),
+        yaxis2=dict(
+            title="Absolute Counts", 
+            overlaying='y', 
+            side='right', 
+            showgrid=False,
+            color=PALETTE["Grey"],
+            title_font=dict(color=PALETTE["Text"])
+        ),
         template="plotly_white",
         hovermode="x unified",
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
+        legend=dict(
+            orientation="h", 
+            yanchor="bottom", 
+            y=1.02, 
+            xanchor="right", 
+            x=1,
+            font=dict(color=PALETTE["Text"])
+        )
     )
 
     print(f"Saving to {OUTPUT_HTML}...")

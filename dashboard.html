@@ -5,16 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education Data Analysis Dashboard</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 40px; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #F7F4EF; 
+            color: #1A1A2E; 
+            margin: 0; 
+            padding: 40px; 
+        }
         .container { max-width: 1000px; margin: auto; }
-        h1 { text-align: center; color: #2c3e50; margin-bottom: 40px; }
+        h1 { 
+            text-align: center; 
+            color: #1A1A2E; 
+            margin-bottom: 40px; 
+            font-weight: 700;
+        }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-        .card { background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); padding: 20px; transition: transform 0.2s; text-decoration: none; color: inherit; display: flex; flex-direction: column; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
-        .card h2 { margin-top: 0; color: #2980b9; font-size: 1.4em; }
-        .card p { flex-grow: 1; color: #666; line-height: 1.5; }
-        .btn { display: inline-block; background-color: #2980b9; color: white; padding: 10px 15px; border-radius: 4px; text-align: center; margin-top: 15px; font-weight: bold; }
-        .footer { text-align: center; margin-top: 50px; color: #999; font-size: 0.9em; }
+        .card { 
+            background: white; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+            padding: 24px; 
+            transition: all 0.3s ease; 
+            text-decoration: none; 
+            color: inherit; 
+            display: flex; 
+            flex-direction: column; 
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .card:hover { 
+            transform: translateY(-8px); 
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1); 
+            border-color: #1CABE2;
+        }
+        .card h2 { 
+            margin-top: 0; 
+            color: #1CABE2; 
+            font-size: 1.4em; 
+            border-bottom: 2px solid #F7F4EF;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .card p { 
+            flex-grow: 1; 
+            color: #6B7280; 
+            line-height: 1.6; 
+            font-size: 0.95em;
+        }
+        .btn { 
+            display: inline-block; 
+            background-color: #1A1A2E; 
+            color: white; 
+            padding: 12px 20px; 
+            border-radius: 6px; 
+            text-align: center; 
+            margin-top: 20px; 
+            font-weight: 600; 
+            transition: background-color 0.2s;
+        }
+        .card:hover .btn {
+            background-color: #E83F6F;
+        }
+        .footer { 
+            text-align: center; 
+            margin-top: 60px; 
+            color: #6B7280; 
+            font-size: 0.85em; 
+            border-top: 1px solid rgba(0,0,0,0.05);
+            padding-top: 20px;
+        }
     </style>
 </head>
 <body>
