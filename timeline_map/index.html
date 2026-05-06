@@ -246,11 +246,11 @@
                     if (!isVuln && !showReg) return;
                     
                     L.circleMarker([s.latitude, s.longitude], {
-                        radius: 3,
+                        radius: isVuln ? 5 : 4,
                         fillColor: isVuln ? '#E07B3B' : '#1CABE2',
                         color: '#fff',
                         weight: 0.5,
-                        fillOpacity: 0.6
+                        fillOpacity: 0.7
                     }).bindTooltip(`
                         <div class="leaflet-tooltip-custom">
                             <b style="font-size:1.1em">${s.name || 'Unknown School'}</b><br>
