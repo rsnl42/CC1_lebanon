@@ -4,15 +4,19 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Country Strategic Insights</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <style>
         :root { --bg: #0E1117; --surface: #161B27; --accent: #E07B3B; --text: #E8E6E0; --muted: #6B7A99; }
-        body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; margin: 0; padding: 40px; }
+        body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; font-weight: 300; margin: 0; padding: 40px; }
         .container { max-width: 1000px; margin: auto; }
-        .country-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 10px; margin-bottom: 40px; }
-        .country-btn { background: var(--surface); color: var(--text); padding: 10px; border: 1px solid rgba(255,255,255,0.1); border-radius: 5px; cursor: pointer; text-align: center; }
+        h1 { font-family: 'Playfair Display', serif; font-weight: 700; color: var(--accent); margin-bottom: 30px; }
+        .country-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 10px; margin-bottom: 40px; }
+        .country-btn { background: var(--surface); color: var(--text); padding: 12px; border: 1px solid rgba(255,255,255,0.1); border-radius: 5px; cursor: pointer; text-align: center; font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 13px; }
         .country-btn:hover { border-color: var(--accent); }
-        .insight-card { background: var(--surface); padding: 20px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); margin-top: 20px; }
-        .back-btn { display: inline-block; color: var(--muted); margin-bottom: 20px; text-decoration: none; }
+        .insight-card { background: var(--surface); padding: 25px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); margin-top: 20px; }
+        .insight-card h3 { font-family: 'DM Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 15px; }
+        .insight-card p { font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 15px; line-height: 1.6; }
+        .back-btn { font-family: 'DM Mono', monospace; font-size: 11px; text-transform: uppercase; color: var(--muted); margin-bottom: 20px; text-decoration: none; display: block; }
     </style>
 </head>
 <body>
