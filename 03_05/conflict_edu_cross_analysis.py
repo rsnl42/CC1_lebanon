@@ -82,7 +82,8 @@ def cross_analyze():
                 mode='lines+markers',
                 line=dict(width=3, color=PALETTE["Primary"]),
                 connectgaps=True,
-                visible=False
+                visible=False,
+                hovertemplate="GER: %{y:.2f}%<extra></extra>"
             ),
             secondary_y=False,
         )
@@ -96,7 +97,8 @@ def cross_analyze():
                 mode='lines+markers',
                 line=dict(width=3, color=PALETTE["Secondary"], dash='dot'),
                 connectgaps=True,
-                visible=False
+                visible=False,
+                hovertemplate="Survival: %{y:.2f}%<extra></extra>"
             ),
             secondary_y=False,
         )
@@ -109,7 +111,8 @@ def cross_analyze():
                 name="Fatalities", 
                 marker_color=PALETTE["Fatalities"],
                 opacity=0.7,
-                visible=False
+                visible=False,
+                hovertemplate="Fatalities: %{y:.2f}<extra></extra>"
             ),
             secondary_y=True,
         )
@@ -122,7 +125,8 @@ def cross_analyze():
                 name="Events", 
                 marker_color=PALETTE["Events"],
                 opacity=0.7,
-                visible=False
+                visible=False,
+                hovertemplate="Events: %{y:.2f}<extra></extra>"
             ),
             secondary_y=True,
         )
@@ -200,18 +204,17 @@ def cross_analyze():
         range=[0, 150],
         color=PALETTE["Grey"],
         title_font=dict(color=PALETTE["Text"]),
-        gridcolor='rgba(0,0,0,0.05)'
+        gridcolor='rgba(0,0,0,0.05)',
+        tickformat=".2f"
     )
     fig.update_yaxes(
         title_text="Conflict Metrics (Count)", 
         secondary_y=True,
         color=PALETTE["Grey"],
         title_font=dict(color=PALETTE["Text"]),
-        showgrid=False
+        showgrid=False,
+        tickformat=".2f"
     )
-
-    fig.update_yaxes(title_text="Education Metrics (%)", secondary_y=False, range=[0, 150])
-    fig.update_yaxes(title_text="Conflict Metrics (Count)", secondary_y=True)
 
     print(f"Saving to {OUTPUT_HTML}...")
     fig.write_html(OUTPUT_HTML)
