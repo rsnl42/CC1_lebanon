@@ -105,11 +105,11 @@ def cross_analyze():
                 y=country_data["DVI"],
                 name="Dynamic Vulnerability Index (0-100)",
                 mode='lines+markers',
-                line=dict(width=2, color=PALETTE["Fatalities"]),
+                line=dict(width=2, color=PALETTE["Both"]),
                 visible=False,
                 hovertemplate="DVI: %{y:.2f}<extra></extra>"
             ),
-            secondary_y=True,
+            secondary_y=False,
         )
 
         # Education Line 2: Survival Rate
