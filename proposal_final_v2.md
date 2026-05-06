@@ -15,14 +15,14 @@ Our preliminary analysis across 24 conflict-affected Humanitarian Response Plan 
 ### Key Insights from Preliminary Research:
 *   **Conflict vs Persistence:** Sharp spikes in localized conflict (granular, historical ACLED data) correlate with immediate drops in 'Survival Rate' even when 'Gross Enrollment' numbers remain stable. This results in higher OOS (out-of-school) numbers despite rising population of the 'school age children' demographic.
 *   **The Vulnerability Timeline:** Using proximity analysis, we can identify schools within 10km of recurring conflict hotspots at a very granular level from 1997-2024. Whilst currently a descriptive solution, it could be used for real-time monitoring as well with access to the most recent ACLED data.
-*   **Gender Neutral Interventions:** In regions with escalating violence, female 'Survival Rate' are declining at a similar rate to male. This suggests a need for emergency interventions, but not necessarily gender-specific ones (at the preliminary stage at least). Reasons for dropping out of school may vary, but solutions like *implementing School Meal programmes* would improve the 'Survival Rate' metrics across all demographics, as evidenced by the improvements in [Ethiopia and Mali](https://github.com/rsnl42/CC1_exam/blob/main/May_02/meal_prog_impact_chart.png)
+*   **Gender Neutral Interventions:** Preliminary data shows comparable decline in survival rates across genders, suggesting universal interventions such as *School Meal programmes* may be more effective than targeted gender-specific responses at this stage, as evidenced by the improvements in [Ethiopia and Mali](https://github.com/rsnl42/CC1_exam/blob/main/May_02/meal_prog_impact_chart.png)
 *   **Data Limitation Challenges:** Significant reporting lags and low granularity of data, particularly for educational metrics, results in significant data gaps in constructing an effective knowledge base. Our solution tries to address this by suggesting the EBI field team to gather more context specific data in those instances, to avoid having to resort to heuristics and developing ineffective solutions based on faulty/inaccurate premises.
 
 ---
 
 ## 3. Strategic Phasing: Build and Transfer
 
-We propose a streamlined two-phase approach that embeds our unique *Data/AI differential* directly into EBI operations. This differential leverages automated ingestion pipelines, geospatial risk modeling, and predictive conflict-education correlation to provide insights far beyond static reporting.
+We propose a streamlined two-phase approach that embeds our unique *Data/AI differential* directly into EBI operations. This differential leverages automated ingestion pipelines, geospatial risk modeling, and conflict-education correlation to provide insights far beyond static reporting.
 
 ### Phase 1: Build (The Monitoring Infrastructure)
 We will deploy our data pipeline to automate the ingestion and harmonization of fragmented education and conflict data. By integrating granular conflict metrics (ACLED) with localized school registry data (HDX/OSM), we build a persistent and robust data model that functions as an effective monitoring tool, as well as an early warning system.
@@ -31,6 +31,10 @@ We will deploy our data pipeline to automate the ingestion and harmonization of 
     *   **Automated Pipeline:** Transforms disparate, siloed data into a unified, clean, and actionable format.
     *   **Geospatial Modeling:** Maps *Dynamic Vulnerability* by identifying school proximity to high-risk conflict zones at a very granular level, allowing for proactive, rather than reactive, resource allocation.  
     *   **Interactive Insights:** Powered by our centralized dashboard, providing longitudinal analysis (e.g., [Interactive Vulnerability Timeline](https://rsnl42.github.io/CC1_exam/timeline_map/index.html)) to track risk migration patterns across decades.
+    *   **LLM-Assisted Narrative Synthesis:** Passes structured dashboard outputs to an LLM to auto-generate plain-language *Situation Reports* that would assist in identifying at-risk clusters and priority regions without requiring data literacy from the EBI field staff. Summaries are flagged as AI-generated, and reviewed by a focal point before distribution, keeping the field team's judgement central to the decision making.
+
+
+    
 
 ### Phase 2: Transfer (Capacity & Sustainability)
 The final phase focuses on organizational independence. We will deliver a **Methodology Guide** and conduct intensive training for EBI staff, ensuring they can operate and adapt the pipeline. Our system is designed to be *indicator-agnostic* enabling EBI to incorporate new metrics or geographic regions autonomously. The [Humanitarian Pipeline](https://rsnl42.github.io/CC1_exam/humanitarian_pipeline/README.md) demonstrates this modularity, ensuring that the Analysis Hub remains an enduring asset, not a project-based deliverable.
