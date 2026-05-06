@@ -63,10 +63,20 @@ def cross_analyze():
     countries = merged["COUNTRY_NAME"].unique()
     print(f"Found data for {len(countries)} countries.")
 
-    # Create the figure
-    fig = make_subplots(specs=[[{"secondary_y": True}]])
+    # Load DVI stats
+    dvi_df = pd.read_csv("country_dvi_stats.csv")
+    dvi_df.rename(columns={"country": "COUNTRY_NAME", "year": "YEAR"}, inplace=True)
+    merged = pd.merge(merged, dvi_df, on=["COUNTRY_NAME", "YEAR"], how="left")
 
-    # Dictionary to keep track of trace indices for the dropdown
+    # Create the figure with three axes
+    fig = make_subplots(specs=[[{"secondary_y": True}]])
+    # Add a third y-axis for DVI
+    fig.layout.yaxis2.overlaying = 'y'
+    fig.layout.yaxis2.side = 'right'
+    fig.layout.yaxis2.anchor = 'free'
+    fig.layout.yaxis2.position = 0.99
+
+    # ... (rest of the trace-adding logic)
     country_traces = {}
     trace_idx = 0
 
@@ -86,6 +96,20 @@ def cross_analyze():
                 hovertemplate="GER: %{y:.2f}%<extra></extra>"
             ),
             secondary_y=False,
+        )
+
+        # DVI Trace
+        fig.add_trace(
+            go.Scatter(
+                x=country_data["YEAR"],
+                y=country_data["DVI"],
+                name="Dynamic Vulnerability Index (0-100)",
+                mode='lines+markers',
+                line=dict(width=2, color=PALETTE["Fatalities"]),
+                visible=False,
+                hovertemplate="DVI: %{y:.2f}<extra></extra>"
+            ),
+            secondary_y=True,
         )
 
         # Education Line 2: Survival Rate
@@ -131,8 +155,8 @@ def cross_analyze():
             secondary_y=True,
         )
         
-        country_traces[country] = [trace_idx, trace_idx + 1, trace_idx + 2, trace_idx + 3]
-        trace_idx += 4
+        country_traces[country] = [trace_idx, trace_idx + 1, trace_idx + 2, trace_idx + 3, trace_idx + 4]
+        trace_idx += 5
 
     # Create dropdown buttons
     buttons = []
