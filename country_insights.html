@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Country Strategic Insights</title>
+    <style>
+        :root { --bg: #0E1117; --surface: #161B27; --accent: #E07B3B; --text: #E8E6E0; --muted: #6B7A99; }
+        body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; margin: 0; padding: 40px; }
+        .container { max-width: 1000px; margin: auto; }
+        .country-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 10px; margin-bottom: 40px; }
+        .country-btn { background: var(--surface); color: var(--text); padding: 10px; border: 1px solid rgba(255,255,255,0.1); border-radius: 5px; cursor: pointer; text-align: center; }
+        .country-btn:hover { border-color: var(--accent); }
+        .insight-card { background: var(--surface); padding: 20px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); margin-top: 20px; }
+        .back-btn { display: inline-block; color: var(--muted); margin-bottom: 20px; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">← Back to Dashboard</a>
+        <h1 style="color:var(--accent);">Country Insights Selector</h1>
+        <div id="selector-container" class="country-grid"></div>
+        <div id="insight-display" style="display: none; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div class="insight-card">
+                <h3 style="color: var(--accent);">Key Insight</h3>
+                <p id="insight-text"></p>
+                <p id="insight-reason" style="font-size: 0.8em; color: var(--muted); margin-top: 10px;"></p>
+            </div>
+            <div class="insight-card">
+                <h3 style="color: #3b82f6;">Recommended Actions</h3>
+                <p id="action-text"></p>
+                <p id="action-reason" style="font-size: 0.8em; color: var(--muted); margin-top: 10px;"></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let insightsData = {};
+        async function loadInsights() {
+            const resp = await fetch('country_strategic_insights.csv');
+            const csv = await resp.text();
+            const lines = csv.split('\n');
+            const container = document.getElementById('selector-container');
+            lines.slice(1).forEach(line => {
+                const parts = line.split(',');
+                if(parts.length >= 5) {
+                    const c = parts[0], k = parts[1], rk = parts[2], p = parts[3], rp = parts[4];
+                    insightsData[c] = {k, rk, p, rp};
+                    const btn = document.createElement('button');
+                    btn.className = 'country-btn';
+                    btn.innerText = c;
+                    btn.onclick = () => showCountry(c);
+                    container.appendChild(btn);
+                }
+            });
+        }
+        function showCountry(name) {
+            const data = insightsData[name];
+            if(data) {
+                document.getElementById('insight-display').style.display = 'grid';
+                document.getElementById('insight-text').innerText = data.k;
+                document.getElementById('insight-reason').innerText = 'Reasoning: ' + data.rk;
+                document.getElementById('action-text').innerText = data.p;
+                document.getElementById('action-reason').innerText = 'Reasoning: ' + data.rp;
+            }
+        }
+        loadInsights();
+    </script>
+</body>
+</html>

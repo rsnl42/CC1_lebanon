@@ -4,67 +4,59 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Education Crisis Dashboard</title>
-    <!-- Use local CSS/styles instead of tailwind CDN -->
     <style>
         :root { --bg: #0E1117; --surface: #161B27; --accent: #E07B3B; --text: #E8E6E0; --muted: #6B7A99; }
-        body { background: var(--bg); color: var(--text); font-family: sans-serif; margin: 0; padding: 20px; }
-        .grid-container { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 1000px; margin: 20px auto; }
-        .insight-card { background: var(--surface); padding: 20px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); }
-        .country-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 10px; max-width: 1000px; margin: 20px auto; }
-        .country-btn { background: var(--surface); color: var(--text); padding: 10px; border: 1px solid rgba(255,255,255,0.1); border-radius: 5px; cursor: pointer; text-align: center; }
-        .country-btn:hover { border-color: var(--accent); }
+        body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; margin: 0; padding: 40px; }
+        .container { max-width: 1100px; margin: auto; }
+        h1 { text-align: center; color: var(--accent); margin-bottom: 40px; font-weight: 700; font-family: 'Playfair Display', serif; }
+        .nav-section { margin-bottom: 50px; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: var(--surface); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px; transition: all 0.3s; text-decoration: none; color: inherit; display: flex; flex-direction: column; }
+        .card:hover { border-color: var(--accent); transform: translateY(-5px); }
+        .card h2 { color: var(--accent); margin-top: 0; font-size: 1.3em; }
+        .btn { display: inline-block; background: #1A1A2E; color: white; padding: 10px 20px; border-radius: 6px; text-align: center; margin-top: auto; font-weight: 600; }
+        .card:hover .btn { background: var(--accent); }
     </style>
 </head>
 <body>
-    <h1 style="text-align: center; color: var(--accent);">Education Crisis Dashboard</h1>
-    <div id="selector-container" class="country-grid"></div>
-    <div id="insight-display" class="grid-container" style="display: none;">
-        <div class="insight-card">
-            <h3 style="color: var(--accent);">Key Insight</h3>
-            <p id="insight-text"></p>
-            <p id="insight-reason" style="font-size: 0.8em; color: var(--muted); margin-top: 10px;"></p>
-        </div>
-        <div class="insight-card">
-            <h3 style="color: #3b82f6;">Recommended Actions</h3>
-            <p id="action-text"></p>
-            <p id="action-reason" style="font-size: 0.8em; color: var(--muted); margin-top: 10px;"></p>
+    <div class="container">
+        <h1>Education Crisis Dashboard</h1>
+        
+        <div class="nav-section">
+            <h2 style="color:var(--muted); font-size: 1em; margin-bottom: 20px;">Available Analytics</h2>
+            <div class="grid">
+                <a href="country_insights.html" class="card">
+                    <h2>Country Strategic Insights</h2>
+                    <p>Evidence-based insights & recommended actions per country.</p>
+                    <div class="btn">Explore Country Data</div>
+                </a>
+                <a href="conflict_edu_analysis.html" class="card">
+                    <h2>Conflict vs Education</h2>
+                    <p>Impact of fatalities/events on survival rates.</p>
+                    <div class="btn">View Chart</div>
+                </a>
+                <a href="timeline_map/index.html" class="card">
+                    <h2>Vulnerability Timeline</h2>
+                    <p>Geospatial journey 1997-2024.</p>
+                    <div class="btn">Launch Timeline</div>
+                </a>
+                <a href="conflict_edu_gender_analysis.html" class="card">
+                    <h2>Gendered Impact</h2>
+                    <p>Boys vs Girls enrollment survival analysis.</p>
+                    <div class="btn">View Chart</div>
+                </a>
+                <a href="oos_profile.html" class="card">
+                    <h2>OOS Profile</h2>
+                    <p>Out-of-school children, gender-disaggregated.</p>
+                    <div class="btn">View Profile</div>
+                </a>
+                <a href="education_trends.html" class="card">
+                    <h2>Macro Education Trends</h2>
+                    <p>Enrollment and Expenditure maturity.</p>
+                    <div class="btn">View Trends</div>
+                </a>
+            </div>
         </div>
     </div>
-
-    <script>
-        let insightsData = {};
-        
-        async function loadInsights() {
-            const resp = await fetch('country_strategic_insights.csv');
-            const csv = await resp.text();
-            const lines = csv.split('\n');
-            const container = document.getElementById('selector-container');
-            
-            lines.slice(1).forEach(line => {
-                const [c, k, rk, p, rp] = line.split(',');
-                if(c) {
-                    insightsData[c] = {k, rk, p, rp};
-                    const btn = document.createElement('button');
-                    btn.className = 'country-btn';
-                    btn.innerText = c;
-                    btn.onclick = () => showCountry(c);
-                    container.appendChild(btn);
-                }
-            });
-        }
-
-        function showCountry(name) {
-            const data = insightsData[name];
-            if(data) {
-                document.getElementById('insight-display').style.display = 'grid';
-                document.getElementById('insight-text').innerText = data.k;
-                document.getElementById('insight-reason').innerText = 'Reasoning: ' + data.rk;
-                document.getElementById('action-text').innerText = data.p;
-                document.getElementById('action-reason').innerText = 'Reasoning: ' + data.rp;
-            }
-        }
-
-        loadInsights();
-    </script>
 </body>
 </html>
