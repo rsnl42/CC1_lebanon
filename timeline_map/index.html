@@ -262,14 +262,16 @@
     function updateLegend(type) {
         let grades = type === 'OOS_Rate' ? [0, 10, 20, 30, 50] : (type === 'Fatalities' ? [0, 100, 500, 1000, 5000] : [0, 10, 100, 500, 1000]);
         let labels = ['Minimal', 'Stress', 'Crisis', 'Emergency', 'Catastrophe'];
-        let html = `<b>${type.replace('_', ' ')} Intensity</b><br>`;
+        let typeDesc = type === 'OOS_Rate' ? 'Percentage of children not enrolled in school.' : (type === 'Fatalities' ? 'Total deaths from conflict events.' : 'Number of distinct conflict events.');
+        
+        let html = `<b title="${typeDesc}">${type.replace('_', ' ')} Intensity</b><br>`;
         grades.forEach((g, i) => {
             html += `<i style="background:${getColor(g + 1, type)}"></i> ${labels[i]}<br>`;
         });
         html += `<hr style="margin:8px 0; border:0; border-top:1px solid #eee;"><b>Markers</b><br>`;
-        html += `<i style="background:#1A1A2E; border-radius:50%; border:1px solid white;"></i> Conflict Site<br>`;
-        html += `<i style="background:#7B0000; border-radius:50%; border:1px solid white;"></i> Vulnerable School<br>`;
-        html += `<i style="background:#1CABE2; border-radius:50%; border:1px solid white;"></i> Regular School`;
+        html += `<span title="Number of distinct conflict events (battles, explosions, etc.)."><i style="background:#1A1A2E; border-radius:50%; border:1px solid white;"></i> Conflict Site</span><br>`;
+        html += `<span title="School within 50km of a conflict event in the selected year."><i style="background:#7B0000; border-radius:50%; border:1px solid white;"></i> Vulnerable School</span><br>`;
+        html += `<span title="School with no nearby conflict events."><i style="background:#1CABE2; border-radius:50%; border:1px solid white;"></i> Regular School</span>`;
         legendDiv.innerHTML = html;
     }
 

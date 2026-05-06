@@ -112,7 +112,7 @@ def cross_analyze():
                 marker_color=PALETTE["Fatalities"],
                 opacity=0.7,
                 visible=False,
-                hovertemplate="Fatalities: %{y:.2f}<extra></extra>"
+                hovertemplate="Fatalities: %{y:,.0f}<extra></extra>"
             ),
             secondary_y=True,
         )
@@ -126,7 +126,7 @@ def cross_analyze():
                 marker_color=PALETTE["Events"],
                 opacity=0.7,
                 visible=False,
-                hovertemplate="Events: %{y:.2f}<extra></extra>"
+                hovertemplate="Events: %{y:,.0f}<extra></extra>"
             ),
             secondary_y=True,
         )
@@ -213,11 +213,33 @@ def cross_analyze():
         color=PALETTE["Grey"],
         title_font=dict(color=PALETTE["Text"]),
         showgrid=False,
-        tickformat=".2f"
+        tickformat=","
     )
 
     print(f"Saving to {OUTPUT_HTML}...")
-    fig.write_html(OUTPUT_HTML)
+    html = fig.to_html(include_plotlyjs='cdn', full_html=True)
+    js_glossary = """
+    <script>
+    const glossary = {
+        'Gross Enrolment Ratio (%)': 'Total enrollment in primary education regardless of age, as a % of the official primary school-age population.',
+        'Survival Rate (%)': 'Percentage of students who are expected to reach the last grade of primary education.',
+        'Fatalities': 'Total deaths resulting from conflict events.',
+        'Events': 'Number of distinct conflict events (battles, explosions, etc.).'
+    };
+    function applyGlossary() {
+        document.querySelectorAll('.legendtext').forEach(el => {
+            const text = el.textContent.trim();
+            if (glossary[text]) {
+                el.setAttribute('title', glossary[text]);
+                el.style.cursor = 'help';
+            }
+        });
+    }
+    setInterval(applyGlossary, 1000);
+    </script>
+    """
+    with open(OUTPUT_HTML, "w") as f:
+        f.write(html.replace('</body>', js_glossary + '</body>'))
     print("Success!")
 
 

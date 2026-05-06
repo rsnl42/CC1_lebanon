@@ -117,7 +117,28 @@ def create_visualizations():
     )
 
     print(f"Saving to {OUTPUT_HTML}...")
-    fig.write_html(OUTPUT_HTML)
+    html = fig.to_html(include_plotlyjs='cdn', full_html=True)
+    js_glossary = """
+    <script>
+    const glossary = {
+        'Gross enrolment ratio, primary, both sexes (%)': 'Total enrollment in primary regardless of age, as % of the official population.',
+        'Gross enrolment ratio, lower secondary, both sexes (%)': 'Total enrollment in lower secondary regardless of age, as % of the official population.',
+        'Government expenditure on primary education as a percentage of GDP (%)': 'Public spending on primary education relative to the national GDP.'
+    };
+    function applyGlossary() {
+        document.querySelectorAll('.legendtext').forEach(el => {
+            const text = el.textContent.trim();
+            if (glossary[text]) {
+                el.setAttribute('title', glossary[text]);
+                el.style.cursor = 'help';
+            }
+        });
+    }
+    setInterval(applyGlossary, 1000);
+    </script>
+    """
+    with open(OUTPUT_HTML, "w") as f:
+        f.write(html.replace('</body>', js_glossary + '</body>'))
     print("Success!")
 
 if __name__ == "__main__":
