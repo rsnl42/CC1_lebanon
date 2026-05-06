@@ -55,9 +55,12 @@
                                 const link = document.getElementById('final-map-link');
                                 link.style.opacity = '1';
                                 link.style.pointerEvents = 'auto';
-                                if (selectedType === 'density') link.href = `30_04/maps/PWD_${selectedYear}_sub_national_100m_map.html`;
-                                else if (selectedType === 'events') link.href = `30_04/maps/${selectedYear}_Global_Events.html`;
-                                else link.href = `timeline_map/index.html`; 
+                                if (selectedType === 'density') {
+                                    link.href = `30_04/maps/PWD_${selectedYear}_sub_national_100m_map.html`;
+                                } else {
+                                    // Both 'events' and 'both' map to the events file
+                                    link.href = `30_04/maps/${selectedYear}_Global_Events.html`;
+                                }
                             }
                         </script>
                         <button class="btn" style="padding:5px; font-size:9px;" onclick="setYear(2000, this)">2000</button>
@@ -67,12 +70,12 @@
                         <button class="btn" style="padding:5px; font-size:9px; background:#E07B3B;" onclick="setYear(2020, this)">2020</button>
                     </div>
 
-                    <div id="type-btns" style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap: 5px; margin-bottom: 10px;">
+                    <div id="type-btns" style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap: 5px; margin-bottom: 15px;">
                         <button class="btn" style="padding:5px; font-size:9px; background:#E07B3B;" onclick="setType('density', this)">PWD Density</button>
                         <button class="btn" style="padding:5px; font-size:9px;" onclick="setType('events', this)">Global Events</button>
                         <button class="btn" style="padding:5px; font-size:9px;" onclick="setType('both', this)">PWD+Events</button>
                     </div>
-                    <a id="final-map-link" href="30_04/maps/PWD_2020_sub_national_100m_map.html" target="_blank" class="btn" style="width:100%;">View Selected Map</a>
+                    <a id="final-map-link" href="30_04/maps/PWD_2020_sub_national_100m_map.html" target="_blank" class="btn" style="width:100%; padding:12px;">View Selected Map</a>
                 </div>
 
                 <a href="country_insights.html" class="card">
