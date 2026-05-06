@@ -35,19 +35,24 @@
                     <div id="year-btns" style="display:grid; grid-template-columns: repeat(5, 1fr); gap: 5px; margin-bottom: 10px;">
                         <script>
                             function selectYear(year, btn) {
+                                // Reset all buttons to neutral
                                 document.querySelectorAll('#year-btns .btn').forEach(b => b.style.background = '#1A1A2E');
+                                // Highlight selected button
                                 btn.style.background = '#E07B3B';
-                                document.getElementById('link-events').href = `30_04/maps/${year}_Global_Events.html`;
-                                document.getElementById('link-events').style.opacity = '1';
+                                // Enable Events Only link
+                                const eventLink = document.getElementById('link-events');
+                                eventLink.href = `30_04/maps/${year}_Global_Events.html`;
+                                eventLink.style.opacity = '1';
+                                eventLink.style.pointerEvents = 'auto';
                             }
                         </script>
-                        <button class="btn" style="padding:5px; font-size:9px;" onclick="selectYear(2000, this)">2000</button>
-                        <button class="btn" style="padding:5px; font-size:9px;" onclick="selectYear(2005, this)">2005</button>
-                        <button class="btn" style="padding:5px; font-size:9px;" onclick="selectYear(2010, this)">2010</button>
-                        <button class="btn" style="padding:5px; font-size:9px;" onclick="selectYear(2015, this)">2015</button>
-                        <button class="btn" style="padding:5px; font-size:9px;" onclick="selectYear(2020, this)">2020</button>
+                        <button class="btn" style="padding:5px; font-size:9px; background:#1A1A2E;" onclick="selectYear(2000, this)">2000</button>
+                        <button class="btn" style="padding:5px; font-size:9px; background:#1A1A2E;" onclick="selectYear(2005, this)">2005</button>
+                        <button class="btn" style="padding:5px; font-size:9px; background:#1A1A2E;" onclick="selectYear(2010, this)">2010</button>
+                        <button class="btn" style="padding:5px; font-size:9px; background:#1A1A2E;" onclick="selectYear(2015, this)">2015</button>
+                        <button class="btn" style="padding:5px; font-size:9px; background:#1A1A2E;" onclick="selectYear(2020, this)">2020</button>
                     </div>
-                    <a id="link-events" href="#" target="_blank" class="btn" style="width:100%; opacity:0.5;">Events Only</a>
+                    <a id="link-events" href="#" target="_blank" class="btn" style="width:100%; opacity:0.3; pointer-events:none;">Events Only</a>
                 </div>
 
                 <a href="country_insights.html" class="card">
