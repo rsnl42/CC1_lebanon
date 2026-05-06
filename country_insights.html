@@ -40,7 +40,7 @@
     <script>
         let insightsData = {};
         async function loadInsights() {
-            const resp = await fetch('country_strategic_insights.csv');
+            const resp = await fetch('country_strategic_insights_v2.csv');
             const csv = await resp.text();
             const lines = csv.split('\n');
             const container = document.getElementById('selector-container');
