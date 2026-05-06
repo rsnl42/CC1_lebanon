@@ -19,6 +19,70 @@
             margin-bottom: 40px; 
             font-weight: 700;
         }
+        .insights-section {
+            background: #FFFFFF;
+            border-left: 5px solid #1CABE2;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .insights-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        @media (max-width: 768px) {
+            .insights-grid { grid-template-columns: 1fr; }
+        }
+        .insight-col h3 {
+            color: #1A1A2E;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            font-size: 1.2em;
+        }
+        .insight-col h3::before {
+            content: '•';
+            color: #1CABE2;
+            font-size: 2em;
+            margin-right: 10px;
+            line-height: 0;
+        }
+        .insight-list, .action-list {
+            list-style: none;
+            padding: 0;
+        }
+        .insight-list li, .action-list li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.5;
+            font-size: 0.95em;
+        }
+        .insight-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #1CABE2;
+        }
+        .action-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #E83F6F;
+            font-weight: bold;
+        }
+        .tag {
+            display: inline-block;
+            background: #F0F9FF;
+            color: #0369A1;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75em;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
         .card { 
             background: white; 
@@ -79,6 +143,43 @@
     <div class="container">
         <h1>Education & Conflict Data Dashboard</h1>
         
+        <!-- Strategic Insights Section -->
+        <div class="insights-section">
+            <div class="insights-grid">
+                <div class="insight-col">
+                    <h3>Strategic Insights</h3>
+                    <ul class="insight-list">
+                        <li>
+                            <span class="tag">Conflict Impact</span><br>
+                            Localized conflict spikes correlate with immediate drops in <strong>Survival Rates</strong>, even when enrollment remains stable. Monitoring "quiet" dropouts is critical.
+                        </li>
+                        <li>
+                            <span class="tag">Dynamic Vulnerability Index</span><br>
+                            The "Vulnerability Clock" shows risk patterns migrating across borders over 20 years. Proximity (within 50km) is a leading indicator for future dropout trends.
+                        </li>
+                        <li>
+                            <span class="tag">Gender Sensitivity</span><br>
+                            Conflict intensity affects female survival rates more sharply in volatile zones, requiring gender-disaggregated emergency programming.
+                        </li>
+                    </ul>
+                </div>
+                <div class="insight-col">
+                    <h3>Recommended Actions</h3>
+                    <ul class="action-list">
+                        <li>
+                            <strong>Early Warning System:</strong> Pre-emptively allocate resources to schools identified in the "High-Risk Path" via the Geospatial Timeline.
+                        </li>
+                        <li>
+                            <strong>Hybrid Monitoring:</strong> Combine ACLED conflict data with monthly field-level attendance reports to bypass the lag in annual UNESCO metrics.
+                        </li>
+                        <li>
+                            <strong>Economic Mitigation:</strong> In contexts like Lebanon, focus on "Secondary Transition" support to prevent recruitment and entry into the informal labor market.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         <div class="grid">
             <!-- Card 1 -->
             <a href="https://rsnl42.github.io/CC1_exam/conflict_edu_analysis.html" class="card" target="_blank">
