@@ -41,7 +41,12 @@ def escape_data(text):
 
 def format_number(num):
     if pd.isna(num): return "N/A"
-    return f"{num:,.2f}" if isinstance(num, float) else f"{int(num):,}"
+    try:
+        if float(num).is_integer():
+            return f"{int(num):,}"
+    except:
+        pass
+    return f"{num:,.2f}"
 
 def generate_map(year):
     print(f"Generating Global {year} Map...")

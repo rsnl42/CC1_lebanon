@@ -48,7 +48,9 @@ def escape_data_for_js(text):
 def format_number(num):
     if pd.isna(num): return "N/A"
     try:
-        return f"{num:,.2f}" if isinstance(num, float) else f"{int(num):,}"
+        if float(num).is_integer():
+            return f"{int(num):,}"
+        return f"{num:,.2f}"
     except:
         return str(num)
 
