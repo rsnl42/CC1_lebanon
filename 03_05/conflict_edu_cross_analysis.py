@@ -160,8 +160,14 @@ def cross_analyze():
 
     # Create dropdown buttons
     buttons = []
-    for country, indices in country_traces.items():
+    country_dvi_map = {}
+    for country in sorted(countries):
+        country_data = merged[merged["COUNTRY_NAME"] == country].sort_values("YEAR")
+        latest_dvi = country_data["DVI"].dropna().iloc[-1] if not country_data["DVI"].dropna().empty else "N/A"
+        country_dvi_map[country] = latest_dvi
+        
         # Create a visibility list where only this country's traces are True
+        indices = country_traces[country]
         visibility = [False] * len(fig.data)
         for idx in indices:
             visibility[idx] = True
@@ -169,13 +175,51 @@ def cross_analyze():
         buttons.append(dict(
             label=country,
             method="update",
-            args=[{"visible": visibility}]
+            args=[{"visible": visibility}, {"title": f"Conflict Intensity vs. Education Metrics - {country}"}]
         ))
 
     # Set the first country as visible by default
     first_country = sorted(countries)[0]
     for idx in country_traces[first_country]:
         fig.data[idx].visible = True
+
+    # Inject KPI card and update logic
+    js_logic = f"""
+    <div id="kpi-card" style="margin: 20px auto; width: 300px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; text-align: center; font-family: sans-serif;">
+        <h3 style="margin: 0; font-size: 14px; color: #666;">Dynamic Vulnerability Index</h3>
+        <p id="kpi-value" style="margin: 10px 0 0; font-size: 24px; font-weight: bold; color: #6A1E74;">{country_dvi_map[first_country]}</p>
+    </div>
+    <script>
+    const dviMap = {{ {','.join([f"'{k}': '{v}'" for k,v in country_dvi_map.items()])} }};
+    
+    // Robust update mechanism
+    document.querySelectorAll('a.dropdown-item').forEach(item => {{
+        item.addEventListener('click', (e) => {{
+            const label = e.target.innerText;
+            if (dviMap[label]) {{
+                document.getElementById('kpi-value').innerText = dviMap[label];
+            }}
+        }});
+    }});
+    
+    const glossary = {{
+        'Gross Enrolment Ratio (%)': 'Total enrollment in primary education regardless of age, as a % of the official primary school-age population.',
+        'Survival Rate (%)': 'Percentage of students who are expected to reach the last grade of primary education.',
+        'Fatalities': 'Total deaths resulting from conflict events.',
+        'Events': 'Number of distinct conflict events (battles, explosions, etc.).'
+    }};
+    function applyGlossary() {{
+        document.querySelectorAll('.legendtext').forEach(el => {{
+            const text = el.textContent.trim();
+            if (glossary[text]) {{
+                el.setAttribute('title', glossary[text]);
+                el.style.cursor = 'help';
+            }}
+        }});
+    }}
+    setInterval(applyGlossary, 1000);
+    </script>
+    """
 
     fig.update_layout(
         updatemenus=[dict(
@@ -186,7 +230,7 @@ def cross_analyze():
             showactive=True,
             x=0.0,
             xanchor="left",
-            y=1.08,
+            y=1.15,
             yanchor="top",
             font=dict(color=PALETTE["Text"]),
             bgcolor="white",
@@ -195,12 +239,12 @@ def cross_analyze():
         paper_bgcolor=PALETTE["Background"],
         plot_bgcolor=PALETTE["Background"],
         title=dict(
-            text="Conflict Intensity vs. Education Metrics",
+            text=f"Conflict Intensity vs. Education Metrics - {first_country}",
             x=0.5,
             xanchor="center",
             font=dict(color=PALETTE["Text"], size=22)
         ),
-        margin=dict(t=100, b=50, l=50, r=50),
+        margin=dict(t=120, b=50, l=50, r=50),
         xaxis=dict(
             title="Year", 
             tickmode='linear', 
@@ -242,29 +286,10 @@ def cross_analyze():
 
     print(f"Saving to {OUTPUT_HTML}...")
     html = fig.to_html(include_plotlyjs='cdn', full_html=True)
-    js_glossary = """
-    <script>
-    const glossary = {
-        'Gross Enrolment Ratio (%)': 'Total enrollment in primary education regardless of age, as a % of the official primary school-age population.',
-        'Survival Rate (%)': 'Percentage of students who are expected to reach the last grade of primary education.',
-        'Fatalities': 'Total deaths resulting from conflict events.',
-        'Events': 'Number of distinct conflict events (battles, explosions, etc.).'
-    };
-    function applyGlossary() {
-        document.querySelectorAll('.legendtext').forEach(el => {
-            const text = el.textContent.trim();
-            if (glossary[text]) {
-                el.setAttribute('title', glossary[text]);
-                el.style.cursor = 'help';
-            }
-        });
-    }
-    setInterval(applyGlossary, 1000);
-    </script>
-    """
     with open(OUTPUT_HTML, "w") as f:
-        f.write(html.replace('</body>', js_glossary + '</body>'))
+        f.write(html.replace('</body>', js_logic + '</body>'))
     print("Success!")
+
 
 
 if __name__ == "__main__":
