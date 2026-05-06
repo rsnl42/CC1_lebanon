@@ -71,10 +71,10 @@ def cross_analyze():
     # Create the figure with three axes
     fig = make_subplots(specs=[[{"secondary_y": True}]])
     # Add a third y-axis for DVI
-    fig.layout.yaxis2.overlaying = 'y'
-    fig.layout.yaxis2.side = 'right'
-    fig.layout.yaxis2.anchor = 'free'
-    fig.layout.yaxis2.position = 0.99
+    
+    
+    
+    
 
     # ... (rest of the trace-adding logic)
     country_traces = {}
