@@ -1,225 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education Data Analysis Dashboard</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Education in Crisis — Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            background-color: #F7F4EF; 
-            color: #1A1A2E; 
-            margin: 0; 
-            padding: 40px; 
+        :root {
+            --bg: #0E1117; --surface: #161B27; --accent: #E07B3B; --text: #E8E6E0; --muted: #6B7A99;
         }
-        .container { max-width: 1200px; margin: auto; }
-        h1 { 
-            text-align: center; 
-            color: #1A1A2E; 
-            margin-bottom: 40px; 
-            font-weight: 700;
-        }
-        .insights-section {
-            background: #FFFFFF;
-            border-left: 5px solid #1CABE2;
-            padding: 30px;
-            border-radius: 12px;
-            margin-bottom: 40px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-        .insights-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-        }
-        @media (max-width: 768px) {
-            .insights-grid { grid-template-columns: 1fr; }
-        }
-        .insight-col h3 {
-            color: #1A1A2E;
-            margin-top: 0;
-            display: flex;
-            align-items: center;
-            font-size: 1.2em;
-        }
-        .insight-col h3::before {
-            content: '•';
-            color: #1CABE2;
-            font-size: 2em;
-            margin-right: 10px;
-            line-height: 0;
-        }
-        .insight-list, .action-list {
-            list-style: none;
-            padding: 0;
-        }
-        .insight-list li, .action-list li {
-            margin-bottom: 15px;
-            padding-left: 20px;
-            position: relative;
-            line-height: 1.5;
-            font-size: 0.95em;
-        }
-        .insight-list li::before {
-            content: '→';
-            position: absolute;
-            left: 0;
-            color: #1CABE2;
-        }
-        .action-list li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: #E83F6F;
-            font-weight: bold;
-        }
-        .tag {
-            display: inline-block;
-            background: #F0F9FF;
-            color: #0369A1;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 0.75em;
-            font-weight: 600;
-            margin-bottom: 4px;
-        }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-        .card { 
-            background: white; 
-            border-radius: 12px; 
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
-            padding: 24px; 
-            transition: all 0.3s ease; 
-            text-decoration: none; 
-            color: inherit; 
-            display: flex; 
-            flex-direction: column; 
-            border: 1px solid rgba(0,0,0,0.05);
-        }
-        .card:hover { 
-            transform: translateY(-8px); 
-            box-shadow: 0 12px 24px rgba(0,0,0,0.1); 
-            border-color: #1CABE2;
-        }
-        .card h2 { 
-            margin-top: 0; 
-            color: #1CABE2; 
-            font-size: 1.4em; 
-            border-bottom: 2px solid #F7F4EF;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-        }
-        .card p { 
-            flex-grow: 1; 
-            color: #6B7280; 
-            line-height: 1.6; 
-            font-size: 0.95em;
-        }
-        .btn { 
-            display: inline-block; 
-            background-color: #1A1A2E; 
-            color: white; 
-            padding: 12px 20px; 
-            border-radius: 6px; 
-            text-align: center; 
-            margin-top: 20px; 
-            font-weight: 600; 
-            transition: background-color 0.2s;
-        }
-        .card:hover .btn {
-            background-color: #E83F6F;
-        }
-        .footer { 
-            text-align: center; 
-            margin-top: 60px; 
-            color: #6B7280; 
-            font-size: 0.85em; 
-            border-top: 1px solid rgba(0,0,0,0.05);
-            padding-top: 20px;
-        }
+        body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; }
+        .insight-card { background: var(--surface); border: 1px solid rgba(255,255,255,0.1); }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Education & Conflict Data Dashboard</h1>
+<body class="p-8">
+    <div class="max-w-6xl mx-auto">
+        <h1 class="text-4xl font-bold mb-8 text-center text-orange-500 font-display">Education Crisis Dashboard</h1>
         
-        <!-- Strategic Insights Section -->
-        <div class="insights-section">
-            <div class="insights-grid">
-                <div class="insight-col">
-                    <h3>Strategic Insights</h3>
-                    <ul class="insight-list">
-                        <li>
-                            <span class="tag">Lebanon Crisis Profile</span><br>
-                            Our analysis shows Lebanon's out-of-school rate peaked at <strong>38.91%</strong>, highlighting a severe education gap during regional escalations.
-                        </li>
-                        <li>
-                            <span class="tag">The 50km Risk Zone</span><br>
-                            Approximately <strong>41.5%</strong> of schools in the dataset (21,861 sites) are classified as "Vulnerable," having been within 50km of a conflict event.
-                        </li>
-                        <li>
-                            <span class="tag">Gendered Survival Gap</span><br>
-                            In high-fatality zones, survival rates to the last grade of primary drop significantly, with girls showing 12% higher volatility than boys.
-                        </li>
-                    </ul>
-                </div>
-                <div class="insight-col">
-                    <h3>Recommended Actions</h3>
-                    <ul class="action-list">
-                        <li>
-                            <strong>Focus on 21k Vulnerable Sites:</strong> Target the 41.5% of schools in the risk zone for pre-emptive resource caching and teacher "continuity" training.
-                        </li>
-                        <li>
-                            <strong>Lebanon Transition Support:</strong> Implement targeted secondary-school scholarships in Lebanon to bridge the <strong>39% OOS gap</strong> and prevent entry into informal labor.
-                        </li>
-                        <li>
-                            <strong>Dynamic Buffer Zones:</strong> Use the Geospatial Timeline to predict the "path of conflict" and establish mobile learning centers 3-6 months ahead of forecasted volatility.
-                        </li>
-                    </ul>
-                </div>
+        <!-- Country Selector placeholder (linked to country_selector logic) -->
+        <div id="selector-container" class="mb-12">
+            <!-- This will be populated dynamically -->
+        </div>
+
+        <div id="insight-display" class="hidden grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="insight-card p-6 rounded-xl">
+                <h3 class="text-xl font-bold text-orange-400 mb-2">Key Insight</h3>
+                <p id="insight-text" class="text-gray-300"></p>
+                <p class="text-xs text-gray-500 mt-4 italic" id="insight-reason"></p>
+            </div>
+            <div class="insight-card p-6 rounded-xl">
+                <h3 class="text-xl font-bold text-blue-400 mb-2">Recommended Actions</h3>
+                <p id="action-text" class="text-gray-300"></p>
+                <p class="text-xs text-gray-500 mt-4 italic" id="action-reason"></p>
             </div>
         </div>
-
-        <div class="grid">
-            <!-- Card 1 -->
-            <a href="https://rsnl42.github.io/CC1_exam/conflict_edu_analysis.html" class="card" target="_blank">
-                <h2>Conflict vs Education</h2>
-                <p>Analyzes the impact of conflict (Fatalities & Events) on Education Survival Rates. Clustered column chart with trend lines.</p>
-                <div class="btn">View Interactive Chart</div>
-            </a>
-
-            <!-- Card 2 -->
-            <a href="https://rsnl42.github.io/CC1_exam/timeline_map/index.html" class="card" target="_blank">
-                <h2>Vulnerability Timeline</h2>
-                <p>An interactive geospatial journey showing how school vulnerability and Out-of-School rates have evolved from 1997 to 2024.</p>
-                <div class="btn">Launch Timeline Map</div>
-            </a>
-
-            <!-- Card 3 -->
-            <a href="https://rsnl42.github.io/CC1_exam/conflict_edu_gender_analysis.html" class="card" target="_blank">
-                <h2>Gendered Conflict Impact</h2>
-                <p>Disaggregated view showing how conflict affects boys and girls differently in terms of enrollment and school survival.</p>
-                <div class="btn">View Interactive Chart</div>
-            </a>
-
-            <!-- Card 4 -->
-            <a href="https://rsnl42.github.io/CC1_exam/oos_profile.html" class="card" target="_blank">
-                <h2>Comprehensive OOS Profile</h2>
-                <p>Full gender-disaggregated view of out-of-school children, merging absolute counts with percentage trends in a single unified profile.</p>
-                <div class="btn">View Interactive Profile</div>
-            </a>
-
-            <!-- Card 5 -->
-            <a href="https://rsnl42.github.io/CC1_exam/education_trends.html" class="card" target="_blank">
-                <h2>Macro Education Trends</h2>
-                <p>Analysis of Gross Enrollment and Expenditure across countries to identify long-term educational maturity.</p>
-                <div class="btn">View Trends</div>
-            </a>
-        </div>
-
-        <div class="footer">
-            Data sourced from UNESCO UIS, World Bank, and ACLED. Dashboard generated by Gemini CLI.
-        </div>
     </div>
+
+    <script>
+        let insightsData = {};
+        
+        async function loadInsights() {
+            const resp = await fetch('country_strategic_insights.csv');
+            const csv = await resp.text();
+            const lines = csv.split('\n');
+            lines.slice(1).forEach(line => {
+                const [c, k, rk, p, rp] = line.split(',');
+                if(c) insightsData[c] = {k, rk, p, rp};
+            });
+        }
+
+        function showCountry(name) {
+            const data = insightsData[name];
+            if(data) {
+                document.getElementById('insight-display').classList.remove('hidden');
+                document.getElementById('insight-text').innerText = data.k;
+                document.getElementById('insight-reason').innerText = data.rk;
+                document.getElementById('action-text').innerText = data.p;
+                document.getElementById('action-reason').innerText = data.rp;
+            }
+        }
+
+        loadInsights();
+    </script>
 </body>
 </html>
