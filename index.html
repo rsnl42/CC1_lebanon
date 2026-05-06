@@ -27,34 +27,11 @@
         <div class="nav-section">
             <h2 style="color:var(--muted); font-size: 11px; font-family: 'DM Mono', monospace; text-transform: uppercase; letter-spacing: 0.18em; margin-bottom: 30px;">Available Analytics</h2>
             <div class="grid">
-                <a href="country_insights.html" class="card">
-                    <h2>Country Strategic Insights</h2>
-                    <p style="font-weight:400; font-size: 14px; color:var(--muted);">Evidence-based insights & recommended actions per country.</p>
-                    <div class="btn">Explore Country Data</div>
-                </a>
-                <a href="conflict_edu_analysis.html" class="card">
-                    <h2>Conflict vs Education</h2>
-                    <p style="font-weight:400; font-size: 14px; color:var(--muted);">Impact of fatalities/events on survival rates.</p>
-                    <div class="btn">View Chart</div>
-                </a>
-                <a href="timeline_map/index.html" class="card">
-                    <h2>Vulnerability Timeline</h2>
-                    <p style="font-weight:400; font-size: 14px; color:var(--muted);">Geospatial journey 1997-2024.</p>
-                    <div class="btn">Launch Timeline</div>
-                </a>
-                <a href="conflict_edu_gender_analysis.html" class="card">
-                    <h2>Gendered Impact</h2>
-                    <p style="font-weight:400; font-size: 14px; color:var(--muted);">Boys vs Girls enrollment survival analysis.</p>
-                    <div class="btn">View Chart</div>
-                </a>
-                <a href="oos_profile.html" class="card">
-                    <h2>OOS Profile</h2>
-                    <p style="font-weight:400; font-size: 14px; color:var(--muted);">Out-of-school children, gender-disaggregated.</p>
-                    <div class="btn">View Profile</div>
-                </a>
-                <div class="card">
-                    <h2>Global Conflict Events</h2>
-                    <p style="font-weight:400; font-size: 14px; color:var(--muted); margin-bottom: 15px;">Select a year to view conflict events map.</p>
+                <!-- Geospatial Section -->
+                <div class="card" style="border-color:var(--accent);">
+                    <h2>Geospatial Analysis</h2>
+                    <p style="font-weight:400; font-size: 14px; color:var(--muted); margin-bottom: 15px;">Explore vulnerability, density, and events.</p>
+                    <a href="timeline_map/index.html" class="btn" style="width:100%; margin-bottom:10px;">Density + Events (Timeline)</a>
                     <div id="year-btns" style="display:grid; grid-template-columns: repeat(5, 1fr); gap: 5px; margin-bottom: 10px;">
                         <script>
                             function selectYear(year, btn) {
@@ -70,8 +47,34 @@
                         <button class="btn" style="padding:5px; font-size:9px;" onclick="selectYear(2015, this)">2015</button>
                         <button class="btn" style="padding:5px; font-size:9px;" onclick="selectYear(2020, this)">2020</button>
                     </div>
-                    <a id="link-events" href="#" target="_blank" class="btn" style="width:100%; opacity:0.5;">View Selected Year Events</a>
+                    <a id="link-events" href="#" target="_blank" class="btn" style="width:100%; opacity:0.5;">Events Only</a>
                 </div>
+
+                <a href="country_insights.html" class="card">
+                    <h2>Country Strategic Insights</h2>
+                    <p style="font-weight:400; font-size: 14px; color:var(--muted);">Evidence-based insights & recommended actions per country.</p>
+                    <div class="btn">Explore Country Data</div>
+                </a>
+                <a href="conflict_edu_analysis.html" class="card">
+                    <h2>Conflict vs Education</h2>
+                    <p style="font-weight:400; font-size: 14px; color:var(--muted);">Impact of fatalities/events on survival rates.</p>
+                    <div class="btn">View Chart</div>
+                </a>
+                <a href="conflict_edu_gender_analysis.html" class="card">
+                    <h2>Gendered Impact</h2>
+                    <p style="font-weight:400; font-size: 14px; color:var(--muted);">Boys vs Girls enrollment survival analysis.</p>
+                    <div class="btn">View Chart</div>
+                </a>
+                <a href="oos_profile.html" class="card">
+                    <h2>OOS Profile</h2>
+                    <p style="font-weight:400; font-size: 14px; color:var(--muted);">Out-of-school children, gender-disaggregated.</p>
+                    <div class="btn">View Profile</div>
+                </a>
+                <a href="education_trends.html" class="card">
+                    <h2>Macro Education Trends</h2>
+                    <p style="font-weight:400; font-size: 14px; color:var(--muted);">Enrollment and Expenditure maturity.</p>
+                    <div class="btn">View Trends</div>
+                </a>
             </div>
         </div>
     </div>
