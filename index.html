@@ -52,10 +52,17 @@
                     <p style="font-weight:400; font-size: 14px; color:var(--muted);">Out-of-school children, gender-disaggregated.</p>
                     <div class="btn">View Profile</div>
                 </a>
-                <a href="30_04/maps/PWD_2020_sub_national_100m_map.html" class="card">
-                    <h2>Population Density</h2>
-                    <p style="font-weight:400; font-size: 14px; color:var(--muted);">Granular 100m resolution mapping.</p>
-                    <div class="btn">View Map</div>
+                <a href="#" class="card" onclick="document.getElementById('density-dropdown').classList.toggle('hidden'); return false;">
+                    <h2>Population Density (100m)</h2>
+                    <p style="font-weight:400; font-size: 14px; color:var(--muted);">Granular sub-national population density maps.</p>
+                    <div id="density-dropdown" class="hidden" style="margin-top:15px; border-top:1px solid rgba(255,255,255,0.1); padding-top:10px;">
+                        <a href="30_04/maps/PWD_2000_sub_national_100m_map.html" style="display:block; color:var(--text); font-size:12px; margin-bottom:5px;">2000 Density Map</a>
+                        <a href="30_04/maps/PWD_2005_sub_national_100m_map.html" style="display:block; color:var(--text); font-size:12px; margin-bottom:5px;">2005 Density Map</a>
+                        <a href="30_04/maps/PWD_2010_sub_national_100m_map.html" style="display:block; color:var(--text); font-size:12px; margin-bottom:5px;">2010 Density Map</a>
+                        <a href="30_04/maps/PWD_2015_sub_national_100m_map.html" style="display:block; color:var(--text); font-size:12px; margin-bottom:5px;">2015 Density Map</a>
+                        <a href="30_04/maps/PWD_2020_sub_national_100m_map.html" style="display:block; color:var(--text); font-size:12px;">2020 Density Map</a>
+                    </div>
+                    <div class="btn">Select Year</div>
                 </a>
             </div>
         </div>
