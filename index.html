@@ -55,10 +55,11 @@
                                 const link = document.getElementById('final-map-link');
                                 link.style.opacity = '1';
                                 link.style.pointerEvents = 'auto';
+
                                 if (selectedType === 'density') {
                                     link.href = `30_04/maps/PWD_${selectedYear}_sub_national_100m_map.html`;
                                 } else {
-                                    // Maps are named 2000_Global_Events.html, 2005_Global_Events.html, etc.
+                                    // Both 'events' and 'both' map to the events file
                                     link.href = `30_04/maps/${selectedYear}_Global_Events.html`;
                                 }
                             }
@@ -75,7 +76,9 @@
                         <button class="btn" style="padding:5px; font-size:9px;" onclick="setType('events', this)">Global Events</button>
                         <button class="btn" style="padding:5px; font-size:9px;" onclick="setType('both', this)">PWD+Events</button>
                     </div>
-                    <a id="final-map-link" href="30_04/maps/PWD_2020_sub_national_100m_map.html" target="_blank" class="btn" style="width:100%; padding:12px;">View Selected Map</a>
+                    <div style="margin-top:auto;">
+                        <a id="final-map-link" href="30_04/maps/PWD_2020_sub_national_100m_map.html" target="_blank" class="btn" style="display:block; width:100%; padding:12px 0; margin-top:0;">View Selected Map</a>
+                    </div>
                 </div>
 
                 <a href="country_insights.html" class="card">
