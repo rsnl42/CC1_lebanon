@@ -53,25 +53,24 @@
                     <div class="btn">View Profile</div>
                 </a>
                 <div class="card">
-                    <h2>Geospatial Maps</h2>
-                    <p style="font-weight:400; font-size: 14px; color:var(--muted); margin-bottom: 15px;">Granular 100m density and Global Event mapping.</p>
-                    <div style="display:grid; grid-template-columns: repeat(5, 1fr); gap: 5px; margin-bottom: 10px;">
+                    <h2>Global Conflict Events</h2>
+                    <p style="font-weight:400; font-size: 14px; color:var(--muted); margin-bottom: 15px;">Select a year to view conflict events map.</p>
+                    <div id="year-btns" style="display:grid; grid-template-columns: repeat(5, 1fr); gap: 5px; margin-bottom: 10px;">
                         <script>
-                            function updateMapLinks(year) {
-                                document.getElementById('link-density').href = `30_04/maps/PWD_${year}_sub_national_100m_map.html`;
-                                document.getElementById('link-events').href = `30_04_playground/maps/PWD_${year}_Global_Events.html`;
+                            function selectYear(year, btn) {
+                                document.querySelectorAll('#year-btns .btn').forEach(b => b.style.background = '#1A1A2E');
+                                btn.style.background = '#E07B3B';
+                                document.getElementById('link-events').href = `30_04/maps/${year}_Global_Events.html`;
+                                document.getElementById('link-events').style.opacity = '1';
                             }
                         </script>
-                        <button class="btn" style="padding:5px; font-size:9px;" onclick="updateMapLinks(2000)">2000</button>
-                        <button class="btn" style="padding:5px; font-size:9px;" onclick="updateMapLinks(2005)">2005</button>
-                        <button class="btn" style="padding:5px; font-size:9px;" onclick="updateMapLinks(2010)">2010</button>
-                        <button class="btn" style="padding:5px; font-size:9px;" onclick="updateMapLinks(2015)">2015</button>
-                        <button class="btn" style="padding:5px; font-size:9px;" onclick="updateMapLinks(2020)">2020</button>
+                        <button class="btn" style="padding:5px; font-size:9px;" onclick="selectYear(2000, this)">2000</button>
+                        <button class="btn" style="padding:5px; font-size:9px;" onclick="selectYear(2005, this)">2005</button>
+                        <button class="btn" style="padding:5px; font-size:9px;" onclick="selectYear(2010, this)">2010</button>
+                        <button class="btn" style="padding:5px; font-size:9px;" onclick="selectYear(2015, this)">2015</button>
+                        <button class="btn" style="padding:5px; font-size:9px;" onclick="selectYear(2020, this)">2020</button>
                     </div>
-                    <div style="display:flex; gap:10px;">
-                        <a id="link-density" href="30_04/maps/PWD_2020_sub_national_100m_map.html" target="_blank" class="btn" style="flex:1">Density</a>
-                        <a id="link-events" href="30_04_playground/maps/PWD_2020_Global_Events.html" target="_blank" class="btn" style="flex:1">Events</a>
-                    </div>
+                    <a id="link-events" href="#" target="_blank" class="btn" style="width:100%; opacity:0.5;">View Selected Year Events</a>
                 </div>
             </div>
         </div>
