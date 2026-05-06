@@ -1,0 +1,41 @@
+{
+  "project_name": "Conflict-Education Resilience Analysis",
+  "organization": "Hypothetical Humanitarian Organization (HHO)",
+  "analysis_scope": {
+    "countries": ["LBN", "SDN", "SSD", "SOM", "YEM", "UKR", "PSE"],
+    "years": {
+      "start": 2015,
+      "end": 2024
+    },
+    "education_indicators": [
+      "SE.PRM.ENRR",
+      "SE.SEC.ENRR",
+      "UIS.NERA.1",
+      "UIS.NERA.2",
+      "UIS.TRTP.1"
+    ]
+  },
+  "data_sources": {
+    "uis": {
+      "enabled": true,
+      "url": "https://download.uis.unesco.org/bdds/202509/OPRI.zip"
+    },
+    "hdx_schools": {
+      "enabled": true
+    },
+    "worldpop": {
+      "enabled": true,
+      "resolution_factor": 50
+    },
+    "acled": {
+      "enabled": false,
+      "email": "your_email@example.com",
+      "key": "your_api_key_here"
+    }
+  },
+  "paths": {
+    "raw": "humanitarian_pipeline/data/raw",
+    "processed": "humanitarian_pipeline/data/processed",
+    "outputs": "humanitarian_pipeline/outputs"
+  }
+}

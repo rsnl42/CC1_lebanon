@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Select Country — Education in Crisis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+/* ── Reset & Base ─────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:         #0E1117;
+  --surface:    #161B27;
+  --surface2:   #1E2535;
+  --border:     rgba(255,255,255,0.07);
+  --text:       #E8E6E0;
+  --muted:      #6B7A99;
+  --accent:     #E07B3B;
+  --accent2:    #1CABE2;
+  --crisis:     #C0392B;
+  --selected:   #E07B3B;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-mono:    'DM Mono', monospace;
+  --font-body:    'DM Sans', sans-serif;
+}
+
+html, body {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-weight: 300;
+}
+
+/* ── Grain overlay ───────────────────────────────────────── */
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0.4;
+}
+
+/* ── Layout ──────────────────────────────────────────────── */
+.shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 28px 100px;
+}
+
+/* ── Header ──────────────────────────────────────────────── */
+.header {
+  margin-bottom: 52px;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 28px; height: 1px;
+  background: var(--accent);
+}
+
+h1 {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 16px;
+}
+
+h1 em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.subtitle {
+  font-size: 15px;
+  color: var(--muted);
+  max-width: 480px;
+  line-height: 1.6;
+}
+
+/* ── Controls ────────────────────────────────────────────── */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+
+.search-wrap {
+  flex: 1;
+  min-width: 200px;
+  position: relative;
+}
+
+.search-wrap svg {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted);
+  pointer-events: none;
+}
+
+#search {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 11px 14px 11px 40px;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+#search::placeholder { color: var(--muted); }
+#search:focus { border-color: rgba(224,123,59,0.4); }
+
+/* Region filter pills */
+.region-pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 7px 14px;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.pill:hover { border-color: rgba(224,123,59,0.3); color: var(--text); }
+.pill.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* ── Region label ────────────────────────────────────────── */
+.region-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.region-label span { color: var(--accent); }
+
+/* ── Country Grid ────────────────────────────────────────── */
+#grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+  gap: 10px;
+}
+
+/* ── Country Card ────────────────────────────────────────── */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px 16px 14px;
+  cursor: pointer;
+  transition: all 0.18s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  overflow: hidden;
+  animation: fadeUp 0.4s both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(224,123,59,0.08) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.card:hover {
+  border-color: rgba(224,123,59,0.35);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+.card:hover::after { opacity: 1; }
+
+.card.selected {
+  border-color: var(--accent);
+  background: rgba(224,123,59,0.08);
+  box-shadow: 0 0 0 1px var(--accent), 0 8px 32px rgba(224,123,59,0.15);
+  transform: translateY(-3px);
+}
+.card.selected::after { opacity: 1; }
+
+/* Severity dot */
+.severity {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 7px; height: 7px;
+  border-radius: 50%;
+}
+.sev-high    { background: #C0392B; box-shadow: 0 0 6px rgba(192,57,43,0.6); }
+.sev-medium  { background: #E07B3B; box-shadow: 0 0 6px rgba(224,123,59,0.5); }
+.sev-low     { background: #F6AA61; }
+
+.card-flag {
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: 10px;
+  display: block;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+  transition: transform 0.2s;
+}
+.card:hover .card-flag { transform: scale(1.1); }
+
+.card-name {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+
+.card-meta {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+}
+
+.card.selected .card-name { color: var(--accent); }
+
+/* Checkmark on selected */
+.check {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 18px; height: 18px;
+  background: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.check svg { width: 10px; height: 10px; color: white; }
+.card.selected .check { opacity: 1; transform: scale(1); }
+
+/* ── Empty state ─────────────────────────────────────────── */
+.empty {
+  grid-column: 1/-1;
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.05em;
+}
+.empty span { display: block; font-size: 32px; margin-bottom: 12px; }
+
+/* ── Selection bar ───────────────────────────────────────── */
+.selection-bar {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  background: rgba(14,17,23,0.92);
+  backdrop-filter: blur(20px);
+  border-top: 1px solid var(--border);
+  padding: 16px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  transform: translateY(100%);
+  transition: transform 0.3s cubic-bezier(0.34, 1.2, 0.64, 1);
+  z-index: 100;
+}
+.selection-bar.visible { transform: translateY(0); }
+
+.sel-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sel-count {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.sel-count strong {
+  font-size: 20px;
+  color: var(--accent);
+  font-weight: 500;
+  display: block;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.sel-flags {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  max-width: 400px;
+}
+
+.sel-flag-chip {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 3px 8px 3px 6px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  animation: chipIn 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@keyframes chipIn {
+  from { opacity: 0; transform: scale(0.7); }
+  to   { opacity: 1; transform: scale(1); }
+}
+.sel-flag-chip .chip-remove {
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  transition: color 0.15s;
+}
+.sel-flag-chip .chip-remove:hover { color: var(--crisis); }
+
+.btn-confirm {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+.btn-confirm:hover {
+  background: #c96830;
+  box-shadow: 0 4px 20px rgba(224,123,59,0.35);
+  transform: translateY(-1px);
+}
+
+.btn-clear {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+.btn-clear:hover { color: var(--text); border-color: rgba(255,255,255,0.2); }
+
+/* Result panel (demo) */
+.result-panel {
+  display: none;
+  margin-top: 40px;
+  background: var(--surface);
+  border: 1px solid rgba(224,123,59,0.3);
+  border-radius: 12px;
+  padding: 28px;
+  animation: fadeUp 0.3s;
+}
+.result-panel h3 {
+  font-family: var(--font-display);
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: var(--accent);
+}
+.result-panel p {
+  font-size: 13px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  line-height: 1.8;
+}
+</style>
+</head>
+<body>
+
+<div class="shell">
+
+  <div class="header">
+    <div class="eyebrow">Education in Crisis — Country Explorer</div>
+    <h1>Where do you want to<br><em>investigate?</em></h1>
+    <p class="subtitle">Select one or more countries to explore education access data, school locations, and conflict event overlays.</p>
+  </div>
+
+  <div class="controls">
+    <div class="search-wrap">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input type="text" id="search" placeholder="Search country…" autocomplete="off"/>
+    </div>
+    <div class="region-pills" id="regionPills"></div>
+  </div>
+
+  <div class="region-label">
+    <span id="regionLabelText">All regions</span>
+    <span id="countLabel"></span>
+  </div>
+
+  <div id="grid"></div>
+
+  <div id="resultPanel" class="result-panel">
+    <h3>Selected countries</h3>
+    <p id="resultText"></p>
+  </div>
+
+</div>
+
+<!-- Fixed selection bar -->
+<div class="selection-bar" id="selBar">
+  <div class="sel-info">
+    <div class="sel-count">
+      <strong id="selNum">0</strong>selected
+    </div>
+    <div class="sel-flags" id="selFlags"></div>
+  </div>
+  <div style="display:flex;gap:8px">
+    <button class="btn-clear" onclick="clearAll()">Clear</button>
+    <button class="btn-confirm" onclick="confirmSelection()">Confirm →</button>
+  </div>
+</div>
+
+<script>
+// ── Data ──────────────────────────────────────────────────────────────────────
+const COUNTRIES = [
+  // Sub-Saharan Africa
+  { iso3:"SOM", name:"Somalia",              flag:"🇸🇴", region:"Sub-Saharan Africa", sev:"high",   iso2:"SO" },
+  { iso3:"ETH", name:"Ethiopia",             flag:"🇪🇹", region:"Sub-Saharan Africa", sev:"high",   iso2:"ET" },
+  { iso3:"SDN", name:"Sudan",                flag:"🇸🇩", region:"Sub-Saharan Africa", sev:"high",   iso2:"SD" },
+  { iso3:"SSD", name:"South Sudan",          flag:"🇸🇸", region:"Sub-Saharan Africa", sev:"high",   iso2:"SS" },
+  { iso3:"NGA", name:"Nigeria",              flag:"🇳🇬", region:"Sub-Saharan Africa", sev:"high",   iso2:"NG" },
+  { iso3:"COD", name:"DR Congo",             flag:"🇨🇩", region:"Sub-Saharan Africa", sev:"high",   iso2:"CD" },
+  { iso3:"CAF", name:"Cent. African Rep.",   flag:"🇨🇫", region:"Sub-Saharan Africa", sev:"high",   iso2:"CF" },
+  { iso3:"MLI", name:"Mali",                 flag:"🇲🇱", region:"Sub-Saharan Africa", sev:"medium", iso2:"ML" },
+  { iso3:"BFA", name:"Burkina Faso",         flag:"🇧🇫", region:"Sub-Saharan Africa", sev:"medium", iso2:"BF" },
+  { iso3:"TCD", name:"Chad",                 flag:"🇹🇩", region:"Sub-Saharan Africa", sev:"medium", iso2:"TD" },
+  { iso3:"MOZ", name:"Mozambique",           flag:"🇲🇿", region:"Sub-Saharan Africa", sev:"medium", iso2:"MZ" },
+  { iso3:"CMR", name:"Cameroon",             flag:"🇨🇲", region:"Sub-Saharan Africa", sev:"medium", iso2:"CM" },
+  { iso3:"KEN", name:"Kenya",                flag:"🇰🇪", region:"Sub-Saharan Africa", sev:"low",    iso2:"KE" },
+  { iso3:"UGA", name:"Uganda",               flag:"🇺🇬", region:"Sub-Saharan Africa", sev:"low",    iso2:"UG" },
+  // Middle East
+  { iso3:"YEM", name:"Yemen",                flag:"🇾🇪", region:"Middle East",        sev:"high",   iso2:"YE" },
+  { iso3:"SYR", name:"Syria",                flag:"🇸🇾", region:"Middle East",        sev:"high",   iso2:"SY" },
+  { iso3:"IRQ", name:"Iraq",                 flag:"🇮🇶", region:"Middle East",        sev:"high",   iso2:"IQ" },
+  { iso3:"AFG", name:"Afghanistan",          flag:"🇦🇫", region:"Middle East",        sev:"high",   iso2:"AF" },
+  { iso3:"PSE", name:"Palestine",            flag:"🇵🇸", region:"Middle East",        sev:"high",   iso2:"PS" },
+  { iso3:"LBN", name:"Lebanon",              flag:"🇱🇧", region:"Middle East",        sev:"medium", iso2:"LB" },
+  { iso3:"LBY", name:"Libya",               flag:"🇱🇾", region:"Middle East",        sev:"medium", iso2:"LY" },
+  { iso3:"JOR", name:"Jordan",               flag:"🇯🇴", region:"Middle East",        sev:"low",    iso2:"JO" },
+  // SE Asia
+  { iso3:"MMR", name:"Myanmar",              flag:"🇲🇲", region:"SE & South Asia",    sev:"high",   iso2:"MM" },
+  { iso3:"AFG", name:"Afghanistan",          flag:"🇦🇫", region:"SE & South Asia",    sev:"high",   iso2:"AF" },
+  { iso3:"PAK", name:"Pakistan",             flag:"🇵🇰", region:"SE & South Asia",    sev:"medium", iso2:"PK" },
+  { iso3:"BGD", name:"Bangladesh",           flag:"🇧🇩", region:"SE & South Asia",    sev:"medium", iso2:"BD" },
+  { iso3:"KHM", name:"Cambodia",             flag:"🇰🇭", region:"SE & South Asia",    sev:"low",    iso2:"KH" },
+  { iso3:"PHL", name:"Philippines",          flag:"🇵🇭", region:"SE & South Asia",    sev:"low",    iso2:"PH" },
+  { iso3:"THA", name:"Thailand",             flag:"🇹🇭", region:"SE & South Asia",    sev:"low",    iso2:"TH" },
+  { iso3:"VNM", name:"Vietnam",              flag:"🇻🇳", region:"SE & South Asia",    sev:"low",    iso2:"VN" },
+].filter((c, i, a) => a.findIndex(x => x.iso3 === c.iso3 && x.region === c.region) === i);
+
+const REGIONS = ["All", ...new Set(COUNTRIES.map(c => c.region))];
+const SEV_LABEL = { high: "High conflict", medium: "Medium", low: "Lower" };
+
+// ── State ─────────────────────────────────────────────────────────────────────
+let selected   = new Set();
+let activeReg  = "All";
+let searchTerm = "";
+
+// ── Render pills ──────────────────────────────────────────────────────────────
+function renderPills() {
+  const el = document.getElementById("regionPills");
+  el.innerHTML = REGIONS.map(r => `
+    <button class="pill ${r === activeReg ? "active" : ""}"
+            onclick="setRegion('${r}')">${r === "All" ? "All regions" : r}</button>
+  `).join("");
+}
+
+function setRegion(r) {
+  activeReg = r;
+  renderPills();
+  renderGrid();
+}
+
+// ── Render grid ───────────────────────────────────────────────────────────────
+function renderGrid() {
+  const term = searchTerm.toLowerCase();
+  const filtered = COUNTRIES.filter(c => {
+    const matchRegion = activeReg === "All" || c.region === activeReg;
+    const matchSearch = !term || c.name.toLowerCase().includes(term) || c.iso3.toLowerCase().includes(term);
+    return matchRegion && matchSearch;
+  });
+
+  const labelEl = document.getElementById("regionLabelText");
+  const countEl = document.getElementById("countLabel");
+  labelEl.textContent = activeReg === "All" ? "All regions" : activeReg;
+  countEl.textContent = `${filtered.length} countries`;
+
+  const grid = document.getElementById("grid");
+  if (!filtered.length) {
+    grid.innerHTML = `<div class="empty"><span>🔍</span>No countries match "${searchTerm}"</div>`;
+    return;
+  }
+
+  grid.innerHTML = filtered.map((c, i) => `
+    <div class="card ${selected.has(c.iso3) ? "selected" : ""}"
+         onclick="toggle('${c.iso3}')"
+         style="animation-delay:${Math.min(i * 0.03, 0.3)}s">
+      <div class="severity sev-${c.sev}" title="${SEV_LABEL[c.sev]} conflict"></div>
+      <span class="card-flag">${c.flag}</span>
+      <div class="card-name">${c.name}</div>
+      <div class="card-meta">${c.iso3} · ${SEV_LABEL[c.sev]}</div>
+      <div class="check">
+        <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+          <polyline points="2,6 5,9 10,3"/>
+        </svg>
+      </div>
+    </div>
+  `).join("");
+}
+
+// ── Toggle selection ──────────────────────────────────────────────────────────
+function toggle(iso3) {
+  if (selected.has(iso3)) selected.delete(iso3);
+  else selected.add(iso3);
+  renderGrid();
+  renderBar();
+}
+
+function clearAll() {
+  selected.clear();
+  renderGrid();
+  renderBar();
+}
+
+// ── Bottom bar ────────────────────────────────────────────────────────────────
+function renderBar() {
+  const bar   = document.getElementById("selBar");
+  const num   = document.getElementById("selNum");
+  const chips = document.getElementById("selFlags");
+
+  if (selected.size === 0) {
+    bar.classList.remove("visible");
+    return;
+  }
+
+  bar.classList.add("visible");
+  num.textContent = selected.size;
+
+  const selCountries = COUNTRIES.filter(c => selected.has(c.iso3));
+  chips.innerHTML = selCountries.map(c => `
+    <div class="sel-flag-chip">
+      ${c.flag} <span style="font-size:11px;font-family:var(--font-mono)">${c.iso3}</span>
+      <span class="chip-remove" onclick="toggle('${c.iso3}')">×</span>
+    </div>
+  `).join("");
+}
+
+// ── Confirm ───────────────────────────────────────────────────────────────────
+function confirmSelection() {
+  const selCountries = COUNTRIES.filter(c => selected.has(c.iso3));
+  const panel = document.getElementById("resultPanel");
+  const text  = document.getElementById("resultText");
+  panel.style.display = "block";
+  text.textContent = selCountries.map(c => `${c.flag} ${c.name} (${c.iso3})`).join("  ·  ");
+  panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  // In a real app: pass selCountries to your data pipeline here
+  console.log("Selected:", selCountries.map(c => c.iso3));
+}
+
+// ── Search ────────────────────────────────────────────────────────────────────
+document.getElementById("search").addEventListener("input", e => {
+  searchTerm = e.target.value;
+  renderGrid();
+});
+
+// ── Boot ──────────────────────────────────────────────────────────────────────
+renderPills();
+renderGrid();
+</script>
+</body>
+</html>

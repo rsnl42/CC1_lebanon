@@ -45,10 +45,12 @@ def calculate_dvi():
         available_count = sum([not np.isnan(pi), not np.isnan(ft), not np.isnan(ed)])
         
         if available_count == 3:
-            return (Wp * pi) + (Wf * ft) + (We * ed)
+            score = (Wp * pi) + (Wf * ft) + (We * ed)
         else:
             # Simplified score logic
-            return (pi * 0.5) + (ft * 0.5) # Fallback to Proximity/Intensity only
+            score = (pi * 0.5) + (ft * 0.5)
+            
+        return round(score * 100, 2)
             
     merged['DVI'] = merged.apply(compute_row, axis=1)
     
