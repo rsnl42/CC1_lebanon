@@ -55,12 +55,15 @@
         #current-year { font-size: 1.4em; font-weight: 700; min-width: 60px; text-align: center; color: #1A1A2E; }
 
         .aggregate-icon {
-            background: #fff; border: 2px solid #1A1A2E; border-radius: 50%;
-            text-align: center; line-height: 20px; font-weight: bold; font-size: 9px;
-            color: #1A1A2E;
+            background: #fff; border: 2px solid;
+            text-align: center; line-height: 20px; font-weight: bold; font-size: 10px;
         }
-        .aggregate-icon.vulnerable { border-color: #7B0000; color: #7B0000; box-shadow: 0 0 8px rgba(123, 0, 0, 0.4); }
-        .aggregate-icon.regular { border-color: #1CABE2; color: #1CABE2; }
+        .aggregate-icon.regular { border-color: #1CABE2; color: #1CABE2; border-radius: 50%; }
+        .aggregate-icon.vulnerable { border-color: #E07B3B; color: #E07B3B; transform: rotate(45deg); }
+        .conflict-event {
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            border: none !important;
+        }
 
         .leaflet-tooltip-custom {
             background: white; border: none; border-radius: 8px; padding: 12px;
@@ -82,9 +85,9 @@
 <div class="info-box">
     <h4 style="margin: 0 0 6px 0; color: #1A1A2E;">Conflict & Education</h4>
     <p style="margin: 0; font-size: 0.8em; color: #6B7280; line-height: 1.5;">
-        <span style="color:#7B0000; font-weight:bold;">●</span> Vulnerable Schools (<50km event)<br>
+        <span style="color:#7B0000; font-weight:bold;">◆</span> Vulnerable Schools (<10km event)<br>
         <span style="color:#1CABE2; font-weight:bold;">●</span> Regular Schools (Safe)<br>
-        <span style="color:#1A1A2E; font-weight:bold;">●</span> Conflict Sites (Proportional)
+        <span style="color:#1A1A2E; font-weight:bold;">▲</span> Conflict Sites (Proportional)
     </p>
 </div>
 
@@ -136,9 +139,9 @@
 
     function getColor(d, type) {
         if (type === 'Events') {
-            return d > 1000 ? '#7B0000' : d > 500 ? '#C0392B' : d > 100 ? '#E07B3B' : d > 10 ? '#F6AA61' : d > 0 ? '#F4D7B3' : '#F7F4EF';
+            return d > 50 ? '#7B0000' : d > 10 ? '#C0392B' : d > 0 ? '#E07B3B' : '#F6AA61';
         } else if (type === 'Fatalities') {
-            return d > 5000 ? '#7B0000' : d > 1000 ? '#C0392B' : d > 500 ? '#E07B3B' : d > 100 ? '#F6AA61' : d > 0 ? '#F4D7B3' : '#F7F4EF';
+            return d > 50 ? '#7B0000' : d > 10 ? '#C0392B' : d > 0 ? '#E07B3B' : '#F6AA61';
         } else {
             // OOS Rate %
             return d > 50 ? '#7B0000' : d > 30 ? '#C0392B' : d > 20 ? '#E07B3B' : d > 10 ? '#F6AA61' : d > 0 ? '#F4D7B3' : '#F7F4EF';
@@ -206,13 +209,15 @@
             const conflictMetric = (dataType === 'Events' || dataType === 'Fatalities') ? dataType : 'Events';
             conflictData.forEach(d => {
                 if (d.Year === year && d[conflictMetric] > 0) {
-                    const radius = getConflictRadius(d[conflictMetric]);
-                    L.circleMarker([d.Latitude, d.Longitude], {
-                        radius: radius, 
-                        fillColor: '#1A1A2E', 
-                        color: '#E83F6F', 
-                        weight: 2, 
-                        fillOpacity: 0.8
+                    const fatalityCount = d.Fatalities || 0;
+                    const color = fatalityCount > 50 ? '#7B0000' : fatalityCount > 10 ? '#C0392B' : fatalityCount > 0 ? '#E07B3B' : '#F6AA61';
+                    
+                    L.marker([d.Latitude, d.Longitude], {
+                        icon: L.divIcon({
+                            className: 'conflict-event',
+                            html: `<div style="width:10px; height:10px; background:${color}; clip-path: polygon(50% 0%, 0% 100%, 100% 100%);"></div>`,
+                            iconSize: [12, 12]
+                        })
                     }).bindTooltip(`<b>Conflict Site</b><br>${d.Country}<br>${conflictMetric}: ${d[conflictMetric]}`, { sticky: true }).addTo(conflictLayer);
                 }
             });
@@ -242,14 +247,17 @@
                     const isVuln = year >= s.vulnerable_year;
                     if (isVuln && !showVuln) return;
                     if (!isVuln && !showReg) return;
-                    L.circleMarker([s.latitude, s.longitude], {
-                        radius: isVuln ? 6 : 3, fillColor: isVuln ? '#7B0000' : '#1CABE2',
-                        color: '#fff', weight: 1, fillOpacity: isVuln ? 0.9 : 0.7
+                    L.marker([s.latitude, s.longitude], {
+                        icon: L.divIcon({
+                            className: isVuln ? 'aggregate-icon vulnerable' : 'aggregate-icon regular',
+                            html: isVuln ? '◆' : '●',
+                            iconSize: [12, 12]
+                        })
                     }).bindTooltip(`
                         <div class="leaflet-tooltip-custom">
                             <b style="font-size:1.1em">${s.name || 'Unknown School'}</b><br>
                             <span style="color:#6B7280">${s.country}</span><br>
-                            Status: ${isVuln ? '<span style="color:#7B0000; font-weight:bold;">VULNERABLE</span>' : '<span style="color:#1CABE2; font-weight:bold;">STABLE</span>'}<br>
+                            Status: ${isVuln ? '<span style="color:#E07B3B; font-weight:bold;">VULNERABLE</span>' : '<span style="color:#1CABE2; font-weight:bold;">STABLE</span>'}<br>
                             ${isVuln ? '<hr style="margin:6px 0; border:0; border-top:1px solid #eee;"><i>Vulnerable since: ' + s.vulnerable_year + '</i>' : ''}
                         </div>
                     `, { sticky: true, className: 'leaflet-tooltip-custom' }).addTo(schoolLayer);
