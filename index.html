@@ -52,18 +52,27 @@
                     <p style="font-weight:400; font-size: 14px; color:var(--muted);">Out-of-school children, gender-disaggregated.</p>
                     <div class="btn">View Profile</div>
                 </a>
-                <a href="#" class="card" onclick="document.getElementById('density-dropdown').classList.toggle('hidden'); return false;">
-                    <h2>Population Density (100m)</h2>
-                    <p style="font-weight:400; font-size: 14px; color:var(--muted);">Granular sub-national population density maps.</p>
-                    <div id="density-dropdown" class="hidden" style="margin-top:15px; border-top:1px solid rgba(255,255,255,0.1); padding-top:10px;">
-                        <a href="30_04/maps/PWD_2000_sub_national_100m_map.html" style="display:block; color:var(--text); font-size:12px; margin-bottom:5px;">2000 Density Map</a>
-                        <a href="30_04/maps/PWD_2005_sub_national_100m_map.html" style="display:block; color:var(--text); font-size:12px; margin-bottom:5px;">2005 Density Map</a>
-                        <a href="30_04/maps/PWD_2010_sub_national_100m_map.html" style="display:block; color:var(--text); font-size:12px; margin-bottom:5px;">2010 Density Map</a>
-                        <a href="30_04/maps/PWD_2015_sub_national_100m_map.html" style="display:block; color:var(--text); font-size:12px; margin-bottom:5px;">2015 Density Map</a>
-                        <a href="30_04/maps/PWD_2020_sub_national_100m_map.html" style="display:block; color:var(--text); font-size:12px;">2020 Density Map</a>
+                <div class="card">
+                    <h2>Geospatial Maps</h2>
+                    <p style="font-weight:400; font-size: 14px; color:var(--muted); margin-bottom: 15px;">Granular 100m density and Global Event mapping.</p>
+                    <div style="display:grid; grid-template-columns: repeat(5, 1fr); gap: 5px; margin-bottom: 10px;">
+                        <script>
+                            function updateMapLinks(year) {
+                                document.getElementById('link-density').href = `30_04/maps/PWD_${year}_sub_national_100m_map.html`;
+                                document.getElementById('link-events').href = `30_04_playground/maps/PWD_${year}_Global_Events.html`;
+                            }
+                        </script>
+                        <button class="btn" style="padding:5px; font-size:9px;" onclick="updateMapLinks(2000)">2000</button>
+                        <button class="btn" style="padding:5px; font-size:9px;" onclick="updateMapLinks(2005)">2005</button>
+                        <button class="btn" style="padding:5px; font-size:9px;" onclick="updateMapLinks(2010)">2010</button>
+                        <button class="btn" style="padding:5px; font-size:9px;" onclick="updateMapLinks(2015)">2015</button>
+                        <button class="btn" style="padding:5px; font-size:9px;" onclick="updateMapLinks(2020)">2020</button>
                     </div>
-                    <div class="btn">Select Year</div>
-                </a>
+                    <div style="display:flex; gap:10px;">
+                        <a id="link-density" href="30_04/maps/PWD_2020_sub_national_100m_map.html" target="_blank" class="btn" style="flex:1">Density</a>
+                        <a id="link-events" href="30_04_playground/maps/PWD_2020_Global_Events.html" target="_blank" class="btn" style="flex:1">Events</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
