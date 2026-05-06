@@ -30,7 +30,7 @@ We will deploy our data pipeline to automate the ingestion, cleaning and harmoni
 *   **Key Capabilities:**
     *   **Automated Pipeline:** Transforms disparate, siloed data into a unified, clean, and actionable format.
     *   **Geospatial Modeling:** Maps *Dynamic Vulnerability* by identifying school proximity to high-risk conflict zones at a very granular level, allowing for proactive, rather than reactive, resource allocation.  
-    *   **Interactive Insights:** As a key component of our centralized dashboard, the [Interactive Vulnerability Timeline](https://rsnl42.github.io/CC1_exam/timeline_map/index.html) provides longitudinal analysis to track risk migration patterns and vulnerable educational institutions from 1997-2024.
+    *   **Interactive Insights:** As a key component of our centralized dashboard, the [Interactive Vulnerability Timeline](https://rsnl42.github.io/CC1_exam/timeline_map/index.html) provides longitudinal analysis to track risk migration patterns and vulnerable educational institutions from 1997-2024 with a high level of granularity.
     *   **LLM-Generated Narrative Synthesis:** Passes structured dashboard outputs to an LLM to auto-generate plain language *Situation Reports* that would assist in identifying at-risk clusters and priority regions without requiring data literacy from the EBI field staff. Summaries are flagged as AI-generated and reviewed by a focal point before distribution, keeping the field team's judgement central to the decision making.
 
     
