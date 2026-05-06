@@ -55,15 +55,12 @@
         #current-year { font-size: 1.4em; font-weight: 700; min-width: 60px; text-align: center; color: #1A1A2E; }
 
         .aggregate-icon {
-            background: transparent; border: none;
-            text-align: center; font-size: 14px; font-weight: bold;
+            background: #fff; border: 2px solid #1A1A2E; border-radius: 50%;
+            text-align: center; line-height: 20px; font-weight: bold; font-size: 9px;
+            color: #1A1A2E;
         }
-        .aggregate-icon.regular { color: #1CABE2; }
-        .aggregate-icon.vulnerable { color: #E07B3B; }
-        .conflict-event {
-            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-            border: none !important;
-        }
+        .aggregate-icon.vulnerable { border-color: #E07B3B; color: #E07B3B; box-shadow: 0 0 8px rgba(224, 123, 59, 0.4); }
+        .aggregate-icon.regular { border-color: #1CABE2; color: #1CABE2; }
 
         .leaflet-tooltip-custom {
             background: white; border: none; border-radius: 8px; padding: 12px;
@@ -85,7 +82,7 @@
 <div class="info-box">
     <h4 style="margin: 0 0 6px 0; color: #1A1A2E;">Conflict & Education</h4>
     <p style="margin: 0; font-size: 0.8em; color: #6B7280; line-height: 1.5;">
-        <span style="color:#E07B3B; font-weight:bold;">◆</span> Vulnerable Schools (<10km event)<br>
+        <span style="color:#E07B3B; font-weight:bold;">●</span> Vulnerable Schools (<10km event)<br>
         <span style="color:#1CABE2; font-weight:bold;">●</span> Regular Schools (Safe)<br>
         <span style="color:#1A1A2E; font-weight:bold;">▲</span> Conflict Sites (Proportional)
     </p>
@@ -249,11 +246,11 @@
                     if (!isVuln && !showReg) return;
                     
                     L.circleMarker([s.latitude, s.longitude], {
-                        radius: 5,
+                        radius: 3,
                         fillColor: isVuln ? '#E07B3B' : '#1CABE2',
                         color: '#fff',
-                        weight: 1,
-                        fillOpacity: 0.9
+                        weight: 0.5,
+                        fillOpacity: 0.6
                     }).bindTooltip(`
                         <div class="leaflet-tooltip-custom">
                             <b style="font-size:1.1em">${s.name || 'Unknown School'}</b><br>
