@@ -58,12 +58,12 @@
 
                                 if (selectedType === 'density') {
                                     link.href = `30_04/maps/PWD_${selectedYear}_sub_national_100m_map.html`;
-                                } else {
-                                    // Both 'events' and 'both' map to the events file
+                                } else if (selectedType === 'events') {
                                     link.href = `30_04/maps/${selectedYear}_Global_Events.html`;
+                                } else if (selectedType === 'both') {
+                                    link.href = `30_04_playground/maps/PWD_${selectedYear}_Global_Events.html`;
                                 }
-                            }
-                        </script>
+                            }                        </script>
                         <button class="btn" style="padding:5px; font-size:9px;" onclick="setYear(2000, this)">2000</button>
                         <button class="btn" style="padding:5px; font-size:9px;" onclick="setYear(2005, this)">2005</button>
                         <button class="btn" style="padding:5px; font-size:9px;" onclick="setYear(2010, this)">2010</button>
