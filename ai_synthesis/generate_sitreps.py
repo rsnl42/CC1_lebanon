@@ -21,8 +21,12 @@ if not API_KEY:
     exit(1)
 
 # 2. Setup Gemini
-genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash')
+# Try the latest flash model, fallback to pro if not available
+try:
+    genai.configure(api_key=API_KEY)
+    model = genai.GenerativeModel('gemini-1.5-flash-latest')
+except Exception:
+    model = genai.GenerativeModel('gemini-pro')
 
 def load_data():
     try:
