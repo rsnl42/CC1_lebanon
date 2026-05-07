@@ -2,7 +2,7 @@
 
 **To:** Education Bridge Initiative (EBI)  
 **From:** Sunil Raman  
-**Date:** May 6, 2026
+**Date:** May 7, 2026
 
 ---
 
@@ -54,5 +54,7 @@ The following tangible outputs will be delivered as part of this engagement:
 By reducing the time to assemble a cross-regional picture from weeks to hours, EBI can redirect resources to the identified at-risk schools *before* the dropout spikes rather than after. Across EBI's 12 operating countries and 800 supported schools, this means earlier interventions, better-targeted programming, and decisions grounded in evidence rather than incomplete field reports. By grounding technical innovation in field-level reality, EBI can ensure that education continuity is maintained even in the most volatile environments. This partnership will provide the tools needed to protect the future of children where it is most at risk.
 
 
+
 **Explore the Full Prototype:** [Central Analysis Hub](https://rsnl42.github.io/CC1_exam/)
+
 **My GitHub Repo:** (https://github.com/rsnl42/CC1_exam) 
