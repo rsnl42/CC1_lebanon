@@ -57,4 +57,4 @@ By reducing the time to assemble a cross-regional picture from weeks to hours, E
 
 **Explore the Full Prototype:** [Central Analysis Hub](https://rsnl42.github.io/CC1_exam/)
 
-**My GitHub Repo:** (https://github.com/rsnl42/CC1_exam) 
+[**My GitHub Repo:**](https://github.com/rsnl42/CC1_exam) 
