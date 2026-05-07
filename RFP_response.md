@@ -33,7 +33,6 @@ We will deploy our data pipeline to automate the ingestion, cleaning and harmoni
     *   **Interactive Insights:** As a key component of our centralized dashboard, the [Interactive Vulnerability Timeline](https://rsnl42.github.io/CC1_exam/timeline_map/index.html) provides longitudinal analysis to track risk migration patterns and vulnerable educational institutions from 1997-2024 with a high level of granularity.
     *   **LLM-Generated Narrative Synthesis:** Passes structured dashboard outputs to an LLM to auto-generate plain language *Situation Reports* that would assist in identifying at-risk clusters and priority regions without requiring data literacy from the EBI field staff. Summaries are flagged as AI-generated and reviewed by a focal point before distribution, keeping the field team's judgement central to the decision making.
 
-    
 ### Phase 2: Transfer (Capacity & Sustainability)
 The final phase focuses on organizational independence. We will deliver a **Methodology Guide** and conduct intensive training for EBI staff, ensuring they can operate, maintain and adapt the pipeline without requiring our assistance. Our system is designed to be *indicator-agnostic*, enabling EBI to incorporate new metrics or geographic regions autonomously. The [Humanitarian Pipeline](https://rsnl42.github.io/CC1_exam/humanitarian_pipeline/README.md) demonstrates this modularity, ensuring that the Analysis Hub remains an enduring asset, not a project-based deliverable.
 
@@ -54,4 +53,6 @@ The following tangible outputs will be delivered as part of this engagement:
 ## 5. Conclusion
 By reducing the time to assemble a cross-regional picture from weeks to hours, EBI can redirect resources to the identified at-risk schools *before* the dropout spikes rather than after. Across EBI's 12 operating countries and 800 supported schools, this means earlier interventions, better-targeted programming, and decisions grounded in evidence rather than incomplete field reports. By grounding technical innovation in field-level reality, EBI can ensure that education continuity is maintained even in the most volatile environments. This partnership will provide the tools needed to protect the future of children where it is most at risk.
 
+
 **Explore the Full Prototype:** [Central Analysis Hub](https://rsnl42.github.io/CC1_exam/)
+**My GitHub Repo:** (https://github.com/rsnl42/CC1_exam) 
