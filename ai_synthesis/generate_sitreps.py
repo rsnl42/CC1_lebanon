@@ -2,16 +2,22 @@ import json
 import os
 import google.generativeai as genai
 from datetime import datetime
+from dotenv import load_dotenv
 
 # 1. Configuration
-# It is best practice to use environment variables for API keys
-API_KEY = os.getenv("GEMINI_API_KEY") 
-DATA_PATH = "../dashboard_data.json"
-OUTPUT_PATH = "pending_sitrep.md"
+# Load environment variables from .env file
+load_dotenv() 
+
+API_KEY = os.getenv("GEMINI_API_KEY")
+
+# Use absolute paths relative to this script's location
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_PATH = os.path.join(SCRIPT_DIR, "..", "dashboard_data.json")
+OUTPUT_PATH = os.path.join(SCRIPT_DIR, "pending_sitrep.md")
 
 if not API_KEY:
-    print("Error: GEMINI_API_KEY not found in environment variables.")
-    print("Please run: export GEMINI_API_KEY='your_actual_key_here'")
+    print("Error: GEMINI_API_KEY not found in environment variables or .env file.")
+    print("Please ensure you have a .env file with GEMINI_API_KEY='your_key'")
     exit(1)
 
 # 2. Setup Gemini
