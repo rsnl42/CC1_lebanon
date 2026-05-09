@@ -1,7 +1,7 @@
 import pandas as pd
+import sys
 
-def standardize_countries():
-    file_path = "opri_pivoted.csv"
+def standardize_countries(file_path):
     df = pd.read_csv(file_path)
 
     mapping = {
@@ -16,7 +16,8 @@ def standardize_countries():
 
     df["COUNTRY_NAME"] = df["COUNTRY_NAME"].replace(mapping)
     df.to_csv(file_path, index=False)
-    print("Country names updated in opri_pivoted.csv")
+    print(f"Country names updated in {file_path}")
 
 if __name__ == "__main__":
-    standardize_countries()
+    path = sys.argv[1] if len(sys.argv) > 1 else "opri_filtered.csv"
+    standardize_countries(path)
