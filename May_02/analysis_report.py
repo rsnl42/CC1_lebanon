@@ -52,8 +52,8 @@ for i, bar in enumerate(bars):
         plt.text(bar.get_width() + 100, bar.get_y() + bar.get_height()/2, f"Coverage: {coverage:.1f}%", va='center', fontsize=9)
 
 plt.tight_layout()
-plt.savefig("May_02/conflict_impact_chart.png")
-print("Chart saved to May_02/conflict_impact_chart.png")
+plt.savefig("May_02/ethiopia_coverage_impact_chart.png")
+print("Chart saved to May_02/ethiopia_coverage_impact_chart.png")
 
 # Save the final analysis table
 analysis_cols = [
