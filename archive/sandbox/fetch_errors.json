@@ -1,0 +1,44 @@
+[
+  {
+    "source": "worldbank",
+    "indicator": "SE.SEC.UNER.ZS",
+    "url": "https://api.worldbank.org/v2/country/LBN/indicator/SE.SEC.UNER.ZS?format=json&date=2000:2026&per_page=500",
+    "message": "The indicator was not found. It may have been deleted or archived.",
+    "type": "Error"
+  },
+  {
+    "source": "worldbank",
+    "indicator": "SM.POP.REFG",
+    "url": "https://api.worldbank.org/v2/country/LBN/indicator/SM.POP.REFG?format=json&date=2000:2026&per_page=500",
+    "message": "The indicator was not found. It may have been deleted or archived.",
+    "type": "Error"
+  },
+  {
+    "source": "unicef",
+    "indicator": "CME_OFST",
+    "url": "https://sdmx.data.unicef.org/ws/public/sdmxapi/rest/data/UNICEF,GLOBAL_DATAFLOW,1.0/LBN.CME_OFST..?format=sdmx-json&startPeriod=2000&endPeriod=2026",
+    "message": "No data for data query against the dataflow: urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:GLOBAL_DATAFLOW(1.0)",
+    "type": "Error"
+  },
+  {
+    "source": "unicef",
+    "indicator": "PT_CHLD_5-17_LBR_ECON",
+    "url": "https://sdmx.data.unicef.org/ws/public/sdmxapi/rest/data/UNICEF,GLOBAL_DATAFLOW,1.0/LBN.PT_CHLD_5-17_LBR_ECON..?format=sdmx-json&startPeriod=2000&endPeriod=2026",
+    "message": "No data for data query against the dataflow: urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:GLOBAL_DATAFLOW(1.0)",
+    "type": "Error"
+  },
+  {
+    "source": "unicef",
+    "indicator": "ED_ANAR_L02",
+    "url": "https://sdmx.data.unicef.org/ws/public/sdmxapi/rest/data/UNICEF,GLOBAL_DATAFLOW,1.0/LBN.ED_ANAR_L02..?format=sdmx-json&startPeriod=2000&endPeriod=2026",
+    "message": "No data for data query against the dataflow: urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:GLOBAL_DATAFLOW(1.0)",
+    "type": "Error"
+  },
+  {
+    "source": "unicef",
+    "indicator": "PT_F_15-19_BIRTH_BY_AGE",
+    "url": "https://sdmx.data.unicef.org/ws/public/sdmxapi/rest/data/UNICEF,GLOBAL_DATAFLOW,1.0/LBN.PT_F_15-19_BIRTH_BY_AGE..?format=sdmx-json&startPeriod=2000&endPeriod=2026",
+    "message": "No data for data query against the dataflow: urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNICEF:GLOBAL_DATAFLOW(1.0)",
+    "type": "Error"
+  }
+]

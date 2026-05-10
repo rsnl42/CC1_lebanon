@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Risk Scoring Dashboard</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .slider-container { margin: 20px 0; background: #f9f9f9; padding: 15px; border-radius: 8px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    </style>
+</head>
+<body>
+    <h1>Interactive Risk Scoring Dashboard</h1>
+    <div class="slider-container">
+        <label>Weight for OOS Rate: <span id="weight-val">50</span>%</label><br>
+        <input type="range" id="weight" min="0" max="100" value="50" oninput="calculate()">
+    </div>
+    <div id="results">Loading...</div>
+    <script>
+        let dashboardData = [];
+        fetch('dashboard_data.json').then(r => r.json()).then(data => {
+            dashboardData = data;
+            calculate();
+        });
+
+        function calculate() {
+            const w = document.getElementById('weight').value / 100;
+            document.getElementById('weight-val').innerText = w * 100;
+            
+            let html = '<table><tr><th>Country</th><th>Risk Score</th><th>Action</th></tr>';
+            
+            dashboardData.forEach(row => {
+                const oos = row.oos_rate || 0;
+                const prox = (row.hotspot_ratio || 0) * 100;
+                const score = (oos * w) + (prox * (1 - w));
+                
+                let insight = isNaN(score) || !row.total_schools ? "Insufficient Data" : score.toFixed(1);
+                let action = isNaN(score) || !row.total_schools ? "Field Data Needed" : (score > 60 ? "Immediate Intervention" : (score > 30 ? "Attendance Support" : "Monitor"));
+                
+                html += `<tr><td>${row.country}</td><td>${insight}</td><td>${action}</td></tr>`;
+            });
+            
+            html += '</table>';
+            document.getElementById('results').innerHTML = html;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,8326 @@
+{
+  "Ohafia|Abia|Nigeria": [
+    5.6629148,
+    7.8324886
+  ],
+  "Ukwa West|Abia|Nigeria": [
+    4.9791653,
+    7.2646812
+  ],
+  "Ganye|Adamawa|Nigeria": [
+    8.4379908,
+    11.8544901
+  ],
+  "Guyuk|Adamawa|Nigeria": [
+    9.8359475,
+    11.9223112
+  ],
+  "Mayo-Belwa|Adamawa|Nigeria": [
+    8.871243,
+    12.0202268
+  ],
+  "Shelleng|Adamawa|Nigeria": [
+    9.9784484,
+    12.1080891
+  ],
+  "Eket|Akwa Ibom|Nigeria": [
+    4.6360066,
+    7.9575416
+  ],
+  "Ikono|Akwa Ibom|Nigeria": [
+    5.1832347,
+    7.7908996
+  ],
+  "Mkpat Enin|Akwa Ibom|Nigeria": [
+    4.7047346,
+    7.7610095
+  ],
+  "Okobo|Akwa Ibom|Nigeria": [
+    4.8136649,
+    8.1239681
+  ],
+  "Idemili North|Anambra|Nigeria": [
+    6.1371462,
+    6.8856971
+  ],
+  "Orumba South|Anambra|Nigeria": [
+    5.9892249,
+    7.2049199
+  ],
+  "Alkaleri|Bauchi|Nigeria": [
+    9.896816,
+    10.4308366
+  ],
+  "Damban|Bauchi|Nigeria": [
+    11.617606,
+    10.7666868
+  ],
+  "Itas-Gadau|Bauchi|Nigeria": [
+    11.877064,
+    10.0445349
+  ],
+  "Shira|Bauchi|Nigeria": [
+    11.4648844,
+    10.0629941
+  ],
+  "Zaki|Bauchi|Nigeria": [
+    12.1874661,
+    10.2448206
+  ],
+  "Logo|Benue|Nigeria": [
+    7.6671713,
+    9.2074676
+  ],
+  "Ushongo|Benue|Nigeria": [
+    7.1040666,
+    9.097224
+  ],
+  "Dikwa|Borno|Nigeria": [
+    11.9443016,
+    14.0711604
+  ],
+  "Gwoza|Borno|Nigeria": [
+    11.0831008,
+    13.6941974
+  ],
+  "Jere|Borno|Nigeria": [
+    11.9360745,
+    13.1816703
+  ],
+  "Konduga|Borno|Nigeria": [
+    11.6327538,
+    13.1840692
+  ],
+  "Kwaya Kusar|Borno|Nigeria": [
+    10.4857449,
+    11.8543195
+  ],
+  "Shani|Borno|Nigeria": [
+    10.151198,
+    11.9796686
+  ],
+  "Abi|Cross River|Nigeria": [
+    5.8866834,
+    8.0328711
+  ],
+  "Bekwara|Cross River|Nigeria": [
+    5.8671966,
+    8.5204774
+  ],
+  "Ikom|Cross River|Nigeria": [
+    5.962765,
+    8.7239694
+  ],
+  "Burutu|Delta|Nigeria": [
+    5.3522824,
+    5.5079208
+  ],
+  "Ethiope East|Delta|Nigeria": [
+    5.6672926,
+    5.9721297
+  ],
+  "Ndokwa West|Delta|Nigeria": [
+    5.8260994,
+    6.4163551
+  ],
+  "Oshimili North|Delta|Nigeria": [
+    6.30333,
+    6.6477729
+  ],
+  "Afikpo North|Ebonyi|Nigeria": [
+    5.860247,
+    7.9184712
+  ],
+  "Ebonyi|Ebonyi|Nigeria": [
+    6.5335734,
+    8.1331391
+  ],
+  "Ohaozara|Ebonyi|Nigeria": [
+    6.0045553,
+    7.7938501
+  ],
+  "Etsako East|Edo|Nigeria": [
+    7.1872207,
+    6.5169123
+  ],
+  "Owan West|Edo|Nigeria": [
+    6.9274464,
+    5.8934672
+  ],
+  "Aiyekire|Ekiti|Nigeria": [
+    7.736891,
+    5.2738326
+  ],
+  "Enugu South|Enugu|Nigeria": [
+    6.4001343,
+    7.5139031
+  ],
+  "Nkanu West|Enugu|Nigeria": [
+    6.3215568,
+    7.5208351
+  ],
+  "Kuje|Federal Capital Territory|Nigeria": [
+    8.6984415,
+    7.3004993
+  ],
+  "Funakaye|Gombe|Nigeria": [
+    10.8541991,
+    11.4446812
+  ],
+  "Ahiazu Mbaise|Imo|Nigeria": [
+    5.5631995,
+    7.2636268
+  ],
+  "Isu|Imo|Nigeria": [
+    5.6868983,
+    7.0561313
+  ],
+  "Oguta|Imo|Nigeria": [
+    5.6594644,
+    6.7783824
+  ],
+  "Ohaji|Imo|Nigeria": [
+    5.4234836,
+    6.8388261
+  ],
+  "Oru West|Imo|Nigeria": [
+    5.7544954,
+    6.9107675
+  ],
+  "Owerri Municipal|Imo|Nigeria": [
+    5.4799006,
+    7.0219827
+  ],
+  "Birniwa|Jigawa|Nigeria": [
+    12.8049867,
+    10.2238016
+  ],
+  "Jahun|Jigawa|Nigeria": [
+    12.0753808,
+    9.6257925
+  ],
+  "Chikun|Kaduna|Nigeria": [
+    10.4202275,
+    7.3135795
+  ],
+  "Ajingi|Kano|Nigeria": [
+    11.958974,
+    9.0338731
+  ],
+  "Gabasawa|Kano|Nigeria": [
+    12.1348836,
+    8.8570347
+  ],
+  "Gwale|Kano|Nigeria": [
+    11.9747465,
+    8.4746362
+  ],
+  "Kumbotso|Kano|Nigeria": [
+    11.9174554,
+    8.5198363
+  ],
+  "Kura|Kano|Nigeria": [
+    11.7791433,
+    8.4743857
+  ],
+  "Madobi|Kano|Nigeria": [
+    11.8179194,
+    8.3432693
+  ],
+  "Shanono|Kano|Nigeria": [
+    12.097207,
+    7.9264412
+  ],
+  "Batsari|Katsina|Nigeria": [
+    12.8454221,
+    7.2679827
+  ],
+  "Funtua|Katsina|Nigeria": [
+    11.5232142,
+    7.307497
+  ],
+  "Kurfi|Katsina|Nigeria": [
+    12.6891921,
+    7.4606759
+  ],
+  "Mashi|Katsina|Nigeria": [
+    13.1318643,
+    8.0128383
+  ],
+  "Musawa|Katsina|Nigeria": [
+    12.1112494,
+    7.7097378
+  ],
+  "Argungu|Kebbi|Nigeria": [
+    12.6967675,
+    4.4473728
+  ],
+  "Bagudo|Kebbi|Nigeria": [
+    11.4040393,
+    4.2277586
+  ],
+  "Birnin-Kebbi|Kebbi|Nigeria": [
+    12.4573462,
+    4.2006114
+  ],
+  "Bunza|Kebbi|Nigeria": [
+    12.2010774,
+    3.9337264
+  ],
+  "Dandi Kamba|Kebbi|Nigeria": [
+    11.4167574,
+    4.1074545
+  ],
+  "Gwandu|Kebbi|Nigeria": [
+    12.4893811,
+    4.6277949
+  ],
+  "Idah|Kogi|Nigeria": [
+    7.1099854,
+    6.7340488
+  ],
+  "Ilorin East|Kwara|Nigeria": [
+    8.5932799,
+    4.7853981
+  ],
+  "Moro|Kwara|Nigeria": [
+    8.8535638,
+    4.5154722
+  ],
+  "Kosofe|Lagos|Nigeria": [
+    6.581974,
+    3.4148359
+  ],
+  "Akwanga|Nassarawa|Nigeria": [
+    9.0152703,
+    8.3406254
+  ],
+  "Keana|Nassarawa|Nigeria": [
+    8.1726904,
+    8.7560264
+  ],
+  "Agaie|Niger|Nigeria": [
+    8.9354301,
+    6.4320188
+  ],
+  "Edati|Niger|Nigeria": [
+    8.9633375,
+    5.9997548
+  ],
+  "Imeko-Afon|Ogun|Nigeria": [
+    7.6689512,
+    2.8602162
+  ],
+  "Remo North|Ogun|Nigeria": [
+    6.9954504,
+    3.7177572
+  ],
+  "Akoko South East|Ondo|Nigeria": [
+    7.4224908,
+    5.9050607
+  ],
+  "Akoko South West|Ondo|Nigeria": [
+    7.4008129,
+    5.7056416
+  ],
+  "Ondo East|Ondo|Nigeria": [
+    7.066805,
+    4.9623712
+  ],
+  "Egbedore|Osun|Nigeria": [
+    7.7874849,
+    4.4362977
+  ],
+  "Irepodun|Osun|Nigeria": [
+    7.8954838,
+    4.5222317
+  ],
+  "Oriade|Osun|Nigeria": [
+    7.5530772,
+    4.867415
+  ],
+  "Orolu|Osun|Nigeria": [
+    7.903355,
+    4.4735706
+  ],
+  "Afijio|Oyo|Nigeria": [
+    7.747811,
+    3.8965833
+  ],
+  "Ibadan North|Oyo|Nigeria": [
+    7.4206525,
+    3.9092156
+  ],
+  "Ibarapa East|Oyo|Nigeria": [
+    7.5840667,
+    3.459362
+  ],
+  "Ibarapa North|Oyo|Nigeria": [
+    7.6445747,
+    3.1731014
+  ],
+  "Iwajowa|Oyo|Nigeria": [
+    7.9901335,
+    2.9887347
+  ],
+  "Olorunsogo|Oyo|Nigeria": [
+    8.7931509,
+    4.0601689
+  ],
+  "Barkin Ladi|Plateau|Nigeria": [
+    9.57549,
+    8.970077
+  ],
+  "Ogba|Rivers|Nigeria": [
+    5.4512857,
+    6.6409178
+  ],
+  "Binji|Sokoto|Nigeria": [
+    13.2095387,
+    4.7694358
+  ],
+  "Isa|Sokoto|Nigeria": [
+    13.202844,
+    6.4057228
+  ],
+  "Yabo|Sokoto|Nigeria": [
+    12.7727698,
+    4.9280534
+  ],
+  "Gujba|Yobe|Nigeria": [
+    11.344585,
+    11.9202736
+  ],
+  "Gulami|Yobe|Nigeria": [
+    12.1233242,
+    11.5065937
+  ],
+  "Tarmua|Yobe|Nigeria": [
+    12.226929,
+    11.8318975
+  ],
+  "Yunusari|Yobe|Nigeria": [
+    13.114159,
+    11.7686413
+  ],
+  "Bukkuyum|Zamfara|Nigeria": [
+    11.9850101,
+    5.5834557
+  ],
+  "Ikwuano|Abia|Nigeria": [
+    5.4092775,
+    7.5729916
+  ],
+  "Nneochi|Abia|Nigeria": [
+    5.9731936,
+    7.4053403
+  ],
+  "Osisioma|Abia|Nigeria": [
+    5.1924923,
+    7.3358399
+  ],
+  "Demsa|Adamawa|Nigeria": [
+    9.4222181,
+    12.0875217
+  ],
+  "Fufore|Adamawa|Nigeria": [
+    9.2577101,
+    12.7592871
+  ],
+  "Lamurde|Adamawa|Nigeria": [
+    9.6072357,
+    11.7930477
+  ],
+  "Essien Udim|Akwa Ibom|Nigeria": [
+    5.1035626,
+    7.6567273
+  ],
+  "Nsit Ibom|Akwa Ibom|Nigeria": [
+    4.9036346,
+    7.896614
+  ],
+  "Nsit Ubium|Akwa Ibom|Nigeria": [
+    4.7597313,
+    7.9487236
+  ],
+  "Oruk Anam|Akwa Ibom|Nigeria": [
+    4.8202351,
+    7.6508147
+  ],
+  "Ukanafun|Akwa Ibom|Nigeria": [
+    4.9038458,
+    7.6055028
+  ],
+  "Urue Offong|Akwa Ibom|Nigeria": [
+    4.7521453,
+    8.1662575
+  ],
+  "Awka South|Anambra|Nigeria": [
+    6.1940561,
+    7.0943469
+  ],
+  "Onisha South|Anambra|Nigeria": [
+    6.2183136,
+    6.9531842
+  ],
+  "Bauchi|Bauchi|Nigeria": [
+    10.3147618,
+    9.8454417
+  ],
+  "Ningi|Bauchi|Nigeria": [
+    11.0046287,
+    9.2016788
+  ],
+  "Warji|Bauchi|Nigeria": [
+    11.1465091,
+    9.7588179
+  ],
+  "Brass|Bayelsa|Nigeria": [
+    4.5121961,
+    6.4818845
+  ],
+  "Yenagoa|Bayelsa|Nigeria": [
+    4.9334651,
+    6.2747786
+  ],
+  "Ado|Benue|Nigeria": [
+    6.7801259,
+    8.0613627
+  ],
+  "Agatu|Benue|Nigeria": [
+    7.8731757,
+    7.8796916
+  ],
+  "Kwande|Benue|Nigeria": [
+    6.8549397,
+    9.3998035
+  ],
+  "Oju|Benue|Nigeria": [
+    6.8701551,
+    8.3636442
+  ],
+  "Okpokwu|Benue|Nigeria": [
+    7.0453758,
+    7.9101002
+  ],
+  "Kukawa|Borno|Nigeria": [
+    13.1239109,
+    13.7775223
+  ],
+  "Obubra|Cross River|Nigeria": [
+    6.015311,
+    8.4146667
+  ],
+  "Odukpani|Cross River|Nigeria": [
+    5.1865544,
+    8.1975491
+  ],
+  "Ethiope West|Delta|Nigeria": [
+    5.9113228,
+    5.7758592
+  ],
+  "Oshimili South|Delta|Nigeria": [
+    6.1303621,
+    6.7307334
+  ],
+  "Patani|Delta|Nigeria": [
+    5.1745322,
+    6.0940441
+  ],
+  "Udu|Delta|Nigeria": [
+    5.477352,
+    5.821686
+  ],
+  "Ishielu|Ebonyi|Nigeria": [
+    6.4270885,
+    7.8441149
+  ],
+  "Egor|Edo|Nigeria": [
+    6.3438385,
+    5.5615668
+  ],
+  "Esan Central|Edo|Nigeria": [
+    6.7047055,
+    6.2079259
+  ],
+  "Ikpoba Okha|Edo|Nigeria": [
+    6.1997654,
+    5.6622467
+  ],
+  "Oredo|Edo|Nigeria": [
+    6.2297631,
+    5.5617902
+  ],
+  "Ovia North East|Edo|Nigeria": [
+    6.3963337,
+    5.5027204
+  ],
+  "Ado Ekiti|Ekiti|Nigeria": [
+    7.6232482,
+    5.22274
+  ],
+  "Ekiti West|Ekiti|Nigeria": [
+    7.7210934,
+    5.034239
+  ],
+  "Oye|Ekiti|Nigeria": [
+    7.8805359,
+    5.3375344
+  ],
+  "Aninri|Enugu|Nigeria": [
+    6.0679259,
+    7.5971085
+  ],
+  "Udi|Enugu|Nigeria": [
+    6.4361489,
+    7.3987364
+  ],
+  "Kwali|Federal Capital Territory|Nigeria": [
+    8.7173886,
+    6.9554864
+  ],
+  "Nafada|Gombe|Nigeria": [
+    11.0505637,
+    11.2551261
+  ],
+  "Ideato North|Imo|Nigeria": [
+    5.8611507,
+    7.1358232
+  ],
+  "Orlu|Imo|Nigeria": [
+    5.8179105,
+    7.0409322
+  ],
+  "Owerri North|Imo|Nigeria": [
+    5.4323857,
+    7.1074755
+  ],
+  "Owerri West|Imo|Nigeria": [
+    5.4068275,
+    6.9851183
+  ],
+  "Kazaure|Jigawa|Nigeria": [
+    12.6649357,
+    8.4352429
+  ],
+  "Kiyawa|Jigawa|Nigeria": [
+    11.7964786,
+    9.5194975
+  ],
+  "Ringim|Jigawa|Nigeria": [
+    12.1658289,
+    9.1100548
+  ],
+  "Kaura|Kaduna|Nigeria": [
+    9.6424163,
+    8.4516188
+  ],
+  "Bichi|Kano|Nigeria": [
+    12.2334,
+    8.24026
+  ],
+  "Dala|Kano|Nigeria": [
+    12.0296959,
+    8.4909615
+  ],
+  "Gwarzo|Kano|Nigeria": [
+    11.9009397,
+    7.9836793
+  ],
+  "Kabo|Kano|Nigeria": [
+    11.8914633,
+    8.2006285
+  ],
+  "Sumaila|Kano|Nigeria": [
+    11.2581601,
+    8.8702242
+  ],
+  "Wudil|Kano|Nigeria": [
+    11.76688,
+    8.8390149
+  ],
+  "Bakori|Katsina|Nigeria": [
+    11.6774063,
+    7.4077956
+  ],
+  "Faskari|Katsina|Nigeria": [
+    11.7138498,
+    7.0993315
+  ],
+  "Ingawa|Katsina|Nigeria": [
+    12.6149151,
+    8.1109489
+  ],
+  "Katsina|Katsina|Nigeria": [
+    12.9894283,
+    7.6006278
+  ],
+  "Kusada|Katsina|Nigeria": [
+    12.4618432,
+    7.9485737
+  ],
+  "Malumfashi|Katsina|Nigeria": [
+    11.8663485,
+    7.8091868
+  ],
+  "Mani|Katsina|Nigeria": [
+    12.9074412,
+    7.9331795
+  ],
+  "Fakai|Kebbi|Nigeria": [
+    11.5267507,
+    4.8830122
+  ],
+  "Jega|Kebbi|Nigeria": [
+    12.1012026,
+    4.4659199
+  ],
+  "Zuru|Kebbi|Nigeria": [
+    11.436776,
+    5.2311774
+  ],
+  "Ogori|Kogi|Nigeria": [
+    7.4786735,
+    6.1558739
+  ],
+  "Omala|Kogi|Nigeria": [
+    7.777828,
+    7.5658863
+  ],
+  "Ilorin South|Kwara|Nigeria": [
+    8.4404502,
+    4.6894414
+  ],
+  "Kai Ama|Kwara|Nigeria": [
+    8.8367891,
+    4.6688487
+  ],
+  "Ajeromi|Lagos|Nigeria": [
+    6.4551345,
+    3.3359655
+  ],
+  "Oshodi|Lagos|Nigeria": [
+    6.5398493,
+    3.312384
+  ],
+  "Lafia|Nassarawa|Nigeria": [
+    8.4960459,
+    8.5147636
+  ],
+  "Wamba|Nassarawa|Nigeria": [
+    9.0034175,
+    8.7170567
+  ],
+  "Magama|Niger|Nigeria": [
+    10.2990765,
+    5.0610888
+  ],
+  "Wushishi|Niger|Nigeria": [
+    9.7113466,
+    5.9103153
+  ],
+  "Ijebu East|Ogun|Nigeria": [
+    6.8181465,
+    4.2512575
+  ],
+  "Odogbolu|Ogun|Nigeria": [
+    6.8077002,
+    3.8141003
+  ],
+  "Shagamu|Ogun|Nigeria": [
+    6.8477165,
+    3.6440551
+  ],
+  "Aiyedire|Osun|Nigeria": [
+    7.5724511,
+    4.2162199
+  ],
+  "Ife East|Osun|Nigeria": [
+    7.403415,
+    4.5995946
+  ],
+  "Ifelodun|Osun|Nigeria": [
+    7.9045165,
+    4.6370338
+  ],
+  "Ilesha East|Osun|Nigeria": [
+    7.6113053,
+    4.7621063
+  ],
+  "Iwo|Osun|Nigeria": [
+    7.633333,
+    4.183333
+  ],
+  "Obokun|Osun|Nigeria": [
+    7.7744022,
+    4.7781458
+  ],
+  "Osogbo|Osun|Nigeria": [
+    7.7583222,
+    4.5750447
+  ],
+  "Ibadan South West|Oyo|Nigeria": [
+    7.3733705,
+    3.8589668
+  ],
+  "Kajola|Oyo|Nigeria": [
+    8.0285326,
+    3.3585943
+  ],
+  "Ogo-Oluwa|Oyo|Nigeria": [
+    7.9610822,
+    4.1808762
+  ],
+  "Oluyole|Oyo|Nigeria": [
+    7.2195796,
+    3.8929879
+  ],
+  "Ori Ire|Oyo|Nigeria": [
+    8.3093052,
+    4.2035848
+  ],
+  "Oyo West|Oyo|Nigeria": [
+    7.9571932,
+    3.8166315
+  ],
+  "Andoni|Rivers|Nigeria": [
+    4.5061458,
+    7.4073072
+  ],
+  "Bonny|Rivers|Nigeria": [
+    4.505781,
+    7.203466
+  ],
+  "Eleme|Rivers|Nigeria": [
+    4.7506524,
+    7.1474252
+  ],
+  "Etche|Rivers|Nigeria": [
+    5.0765321,
+    7.0926388
+  ],
+  "Obua|Rivers|Nigeria": [
+    4.8416028,
+    6.8604088
+  ],
+  "Gudu|Sokoto|Nigeria": [
+    13.4596132,
+    4.4512601
+  ],
+  "Sokoto South|Sokoto|Nigeria": [
+    13.03565,
+    5.2629592
+  ],
+  "Wamakko|Sokoto|Nigeria": [
+    13.0299143,
+    5.0964801
+  ],
+  "Lau|Taraba|Nigeria": [
+    9.1939001,
+    11.4630191
+  ],
+  "Sardauna|Taraba|Nigeria": [
+    6.929532,
+    11.2229288
+  ],
+  "Takum|Taraba|Nigeria": [
+    7.2549376,
+    9.9852661
+  ],
+  "Bade|Yobe|Nigeria": [
+    12.1233242,
+    11.5065937
+  ],
+  "Fika|Yobe|Nigeria": [
+    11.320567,
+    11.2729093
+  ],
+  "Potiskum|Yobe|Nigeria": [
+    11.7122553,
+    11.0762744
+  ],
+  "Yusufari|Yobe|Nigeria": [
+    13.156975,
+    10.4922742
+  ],
+  "Shinkafi|Zamfara|Nigeria": [
+    13.0373049,
+    6.3704843
+  ],
+  "Isuikwuato|Abia|Nigeria": [
+    5.8080022,
+    7.4696705
+  ],
+  "Obioma Ngwa|Abia|Nigeria": [
+    5.4540953,
+    7.5153071
+  ],
+  "Gombi|Adamawa|Nigeria": [
+    10.2425242,
+    12.53884
+  ],
+  "Numan|Adamawa|Nigeria": [
+    9.4598443,
+    12.0359283
+  ],
+  "Ibiono Ibom|Akwa Ibom|Nigeria": [
+    5.2040105,
+    7.8974506
+  ],
+  "Ika|Akwa Ibom|Nigeria": [
+    5.0161686,
+    7.542619
+  ],
+  "Uruan|Akwa Ibom|Nigeria": [
+    5.0038805,
+    8.0774824
+  ],
+  "Anambra East|Anambra|Nigeria": [
+    6.3146982,
+    6.8929567
+  ],
+  "Aniocha|Anambra|Nigeria": [
+    6.3679941,
+    6.4702804
+  ],
+  "Nnewi South|Anambra|Nigeria": [
+    5.9604744,
+    6.9807066
+  ],
+  "Orumba North|Anambra|Nigeria": [
+    6.1134022,
+    7.1625696
+  ],
+  "Dass|Bauchi|Nigeria": [
+    10.0114079,
+    9.4718203
+  ],
+  "Gamawa|Bauchi|Nigeria": [
+    12.014595,
+    10.5934781
+  ],
+  "Ekermor|Bayelsa|Nigeria": [
+    4.7629786,
+    6.028898
+  ],
+  "Sagbama|Bayelsa|Nigeria": [
+    5.0969489,
+    6.1267442
+  ],
+  "Tarka|Benue|Nigeria": [
+    7.6149052,
+    8.823735
+  ],
+  "Bayo|Borno|Nigeria": [
+    10.452489,
+    11.6827984
+  ],
+  "Ngala|Borno|Nigeria": [
+    12.3758114,
+    14.0852342
+  ],
+  "Calabar Municipal|Cross River|Nigeria": [
+    5.0153885,
+    8.346658
+  ],
+  "Calabar South|Cross River|Nigeria": [
+    4.8527025,
+    8.3207315
+  ],
+  "Ogaja|Cross River|Nigeria": [
+    5.8671966,
+    8.5204774
+  ],
+  "Ika North East|Delta|Nigeria": [
+    6.2361939,
+    6.320777
+  ],
+  "Ika South|Delta|Nigeria": [
+    6.1849053,
+    6.1380809
+  ],
+  "Okpe|Delta|Nigeria": [
+    5.7004104,
+    5.7518793
+  ],
+  "Ezza North|Ebonyi|Nigeria": [
+    6.2590742,
+    7.9835226
+  ],
+  "Etsako Central|Edo|Nigeria": [
+    6.978096,
+    6.5157761
+  ],
+  "Owan East|Edo|Nigeria": [
+    7.0306056,
+    6.1056297
+  ],
+  "Efon|Ekiti|Nigeria": [
+    7.6836481,
+    4.9348868
+  ],
+  "Ilejemeji|Ekiti|Nigeria": [
+    7.736891,
+    5.2738326
+  ],
+  "Enugu East|Enugu|Nigeria": [
+    6.5483445,
+    7.5568359
+  ],
+  "Ezeagu|Enugu|Nigeria": [
+    6.4170554,
+    7.2379601
+  ],
+  "Nkanu East|Enugu|Nigeria": [
+    6.3371067,
+    7.6610906
+  ],
+  "Gwagwalada|Federal Capital Territory|Nigeria": [
+    8.9360261,
+    7.0859144
+  ],
+  "Billiri|Gombe|Nigeria": [
+    9.8350997,
+    11.1418759
+  ],
+  "Gombe|Gombe|Nigeria": [
+    10.2822161,
+    11.1629771
+  ],
+  "Ihitte Uboma|Imo|Nigeria": [
+    5.6492083,
+    7.3814958
+  ],
+  "Obowo|Imo|Nigeria": [
+    5.5585649,
+    7.3605637
+  ],
+  "Okigwe|Imo|Nigeria": [
+    5.8227091,
+    7.3198299
+  ],
+  "Onuimo|Imo|Nigeria": [
+    5.5859456,
+    7.0669651
+  ],
+  "Babura|Jigawa|Nigeria": [
+    12.6050122,
+    8.8275802
+  ],
+  "Dutse|Jigawa|Nigeria": [
+    11.6909859,
+    9.3390747
+  ],
+  "Gwaram|Jigawa|Nigeria": [
+    11.2198673,
+    10.0506649
+  ],
+  "Gwiwa|Jigawa|Nigeria": [
+    12.7376334,
+    8.292064
+  ],
+  "Kaugama|Jigawa|Nigeria": [
+    12.5509256,
+    9.7591978
+  ],
+  "Giwa|Kaduna|Nigeria": [
+    11.0464629,
+    7.2339435
+  ],
+  "Kajuru|Kaduna|Nigeria": [
+    10.2550514,
+    7.7714939
+  ],
+  "Kudan|Kaduna|Nigeria": [
+    11.2638864,
+    7.7175626
+  ],
+  "Bagwai|Kano|Nigeria": [
+    12.1017637,
+    8.1198444
+  ],
+  "Karaye|Kano|Nigeria": [
+    11.7608489,
+    7.9788017
+  ],
+  "Kibiya|Kano|Nigeria": [
+    11.4926881,
+    8.6969015
+  ],
+  "Rogo|Kano|Nigeria": [
+    11.5090482,
+    7.8533616
+  ],
+  "Tarauni|Kano|Nigeria": [
+    11.9614371,
+    8.565161
+  ],
+  "Charanchi|Katsina|Nigeria": [
+    12.5582006,
+    7.6759502
+  ],
+  "Daura|Katsina|Nigeria": [
+    13.035917,
+    8.319388
+  ],
+  "Jibia|Katsina|Nigeria": [
+    12.9826952,
+    7.467752
+  ],
+  "Kafur|Katsina|Nigeria": [
+    11.632705,
+    7.6975486
+  ],
+  "Rimi|Katsina|Nigeria": [
+    12.8919095,
+    7.7145423
+  ],
+  "Sabuwa|Katsina|Nigeria": [
+    11.3401382,
+    7.0754897
+  ],
+  "Safana|Katsina|Nigeria": [
+    12.5182313,
+    7.2324827
+  ],
+  "Zango|Katsina|Nigeria": [
+    12.95365,
+    8.5446236
+  ],
+  "Okehi|Kogi|Nigeria": [
+    7.7331345,
+    6.3561003
+  ],
+  "Ekiti|Kwara|Nigeria": [
+    8.1120171,
+    5.3438559
+  ],
+  "Oyun|Kwara|Nigeria": [
+    8.1998492,
+    4.6316354
+  ],
+  "Eti-Osa|Lagos|Nigeria": [
+    6.4592426,
+    3.532073
+  ],
+  "Lagos Island|Lagos|Nigeria": [
+    6.5146557,
+    3.4907375
+  ],
+  "Somolu|Lagos|Nigeria": [
+    6.5392228,
+    3.3789578
+  ],
+  "Nasarawa|Nassarawa|Nigeria": [
+    8.330112,
+    7.7502586
+  ],
+  "Obi|Nassarawa|Nigeria": [
+    8.3698344,
+    8.7578909
+  ],
+  "Toto|Nassarawa|Nigeria": [
+    8.2616496,
+    7.1971572
+  ],
+  "Mokwa|Niger|Nigeria": [
+    9.1218968,
+    5.3232819
+  ],
+  "Shiroro|Niger|Nigeria": [
+    10.0841804,
+    6.7189286
+  ],
+  "Ipokia|Ogun|Nigeria": [
+    6.6435327,
+    2.8114232
+  ],
+  "Odedah|Ogun|Nigeria": [
+    7.233333,
+    3.533333
+  ],
+  "Akoko North East|Ondo|Nigeria": [
+    7.5625875,
+    5.9042263
+  ],
+  "Akure North|Ondo|Nigeria": [
+    7.2520757,
+    5.3143805
+  ],
+  "Akure South|Ondo|Nigeria": [
+    7.22318,
+    5.1688323
+  ],
+  "Ilaje|Ondo|Nigeria": [
+    6.1963821,
+    4.7590558
+  ],
+  "Odigbo|Ondo|Nigeria": [
+    6.7318828,
+    4.8851666
+  ],
+  "Okitipupa|Ondo|Nigeria": [
+    6.5654448,
+    4.7294512
+  ],
+  "Ose|Ondo|Nigeria": [
+    7.051014,
+    5.7286513
+  ],
+  "Atakumosa West|Osun|Nigeria": [
+    7.5484047,
+    4.4978307
+  ],
+  "Boluwaduro|Osun|Nigeria": [
+    7.9466402,
+    4.8092286
+  ],
+  "Ejigbo|Osun|Nigeria": [
+    7.8999894,
+    4.3167086
+  ],
+  "Akinyele|Oyo|Nigeria": [
+    7.5545037,
+    3.9120421
+  ],
+  "Atisbo|Oyo|Nigeria": [
+    8.4031483,
+    3.2515872
+  ],
+  "Orelope|Oyo|Nigeria": [
+    8.7941346,
+    3.8019227
+  ],
+  "Saki West|Oyo|Nigeria": [
+    8.6429222,
+    3.2031583
+  ],
+  "Bassa|Plateau|Nigeria": [
+    10.0561748,
+    8.817865
+  ],
+  "Jos East|Plateau|Nigeria": [
+    9.872746,
+    9.1340164
+  ],
+  "Kanke|Plateau|Nigeria": [
+    9.3671789,
+    9.6393549
+  ],
+  "Shendam|Plateau|Nigeria": [
+    8.7365546,
+    9.5155524
+  ],
+  "Ogu|Rivers|Nigeria": [
+    4.6742177,
+    7.201702
+  ],
+  "Goronyo|Sokoto|Nigeria": [
+    13.3498618,
+    5.7675412
+  ],
+  "Kware|Sokoto|Nigeria": [
+    13.1554579,
+    5.2931233
+  ],
+  "Sabon Birni|Sokoto|Nigeria": [
+    13.5311002,
+    6.2175118
+  ],
+  "Shagari|Sokoto|Nigeria": [
+    12.5426651,
+    5.0724551
+  ],
+  "Nangere|Yobe|Nigeria": [
+    11.8075446,
+    11.0562868
+  ],
+  "Gummi|Zamfara|Nigeria": [
+    12.0443133,
+    5.1088086
+  ],
+  "Kaura Namoda|Zamfara|Nigeria": [
+    12.4773306,
+    6.5716659
+  ],
+  "Kiyawa|Zamfara|Nigeria": [
+    11.7964786,
+    9.5194975
+  ],
+  "Isiala Ngwa North|Abia|Nigeria": [
+    5.2795472,
+    7.4422931
+  ],
+  "Madagali|Adamawa|Nigeria": [
+    10.786603,
+    13.4885513
+  ],
+  "Michika|Adamawa|Nigeria": [
+    10.577505,
+    13.4045579
+  ],
+  "Toungo|Adamawa|Nigeria": [
+    8.11751,
+    12.0469523
+  ],
+  "Yola-South|Adamawa|Nigeria": [
+    9.2581806,
+    12.4082125
+  ],
+  "Eastern Obolo|Akwa Ibom|Nigeria": [
+    4.5365226,
+    7.7059004
+  ],
+  "Ekpe Atai|Akwa Ibom|Nigeria": [
+    4.990638,
+    7.7966205
+  ],
+  "Ibesikpo Asutan|Akwa Ibom|Nigeria": [
+    4.9179451,
+    7.9647991
+  ],
+  "Ikot Ekpene|Akwa Ibom|Nigeria": [
+    5.181975,
+    7.7132177
+  ],
+  "Ini|Akwa Ibom|Nigeria": [
+    5.4039717,
+    7.7515186
+  ],
+  "Itu|Akwa Ibom|Nigeria": [
+    5.145175,
+    8.0032914
+  ],
+  "Uyo|Akwa Ibom|Nigeria": [
+    4.990237,
+    7.9974399
+  ],
+  "Ihiala|Anambra|Nigeria": [
+    5.8443234,
+    6.8732874
+  ],
+  "Ogbaru|Anambra|Nigeria": [
+    5.9212864,
+    6.7609969
+  ],
+  "Onisha North|Anambra|Nigeria": [
+    6.2183136,
+    6.9531842
+  ],
+  "Bogoro|Bauchi|Nigeria": [
+    9.6369083,
+    9.6200272
+  ],
+  "Darazo|Bauchi|Nigeria": [
+    11.1188755,
+    10.5562017
+  ],
+  "Giade|Bauchi|Nigeria": [
+    11.4165826,
+    10.2346898
+  ],
+  "Gboko|Benue|Nigeria": [
+    7.3778482,
+    8.8713224
+  ],
+  "Gwer West|Benue|Nigeria": [
+    7.6210446,
+    8.206342
+  ],
+  "Vandeikya|Benue|Nigeria": [
+    6.8334444,
+    9.0458344
+  ],
+  "Bama|Borno|Nigeria": [
+    11.54544,
+    14.0064277
+  ],
+  "Chibok|Borno|Nigeria": [
+    10.8690461,
+    12.8480309
+  ],
+  "Gubio|Borno|Nigeria": [
+    12.6718417,
+    12.7756347
+  ],
+  "Kala Balge|Borno|Nigeria": [
+    11.906762,
+    14.4562539
+  ],
+  "Mafa|Borno|Nigeria": [
+    11.9239025,
+    13.6002436
+  ],
+  "Mobbar|Borno|Nigeria": [
+    13.0669035,
+    12.6776969
+  ],
+  "Yakurr|Cross River|Nigeria": [
+    5.8176086,
+    8.1779057
+  ],
+  "Ohaukwu|Ebonyi|Nigeria": [
+    6.5240374,
+    8.0108481
+  ],
+  "Esan South East|Edo|Nigeria": [
+    6.576807,
+    6.4860838
+  ],
+  "Igueben|Edo|Nigeria": [
+    6.6018648,
+    6.242448
+  ],
+  "Uhunmwode|Edo|Nigeria": [
+    6.6076575,
+    5.9722713
+  ],
+  "Ekiti East|Ekiti|Nigeria": [
+    7.7208095,
+    5.6597767
+  ],
+  "Ise|Ekiti|Nigeria": [
+    7.4205606,
+    5.384951
+  ],
+  "Igbo Eze South|Enugu|Nigeria": [
+    6.9519151,
+    7.3499866
+  ],
+  "Nsukka|Enugu|Nigeria": [
+    6.8561,
+    7.3927
+  ],
+  "Kaltungo|Gombe|Nigeria": [
+    9.8269458,
+    11.4361064
+  ],
+  "Njaba|Imo|Nigeria": [
+    5.7054952,
+    7.0021319
+  ],
+  "Orsu|Imo|Nigeria": [
+    5.8494268,
+    6.9828062
+  ],
+  "Birnin Kudu|Jigawa|Nigeria": [
+    11.4514358,
+    9.477428
+  ],
+  "Malam Madori|Jigawa|Nigeria": [
+    12.5297795,
+    9.8959769
+  ],
+  "Lere|Kaduna|Nigeria": [
+    10.3617512,
+    8.5723993
+  ],
+  "Soba|Kaduna|Nigeria": [
+    10.9579962,
+    8.0299052
+  ],
+  "Zaria|Kaduna|Nigeria": [
+    11.0248119,
+    7.6518533
+  ],
+  "Bunkure|Kano|Nigeria": [
+    11.6690434,
+    8.5487486
+  ],
+  "Garun Mallam|Kano|Nigeria": [
+    11.586468,
+    8.422951
+  ],
+  "Gezawa|Kano|Nigeria": [
+    12.0643182,
+    8.7188397
+  ],
+  "Tsanyawa|Kano|Nigeria": [
+    12.2847503,
+    7.9963794
+  ],
+  "Ungogo|Kano|Nigeria": [
+    12.0916,
+    8.49534
+  ],
+  "Batagarawa|Katsina|Nigeria": [
+    12.8677769,
+    7.5314298
+  ],
+  "Danko|Kebbi|Nigeria": [
+    11.3811742,
+    5.7464525
+  ],
+  "Kalgo|Kebbi|Nigeria": [
+    12.3898375,
+    4.0431789
+  ],
+  "Shanga|Kebbi|Nigeria": [
+    11.1964232,
+    4.6058888
+  ],
+  "Bassa|Kogi|Nigeria": [
+    7.7467992,
+    6.9610649
+  ],
+  "Yagba West|Kogi|Nigeria": [
+    8.2763953,
+    5.5564206
+  ],
+  "Asa|Kwara|Nigeria": [
+    8.413265,
+    4.4423815
+  ],
+  "Pategi|Kwara|Nigeria": [
+    8.6704602,
+    5.8172728
+  ],
+  "Ifako|Lagos|Nigeria": [
+    6.6604933,
+    3.3214708
+  ],
+  "Ikeja|Lagos|Nigeria": [
+    6.5974727,
+    3.3432815
+  ],
+  "Awe|Nassarawa|Nigeria": [
+    8.2167306,
+    9.1609237
+  ],
+  "Keffi|Nassarawa|Nigeria": [
+    8.8453176,
+    7.876834
+  ],
+  "Gbako|Niger|Nigeria": [
+    9.2790366,
+    5.9973716
+  ],
+  "Katcha|Niger|Nigeria": [
+    8.7617343,
+    6.311747
+  ],
+  "Kontagora|Niger|Nigeria": [
+    10.399893,
+    5.4694905
+  ],
+  "Minna|Niger|Nigeria": [
+    9.6187093,
+    6.5475752
+  ],
+  "Muya|Niger|Nigeria": [
+    9.9326083,
+    5.6511088
+  ],
+  "Ewekoro|Ogun|Nigeria": [
+    6.961699,
+    3.1734405
+  ],
+  "Atakumosa East|Osun|Nigeria": [
+    7.5484047,
+    4.4978307
+  ],
+  "Ife Central|Osun|Nigeria": [
+    7.5463691,
+    4.5280269
+  ],
+  "Irewole|Osun|Nigeria": [
+    7.4233538,
+    4.2112928
+  ],
+  "Ona-Ara|Oyo|Nigeria": [
+    7.258719,
+    4.064942
+  ],
+  "Mikang|Plateau|Nigeria": [
+    9.0122647,
+    9.5544813
+  ],
+  "Quan-Pan|Plateau|Nigeria": [
+    9.0583446,
+    9.6826289
+  ],
+  "Khana|Rivers|Nigeria": [
+    4.6693695,
+    7.4375406
+  ],
+  "Bodinga|Sokoto|Nigeria": [
+    12.8106793,
+    5.1723538
+  ],
+  "Tambuwal|Sokoto|Nigeria": [
+    12.3986484,
+    4.9429866
+  ],
+  "Tangaza|Sokoto|Nigeria": [
+    13.4791553,
+    4.9704261
+  ],
+  "Gassol|Taraba|Nigeria": [
+    8.3828235,
+    10.4650956
+  ],
+  "Karim Lamidu|Taraba|Nigeria": [
+    8.0141334,
+    10.7376336
+  ],
+  "Zing|Taraba|Nigeria": [
+    8.8585801,
+    11.7650828
+  ],
+  "Anka|Zamfara|Nigeria": [
+    11.9832114,
+    5.9642846
+  ],
+  "Bende|Abia|Nigeria": [
+    5.6390798,
+    7.5893402
+  ],
+  "Ugwunagbo|Abia|Nigeria": [
+    5.0223494,
+    7.3554656
+  ],
+  "Girei|Adamawa|Nigeria": [
+    9.4182119,
+    12.4745425
+  ],
+  "Hong|Adamawa|Nigeria": [
+    10.2622947,
+    12.9479254
+  ],
+  "Abak|Akwa Ibom|Nigeria": [
+    5.0040731,
+    7.7956668
+  ],
+  "Etinan|Akwa Ibom|Nigeria": [
+    4.8457415,
+    7.8431499
+  ],
+  "Onna|Akwa Ibom|Nigeria": [
+    4.6367584,
+    7.8723707
+  ],
+  "Awka North|Anambra|Nigeria": [
+    6.3417876,
+    7.0583437
+  ],
+  "Idemili South|Anambra|Nigeria": [
+    6.0722537,
+    6.8332372
+  ],
+  "Buruku|Benue|Nigeria": [
+    7.4191966,
+    9.2137482
+  ],
+  "Maiduguri Metro|Borno|Nigeria": [
+    12.1875392,
+    13.3080034
+  ],
+  "Nganzai|Borno|Nigeria": [
+    12.4493445,
+    13.1252411
+  ],
+  "Akamkpa|Cross River|Nigeria": [
+    5.3896461,
+    8.5446556
+  ],
+  "Biase|Cross River|Nigeria": [
+    5.547368,
+    8.0520267
+  ],
+  "Yala|Cross River|Nigeria": [
+    6.5895948,
+    8.4959311
+  ],
+  "Isoko North|Delta|Nigeria": [
+    5.5213421,
+    6.1308705
+  ],
+  "Ukwuani|Delta|Nigeria": [
+    5.84944,
+    6.2520583
+  ],
+  "Abakaliki|Ebonyi|Nigeria": [
+    6.3208897,
+    8.1133202
+  ],
+  "Ikwo|Ebonyi|Nigeria": [
+    6.0830204,
+    8.1856299
+  ],
+  "Izzi|Ebonyi|Nigeria": [
+    6.5523758,
+    8.2718631
+  ],
+  "Ijero|Ekiti|Nigeria": [
+    7.8317358,
+    5.0583553
+  ],
+  "Ikere|Ekiti|Nigeria": [
+    7.5135717,
+    5.2202759
+  ],
+  "Ikole|Ekiti|Nigeria": [
+    7.8831532,
+    5.5156487
+  ],
+  "Enugu North|Enugu|Nigeria": [
+    6.4410785,
+    7.5383207
+  ],
+  "Udenu|Enugu|Nigeria": [
+    6.8958276,
+    7.5608051
+  ],
+  "Abaji|Federal Capital Territory|Nigeria": [
+    8.8678966,
+    6.8281816
+  ],
+  "Bwari|Federal Capital Territory|Nigeria": [
+    9.2357478,
+    7.4718746
+  ],
+  "Shomgom|Gombe|Nigeria": [
+    10.4304018,
+    11.2065408
+  ],
+  "Mbaitoli|Imo|Nigeria": [
+    5.5935474,
+    7.0191523
+  ],
+  "Nkwerre|Imo|Nigeria": [
+    5.7442951,
+    7.0994267
+  ],
+  "Oru East|Imo|Nigeria": [
+    5.7274848,
+    6.9478755
+  ],
+  "Gagarawa|Jigawa|Nigeria": [
+    12.4856312,
+    9.5202629
+  ],
+  "Gumel|Jigawa|Nigeria": [
+    12.6232524,
+    9.4044169
+  ],
+  "Roni|Jigawa|Nigeria": [
+    12.563882,
+    8.3709345
+  ],
+  "Taura|Jigawa|Nigeria": [
+    12.2724893,
+    9.3624188
+  ],
+  "Yankwashi|Jigawa|Nigeria": [
+    12.7396442,
+    8.5605791
+  ],
+  "Igabi|Kaduna|Nigeria": [
+    10.7490822,
+    7.5289498
+  ],
+  "Ikara|Kaduna|Nigeria": [
+    11.3111222,
+    8.1640685
+  ],
+  "Jaba|Kaduna|Nigeria": [
+    9.4747461,
+    8.0124917
+  ],
+  "Kachia|Kaduna|Nigeria": [
+    9.8570726,
+    7.6885857
+  ],
+  "Dawakin Tofa|Kano|Nigeria": [
+    12.142136,
+    8.3611161
+  ],
+  "Garko|Kano|Nigeria": [
+    11.5649275,
+    8.8369338
+  ],
+  "Kunchi|Kano|Nigeria": [
+    12.4684379,
+    8.2590837
+  ],
+  "Minjibir|Kano|Nigeria": [
+    12.1936318,
+    8.6142193
+  ],
+  "Nassarawa|Kano|Nigeria": [
+    12.0090164,
+    8.5788276
+  ],
+  "Rimin Gado|Kano|Nigeria": [
+    11.9243341,
+    8.3318596
+  ],
+  "Dutsinma|Katsina|Nigeria": [
+    12.427362,
+    7.4526849
+  ],
+  "Kankara|Katsina|Nigeria": [
+    11.9720225,
+    7.3609374
+  ],
+  "Kankia|Katsina|Nigeria": [
+    12.4289363,
+    7.7953999
+  ],
+  "Suru|Kebbi|Nigeria": [
+    11.7923494,
+    4.1460127
+  ],
+  "Dekina|Kogi|Nigeria": [
+    7.5953906,
+    7.1434419
+  ],
+  "Kabba|Kogi|Nigeria": [
+    8.0700982,
+    6.1414186
+  ],
+  "Mopa-Muro|Kogi|Nigeria": [
+    8.1404458,
+    5.888926
+  ],
+  "Ilorin West|Kwara|Nigeria": [
+    8.4864338,
+    4.5138928
+  ],
+  "Irepodun|Kwara|Nigeria": [
+    8.1935788,
+    4.8549459
+  ],
+  "Amowo-Odofin|Lagos|Nigeria": [
+    6.5269033,
+    3.5774005
+  ],
+  "Ibeju-Lekki|Lagos|Nigeria": [
+    6.4711251,
+    3.8147504
+  ],
+  "Surulere|Lagos|Nigeria": [
+    6.4855737,
+    3.3539907
+  ],
+  "Lavun|Niger|Nigeria": [
+    9.3823776,
+    5.6366923
+  ],
+  "Rijau|Niger|Nigeria": [
+    11.0430889,
+    5.2174572
+  ],
+  "Tafa|Niger|Nigeria": [
+    9.2379532,
+    7.2587751
+  ],
+  "Ado-Odo|Ogun|Nigeria": [
+    6.6,
+    2.933333
+  ],
+  "Egbado North|Ogun|Nigeria": [
+    7.1260629,
+    2.9408573
+  ],
+  "Ifo|Ogun|Nigeria": [
+    6.7563533,
+    3.2416864
+  ],
+  "Ijebu Ode|Ogun|Nigeria": [
+    6.8140077,
+    3.9151668
+  ],
+  "Obafemi|Ogun|Nigeria": [
+    6.9171662,
+    3.4459066
+  ],
+  "Ogun Waterside|Ogun|Nigeria": [
+    6.4608378,
+    4.3903695
+  ],
+  "Ondo West|Ondo|Nigeria": [
+    7.0331467,
+    4.7687111
+  ],
+  "Ila|Osun|Nigeria": [
+    7.9702752,
+    4.8951082
+  ],
+  "Ilesha West|Osun|Nigeria": [
+    7.6388128,
+    4.7163994
+  ],
+  "Isokan|Osun|Nigeria": [
+    7.2917009,
+    4.1970783
+  ],
+  "Odo-Otin|Osun|Nigeria": [
+    8.0074435,
+    4.6790483
+  ],
+  "Olorunda|Osun|Nigeria": [
+    7.8734477,
+    4.5821284
+  ],
+  "Atiba|Oyo|Nigeria": [
+    8.2356925,
+    3.8685804
+  ],
+  "Egbeda|Oyo|Nigeria": [
+    7.3926447,
+    4.0387216
+  ],
+  "Ibadan North East|Oyo|Nigeria": [
+    7.3939066,
+    3.9273483
+  ],
+  "Lagelu|Oyo|Nigeria": [
+    7.5116973,
+    4.0789034
+  ],
+  "Oyo East|Oyo|Nigeria": [
+    7.870081,
+    4.0289582
+  ],
+  "Bokkos|Plateau|Nigeria": [
+    9.2285352,
+    8.8948024
+  ],
+  "Okrika|Rivers|Nigeria": [
+    4.6920776,
+    7.0614745
+  ],
+  "Omumma|Rivers|Nigeria": [
+    5.0931204,
+    7.235432
+  ],
+  "Oyigbo|Rivers|Nigeria": [
+    4.8814078,
+    7.1334475
+  ],
+  "Illela|Sokoto|Nigeria": [
+    13.6664957,
+    5.321407
+  ],
+  "Wurno|Sokoto|Nigeria": [
+    13.2428503,
+    5.4760516
+  ],
+  "Gashaka|Taraba|Nigeria": [
+    7.5071871,
+    11.3402371
+  ],
+  "Ibi|Taraba|Nigeria": [
+    8.182155,
+    9.7472789
+  ],
+  "Wukari|Taraba|Nigeria": [
+    7.8705196,
+    9.7775523
+  ],
+  "Bungudu|Zamfara|Nigeria": [
+    12.0079549,
+    6.5157571
+  ],
+  "Maru|Zamfara|Nigeria": [
+    11.636483,
+    6.3200966
+  ],
+  "Zurmi|Zamfara|Nigeria": [
+    12.8632427,
+    6.7601807
+  ],
+  "Isiala Ngwa South|Abia|Nigeria": [
+    5.3855522,
+    7.4163509
+  ],
+  "Ukwa East|Abia|Nigeria": [
+    4.9369271,
+    7.4028023
+  ],
+  "Ibeno|Akwa Ibom|Nigeria": [
+    4.5580121,
+    8.1085551
+  ],
+  "Ikot Abasi|Akwa Ibom|Nigeria": [
+    4.5850454,
+    7.635553
+  ],
+  "Mbo|Akwa Ibom|Nigeria": [
+    4.6506469,
+    8.2493976
+  ],
+  "Ayamelum|Anambra|Nigeria": [
+    6.5346229,
+    6.9747974
+  ],
+  "Njikoka|Anambra|Nigeria": [
+    6.1892624,
+    6.9937842
+  ],
+  "Nnewi North|Anambra|Nigeria": [
+    6.006232,
+    6.9120158
+  ],
+  "Toro|Bauchi|Nigeria": [
+    10.3502951,
+    9.328662
+  ],
+  "Nembe|Bayelsa|Nigeria": [
+    4.5154824,
+    6.2831826
+  ],
+  "Ogbia|Bayelsa|Nigeria": [
+    4.7957444,
+    6.3138193
+  ],
+  "Southern Ijaw|Bayelsa|Nigeria": [
+    4.7132198,
+    5.8767913
+  ],
+  "Gwer East|Benue|Nigeria": [
+    7.378217,
+    8.3527425
+  ],
+  "Konshisha|Benue|Nigeria": [
+    7.1204698,
+    8.6180473
+  ],
+  "Ogbadibo|Benue|Nigeria": [
+    7.008833,
+    7.6456569
+  ],
+  "Ohimini|Benue|Nigeria": [
+    7.2502554,
+    7.9572672
+  ],
+  "Guzamala|Borno|Nigeria": [
+    12.8640065,
+    13.2508969
+  ],
+  "Monguno|Borno|Nigeria": [
+    12.6534453,
+    13.6856712
+  ],
+  "Akpabuyo|Cross River|Nigeria": [
+    4.8956344,
+    8.4803881
+  ],
+  "Etung|Cross River|Nigeria": [
+    5.8739933,
+    8.8076153
+  ],
+  "Obanliku|Cross River|Nigeria": [
+    6.4864846,
+    9.2946334
+  ],
+  "Obudu|Cross River|Nigeria": [
+    6.5583976,
+    9.0532889
+  ],
+  "Aniocha North|Delta|Nigeria": [
+    6.3679941,
+    6.4702804
+  ],
+  "Isoko South|Delta|Nigeria": [
+    5.3895204,
+    6.2110496
+  ],
+  "Sapele|Delta|Nigeria": [
+    5.8315639,
+    5.660128
+  ],
+  "Ughelli North|Delta|Nigeria": [
+    5.4868836,
+    6.0175259
+  ],
+  "Ughelli South|Delta|Nigeria": [
+    5.3602094,
+    5.9677787
+  ],
+  "Warri North|Delta|Nigeria": [
+    5.9235306,
+    5.1348618
+  ],
+  "Warri South|Delta|Nigeria": [
+    5.626158,
+    5.6514533
+  ],
+  "Ivo|Ebonyi|Nigeria": [
+    5.9093492,
+    7.637395
+  ],
+  "Esan West|Edo|Nigeria": [
+    6.6546491,
+    6.1396625
+  ],
+  "Orhionwon|Edo|Nigeria": [
+    6.6076575,
+    5.9722713
+  ],
+  "Ovia South West|Edo|Nigeria": [
+    6.4709535,
+    5.2991591
+  ],
+  "Ekiti South West|Ekiti|Nigeria": [
+    7.5234638,
+    5.0333579
+  ],
+  "Moba|Ekiti|Nigeria": [
+    7.9928836,
+    5.131158
+  ],
+  "Agwu|Enugu|Nigeria": [
+    6.9704,
+    7.4145
+  ],
+  "Igbo Etiti|Enugu|Nigeria": [
+    6.6889069,
+    7.4059266
+  ],
+  "Igbo Eze North|Enugu|Nigeria": [
+    7.0047968,
+    7.4594853
+  ],
+  "Abuja Municipal|Federal Capital Territory|Nigeria": [
+    9.0805107,
+    7.4969005
+  ],
+  "Kwami|Gombe|Nigeria": [
+    10.4918757,
+    11.2274196
+  ],
+  "Ideato South|Imo|Nigeria": [
+    5.8053246,
+    7.1389231
+  ],
+  "Isiala Mbano|Imo|Nigeria": [
+    5.6846896,
+    7.1963538
+  ],
+  "Auyo|Jigawa|Nigeria": [
+    12.3333296,
+    9.9128345
+  ],
+  "Garki|Jigawa|Nigeria": [
+    12.4303749,
+    9.1130416
+  ],
+  "Kiri-Kasamma|Jigawa|Nigeria": [
+    12.6932,
+    10.2551
+  ],
+  "Miga|Jigawa|Nigeria": [
+    12.235652,
+    9.6980272
+  ],
+  "Jema'a|Kaduna|Nigeria": [
+    9.4136358,
+    8.2529284
+  ],
+  "Kagarko|Kaduna|Nigeria": [
+    9.4903756,
+    7.5743264
+  ],
+  "Kubau|Kaduna|Nigeria": [
+    10.8121332,
+    8.3609171
+  ],
+  "Makarfi|Kaduna|Nigeria": [
+    11.3292772,
+    7.9453962
+  ],
+  "Zangon Kataf|Kaduna|Nigeria": [
+    9.8968169,
+    8.2582128
+  ],
+  "Albasu|Kano|Nigeria": [
+    11.6460292,
+    9.0403142
+  ],
+  "Danbatta|Kano|Nigeria": [
+    12.4339363,
+    8.5150694
+  ],
+  "Fagge|Kano|Nigeria": [
+    12.032223,
+    8.5174197
+  ],
+  "Kano Municipal|Kano|Nigeria": [
+    11.9835421,
+    8.5269365
+  ],
+  "Kiru|Kano|Nigeria": [
+    11.5568483,
+    8.0989509
+  ],
+  "Warawa|Kano|Nigeria": [
+    11.9046272,
+    8.7934017
+  ],
+  "Baure|Katsina|Nigeria": [
+    12.7897719,
+    8.7816395
+  ],
+  "Bindawa|Katsina|Nigeria": [
+    12.7082443,
+    7.8815931
+  ],
+  "Dandume|Katsina|Nigeria": [
+    11.4169922,
+    7.2224595
+  ],
+  "Danja|Katsina|Nigeria": [
+    11.4083136,
+    7.4790533
+  ],
+  "Dan-Musa|Katsina|Nigeria": [
+    12.2587684,
+    7.2858517
+  ],
+  "Dutsi|Katsina|Nigeria": [
+    12.9213406,
+    8.1568206
+  ],
+  "Kaita|Katsina|Nigeria": [
+    13.1799187,
+    7.7922704
+  ],
+  "Matazu|Katsina|Nigeria": [
+    12.2380556,
+    7.6587901
+  ],
+  "Arewa|Kebbi|Nigeria": [
+    12.7215033,
+    4.0747579
+  ],
+  "Adavi|Kogi|Nigeria": [
+    7.6844147,
+    6.4667075
+  ],
+  "Lokoja|Kogi|Nigeria": [
+    7.802355,
+    6.7430327
+  ],
+  "Okene|Kogi|Nigeria": [
+    7.4610396,
+    6.398817
+  ],
+  "Ifelodun|Kwara|Nigeria": [
+    8.6327047,
+    5.1788776
+  ],
+  "Apapa|Lagos|Nigeria": [
+    6.445187,
+    3.3683732
+  ],
+  "Doma|Nassarawa|Nigeria": [
+    8.1599335,
+    8.3372935
+  ],
+  "Kokona|Nassarawa|Nigeria": [
+    8.8461237,
+    8.0833607
+  ],
+  "Agwara|Niger|Nigeria": [
+    10.7453014,
+    4.5394175
+  ],
+  "Bida|Niger|Nigeria": [
+    9.083333,
+    6.016667
+  ],
+  "Lapai|Niger|Nigeria": [
+    8.781127,
+    6.6753811
+  ],
+  "Mariga|Niger|Nigeria": [
+    10.6073683,
+    5.8670483
+  ],
+  "Egbado South|Ogun|Nigeria": [
+    6.7778023,
+    2.9583573
+  ],
+  "Akoko North West|Ondo|Nigeria": [
+    7.6501791,
+    5.8147441
+  ],
+  "Ese-Edo|Ondo|Nigeria": [
+    7.0209686,
+    5.0567477
+  ],
+  "Boripe|Osun|Nigeria": [
+    7.8622022,
+    4.6594465
+  ],
+  "Ifedayo|Osun|Nigeria": [
+    7.9618888,
+    4.9848067
+  ],
+  "Ibadan North West|Oyo|Nigeria": [
+    7.403651,
+    3.871402
+  ],
+  "Irepo|Oyo|Nigeria": [
+    9.0246081,
+    3.8849516
+  ],
+  "Iseyin|Oyo|Nigeria": [
+    7.9710106,
+    3.5956141
+  ],
+  "Ogbomosho North|Oyo|Nigeria": [
+    8.1568767,
+    4.2633807
+  ],
+  "Saki East|Oyo|Nigeria": [
+    8.710249,
+    3.5676274
+  ],
+  "Jos North|Plateau|Nigeria": [
+    9.9421959,
+    8.8929852
+  ],
+  "Langtang North|Plateau|Nigeria": [
+    9.0494609,
+    9.8187243
+  ],
+  "Mangu|Plateau|Nigeria": [
+    9.3622293,
+    9.1816302
+  ],
+  "Riyom|Plateau|Nigeria": [
+    9.5564637,
+    8.704925
+  ],
+  "Emohua|Rivers|Nigeria": [
+    4.8416028,
+    6.8604088
+  ],
+  "Gonaka|Rivers|Nigeria": [
+    4.8416028,
+    6.8604088
+  ],
+  "Ikwerre|Rivers|Nigeria": [
+    5.0705152,
+    6.8820046
+  ],
+  "Port Harcourt|Rivers|Nigeria": [
+    4.7676576,
+    7.0188527
+  ],
+  "Tai|Rivers|Nigeria": [
+    4.7698464,
+    7.261975
+  ],
+  "Dange-Shuni|Sokoto|Nigeria": [
+    12.8256542,
+    5.4191047
+  ],
+  "Silame|Sokoto|Nigeria": [
+    12.9891629,
+    4.8202412
+  ],
+  "Ardo Kola|Taraba|Nigeria": [
+    8.8470989,
+    11.1325195
+  ],
+  "Bali|Taraba|Nigeria": [
+    8.0906258,
+    10.9522619
+  ],
+  "Yorro|Taraba|Nigeria": [
+    8.8803048,
+    11.5067844
+  ],
+  "Karasuwa|Yobe|Nigeria": [
+    13.0000596,
+    10.6717985
+  ],
+  "Nguru|Yobe|Nigeria": [
+    12.875615,
+    10.4540091
+  ],
+  "Arochukwu|Abia|Nigeria": [
+    5.5185154,
+    7.8694045
+  ],
+  "Mubi North|Adamawa|Nigeria": [
+    10.2801221,
+    13.3214501
+  ],
+  "Obat Akara|Akwa Ibom|Nigeria": [
+    4.990638,
+    7.7966205
+  ],
+  "Udung Uko|Akwa Ibom|Nigeria": [
+    4.7505095,
+    8.2631939
+  ],
+  "Aguata|Anambra|Nigeria": [
+    5.9842248,
+    7.0906432
+  ],
+  "Anambra West|Anambra|Nigeria": [
+    6.4925694,
+    6.7765786
+  ],
+  "Ekwusigwo|Anambra|Nigeria": [
+    6.2183136,
+    6.9531842
+  ],
+  "Oyi|Anambra|Nigeria": [
+    6.2395957,
+    6.907348
+  ],
+  "Ganjuwa|Bauchi|Nigeria": [
+    10.7493609,
+    9.9899566
+  ],
+  "Jamaare|Bauchi|Nigeria": [
+    10.6228284,
+    10.0287754
+  ],
+  "Kirfi|Bauchi|Nigeria": [
+    10.4393765,
+    10.5360929
+  ],
+  "Tafawa Balewa|Bauchi|Nigeria": [
+    9.8441524,
+    9.5933061
+  ],
+  "Kolokuma|Bayelsa|Nigeria": [
+    5.0663759,
+    6.2461084
+  ],
+  "Katsina Ala|Benue|Nigeria": [
+    7.313762,
+    9.5660977
+  ],
+  "Obi|Benue|Nigeria": [
+    7.0439804,
+    8.3038379
+  ],
+  "Otukpo|Benue|Nigeria": [
+    7.1912599,
+    8.1328576
+  ],
+  "Ukum|Benue|Nigeria": [
+    7.6077266,
+    9.6059233
+  ],
+  "Askira Uba|Borno|Nigeria": [
+    10.7251526,
+    13.1565189
+  ],
+  "Biu|Borno|Nigeria": [
+    10.6146098,
+    12.1909612
+  ],
+  "Damboa|Borno|Nigeria": [
+    11.0793105,
+    12.6688633
+  ],
+  "Kaga|Borno|Nigeria": [
+    11.6008803,
+    12.5301876
+  ],
+  "Magumeri|Borno|Nigeria": [
+    12.1432355,
+    12.6629372
+  ],
+  "Marte|Borno|Nigeria": [
+    12.4029201,
+    13.8326386
+  ],
+  "Boki|Cross River|Nigeria": [
+    6.2680357,
+    9.0290841
+  ],
+  "Bomadi|Delta|Nigeria": [
+    5.2255299,
+    5.8097295
+  ],
+  "Uvwie|Delta|Nigeria": [
+    5.5639359,
+    5.7838249
+  ],
+  "Afikpo South|Ebonyi|Nigeria": [
+    5.8274591,
+    7.7839142
+  ],
+  "Akoko Edo|Edo|Nigeria": [
+    7.3523936,
+    6.1252351
+  ],
+  "Esan North East|Edo|Nigeria": [
+    6.7867315,
+    6.4334884
+  ],
+  "Etsako West|Edo|Nigeria": [
+    6.9969282,
+    6.3018014
+  ],
+  "Ido-Osi|Ekiti|Nigeria": [
+    7.8633483,
+    5.1969435
+  ],
+  "Irepodun|Ekiti|Nigeria": [
+    7.706224,
+    5.2644602
+  ],
+  "Isi Uzo|Enugu|Nigeria": [
+    6.7418618,
+    7.6809367
+  ],
+  "Balanga|Gombe|Nigeria": [
+    9.945255,
+    11.600761
+  ],
+  "Yamaltu|Gombe|Nigeria": [
+    10.3071708,
+    11.3732153
+  ],
+  "Aboh Mbaise|Imo|Nigeria": [
+    5.4188933,
+    7.2606702
+  ],
+  "Ikeduru|Imo|Nigeria": [
+    5.5596812,
+    7.1489271
+  ],
+  "Hadejia|Jigawa|Nigeria": [
+    12.4526098,
+    10.0418934
+  ],
+  "Sule Takarkar|Jigawa|Nigeria": [
+    12.3252362,
+    9.5103296
+  ],
+  "Kaduna North|Kaduna|Nigeria": [
+    10.5561853,
+    7.4527471
+  ],
+  "Kaduna South|Kaduna|Nigeria": [
+    10.4984812,
+    7.4022142
+  ],
+  "Bebeji|Kano|Nigeria": [
+    11.5370886,
+    8.3106486
+  ],
+  "Gaya|Kano|Nigeria": [
+    11.8189571,
+    9.0267113
+  ],
+  "Tofa|Kano|Nigeria": [
+    12.0245844,
+    8.341578
+  ],
+  "Maiadua|Katsina|Nigeria": [
+    12.5630825,
+    7.6207063
+  ],
+  "Alieru|Kebbi|Nigeria": [
+    11.4167574,
+    4.1074545
+  ],
+  "Augie|Kebbi|Nigeria": [
+    12.9010929,
+    4.6290649
+  ],
+  "Koko|Kebbi|Nigeria": [
+    11.4355339,
+    4.4793871
+  ],
+  "Ngaski|Kebbi|Nigeria": [
+    10.5767008,
+    4.7208828
+  ],
+  "Sakaba|Kebbi|Nigeria": [
+    11.1775635,
+    5.5420716
+  ],
+  "Ijumu|Kogi|Nigeria": [
+    7.842371,
+    5.8957474
+  ],
+  "Ofu|Kogi|Nigeria": [
+    7.3294933,
+    7.068971
+  ],
+  "Yagba East|Kogi|Nigeria": [
+    8.1347528,
+    5.7048151
+  ],
+  "Baruten|Kwara|Nigeria": [
+    9.384549,
+    3.4806575
+  ],
+  "Agege|Lagos|Nigeria": [
+    6.6252516,
+    3.3112096
+  ],
+  "Ikorodu|Lagos|Nigeria": [
+    6.6191233,
+    3.5041271
+  ],
+  "Ojo|Lagos|Nigeria": [
+    6.4624975,
+    3.1657099
+  ],
+  "Nasarawa Eggon|Nassarawa|Nigeria": [
+    8.4387868,
+    8.2382849
+  ],
+  "Gurara|Niger|Nigeria": [
+    9.3250486,
+    7.0316675
+  ],
+  "Mashegu|Niger|Nigeria": [
+    9.8155046,
+    5.2392304
+  ],
+  "Suleja|Niger|Nigeria": [
+    9.2081657,
+    7.1871897
+  ],
+  "Abeokuta South|Ogun|Nigeria": [
+    7.1594138,
+    3.3645466
+  ],
+  "Ikenne|Ogun|Nigeria": [
+    6.9010633,
+    3.6977168
+  ],
+  "Owo|Ondo|Nigeria": [
+    7.1962012,
+    5.5868016
+  ],
+  "Aiyedade|Osun|Nigeria": [
+    7.344518,
+    4.3614141
+  ],
+  "Ife North|Osun|Nigeria": [
+    7.2776156,
+    4.4528658
+  ],
+  "Ife South|Osun|Nigeria": [
+    7.2248225,
+    4.6099752
+  ],
+  "Ibadan South East|Oyo|Nigeria": [
+    7.355048,
+    3.9035289
+  ],
+  "Itesiwaju|Oyo|Nigeria": [
+    8.2107134,
+    3.5481983
+  ],
+  "Ogbomosho South|Oyo|Nigeria": [
+    8.0747153,
+    4.2369848
+  ],
+  "Pankshin|Plateau|Nigeria": [
+    9.3054781,
+    9.3794144
+  ],
+  "Wase|Plateau|Nigeria": [
+    9.0070529,
+    10.2440209
+  ],
+  "Asaritoru|Rivers|Nigeria": [
+    4.8416028,
+    6.8604088
+  ],
+  "Degema|Rivers|Nigeria": [
+    4.5905613,
+    6.9389479
+  ],
+  "Gwadabawa|Sokoto|Nigeria": [
+    13.4160911,
+    5.3227333
+  ],
+  "Rabah|Sokoto|Nigeria": [
+    13.0019668,
+    5.7945252
+  ],
+  "Sokoto North|Sokoto|Nigeria": [
+    13.0665791,
+    5.2331985
+  ],
+  "Tureta|Sokoto|Nigeria": [
+    12.5190328,
+    5.4949963
+  ],
+  "Jalingo|Taraba|Nigeria": [
+    8.894985,
+    11.360042
+  ],
+  "Ussa|Taraba|Nigeria": [
+    7.1040816,
+    10.0535879
+  ],
+  "Damaturu|Yobe|Nigeria": [
+    11.747,
+    11.9608
+  ],
+  "Fune|Yobe|Nigeria": [
+    11.8920217,
+    11.4324499
+  ],
+  "Jakusko|Yobe|Nigeria": [
+    12.3691,
+    10.7744631
+  ],
+  "Machina|Yobe|Nigeria": [
+    13.0342994,
+    10.0474618
+  ],
+  "Gusau|Zamfara|Nigeria": [
+    12.1658358,
+    6.6606398
+  ],
+  "Maradun|Zamfara|Nigeria": [
+    12.7162901,
+    6.3270017
+  ],
+  "Talata Mafara|Zamfara|Nigeria": [
+    12.3990101,
+    6.0825831
+  ],
+  "Aba North|Abia|Nigeria": [
+    5.0938628,
+    7.3947877
+  ],
+  "Aba South|Abia|Nigeria": [
+    5.0876592,
+    7.3497135
+  ],
+  "Umuahia North|Abia|Nigeria": [
+    5.6078214,
+    7.4762003
+  ],
+  "Umuahia South|Abia|Nigeria": [
+    5.4980793,
+    7.4618449
+  ],
+  "Jada|Adamawa|Nigeria": [
+    8.6964628,
+    12.3215818
+  ],
+  "Maiha|Adamawa|Nigeria": [
+    9.8562705,
+    13.1576397
+  ],
+  "Mubi South|Adamawa|Nigeria": [
+    10.148035,
+    13.3284979
+  ],
+  "Song|Adamawa|Nigeria": [
+    9.7789798,
+    12.642119
+  ],
+  "Yola-North|Adamawa|Nigeria": [
+    9.2662849,
+    12.251132
+  ],
+  "Etim Ekpo|Akwa Ibom|Nigeria": [
+    4.954823,
+    7.5738446
+  ],
+  "Oron|Akwa Ibom|Nigeria": [
+    4.8169432,
+    8.2369999
+  ],
+  "Dunukofia|Anambra|Nigeria": [
+    6.2738049,
+    6.9780011
+  ],
+  "Katagum|Bauchi|Nigeria": [
+    11.6557329,
+    10.3503719
+  ],
+  "Misau|Bauchi|Nigeria": [
+    11.3861194,
+    10.4685521
+  ],
+  "Apa|Benue|Nigeria": [
+    7.6006341,
+    7.8852036
+  ],
+  "Guma|Benue|Nigeria": [
+    7.8682914,
+    8.8286537
+  ],
+  "Makurdi|Benue|Nigeria": [
+    7.7312634,
+    8.538425
+  ],
+  "Abadan|Borno|Nigeria": [
+    12.1875392,
+    13.3080034
+  ],
+  "Hawul|Borno|Nigeria": [
+    10.4545467,
+    12.3077703
+  ],
+  "Aniocha South|Delta|Nigeria": [
+    6.1419725,
+    6.4773901
+  ],
+  "Ndokwa East|Delta|Nigeria": [
+    5.6582752,
+    6.4961408
+  ],
+  "Warri South-West|Delta|Nigeria": [
+    5.6042278,
+    5.3230331
+  ],
+  "Ezza South|Ebonyi|Nigeria": [
+    6.1269331,
+    8.021691
+  ],
+  "Onicha|Ebonyi|Nigeria": [
+    6.1085424,
+    7.8142408
+  ],
+  "Emure|Ekiti|Nigeria": [
+    7.4293752,
+    5.5129244
+  ],
+  "Oji River|Enugu|Nigeria": [
+    6.1654933,
+    7.3030229
+  ],
+  "Uzo Uwani|Enugu|Nigeria": [
+    6.6896644,
+    7.1623308
+  ],
+  "Akko|Gombe|Nigeria": [
+    10.1003094,
+    11.0028596
+  ],
+  "Dukku|Gombe|Nigeria": [
+    10.7799177,
+    10.8210523
+  ],
+  "Ehime Mbano|Imo|Nigeria": [
+    5.6882541,
+    7.3001814
+  ],
+  "Ezinihitte Mbaise|Imo|Nigeria": [
+    5.5859456,
+    7.0669651
+  ],
+  "Ngor Okpala|Imo|Nigeria": [
+    5.3274231,
+    7.1575034
+  ],
+  "Nkwangele|Imo|Nigeria": [
+    5.5859456,
+    7.0669651
+  ],
+  "Buji|Jigawa|Nigeria": [
+    11.5483373,
+    9.7315015
+  ],
+  "Guri|Jigawa|Nigeria": [
+    12.7284315,
+    10.4197948
+  ],
+  "Kafin Hausa|Jigawa|Nigeria": [
+    12.1643718,
+    9.9873569
+  ],
+  "Maigatari|Jigawa|Nigeria": [
+    12.6935744,
+    9.6103451
+  ],
+  "Birnin Gwari|Kaduna|Nigeria": [
+    10.8837699,
+    6.585878
+  ],
+  "Kauru|Kaduna|Nigeria": [
+    10.3557988,
+    8.1828454
+  ],
+  "Sabon Gari|Kaduna|Nigeria": [
+    11.1665682,
+    7.7068114
+  ],
+  "Sanga|Kaduna|Nigeria": [
+    9.2458822,
+    8.4593907
+  ],
+  "Dawakin Kudu|Kano|Nigeria": [
+    11.7974797,
+    8.7065887
+  ],
+  "Doguwa|Kano|Nigeria": [
+    10.8799648,
+    8.6761589
+  ],
+  "Makoda|Kano|Nigeria": [
+    12.4269267,
+    8.4312888
+  ],
+  "Rano|Kano|Nigeria": [
+    11.4850802,
+    8.5136042
+  ],
+  "Takai|Kano|Nigeria": [
+    11.4853125,
+    9.1560448
+  ],
+  "Tudun Wada|Kano|Nigeria": [
+    11.315692,
+    8.5239039
+  ],
+  "Sandamu|Katsina|Nigeria": [
+    12.9326254,
+    8.4056984
+  ],
+  "Maiyama|Kebbi|Nigeria": [
+    12.0068976,
+    4.2962992
+  ],
+  "Yauri|Kebbi|Nigeria": [
+    10.7769051,
+    4.734335
+  ],
+  "Ajaokuta|Kogi|Nigeria": [
+    7.5639973,
+    6.6291171
+  ],
+  "Ankpa|Kogi|Nigeria": [
+    7.4693181,
+    7.6191528
+  ],
+  "Ibaji|Kogi|Nigeria": [
+    6.7915719,
+    6.7599354
+  ],
+  "Igalamela|Kogi|Nigeria": [
+    7.0354145,
+    7.0591062
+  ],
+  "Kogi|Kogi|Nigeria": [
+    8.1270318,
+    6.8556095
+  ],
+  "Olamaboro|Kogi|Nigeria": [
+    7.1697767,
+    7.5133535
+  ],
+  "Edu|Kwara|Nigeria": [
+    8.8453918,
+    5.2120792
+  ],
+  "Offa|Kwara|Nigeria": [
+    8.1560008,
+    4.7227435
+  ],
+  "Oke-Ero|Kwara|Nigeria": [
+    8.1803193,
+    5.2964357
+  ],
+  "Osin|Kwara|Nigeria": [
+    8.4319871,
+    4.5726192
+  ],
+  "Alimosho|Lagos|Nigeria": [
+    6.5843883,
+    3.2575876
+  ],
+  "Badagry|Lagos|Nigeria": [
+    6.4393223,
+    2.9060324
+  ],
+  "Epe|Lagos|Nigeria": [
+    6.5857286,
+    3.975694
+  ],
+  "Lagos Mainland|Lagos|Nigeria": [
+    6.4932779,
+    3.3883546
+  ],
+  "Mushin|Lagos|Nigeria": [
+    6.5247655,
+    3.3516348
+  ],
+  "Karu|Nassarawa|Nigeria": [
+    8.995008,
+    7.7512256
+  ],
+  "Borgu|Niger|Nigeria": [
+    10.1967653,
+    4.0920206
+  ],
+  "Bosso|Niger|Nigeria": [
+    9.6009083,
+    6.3466716
+  ],
+  "Paikoro|Niger|Nigeria": [
+    9.4930392,
+    6.8376786
+  ],
+  "Rafi|Niger|Nigeria": [
+    10.2138948,
+    6.2071102
+  ],
+  "Abeokuta North|Ogun|Nigeria": [
+    7.2344952,
+    3.2012259
+  ],
+  "Ijebu North|Ogun|Nigeria": [
+    7.0321309,
+    3.9914572
+  ],
+  "Ijebu North East|Ogun|Nigeria": [
+    6.887079,
+    4.0068673
+  ],
+  "Idanre|Ondo|Nigeria": [
+    6.975549,
+    5.2547047
+  ],
+  "Ifedore|Ondo|Nigeria": [
+    7.3528421,
+    5.1103681
+  ],
+  "Ile-Oluji-Okeigbo|Ondo|Nigeria": [
+    7.2369326,
+    4.8913266
+  ],
+  "Irele|Ondo|Nigeria": [
+    6.4894071,
+    4.8700171
+  ],
+  "Ede North|Osun|Nigeria": [
+    7.7344181,
+    4.4739981
+  ],
+  "Ede South|Osun|Nigeria": [
+    7.6592076,
+    4.4636917
+  ],
+  "Ola-Oluwa|Osun|Nigeria": [
+    7.7457421,
+    4.1994322
+  ],
+  "Ibarapa Central|Oyo|Nigeria": [
+    7.4115165,
+    3.247705
+  ],
+  "Ido|Oyo|Nigeria": [
+    7.5191533,
+    3.697842
+  ],
+  "Surulere|Oyo|Nigeria": [
+    8.0906412,
+    4.414576
+  ],
+  "Jos South|Plateau|Nigeria": [
+    9.7587528,
+    8.8487805
+  ],
+  "Kanam|Plateau|Nigeria": [
+    9.491138,
+    10.1545302
+  ],
+  "Langtang South|Plateau|Nigeria": [
+    8.5842962,
+    9.8329948
+  ],
+  "Ahoada|Rivers|Nigeria": [
+    5.041966,
+    6.513134
+  ],
+  "Ahoada West|Rivers|Nigeria": [
+    5.0419659,
+    6.513134
+  ],
+  "Akukutoru|Rivers|Nigeria": [
+    4.8416028,
+    6.8604088
+  ],
+  "Obio|Rivers|Nigeria": [
+    4.8663069,
+    7.0202155
+  ],
+  "Opobo|Rivers|Nigeria": [
+    4.5092548,
+    7.5209388
+  ],
+  "Gada|Sokoto|Nigeria": [
+    13.6829016,
+    5.7011027
+  ],
+  "Kebbe|Sokoto|Nigeria": [
+    11.8863543,
+    4.7436167
+  ],
+  "Donga|Taraba|Nigeria": [
+    7.6647556,
+    10.0812577
+  ],
+  "Kurmi|Taraba|Nigeria": [
+    7.2643352,
+    10.7014076
+  ],
+  "Bursari|Yobe|Nigeria": [
+    12.1233242,
+    11.5065937
+  ],
+  "Geidam|Yobe|Nigeria": [
+    12.8952043,
+    11.9264702
+  ],
+  "Bakura|Zamfara|Nigeria": [
+    12.5584645,
+    5.8640739
+  ],
+  "Tsafe|Zamfara|Nigeria": [
+    11.8234446,
+    6.9042433
+  ],
+  "Cap Haitien|Nord|Haiti": [
+    19.7595236,
+    -72.2008068
+  ],
+  "Fort Liberte|Nord-Est|Haiti": [
+    19.6635608,
+    -71.8367046
+  ],
+  "Ouanaminthe|Nord-Est|Haiti": [
+    19.5485315,
+    -71.7258332
+  ],
+  "Mole Saint Nicolas|Nord-Ouest|Haiti": [
+    19.8070204,
+    -73.3766132
+  ],
+  "Aquin|Sud|Haiti": [
+    18.2809005,
+    -73.394446
+  ],
+  "Belle Anse|Sud-Est|Haiti": [
+    18.2383019,
+    -72.0661883
+  ],
+  "Lascahobas|Centre|Haiti": [
+    18.8298821,
+    -71.9358047
+  ],
+  "Corail|Grande-Anse|Haiti": [
+    18.4899228,
+    -73.9224749
+  ],
+  "Saint Raphael|Nord|Haiti": [
+    19.4392971,
+    -72.1993956
+  ],
+  "Croix Des Bouquets|Ouest|Haiti": [
+    18.5775444,
+    -72.2296219
+  ],
+  "Leogane|Ouest|Haiti": [
+    18.4122999,
+    -72.754125
+  ],
+  "Cayes|Sud|Haiti": [
+    18.2696332,
+    -73.8390224
+  ],
+  "Bainet|Sud-Est|Haiti": [
+    18.1848637,
+    -72.7517144
+  ],
+  "Jacmel|Sud-Est|Haiti": [
+    18.2352587,
+    -72.5375127
+  ],
+  "Gonaives|Artibonite|Haiti": [
+    19.4736171,
+    -72.5920452
+  ],
+  "Mirebalais|Centre|Haiti": [
+    18.8344163,
+    -72.104836
+  ],
+  "Jeremie|Grande-Anse|Haiti": [
+    18.5252739,
+    -74.2286786
+  ],
+  "Anse-a-Veau|Nippes|Haiti": [
+    18.5034873,
+    -73.3452756
+  ],
+  "Miragoane|Nippes|Haiti": [
+    18.4448425,
+    -73.0886392
+  ],
+  "Acul Du Nord|Nord|Haiti": [
+    19.6822529,
+    -72.3184496
+  ],
+  "Trou Du Nord|Nord-Est|Haiti": [
+    19.616781,
+    -72.0248629
+  ],
+  "La Gonave|Ouest|Haiti": [
+    18.8318139,
+    -73.0169791
+  ],
+  "Marmelade|Artibonite|Haiti": [
+    19.5174077,
+    -72.3619143
+  ],
+  "Baraderes|Nippes|Haiti": [
+    18.4934059,
+    -73.6681746
+  ],
+  "Limbe|Nord|Haiti": [
+    19.6918224,
+    -72.3939267
+  ],
+  "Archaie|Ouest|Haiti": [
+    18.7728191,
+    -72.5105775
+  ],
+  "Port-au-Prince|Ouest|Haiti": [
+    18.547327,
+    -72.3395928
+  ],
+  "Grande Riviere Du Nord|Nord|Haiti": [
+    19.5778207,
+    -72.1693457
+  ],
+  "Plaisance|Nord|Haiti": [
+    19.5981376,
+    -72.4704457
+  ],
+  "Port Salut|Sud|Haiti": [
+    18.0767712,
+    -73.9181353
+  ],
+  "Hinche|Centre|Haiti": [
+    19.1445541,
+    -72.0087527
+  ],
+  "Vallieres|Nord-Est|Haiti": [
+    19.3924679,
+    -71.9187743
+  ],
+  "Port De Paix|Nord-Ouest|Haiti": [
+    19.9389855,
+    -72.8308129
+  ],
+  "Coteaux|Sud|Haiti": [
+    18.2304507,
+    -74.0195041
+  ],
+  "Gros Morne|Artibonite|Haiti": [
+    19.6716098,
+    -72.6783922
+  ],
+  "Cerca La Source|Centre|Haiti": [
+    19.1659775,
+    -71.7904885
+  ],
+  "Borgne|Nord|Haiti": [
+    19.7717144,
+    -72.5203293
+  ],
+  "Saint Louis Du Nord|Nord-Ouest|Haiti": [
+    19.9333656,
+    -72.7209086
+  ],
+  "Dessalines|Artibonite|Haiti": [
+    19.2613129,
+    -72.5170223
+  ],
+  "Saint Marc|Artibonite|Haiti": [
+    19.1020269,
+    -72.699511
+  ],
+  "Anse-d'Hainault|Grande-Anse|Haiti": [
+    18.4858731,
+    -74.4519539
+  ],
+  "Chardonnieres|Sud|Haiti": [
+    18.3288075,
+    -74.2246194
+  ],
+  "Nioro|Kayes|Mali": [
+    15.155707,
+    -9.7842706
+  ],
+  "Baraoueli|Segou|Mali": [
+    13.0392584,
+    -6.6388693
+  ],
+  "Kenieba|Kayes|Mali": [
+    12.7954505,
+    -11.0449971
+  ],
+  "Bla|Segou|Mali": [
+    12.9210914,
+    -5.819086
+  ],
+  "Tominian|Segou|Mali": [
+    13.3225835,
+    -4.3810172
+  ],
+  "Kolondieba|Sikasso|Mali": [
+    10.89129,
+    -6.6537819
+  ],
+  "Yelimane|Kayes|Mali": [
+    15.034,
+    -10.6419035
+  ],
+  "Kolokani|Koulikoro|Mali": [
+    13.700245,
+    -8.1181648
+  ],
+  "Tessalit|Kidal|Mali": [
+    20.2019542,
+    1.0124531
+  ],
+  "Ansongo|Gao|Mali": [
+    15.896,
+    0.8862144
+  ],
+  "Mopti|Mopti|Mali": [
+    14.7579679,
+    -4.0325313
+  ],
+  "Yanfolila|Sikasso|Mali": [
+    10.9297287,
+    -7.9475827
+  ],
+  "Youwarou|Mopti|Mali": [
+    15.390665,
+    -4.5613117
+  ],
+  "Yorosso|Sikasso|Mali": [
+    12.3488115,
+    -4.7233925
+  ],
+  "Djenne|Mopti|Mali": [
+    14.0105066,
+    -4.5953872
+  ],
+  "Tenenkou|Mopti|Mali": [
+    14.5892092,
+    -4.9581708
+  ],
+  "Dire|Tombouctou|Mali": [
+    16.35148,
+    -3.3799396
+  ],
+  "Bourem|Gao|Mali": [
+    17.78715,
+    -0.0866408
+  ],
+  "Bafoulabe|Kayes|Mali": [
+    13.6785,
+    -10.7247381
+  ],
+  "Banamba|Koulikoro|Mali": [
+    13.8604158,
+    -7.316735
+  ],
+  "Dioila|Koulikoro|Mali": [
+    12.3141217,
+    -6.628351
+  ],
+  "Niafunke|Tombouctou|Mali": [
+    15.931,
+    -3.99
+  ],
+  "Sikasso|Sikasso|Mali": [
+    11.3165531,
+    -5.6777526
+  ],
+  "Bougouni|Sikasso|Mali": [
+    11.3005,
+    -7.5741066
+  ],
+  "Koutiala|Sikasso|Mali": [
+    12.350515,
+    -5.5856742
+  ],
+  "Inekar|Menaka|Mali": [
+    15.9486791,
+    3.1572826
+  ],
+  "Menaka|Menaka|Mali": [
+    15.9167,
+    2.4
+  ],
+  "Tidermene|Menaka|Mali": [
+    16.5923464,
+    2.415028
+  ],
+  "Abeibara|Kidal|Mali": [
+    19.8281335,
+    2.325717
+  ],
+  "Anderamboukane|Menaka|Mali": [
+    15.4220566,
+    3.0224703
+  ],
+  "Segou|Segou|Mali": [
+    13.7502886,
+    -6.1977941
+  ],
+  "Kati|Koulikoro|Mali": [
+    12.6021318,
+    -8.4255132
+  ],
+  "Koro|Mopti|Mali": [
+    14.218157,
+    -3.0157007
+  ],
+  "Kayes|Kayes|Mali": [
+    14.5864164,
+    -11.4686783
+  ],
+  "Bankass|Mopti|Mali": [
+    13.690434,
+    -3.6300346
+  ],
+  "Tin-Essako|Kidal|Mali": [
+    18.4509602,
+    2.4897883
+  ],
+  "Goundam|Tombouctou|Mali": [
+    16.4120355,
+    -4.472303
+  ],
+  "Kidal|Kidal|Mali": [
+    18.4408358,
+    1.4075395
+  ],
+  "San|Segou|Mali": [
+    13.1167876,
+    -5.0058521
+  ],
+  "Diema|Kayes|Mali": [
+    14.6682136,
+    -9.2764085
+  ],
+  "Nara|Koulikoro|Mali": [
+    14.818,
+    -7.4711322
+  ],
+  "Gao|Gao|Mali": [
+    16.2788129,
+    -0.0412392
+  ],
+  "Kita|Kayes|Mali": [
+    13.2069801,
+    -9.3886457
+  ],
+  "Gourma-Rharous|Tombouctou|Mali": [
+    16.8776652,
+    -1.925352
+  ],
+  "Bamako|Bamako|Mali": [
+    12.649319,
+    -8.000337
+  ],
+  "Koulikoro|Koulikoro|Mali": [
+    13.2359292,
+    -7.3654045
+  ],
+  "Kadiolo|Sikasso|Mali": [
+    10.6303712,
+    -5.8289323
+  ],
+  "Tombouctou|Tombouctou|Mali": [
+    16.7719091,
+    -3.0087272
+  ],
+  "Kangaba|Koulikoro|Mali": [
+    11.9132694,
+    -8.4943243
+  ],
+  "Bandiagara|Mopti|Mali": [
+    14.3855125,
+    -3.6162204
+  ],
+  "Macina|Segou|Mali": [
+    13.9979613,
+    -5.4743053
+  ],
+  "Douentza|Mopti|Mali": [
+    15.1605,
+    -2.4458759
+  ],
+  "Niono|Segou|Mali": [
+    14.7035,
+    -6.0060208
+  ],
+  "Taungoo|Bago-East|Myanmar": [
+    18.8094312,
+    96.2363727
+  ],
+  "Gangaw|Magway|Myanmar": [
+    21.7957566,
+    94.1575177
+  ],
+  "Pakokku|Magway|Myanmar": [
+    21.3541862,
+    94.748584
+  ],
+  "Mawlamyine|Mon|Myanmar": [
+    16.4908026,
+    97.6284825
+  ],
+  "Hkamti|Sagaing|Myanmar": [
+    25.3975359,
+    95.5969384
+  ],
+  "Kanbalu|Sagaing|Myanmar": [
+    23.272358,
+    95.4019086
+  ],
+  "Tamu|Sagaing|Myanmar": [
+    24.1873544,
+    94.3925262
+  ],
+  "Mindat|Chin|Myanmar": [
+    21.2189991,
+    93.8080793
+  ],
+  "Hpa-An|Kayin|Myanmar": [
+    16.8902634,
+    97.6362745
+  ],
+  "Kawkareik|Kayin|Myanmar": [
+    16.5279057,
+    98.144273
+  ],
+  "Mrauk-U|Rakhine|Myanmar": [
+    20.5413409,
+    93.4351556
+  ],
+  "Yinmarbin|Sagaing|Myanmar": [
+    22.077789,
+    94.900139
+  ],
+  "Myeik|Tanintharyi|Myanmar": [
+    12.4319552,
+    98.5955711
+  ],
+  "Yangon-East|Yangon|Myanmar": [
+    16.8911325,
+    96.2414131
+  ],
+  "Hinthada|Ayeyarwady|Myanmar": [
+    17.586973,
+    95.233272
+  ],
+  "Falam|Chin|Myanmar": [
+    23.4456156,
+    93.7118004
+  ],
+  "Bhamo|Kachin|Myanmar": [
+    24.2688897,
+    97.1784703
+  ],
+  "Loikaw|Kayah|Myanmar": [
+    19.674167,
+    97.2094441
+  ],
+  "Myawaddy|Kayin|Myanmar": [
+    16.6871674,
+    98.507114
+  ],
+  "Kyaukse|Mandalay|Myanmar": [
+    21.5782937,
+    96.2736689
+  ],
+  "Mandalay|Mandalay|Myanmar": [
+    21.9700209,
+    96.1557651
+  ],
+  "Oke Ta Ra|Nay Pyi Taw|Myanmar": [
+    20.0461172,
+    96.1118238
+  ],
+  "Thandwe|Rakhine|Myanmar": [
+    18.0398612,
+    94.6685855
+  ],
+  "Katha|Sagaing|Myanmar": [
+    24.2196736,
+    95.8709264
+  ],
+  "Kawlin|Sagaing|Myanmar": [
+    23.69455,
+    95.4638942
+  ],
+  "Danu Self-Administered Zone|Shan-South|Myanmar": [
+    21.2212715,
+    96.5084305
+  ],
+  "Langkho|Shan-South|Myanmar": [
+    20.0872823,
+    97.9653413
+  ],
+  "Loilen|Shan-South|Myanmar": [
+    21.2633247,
+    97.7697553
+  ],
+  "Kawthoung|Tanintharyi|Myanmar": [
+    9.9833083,
+    98.5511733
+  ],
+  "Minbu|Magway|Myanmar": [
+    20.3461576,
+    94.4729146
+  ],
+  "Yamethin|Mandalay|Myanmar": [
+    20.4849452,
+    96.1068811
+  ],
+  "Taunggyi|Shan-South|Myanmar": [
+    21.2195277,
+    96.8829293
+  ],
+  "Dawei|Tanintharyi|Myanmar": [
+    14.0797232,
+    98.1990191
+  ],
+  "Yangon-South|Yangon|Myanmar": [
+    16.7364033,
+    96.4832604
+  ],
+  "Yangon-West|Yangon|Myanmar": [
+    16.8358438,
+    96.1327256
+  ],
+  "Labutta|Ayeyarwady|Myanmar": [
+    16.3527339,
+    95.2528991
+  ],
+  "Thayarwady|Bago-West|Myanmar": [
+    18.1282941,
+    95.7678496
+  ],
+  "Bawlake|Kayah|Myanmar": [
+    19.0897685,
+    97.5182805
+  ],
+  "Thayet|Magway|Myanmar": [
+    19.4158601,
+    95.1419545
+  ],
+  "Myingyan|Mandalay|Myanmar": [
+    21.3911546,
+    95.5906737
+  ],
+  "Kale|Sagaing|Myanmar": [
+    22.9531886,
+    94.4442828
+  ],
+  "Mawlaik|Sagaing|Myanmar": [
+    23.9472909,
+    94.7567458
+  ],
+  "Monywa|Sagaing|Myanmar": [
+    22.2136005,
+    95.3422251
+  ],
+  "Sagaing|Sagaing|Myanmar": [
+    21.9134294,
+    95.4699266
+  ],
+  "Kengtung|Shan-East|Myanmar": [
+    21.2452919,
+    99.337059
+  ],
+  "Monghsat|Shan-East|Myanmar": [
+    20.685597,
+    99.0203784
+  ],
+  "Maubin|Ayeyarwady|Myanmar": [
+    16.9568109,
+    95.5357384
+  ],
+  "Myaungmya|Ayeyarwady|Myanmar": [
+    16.6202077,
+    95.119788
+  ],
+  "Pyapon|Ayeyarwady|Myanmar": [
+    16.1701061,
+    95.5452034
+  ],
+  "Bago|Bago-East|Myanmar": [
+    17.6596964,
+    96.6460303
+  ],
+  "Magway|Magway|Myanmar": [
+    20.2844816,
+    95.3297427
+  ],
+  "Kyaukpyu|Rakhine|Myanmar": [
+    19.7078491,
+    94.0679549
+  ],
+  "Maungdaw|Rakhine|Myanmar": [
+    20.966769,
+    92.5216097
+  ],
+  "Naga Self-Administered Zone|Sagaing|Myanmar": [
+    26.5656235,
+    95.651784
+  ],
+  "Shwebo|Sagaing|Myanmar": [
+    22.5385263,
+    95.5980865
+  ],
+  "Lashio|Shan-North|Myanmar": [
+    22.5976938,
+    97.2563492
+  ],
+  "Matman|Shan-North|Myanmar": [
+    22.1868086,
+    98.8931512
+  ],
+  "Yangon-North|Yangon|Myanmar": [
+    17.3076187,
+    96.00628
+  ],
+  "Pathein|Ayeyarwady|Myanmar": [
+    16.7137102,
+    94.521129
+  ],
+  "Matupi|Chin|Myanmar": [
+    21.7316124,
+    93.2990732
+  ],
+  "Mohnyin|Kachin|Myanmar": [
+    25.3112611,
+    96.5425188
+  ],
+  "Myitkyina|Kachin|Myanmar": [
+    25.6718556,
+    97.5745613
+  ],
+  "Hpapun|Kayin|Myanmar": [
+    18.0696367,
+    97.4252947
+  ],
+  "Meiktila|Mandalay|Myanmar": [
+    20.9582957,
+    95.895638
+  ],
+  "Kyaukme|Shan-North|Myanmar": [
+    22.0342388,
+    96.4811297
+  ],
+  "Pa-O Self-Administered Zone|Shan-South|Myanmar": [
+    20.137476,
+    96.67366
+  ],
+  "Hakha|Chin|Myanmar": [
+    22.5388057,
+    93.5669227
+  ],
+  "Puta-O|Kachin|Myanmar": [
+    27.2581853,
+    97.8915986
+  ],
+  "Nyaung-U|Mandalay|Myanmar": [
+    20.928028,
+    95.167346
+  ],
+  "Pyinoolwin|Mandalay|Myanmar": [
+    22.0200826,
+    96.5415828
+  ],
+  "Thaton|Mon|Myanmar": [
+    16.9136941,
+    97.3689718
+  ],
+  "Det Khi Na|Nay Pyi Taw|Myanmar": [
+    19.6789129,
+    96.1989245
+  ],
+  "Sittwe|Rakhine|Myanmar": [
+    20.565939,
+    92.9079205
+  ],
+  "Gotheye|Tillaberi|Niger": [
+    13.7978926,
+    1.4544293
+  ],
+  "Dosso|Dosso|Niger": [
+    12.8539,
+    3.2581048
+  ],
+  "Dioundiou|Dosso|Niger": [
+    12.6581652,
+    3.6771504
+  ],
+  "Dogondoutchi|Dosso|Niger": [
+    13.6446616,
+    4.0970715
+  ],
+  "Bagaroua|Tahoua|Niger": [
+    14.3719596,
+    4.6892581
+  ],
+  "Abalak|Tahoua|Niger": [
+    15.4650785,
+    6.2748248
+  ],
+  "Guidan Roumdji|Maradi|Niger": [
+    13.546,
+    6.9566459
+  ],
+  "Gazaoua|Maradi|Niger": [
+    13.4478758,
+    7.9322052
+  ],
+  "N'Guigmi|Diffa|Niger": [
+    15.897075,
+    13.27374
+  ],
+  "Tchirozerine|Agadez|Niger": [
+    17.379305,
+    8.1979239
+  ],
+  "Falmey|Dosso|Niger": [
+    12.548938,
+    2.8526682
+  ],
+  "Gaya|Dosso|Niger": [
+    12.31875,
+    3.4895885
+  ],
+  "Ouallam|Tillaberi|Niger": [
+    14.58715,
+    2.1962139
+  ],
+  "Ayerou|Tillaberi|Niger": [
+    14.9488927,
+    1.0600233
+  ],
+  "Tillia|Tahoua|Niger": [
+    15.9010033,
+    4.6289634
+  ],
+  "Goure|Zinder|Niger": [
+    15.27425,
+    10.8121218
+  ],
+  "Bosso|Diffa|Niger": [
+    13.700055,
+    13.3112436
+  ],
+  "Tesker|Zinder|Niger": [
+    15.9090394,
+    10.8167347
+  ],
+  "Balleyara|Tillaberi|Niger": [
+    13.7841021,
+    2.9515071
+  ],
+  "Bouza|Tahoua|Niger": [
+    14.5013528,
+    6.1106918
+  ],
+  "Dakoro|Maradi|Niger": [
+    14.60025,
+    7.1077556
+  ],
+  "Mayahi|Maradi|Niger": [
+    14.10935,
+    7.6081961
+  ],
+  "N'Gourti|Diffa|Niger": [
+    16.1870944,
+    13.4112404
+  ],
+  "Aderbissinat|Agadez|Niger": [
+    16.4738752,
+    8.7265896
+  ],
+  "Arlit|Agadez|Niger": [
+    20.4172725,
+    8.9768864
+  ],
+  "Bankilare|Tillaberi|Niger": [
+    14.5828541,
+    0.725173
+  ],
+  "Say|Tillaberi|Niger": [
+    12.7634949,
+    2.032668
+  ],
+  "Loga|Dosso|Niger": [
+    13.60335,
+    3.4378704
+  ],
+  "Banibangou|Tillaberi|Niger": [
+    15.0393641,
+    2.7016766
+  ],
+  "Magaria|Zinder|Niger": [
+    13.2201,
+    9.2097014
+  ],
+  "Ville de Zinder|Zinder|Niger": [
+    13.8140458,
+    8.9850918
+  ],
+  "Maine Soroa|Diffa|Niger": [
+    13.75225,
+    11.582675
+  ],
+  "Diffa|Diffa|Niger": [
+    13.4880875,
+    12.5136266
+  ],
+  "Belbedji|Zinder|Niger": [
+    14.9860422,
+    7.813647
+  ],
+  "Kollo|Tillaberi|Niger": [
+    13.199427,
+    2.4945381
+  ],
+  "Torodi|Tillaberi|Niger": [
+    13.1147446,
+    1.4660878
+  ],
+  "Birni N'Konni|Tahoua|Niger": [
+    13.989755,
+    5.1116325
+  ],
+  "Illela|Tahoua|Niger": [
+    14.34675,
+    5.0390075
+  ],
+  "Ville de Tahoua|Tahoua|Niger": [
+    13.7998942,
+    5.2467948
+  ],
+  "Madaoua|Tahoua|Niger": [
+    14.0028837,
+    6.1041214
+  ],
+  "Tessaoua|Maradi|Niger": [
+    13.8277,
+    8.1745475
+  ],
+  "Mirriah|Zinder|Niger": [
+    13.876,
+    9.110225
+  ],
+  "Goudoumaria|Diffa|Niger": [
+    13.8469943,
+    11.2518924
+  ],
+  "Bermo|Maradi|Niger": [
+    14.9913213,
+    6.972607
+  ],
+  "Tassara|Tahoua|Niger": [
+    17.4874199,
+    4.7556753
+  ],
+  "Iferouane|Agadez|Niger": [
+    20.5289472,
+    9.5092338
+  ],
+  "Tillaberi|Tillaberi|Niger": [
+    14.5198,
+    1.343247
+  ],
+  "Ville de Niamey|Niamey|Niger": [
+    13.5136404,
+    2.10884
+  ],
+  "Filingue|Tillaberi|Niger": [
+    14.607885,
+    3.5282739
+  ],
+  "Keita|Tahoua|Niger": [
+    14.7732921,
+    5.9455056
+  ],
+  "Tchintabaraden|Tahoua|Niger": [
+    15.9609623,
+    5.6698299
+  ],
+  "Madarounfa|Maradi|Niger": [
+    13.2882513,
+    7.1802685
+  ],
+  "Damagaram Takaya|Zinder|Niger": [
+    14.0519667,
+    9.5082973
+  ],
+  "Ingall|Agadez|Niger": [
+    16.7861094,
+    6.9321705
+  ],
+  "Tera|Tillaberi|Niger": [
+    14.1763132,
+    0.8841753
+  ],
+  "Tibiri|Dosso|Niger": [
+    13.0636636,
+    3.9163538
+  ],
+  "Tahoua|Tahoua|Niger": [
+    14.8397,
+    4.873025
+  ],
+  "Malbaza|Tahoua|Niger": [
+    13.9602829,
+    5.5071021
+  ],
+  "Kantche|Zinder|Niger": [
+    13.4156793,
+    8.5663226
+  ],
+  "Dungass|Zinder|Niger": [
+    13.2087411,
+    9.5942474
+  ],
+  "Tanout|Zinder|Niger": [
+    15.1314,
+    8.5242534
+  ],
+  "Boboye|Dosso|Niger": [
+    12.94531,
+    2.8457413
+  ],
+  "Abala|Tillaberi|Niger": [
+    14.9963216,
+    3.5628728
+  ],
+  "Ville de Maradi|Maradi|Niger": [
+    13.4916964,
+    7.1060706
+  ],
+  "Aguie|Maradi|Niger": [
+    13.4857,
+    7.7932993
+  ],
+  "Takeita|Zinder|Niger": [
+    13.9388388,
+    8.8674221
+  ],
+  "Bilma|Agadez|Niger": [
+    20.3057331,
+    13.5037581
+  ],
+  "Kapoeta East|Eastern Equatoria|South Sudan": [
+    5.194826,
+    34.8082563
+  ],
+  "Kapoeta South|Eastern Equatoria|South Sudan": [
+    4.6205873,
+    33.6975221
+  ],
+  "Twic East|Jonglei|South Sudan": [
+    7.0120052,
+    31.3062638
+  ],
+  "Rumbek Centre|Lakes|South Sudan": [
+    7.0373489,
+    29.8133694
+  ],
+  "Wulu|Lakes|South Sudan": [
+    6.2178832,
+    29.1683118
+  ],
+  "Yirol East|Lakes|South Sudan": [
+    6.7738734,
+    30.7665584
+  ],
+  "Aweil North|Northern Bahr el Ghazal|South Sudan": [
+    9.374445,
+    26.6933758
+  ],
+  "Panriang|Unity|South Sudan": [
+    8.4582525,
+    29.9560547
+  ],
+  "Maban|Upper Nile|South Sudan": [
+    10.1071905,
+    33.4710556
+  ],
+  "Tonj North|Warrap|South Sudan": [
+    8.2118597,
+    29.1580575
+  ],
+  "Tonj South|Warrap|South Sudan": [
+    7.1153949,
+    28.6955623
+  ],
+  "Anzara|Western Equatoria|South Sudan": [
+    5.5381215,
+    29.1495118
+  ],
+  "Terekeka|Central Equatoria|South Sudan": [
+    5.6939779,
+    31.4358125
+  ],
+  "Magwi|Eastern Equatoria|South Sudan": [
+    3.937411,
+    32.1711005
+  ],
+  "Ayod|Jonglei|South Sudan": [
+    8.4248791,
+    31.0281965
+  ],
+  "Cueibet|Lakes|South Sudan": [
+    7.1289025,
+    29.2283968
+  ],
+  "Mayom|Unity|South Sudan": [
+    9.2548884,
+    29.1006292
+  ],
+  "Maiwut|Upper Nile|South Sudan": [
+    8.7912006,
+    33.8265501
+  ],
+  "Jur River|Western Bahr el Ghazal|South Sudan": [
+    7.6200623,
+    28.1869956
+  ],
+  "Ibba|Western Equatoria|South Sudan": [
+    5.052483,
+    29.0254541
+  ],
+  "Tambura|Western Equatoria|South Sudan": [
+    6.0309907,
+    27.2027416
+  ],
+  "Lainya|Central Equatoria|South Sudan": [
+    4.2176254,
+    30.8184151
+  ],
+  "Morobo|Central Equatoria|South Sudan": [
+    3.7186118,
+    30.817595
+  ],
+  "Uror|Jonglei|South Sudan": [
+    7.5633573,
+    32.095178
+  ],
+  "Rumbek North|Lakes|South Sudan": [
+    7.5956324,
+    29.6352115
+  ],
+  "Abiemnhom|Unity|South Sudan": [
+    9.4292176,
+    28.8304517
+  ],
+  "Panyijiar|Unity|South Sudan": [
+    7.5288882,
+    30.3123264
+  ],
+  "Renk|Upper Nile|South Sudan": [
+    11.2903588,
+    32.9171036
+  ],
+  "Ulang|Upper Nile|South Sudan": [
+    8.6231595,
+    32.8144834
+  ],
+  "Gogrial East|Warrap|South Sudan": [
+    8.533188,
+    28.4683243
+  ],
+  "Twic|Warrap|South Sudan": [
+    9.0637004,
+    28.3776649
+  ],
+  "Kapoeta North|Eastern Equatoria|South Sudan": [
+    5.3487876,
+    33.4393952
+  ],
+  "Fangak|Jonglei|South Sudan": [
+    9.0444251,
+    30.8256524
+  ],
+  "Nyirol|Jonglei|South Sudan": [
+    8.6974011,
+    32.10317
+  ],
+  "Yirol West|Lakes|South Sudan": [
+    6.3756265,
+    30.4588566
+  ],
+  "Fashoda|Upper Nile|South Sudan": [
+    9.9856621,
+    31.8482871
+  ],
+  "Melut|Upper Nile|South Sudan": [
+    10.3706471,
+    32.5888207
+  ],
+  "Gogrial West|Warrap|South Sudan": [
+    8.5768122,
+    28.1497906
+  ],
+  "Yei|Central Equatoria|South Sudan": [
+    4.2432059,
+    30.284559
+  ],
+  "Lafon|Eastern Equatoria|South Sudan": [
+    5.1843095,
+    32.6302596
+  ],
+  "Bor South|Jonglei|South Sudan": [
+    6.4105382,
+    31.9079715
+  ],
+  "Duk|Jonglei|South Sudan": [
+    7.5411783,
+    31.0849621
+  ],
+  "Pochalla|Jonglei|South Sudan": [
+    7.2059413,
+    33.6768649
+  ],
+  "Aweil Centre|Northern Bahr el Ghazal|South Sudan": [
+    8.4234667,
+    26.8990118
+  ],
+  "Aweil West|Northern Bahr el Ghazal|South Sudan": [
+    8.9061176,
+    26.5050414
+  ],
+  "Rubkona|Unity|South Sudan": [
+    9.3938319,
+    29.6277306
+  ],
+  "Luakpiny/Nasir|Upper Nile|South Sudan": [
+    9.0,
+    33.0
+  ],
+  "Raja|Western Bahr el Ghazal|South Sudan": [
+    8.5455555,
+    25.2224504
+  ],
+  "Ezo|Western Equatoria|South Sudan": [
+    5.6030233,
+    27.9948284
+  ],
+  "Juba|Central Equatoria|South Sudan": [
+    4.7135783,
+    31.3145185
+  ],
+  "Kajo Keji|Central Equatoria|South Sudan": [
+    3.88341,
+    31.4555659
+  ],
+  "Awerial|Lakes|South Sudan": [
+    6.1888192,
+    31.117421
+  ],
+  "Rumbek East|Lakes|South Sudan": [
+    6.7614077,
+    30.0433187
+  ],
+  "Aweil South|Northern Bahr el Ghazal|South Sudan": [
+    8.674098,
+    27.683843
+  ],
+  "Guit|Unity|South Sudan": [
+    9.42482,
+    30.1194322
+  ],
+  "Mayendit|Unity|South Sudan": [
+    8.0972785,
+    29.896329
+  ],
+  "Baliet|Upper Nile|South Sudan": [
+    9.5926595,
+    32.2088383
+  ],
+  "Malakal|Upper Nile|South Sudan": [
+    9.6614801,
+    31.7295162
+  ],
+  "Tonj East|Warrap|South Sudan": [
+    7.8541497,
+    29.3233312
+  ],
+  "Mundri West|Western Equatoria|South Sudan": [
+    5.1571039,
+    30.2184066
+  ],
+  "Budi|Eastern Equatoria|South Sudan": [
+    4.3829095,
+    33.5916832
+  ],
+  "Canal/Pigi|Jonglei|South Sudan": [
+    9.3650172,
+    31.5484834
+  ],
+  "Aweil East|Northern Bahr el Ghazal|South Sudan": [
+    9.1738578,
+    27.6449793
+  ],
+  "Manyo|Upper Nile|South Sudan": [
+    11.0387873,
+    32.5643366
+  ],
+  "Maridi|Western Equatoria|South Sudan": [
+    5.1349142,
+    29.6916118
+  ],
+  "Mundri East|Western Equatoria|South Sudan": [
+    5.3186684,
+    30.6738099
+  ],
+  "Mvolo|Western Equatoria|South Sudan": [
+    5.9505756,
+    30.0129839
+  ],
+  "Yambio|Western Equatoria|South Sudan": [
+    5.1645155,
+    28.4530332
+  ],
+  "Ikotos|Eastern Equatoria|South Sudan": [
+    4.0784728,
+    33.1078963
+  ],
+  "Torit|Eastern Equatoria|South Sudan": [
+    4.404949,
+    32.5628811
+  ],
+  "Akobo|Jonglei|South Sudan": [
+    7.814681,
+    32.8260777
+  ],
+  "Pibor|Jonglei|South Sudan": [
+    6.556148,
+    33.6951631
+  ],
+  "Koch|Unity|South Sudan": [
+    8.6022169,
+    29.8539829
+  ],
+  "Leer|Unity|South Sudan": [
+    8.1880088,
+    30.2227931
+  ],
+  "Longchuk|Upper Nile|South Sudan": [
+    9.0,
+    33.0
+  ],
+  "Panyikang|Upper Nile|South Sudan": [
+    9.548193,
+    31.1790523
+  ],
+  "Wau|Western Bahr el Ghazal|South Sudan": [
+    7.4195016,
+    27.3740745
+  ],
+  "Nagero|Western Equatoria|South Sudan": [
+    6.4388054,
+    27.7438354
+  ],
+  "Menbij|Aleppo|Syria": [
+    36.2988434,
+    37.7593857
+  ],
+  "Ar Raqqa|Ar Raqqa|Syria": [
+    35.949678,
+    39.0089212
+  ],
+  "As Salamiyeh|Hama|Syria": [
+    35.28733,
+    37.2541753
+  ],
+  "Tall Kalakh|Homs|Syria": [
+    34.6711575,
+    36.2616815
+  ],
+  "Ain Al Arab|Aleppo|Syria": [
+    36.8899756,
+    38.3542376
+  ],
+  "Azaz|Aleppo|Syria": [
+    36.5864441,
+    37.0464305
+  ],
+  "Muhradah|Hama|Syria": [
+    35.28733,
+    37.2541753
+  ],
+  "Idleb|Idleb|Syria": [
+    35.8741289,
+    36.8142178
+  ],
+  "Al Fiq|Quneitra|Syria": [
+    32.8997436,
+    35.8780671
+  ],
+  "Quneitra|Quneitra|Syria": [
+    33.1215488,
+    35.8973287
+  ],
+  "Qatana|Rural Damascus|Syria": [
+    33.3810496,
+    35.9846358
+  ],
+  "Dreikish|Tartous|Syria": [
+    34.9453957,
+    36.0733069
+  ],
+  "Salkhad|As Sweida|Syria": [
+    32.7386567,
+    36.8999085
+  ],
+  "Al Mayadin|Deir ez Zor|Syria": [
+    35.0190567,
+    40.4509227
+  ],
+  "Qadmous|Tartous|Syria": [
+    35.1086261,
+    36.1654891
+  ],
+  "Damascus|Damascus|Syria": [
+    33.5130695,
+    36.3095814
+  ],
+  "Dara|Dara|Syria": [
+    32.6227776,
+    36.1067639
+  ],
+  "As Suqaylabiyah|Hama|Syria": [
+    35.28733,
+    37.2541753
+  ],
+  "Al Makhrim|Homs|Syria": [
+    34.4667601,
+    38.0622823
+  ],
+  "Lattakia|Lattakia|Syria": [
+    35.5752422,
+    35.8008169
+  ],
+  "Darayya|Rural Damascus|Syria": [
+    33.4624691,
+    36.2183064
+  ],
+  "Banyas|Tartous|Syria": [
+    35.1459539,
+    36.0872985
+  ],
+  "Safita|Tartous|Syria": [
+    34.820683,
+    36.1177283
+  ],
+  "Tartous|Tartous|Syria": [
+    34.8936225,
+    35.885167
+  ],
+  "Afrin|Aleppo|Syria": [
+    36.5083795,
+    36.870089
+  ],
+  "As Sanamayn|Dara|Syria": [
+    33.0732448,
+    36.1833927
+  ],
+  "Izra|Dara|Syria": [
+    32.8546282,
+    36.2420324
+  ],
+  "Al Bab|Aleppo|Syria": [
+    36.3711098,
+    37.5143955
+  ],
+  "As Safira|Aleppo|Syria": [
+    36.0791541,
+    37.3728465
+  ],
+  "Masyaf|Hama|Syria": [
+    35.0646383,
+    36.3407993
+  ],
+  "Homs|Homs|Syria": [
+    34.7333334,
+    36.7166667
+  ],
+  "Tadmor|Homs|Syria": [
+    34.5526608,
+    38.259261
+  ],
+  "Ariha|Idleb|Syria": [
+    35.8126373,
+    36.6100784
+  ],
+  "Al Haffa|Lattakia|Syria": [
+    35.5980442,
+    36.0302525
+  ],
+  "Sheikh Badr|Tartous|Syria": [
+    35.0193914,
+    36.0872686
+  ],
+  "Shahba|As Sweida|Syria": [
+    32.8530581,
+    36.6293304
+  ],
+  "Deir ez Zor|Deir ez Zor|Syria": [
+    35.3333335,
+    40.1499999
+  ],
+  "Al Qusayr|Homs|Syria": [
+    34.5107184,
+    36.576892
+  ],
+  "Ar Rastan|Homs|Syria": [
+    34.9271069,
+    36.7323977
+  ],
+  "Jarablus|Aleppo|Syria": [
+    36.8181146,
+    38.0098306
+  ],
+  "Jebel Saman|Aleppo|Syria": [
+    36.2333333,
+    37.2666667
+  ],
+  "Tell Abiad|Ar Raqqa|Syria": [
+    36.6946212,
+    38.9499931
+  ],
+  "As Sweida|As Sweida|Syria": [
+    32.7218083,
+    36.5806589
+  ],
+  "Abu Kamal|Deir ez Zor|Syria": [
+    34.4505521,
+    40.9170636
+  ],
+  "Hama|Hama|Syria": [
+    35.1343368,
+    36.7496276
+  ],
+  "Al Mara|Idleb|Syria": [
+    35.8009354,
+    36.3715796
+  ],
+  "Harim|Idleb|Syria": [
+    36.2118438,
+    36.5207448
+  ],
+  "Jisr Ash Shugur|Idleb|Syria": [
+    35.8150814,
+    36.3205647
+  ],
+  "Shahri Buzurg|Badakhshan|Afghanistan": [
+    37.341232,
+    70.135468
+  ],
+  "Shighnan|Badakhshan|Afghanistan": [
+    37.601108,
+    71.243997
+  ],
+  "Yawan|Badakhshan|Afghanistan": [
+    37.528151,
+    70.380443
+  ],
+  "Khinjan|Baghlan|Afghanistan": [
+    35.47131,
+    68.973603
+  ],
+  "Nahreen|Baghlan|Afghanistan": [
+    35.75,
+    69.0
+  ],
+  "Char Kent|Balkh|Afghanistan": [
+    36.7558933,
+    66.7208878
+  ],
+  "Khulm|Balkh|Afghanistan": [
+    36.814534,
+    67.743267
+  ],
+  "Bamyan|Bamyan|Afghanistan": [
+    34.794631,
+    67.684334
+  ],
+  "Miramor|Daykundi|Afghanistan": [
+    33.8050984,
+    67.0466319
+  ],
+  "Qaram Qul|Faryab|Afghanistan": [
+    35.6481166,
+    64.8808667
+  ],
+  "Muqur|Ghazni|Afghanistan": [
+    32.940346,
+    67.781802
+  ],
+  "Pasaband|Ghor|Afghanistan": [
+    33.5768137,
+    65.1399903
+  ],
+  "Kajaki|Helmand|Afghanistan": [
+    32.48418,
+    65.038714
+  ],
+  "Sangin|Helmand|Afghanistan": [
+    32.123611,
+    64.996532
+  ],
+  "Adraskan|Herat|Afghanistan": [
+    33.705406,
+    61.995481
+  ],
+  "Ghoryan|Herat|Afghanistan": [
+    34.18233,
+    61.16269
+  ],
+  "Gulran|Herat|Afghanistan": [
+    35.134036,
+    61.57135
+  ],
+  "Guzera|Herat|Afghanistan": [
+    34.1577182,
+    62.2905676
+  ],
+  "Obe|Herat|Afghanistan": [
+    34.36058,
+    63.250427
+  ],
+  "Darzab|Jowzjan|Afghanistan": [
+    36.0053474,
+    65.3959124
+  ],
+  "Sheberghan|Jowzjan|Afghanistan": [
+    36.5816654,
+    65.7274006
+  ],
+  "Bagrami|Kabul|Afghanistan": [
+    34.483553,
+    69.336171
+  ],
+  "Kalakan|Kabul|Afghanistan": [
+    34.762507,
+    69.175586
+  ],
+  "Miyanishin|Kandahar|Afghanistan": [
+    32.381034,
+    66.336451
+  ],
+  "Shah Wali Kot|Kandahar|Afghanistan": [
+    32.07954,
+    66.005729
+  ],
+  "Koh Band|Kapisa|Afghanistan": [
+    35.10575,
+    69.473416
+  ],
+  "Tagab|Kapisa|Afghanistan": [
+    34.794559,
+    69.679304
+  ],
+  "Manduzay|Khost|Afghanistan": [
+    33.4014634,
+    69.8912294
+  ],
+  "Khas Kunar|Kunar|Afghanistan": [
+    34.612865,
+    70.938538
+  ],
+  "Nari|Kunar|Afghanistan": [
+    35.267239,
+    71.540657
+  ],
+  "Shigal|Kunar|Afghanistan": [
+    35.036301,
+    71.225047
+  ],
+  "Dasht-e-Archi|Kunduz|Afghanistan": [
+    36.963604,
+    69.157287
+  ],
+  "Alingar|Laghman|Afghanistan": [
+    34.817499,
+    70.410769
+  ],
+  "Charkh|Logar|Afghanistan": [
+    33.8174375,
+    68.898277
+  ],
+  "Behsud|Nangarhar|Afghanistan": [
+    34.442764,
+    70.50899
+  ],
+  "Chaparhar|Nangarhar|Afghanistan": [
+    34.290801,
+    70.373343
+  ],
+  "Pachir Waagam|Nangarhar|Afghanistan": [
+    34.220389,
+    70.3800314
+  ],
+  "Sher Zad|Nangarhar|Afghanistan": [
+    34.220389,
+    70.3800314
+  ],
+  "Shinwar|Nangarhar|Afghanistan": [
+    34.187246,
+    70.8416474
+  ],
+  "Noor Gram|Nuristan|Afghanistan": [
+    35.3,
+    70.833333
+  ],
+  "Gardez|Paktia|Afghanistan": [
+    33.5877097,
+    69.2685645
+  ],
+  "Nika|Paktika|Afghanistan": [
+    33.206518,
+    69.240034
+  ],
+  "Urgoon|Paktika|Afghanistan": [
+    32.3936231,
+    68.7036514
+  ],
+  "Yosuf Khel|Paktika|Afghanistan": [
+    33.0400575,
+    68.6272841
+  ],
+  "Charikar|Parwan|Afghanistan": [
+    34.988185,
+    69.142042
+  ],
+  "Salang|Parwan|Afghanistan": [
+    35.276921,
+    69.151311
+  ],
+  "Shinwari|Parwan|Afghanistan": [
+    35.120349,
+    68.970812
+  ],
+  "Aybak|Samangan|Afghanistan": [
+    36.222403,
+    67.976013
+  ],
+  "Balkhab|Sar-e Pol|Afghanistan": [
+    35.457987,
+    66.602255
+  ],
+  "Kohistanat|Sar-e Pol|Afghanistan": [
+    35.438343,
+    65.936469
+  ],
+  "Sancharak|Sar-e Pol|Afghanistan": [
+    35.842099,
+    66.341588
+  ],
+  "Chahab|Takhar|Afghanistan": [
+    37.450036,
+    69.879896
+  ],
+  "Hazar Sumuch|Takhar|Afghanistan": [
+    36.92633,
+    69.569672
+  ],
+  "Khwaja Bahawuddin|Takhar|Afghanistan": [
+    37.339247,
+    69.582512
+  ],
+  "Taluqan|Takhar|Afghanistan": [
+    36.734551,
+    69.5409089
+  ],
+  "Chak-e-Wardak|Wardak|Afghanistan": [
+    34.108224,
+    68.490564
+  ],
+  "Markaz-e-Behsud|Wardak|Afghanistan": [
+    34.404814,
+    67.69113
+  ],
+  "Mizan|Zabul|Afghanistan": [
+    32.178858,
+    66.506313
+  ],
+  "Argo|Badakhshan|Afghanistan": [
+    37.0504466,
+    70.3917603
+  ],
+  "Kiran Wa Menjan|Badakhshan|Afghanistan": [
+    36.028663,
+    70.772575
+  ],
+  "Kohistan|Badakhshan|Afghanistan": [
+    37.421168,
+    70.656267
+  ],
+  "Raghistan|Badakhshan|Afghanistan": [
+    37.660787,
+    70.67346
+  ],
+  "Tagab|Badakhshan|Afghanistan": [
+    36.48276,
+    70.349632
+  ],
+  "Yamgan|Badakhshan|Afghanistan": [
+    36.436843,
+    70.791308
+  ],
+  "Jawand|Badghis|Afghanistan": [
+    35.002284,
+    64.336319
+  ],
+  "Firing Wa Gharu|Baghlan|Afghanistan": [
+    36.148827,
+    69.6841881
+  ],
+  "Chimtal|Balkh|Afghanistan": [
+    36.5866525,
+    66.6880364
+  ],
+  "Dawlat Abad|Balkh|Afghanistan": [
+    36.5268933,
+    65.0327823
+  ],
+  "Nili|Daykundi|Afghanistan": [
+    33.7582445,
+    66.074779
+  ],
+  "Shahristan|Daykundi|Afghanistan": [
+    33.7160263,
+    66.4516779
+  ],
+  "Farah|Farah|Afghanistan": [
+    32.244527,
+    62.228784
+  ],
+  "Pashtun Kot|Faryab|Afghanistan": [
+    35.8243765,
+    64.8229153
+  ],
+  "Duleena|Ghor|Afghanistan": [
+    34.1605257,
+    64.9201949
+  ],
+  "Baghran|Helmand|Afghanistan": [
+    33.014064,
+    65.042082
+  ],
+  "Musa Qala|Helmand|Afghanistan": [
+    32.4571676,
+    64.7300131
+  ],
+  "Karrukh|Herat|Afghanistan": [
+    34.1577182,
+    62.2905676
+  ],
+  "Zendahjan|Herat|Afghanistan": [
+    34.1577182,
+    62.2905676
+  ],
+  "Aqchah|Jowzjan|Afghanistan": [
+    36.904111,
+    66.208041
+  ],
+  "Faizabad|Jowzjan|Afghanistan": [
+    36.704519,
+    66.32969
+  ],
+  "Khamyab|Jowzjan|Afghanistan": [
+    37.313692,
+    65.7212
+  ],
+  "Mardyan|Jowzjan|Afghanistan": [
+    37.052169,
+    66.328821
+  ],
+  "Farza|Kabul|Afghanistan": [
+    34.794016,
+    69.017701
+  ],
+  "Arghistan|Kandahar|Afghanistan": [
+    31.520906,
+    66.554269
+  ],
+  "Kandahar|Kandahar|Afghanistan": [
+    31.507325,
+    65.714941
+  ],
+  "Baak|Khost|Afghanistan": [
+    33.4014634,
+    69.8912294
+  ],
+  "Musa Khel|Khost|Afghanistan": [
+    33.583857,
+    69.681859
+  ],
+  "Qalandar|Khost|Afghanistan": [
+    33.491869,
+    69.658717
+  ],
+  "Chapa Dara|Kunar|Afghanistan": [
+    34.959001,
+    70.703226
+  ],
+  "Mara wara|Kunar|Afghanistan": [
+    34.95,
+    71.133333
+  ],
+  "Narang Wa Badil|Kunar|Afghanistan": [
+    34.95,
+    71.133333
+  ],
+  "Sar Kani|Kunar|Afghanistan": [
+    34.750613,
+    71.118641
+  ],
+  "Watapoor|Kunar|Afghanistan": [
+    34.95,
+    71.133333
+  ],
+  "Khan Abad|Kunduz|Afghanistan": [
+    36.603113,
+    69.104049
+  ],
+  "Qala-e-Zal|Kunduz|Afghanistan": [
+    37.0368779,
+    68.3966499
+  ],
+  "Kama|Nangarhar|Afghanistan": [
+    34.443008,
+    70.656249
+  ],
+  "Khugyani|Nangarhar|Afghanistan": [
+    34.231504,
+    70.149404
+  ],
+  "Khashrod|Nimruz|Afghanistan": [
+    31.735881,
+    62.910369
+  ],
+  "Zaranj|Nimruz|Afghanistan": [
+    30.9317531,
+    62.0020915
+  ],
+  "Paroon|Nuristan|Afghanistan": [
+    35.3,
+    70.833333
+  ],
+  "Jaji|Paktia|Afghanistan": [
+    33.9818763,
+    69.6859755
+  ],
+  "Sayyid Karam|Paktia|Afghanistan": [
+    33.712446,
+    69.479727
+  ],
+  "Mata Khan|Paktika|Afghanistan": [
+    33.297048,
+    68.886112
+  ],
+  "Yahya Khel|Paktika|Afghanistan": [
+    32.923075,
+    68.662351
+  ],
+  "Bagram|Parwan|Afghanistan": [
+    34.923949,
+    69.330693
+  ],
+  "Jabulussaraj|Parwan|Afghanistan": [
+    34.9797014,
+    68.9146703
+  ],
+  "Koh-e-Safi|Parwan|Afghanistan": [
+    34.760578,
+    69.472189
+  ],
+  "Sayyad|Sar-e Pol|Afghanistan": [
+    36.149835,
+    65.708953
+  ],
+  "Kalafgan|Takhar|Afghanistan": [
+    36.7972515,
+    69.9035897
+  ],
+  "Warsaj|Takhar|Afghanistan": [
+    36.095972,
+    70.138821
+  ],
+  "Sayyid Abad|Wardak|Afghanistan": [
+    34.3191345,
+    68.3360426
+  ],
+  "Atghar|Zabul|Afghanistan": [
+    31.724984,
+    67.385067
+  ],
+  "Daichopan|Zabul|Afghanistan": [
+    32.613208,
+    66.691227
+  ],
+  "Naw Bahar|Zabul|Afghanistan": [
+    32.217184,
+    67.570728
+  ],
+  "Shemel Zayi|Zabul|Afghanistan": [
+    32.3068942,
+    67.129904
+  ],
+  "Faiz Abad|Badakhshan|Afghanistan": [
+    36.8040254,
+    71.367658
+  ],
+  "Bala Murghab|Badghis|Afghanistan": [
+    35.467372,
+    63.472159
+  ],
+  "Baghlan-e-Jadeed|Baghlan|Afghanistan": [
+    35.75,
+    69.0
+  ],
+  "Kishindeh|Balkh|Afghanistan": [
+    36.005176,
+    66.922343
+  ],
+  "Shebar|Bamyan|Afghanistan": [
+    34.7969869,
+    67.5073393
+  ],
+  "Gizab|Daykundi|Afghanistan": [
+    33.3670995,
+    66.3577048
+  ],
+  "Qala-i-kah|Farah|Afghanistan": [
+    32.395515,
+    61.32836
+  ],
+  "Shibkoh|Farah|Afghanistan": [
+    32.0808804,
+    61.2220025
+  ],
+  "Almar|Faryab|Afghanistan": [
+    35.956008,
+    64.278347
+  ],
+  "Nad Ali|Helmand|Afghanistan": [
+    31.6434234,
+    64.237812
+  ],
+  "Nawzad|Helmand|Afghanistan": [
+    32.471617,
+    64.473745
+  ],
+  "Kohsan|Herat|Afghanistan": [
+    34.613259,
+    61.1662
+  ],
+  "Khwaja Dukoh|Jowzjan|Afghanistan": [
+    36.6779991,
+    65.7304807
+  ],
+  "Deh Sabz|Kabul|Afghanistan": [
+    34.665549,
+    69.307999
+  ],
+  "Maiwand|Kandahar|Afghanistan": [
+    31.58363,
+    64.993325
+  ],
+  "Jaji Maidan|Khost|Afghanistan": [
+    33.640774,
+    70.078882
+  ],
+  "Asad Abad|Kunar|Afghanistan": [
+    34.95,
+    71.133333
+  ],
+  "Dara-e-Pech|Kunar|Afghanistan": [
+    34.953068,
+    70.916381
+  ],
+  "Sawkai|Kunar|Afghanistan": [
+    34.95,
+    71.133333
+  ],
+  "Hazrati Imam Sahib|Kunduz|Afghanistan": [
+    36.8707187,
+    68.7563528
+  ],
+  "Mehterlam|Laghman|Afghanistan": [
+    34.783333,
+    70.183333
+  ],
+  "Baraki Barak|Logar|Afghanistan": [
+    33.929914,
+    68.885233
+  ],
+  "Dur Baba|Nangarhar|Afghanistan": [
+    34.097973,
+    70.963032
+  ],
+  "Kot|Nangarhar|Afghanistan": [
+    34.153184,
+    70.595336
+  ],
+  "Surkh Rud|Nangarhar|Afghanistan": [
+    34.220389,
+    70.3800314
+  ],
+  "Char Burjak|Nimruz|Afghanistan": [
+    30.2801097,
+    62.0592888
+  ],
+  "Wama|Nuristan|Afghanistan": [
+    35.18228,
+    70.795553
+  ],
+  "Ahmadabad|Paktia|Afghanistan": [
+    33.773795,
+    69.339813
+  ],
+  "Omna|Paktika|Afghanistan": [
+    32.8942,
+    68.813259
+  ],
+  "Wazakhwah|Paktika|Afghanistan": [
+    32.3936231,
+    68.7036514
+  ],
+  "Wormamay|Paktika|Afghanistan": [
+    31.933582,
+    68.834878
+  ],
+  "Hissa-e-Awal (Khinj)|Panjshir|Afghanistan": [
+    35.4338536,
+    69.7930899
+  ],
+  "Paryan|Panjshir|Afghanistan": [
+    35.6433172,
+    70.0032581
+  ],
+  "Shaykh Ali|Parwan|Afghanistan": [
+    34.946788,
+    68.418891
+  ],
+  "Chal|Takhar|Afghanistan": [
+    36.497396,
+    69.559194
+  ],
+  "Chora|Urozgan|Afghanistan": [
+    32.930052,
+    66.262706
+  ],
+  "Arghandab|Zabul|Afghanistan": [
+    32.511956,
+    66.987372
+  ],
+  "Kakar|Zabul|Afghanistan": [
+    32.860043,
+    67.181449
+  ],
+  "Shinkai|Zabul|Afghanistan": [
+    31.919989,
+    67.156133
+  ],
+  "Tarang Wa Jaldak|Zabul|Afghanistan": [
+    32.3068942,
+    67.129904
+  ],
+  "Arghanj Khwah|Badakhshan|Afghanistan": [
+    37.266237,
+    70.821473
+  ],
+  "Khwahan|Badakhshan|Afghanistan": [
+    37.837201,
+    70.394036
+  ],
+  "Kishm|Badakhshan|Afghanistan": [
+    36.8178142,
+    70.1013801
+  ],
+  "Maimay|Badakhshan|Afghanistan": [
+    36.8040254,
+    71.367658
+  ],
+  "Wakhan|Badakhshan|Afghanistan": [
+    37.0028742,
+    73.5925373
+  ],
+  "Zebak|Badakhshan|Afghanistan": [
+    36.426552,
+    71.342025
+  ],
+  "Ghormach|Badghis|Afghanistan": [
+    35.7027513,
+    63.7598713
+  ],
+  "Qadis|Badghis|Afghanistan": [
+    34.815592,
+    63.584199
+  ],
+  "Pul-i-Khumri|Baghlan|Afghanistan": [
+    36.099968,
+    68.6404382
+  ],
+  "Tala Wa Barfak|Baghlan|Afghanistan": [
+    35.275246,
+    68.380681
+  ],
+  "Kaldar|Balkh|Afghanistan": [
+    37.1360894,
+    67.5399425
+  ],
+  "Kahmard|Bamyan|Afghanistan": [
+    35.3721753,
+    67.7545547
+  ],
+  "Saighan|Bamyan|Afghanistan": [
+    35.1147399,
+    67.6217585
+  ],
+  "Bakwa|Farah|Afghanistan": [
+    32.214779,
+    62.880928
+  ],
+  "Bala Buluk|Farah|Afghanistan": [
+    32.770427,
+    62.751867
+  ],
+  "Khak-i-Safed|Farah|Afghanistan": [
+    32.654224,
+    62.10434
+  ],
+  "Dawlat Abad|Faryab|Afghanistan": [
+    36.5268933,
+    65.0327823
+  ],
+  "Khwaja Sabz Posh|Faryab|Afghanistan": [
+    36.058641,
+    64.965947
+  ],
+  "Jaghatu|Ghazni|Afghanistan": [
+    33.528218,
+    68.068518
+  ],
+  "Khugyani|Ghazni|Afghanistan": [
+    33.559046,
+    68.298941
+  ],
+  "Zanakhan|Ghazni|Afghanistan": [
+    33.67916,
+    68.665904
+  ],
+  "Lal Wa Sar Jangal|Ghor|Afghanistan": [
+    34.604258,
+    66.2741
+  ],
+  "Lashkargah|Helmand|Afghanistan": [
+    31.5496641,
+    64.5522912
+  ],
+  "Chishti Sharif|Herat|Afghanistan": [
+    34.445154,
+    63.957314
+  ],
+  "Fersi|Herat|Afghanistan": [
+    34.1577182,
+    62.2905676
+  ],
+  "Kushk|Herat|Afghanistan": [
+    35.004429,
+    62.239855
+  ],
+  "Kushk-i-Kuhna|Herat|Afghanistan": [
+    34.8706638,
+    62.547461
+  ],
+  "Mingajik|Jowzjan|Afghanistan": [
+    37.055284,
+    65.989097
+  ],
+  "Kabul|Kabul|Afghanistan": [
+    34.5269503,
+    69.1850584
+  ],
+  "Khak-e-Jabar|Kabul|Afghanistan": [
+    34.364943,
+    69.433654
+  ],
+  "Paghman|Kabul|Afghanistan": [
+    34.54808,
+    68.937163
+  ],
+  "Nesh|Kandahar|Afghanistan": [
+    32.388567,
+    65.705073
+  ],
+  "Spin Boldak|Kandahar|Afghanistan": [
+    30.987916,
+    66.169753
+  ],
+  "Alasai|Kapisa|Afghanistan": [
+    34.905556,
+    69.741667
+  ],
+  "Dangam|Kunar|Afghanistan": [
+    35.002093,
+    71.437221
+  ],
+  "Mohammad Agha|Logar|Afghanistan": [
+    34.209684,
+    69.17959
+  ],
+  "Achin|Nangarhar|Afghanistan": [
+    34.0454314,
+    70.6692329
+  ],
+  "Kamdesh|Nuristan|Afghanistan": [
+    35.483273,
+    71.314533
+  ],
+  "Laja Ahmad khel|Paktia|Afghanistan": [
+    33.81524,
+    69.633808
+  ],
+  "Zurmat|Paktia|Afghanistan": [
+    33.3868676,
+    69.1126284
+  ],
+  "Gomal|Paktika|Afghanistan": [
+    32.38889,
+    68.946651
+  ],
+  "Sar Rawza|Paktika|Afghanistan": [
+    32.3936231,
+    68.7036514
+  ],
+  "Darah|Panjshir|Afghanistan": [
+    35.2195615,
+    69.7524679
+  ],
+  "Bazarak|Panjshir|Afghanistan": [
+    35.3428593,
+    69.5139925
+  ],
+  "Khuram Wa Sarbagh|Samangan|Afghanistan": [
+    35.986505,
+    68.12169
+  ],
+  "Yangi Qala|Takhar|Afghanistan": [
+    37.4695108,
+    69.6208553
+  ],
+  "Dehraoud|Urozgan|Afghanistan": [
+    32.8129681,
+    66.0183185
+  ],
+  "Jurm|Badakhshan|Afghanistan": [
+    36.740047,
+    70.906355
+  ],
+  "Shuhada|Badakhshan|Afghanistan": [
+    37.104261,
+    71.163764
+  ],
+  "Wardooj|Badakhshan|Afghanistan": [
+    36.8040254,
+    71.367658
+  ],
+  "Muqur|Badghis|Afghanistan": [
+    35.170057,
+    63.105087
+  ],
+  "Qala-i-Now|Badghis|Afghanistan": [
+    34.810696,
+    63.123529
+  ],
+  "Andarab|Baghlan|Afghanistan": [
+    35.624049,
+    69.178607
+  ],
+  "Deh Salah|Baghlan|Afghanistan": [
+    35.6875816,
+    69.3138591
+  ],
+  "Khost Wa Firing|Baghlan|Afghanistan": [
+    35.904721,
+    69.664786
+  ],
+  "Balkh|Balkh|Afghanistan": [
+    36.815634,
+    66.890143
+  ],
+  "Char Bolak|Balkh|Afghanistan": [
+    36.8403726,
+    66.6586618
+  ],
+  "Marmul|Balkh|Afghanistan": [
+    36.634699,
+    67.335026
+  ],
+  "Sholgara|Balkh|Afghanistan": [
+    36.303201,
+    66.864645
+  ],
+  "Shortepa|Balkh|Afghanistan": [
+    37.256451,
+    66.85125
+  ],
+  "Panjab|Bamyan|Afghanistan": [
+    34.422058,
+    66.930462
+  ],
+  "Waras|Bamyan|Afghanistan": [
+    34.151347,
+    66.973499
+  ],
+  "Kejran|Daykundi|Afghanistan": [
+    33.725113,
+    66.2196554
+  ],
+  "Khedir|Daykundi|Afghanistan": [
+    33.897949,
+    65.7770887
+  ],
+  "Anar Dara|Farah|Afghanistan": [
+    33.011189,
+    61.249004
+  ],
+  "Gulistan|Farah|Afghanistan": [
+    32.6524371,
+    63.6100013
+  ],
+  "Pur Chaman|Farah|Afghanistan": [
+    33.136556,
+    63.7865612
+  ],
+  "Kohistan|Faryab|Afghanistan": [
+    35.334059,
+    64.922904
+  ],
+  "Gelan|Ghazni|Afghanistan": [
+    32.7190415,
+    67.6824844
+  ],
+  "Nawa|Ghazni|Afghanistan": [
+    32.3591713,
+    67.9171794
+  ],
+  "Taywara|Ghor|Afghanistan": [
+    33.4633888,
+    64.3931858
+  ],
+  "Dishu|Helmand|Afghanistan": [
+    29.879172,
+    63.174398
+  ],
+  "Nahr-i-Saraj|Helmand|Afghanistan": [
+    31.820894,
+    64.570048
+  ],
+  "Washer|Helmand|Afghanistan": [
+    32.103175,
+    63.946629
+  ],
+  "Pashtun Zarghun|Herat|Afghanistan": [
+    34.1843,
+    62.754605
+  ],
+  "Khanaqa|Jowzjan|Afghanistan": [
+    36.783951,
+    66.128518
+  ],
+  "Qarqin|Jowzjan|Afghanistan": [
+    37.291421,
+    66.094429
+  ],
+  "Qush Tepa|Jowzjan|Afghanistan": [
+    36.209716,
+    65.363455
+  ],
+  "Musahi|Kabul|Afghanistan": [
+    34.369083,
+    69.218387
+  ],
+  "Qarabagh|Kabul|Afghanistan": [
+    34.849386,
+    69.176297
+  ],
+  "Arghandab|Kandahar|Afghanistan": [
+    31.7752905,
+    65.6641793
+  ],
+  "Ghorak|Kandahar|Afghanistan": [
+    32.043898,
+    65.195661
+  ],
+  "Khakrez|Kandahar|Afghanistan": [
+    32.010754,
+    65.503351
+  ],
+  "Maruf|Kandahar|Afghanistan": [
+    31.446305,
+    67.252742
+  ],
+  "Shorabak|Kandahar|Afghanistan": [
+    30.168419,
+    66.040621
+  ],
+  "Sabari|Khost|Afghanistan": [
+    33.543516,
+    69.9118
+  ],
+  "Spera|Khost|Afghanistan": [
+    33.15664,
+    69.491204
+  ],
+  "Ali Abad|Kunduz|Afghanistan": [
+    36.530108,
+    68.877798
+  ],
+  "Chahar Darah|Kunduz|Afghanistan": [
+    36.654405,
+    68.567288
+  ],
+  "Qarghayee|Laghman|Afghanistan": [
+    34.783333,
+    70.183333
+  ],
+  "Kharwar|Logar|Afghanistan": [
+    33.694954,
+    68.892803
+  ],
+  "Bati Kot|Nangarhar|Afghanistan": [
+    34.289385,
+    70.756531
+  ],
+  "Kuzkunar|Nangarhar|Afghanistan": [
+    34.559275,
+    70.606808
+  ],
+  "Zarghun Shahr|Paktika|Afghanistan": [
+    32.853675,
+    68.477821
+  ],
+  "Ziruk|Paktika|Afghanistan": [
+    33.155823,
+    69.326833
+  ],
+  "Ghurband|Parwan|Afghanistan": [
+    34.9797014,
+    68.9146703
+  ],
+  "Dara Sof Balla|Samangan|Afghanistan": [
+    36.0,
+    67.666667
+  ],
+  "Darah-e-Noor|Samangan|Afghanistan": [
+    36.0,
+    67.666667
+  ],
+  "Darqad|Takhar|Afghanistan": [
+    37.45379,
+    69.499007
+  ],
+  "Rustaq|Takhar|Afghanistan": [
+    37.106203,
+    69.817278
+  ],
+  "Khas Urozgan|Urozgan|Afghanistan": [
+    32.996739,
+    66.693591
+  ],
+  "Tirinkot|Urozgan|Afghanistan": [
+    32.8129681,
+    66.0183185
+  ],
+  "Hissa-e-awali Behsud|Wardak|Afghanistan": [
+    34.3191345,
+    68.3360426
+  ],
+  "Qalat|Zabul|Afghanistan": [
+    32.209783,
+    66.999194
+  ],
+  "Burka|Baghlan|Afghanistan": [
+    36.208589,
+    69.1866416
+  ],
+  "Gozargah-e-Noor|Baghlan|Afghanistan": [
+    35.75,
+    69.0
+  ],
+  "Pul-e-Hisar|Baghlan|Afghanistan": [
+    35.583563,
+    69.560336
+  ],
+  "Nahri Shahi|Balkh|Afghanistan": [
+    36.8534935,
+    67.1804221
+  ],
+  "Zari|Balkh|Afghanistan": [
+    35.8567217,
+    66.7570267
+  ],
+  "Yakawlang|Bamyan|Afghanistan": [
+    34.97904,
+    66.948019
+  ],
+  "Sang-e-Takht|Daykundi|Afghanistan": [
+    34.172735,
+    65.9642349
+  ],
+  "Gurziwan|Faryab|Afghanistan": [
+    35.632357,
+    65.283014
+  ],
+  "Shirin Tagab|Faryab|Afghanistan": [
+    36.2585766,
+    64.8250232
+  ],
+  "Ajristan|Ghazni|Afghanistan": [
+    33.515731,
+    67.108855
+  ],
+  "Giro|Ghazni|Afghanistan": [
+    33.063099,
+    68.345893
+  ],
+  "Jaghuri|Ghazni|Afghanistan": [
+    33.143405,
+    67.463836
+  ],
+  "Khwaja Omari|Ghazni|Afghanistan": [
+    33.675469,
+    68.421723
+  ],
+  "Dawlatyar|Ghor|Afghanistan": [
+    34.580199,
+    65.751475
+  ],
+  "Saghar|Ghor|Afghanistan": [
+    33.580866,
+    63.673647
+  ],
+  "Shahrak|Ghor|Afghanistan": [
+    34.102391,
+    64.335514
+  ],
+  "Tulak|Ghor|Afghanistan": [
+    34.009208,
+    63.714171
+  ],
+  "Herat|Herat|Afghanistan": [
+    34.3669836,
+    62.2580688
+  ],
+  "Shakar Dara|Kabul|Afghanistan": [
+    34.6234003,
+    69.0331636
+  ],
+  "Panjwayee|Kandahar|Afghanistan": [
+    30.9910033,
+    65.7068525
+  ],
+  "Nijrab|Kapisa|Afghanistan": [
+    35.04628,
+    69.645976
+  ],
+  "Gurbuz|Khost|Afghanistan": [
+    33.20233,
+    69.942447
+  ],
+  "Khost|Khost|Afghanistan": [
+    33.340455,
+    70.003804
+  ],
+  "Tanay|Khost|Afghanistan": [
+    33.2516449,
+    69.8699493
+  ],
+  "Tirzayee|Khost|Afghanistan": [
+    33.4014634,
+    69.8912294
+  ],
+  "Bar Kunar|Kunar|Afghanistan": [
+    35.071868,
+    71.37769
+  ],
+  "Puli Alam|Logar|Afghanistan": [
+    33.9815114,
+    69.0640012
+  ],
+  "Hesarak|Nangarhar|Afghanistan": [
+    34.279479,
+    69.768717
+  ],
+  "Asl-i-chakhansur|Nimruz|Afghanistan": [
+    30.7753811,
+    62.4793088
+  ],
+  "Kang|Nimruz|Afghanistan": [
+    31.3211,
+    61.835166
+  ],
+  "Samkani|Paktia|Afghanistan": [
+    33.705724,
+    69.4083555
+  ],
+  "Giyan|Paktika|Afghanistan": [
+    32.975159,
+    69.399302
+  ],
+  "Unaba|Panjshir|Afghanistan": [
+    35.4338536,
+    69.7930899
+  ],
+  "Sayyid Khel|Parwan|Afghanistan": [
+    35.04683,
+    69.262118
+  ],
+  "Surkhi Parsa|Parwan|Afghanistan": [
+    34.765468,
+    68.625679
+  ],
+  "Feroz Nakhcheer|Samangan|Afghanistan": [
+    36.0,
+    67.666667
+  ],
+  "Ruyi Du Ab|Samangan|Afghanistan": [
+    35.635487,
+    67.817259
+  ],
+  "Gosfandi|Sar-e Pol|Afghanistan": [
+    36.085626,
+    66.517297
+  ],
+  "Dashti Qala|Takhar|Afghanistan": [
+    37.2212227,
+    69.4949973
+  ],
+  "Eshkamesh|Takhar|Afghanistan": [
+    36.3852832,
+    69.3151823
+  ],
+  "Farkhar|Takhar|Afghanistan": [
+    36.469899,
+    69.960827
+  ],
+  "Baharak|Badakhshan|Afghanistan": [
+    37.0467005,
+    70.8704794
+  ],
+  "Darayim|Badakhshan|Afghanistan": [
+    36.87213,
+    70.466455
+  ],
+  "Eshkashim|Badakhshan|Afghanistan": [
+    36.8040254,
+    71.367658
+  ],
+  "Khash|Badakhshan|Afghanistan": [
+    36.940308,
+    70.725663
+  ],
+  "Shiki|Badakhshan|Afghanistan": [
+    38.206408,
+    70.651787
+  ],
+  "Tashkan|Badakhshan|Afghanistan": [
+    36.77022,
+    70.395913
+  ],
+  "Ab Kamari|Badghis|Afghanistan": [
+    34.925091,
+    62.901713
+  ],
+  "Mazar-e-Sharif|Balkh|Afghanistan": [
+    36.7090366,
+    67.1114085
+  ],
+  "Ishterlai|Daykundi|Afghanistan": [
+    33.725113,
+    66.2196554
+  ],
+  "Andkhoy|Faryab|Afghanistan": [
+    36.852884,
+    65.285764
+  ],
+  "Bilchiragh|Faryab|Afghanistan": [
+    35.88083,
+    65.453377
+  ],
+  "Khani Charbagh|Faryab|Afghanistan": [
+    37.110989,
+    65.229689
+  ],
+  "Qurghan|Faryab|Afghanistan": [
+    37.035864,
+    64.942345
+  ],
+  "Ab Band|Ghazni|Afghanistan": [
+    32.88363,
+    68.06357
+  ],
+  "Andar|Ghazni|Afghanistan": [
+    33.305843,
+    68.446963
+  ],
+  "Deh Yak|Ghazni|Afghanistan": [
+    33.4571456,
+    68.6756926
+  ],
+  "Ghazni|Ghazni|Afghanistan": [
+    33.5284427,
+    68.4422677
+  ],
+  "Nawur|Ghazni|Afghanistan": [
+    33.8448096,
+    67.7419404
+  ],
+  "Qarabagh|Ghazni|Afghanistan": [
+    33.220979,
+    67.987402
+  ],
+  "Rashidan|Ghazni|Afghanistan": [
+    33.697579,
+    68.147588
+  ],
+  "Waghaz|Ghazni|Afghanistan": [
+    33.409127,
+    68.211953
+  ],
+  "Char Sada|Ghor|Afghanistan": [
+    34.1605257,
+    64.9201949
+  ],
+  "Chighcheran|Ghor|Afghanistan": [
+    34.1605257,
+    64.9201949
+  ],
+  "Reg-i-Khan Nishin|Helmand|Afghanistan": [
+    31.0,
+    64.0
+  ],
+  "Mir Bacha Kot|Kabul|Afghanistan": [
+    34.727265,
+    69.11823
+  ],
+  "Hissa-e-Awali Kohistan|Kapisa|Afghanistan": [
+    34.905556,
+    69.741667
+  ],
+  "Hissa-e-Duwumi Kohistan|Kapisa|Afghanistan": [
+    34.905556,
+    69.741667
+  ],
+  "Nadir Shah Kot|Khost|Afghanistan": [
+    33.381189,
+    69.682647
+  ],
+  "Shamul|Khost|Afghanistan": [
+    33.315326,
+    69.532119
+  ],
+  "Ghazi Abad|Kunar|Afghanistan": [
+    34.6659206,
+    70.7481054
+  ],
+  "Noorgal|Kunar|Afghanistan": [
+    34.95,
+    71.133333
+  ],
+  "Alishing|Laghman|Afghanistan": [
+    34.825481,
+    70.084213
+  ],
+  "Darah-e-Noor|Nangarhar|Afghanistan": [
+    34.220389,
+    70.3800314
+  ],
+  "Deh Bala|Nangarhar|Afghanistan": [
+    34.088452,
+    70.443818
+  ],
+  "Goshta|Nangarhar|Afghanistan": [
+    34.448441,
+    70.86699
+  ],
+  "Muhmand Dara|Nangarhar|Afghanistan": [
+    34.204757,
+    70.984181
+  ],
+  "Nazyan|Nangarhar|Afghanistan": [
+    34.055907,
+    70.825766
+  ],
+  "Rodat|Nangarhar|Afghanistan": [
+    34.273006,
+    70.568225
+  ],
+  "Bargi Matal|Nuristan|Afghanistan": [
+    35.79649,
+    71.2590174
+  ],
+  "Duab|Nuristan|Afghanistan": [
+    35.635487,
+    67.817259
+  ],
+  "Waygal|Nuristan|Afghanistan": [
+    35.225614,
+    71.026234
+  ],
+  "Dand Patan|Paktia|Afghanistan": [
+    33.79173,
+    69.910832
+  ],
+  "Jani Khel|Paktia|Afghanistan": [
+    33.655357,
+    69.786578
+  ],
+  "Barmal|Paktika|Afghanistan": [
+    32.71433,
+    69.275053
+  ],
+  "Dila|Paktika|Afghanistan": [
+    32.563758,
+    68.131147
+  ],
+  "Sharan|Paktika|Afghanistan": [
+    33.200177,
+    68.728497
+  ],
+  "Surubi|Paktika|Afghanistan": [
+    32.3936231,
+    68.7036514
+  ],
+  "Shutul|Panjshir|Afghanistan": [
+    35.4338536,
+    69.7930899
+  ],
+  "Sar-e-Pul|Sar-e Pol|Afghanistan": [
+    36.29894,
+    66.007414
+  ],
+  "Baharak|Takhar|Afghanistan": [
+    36.832879,
+    69.395313
+  ],
+  "Bangi|Takhar|Afghanistan": [
+    36.613374,
+    69.33807
+  ],
+  "Namak Ab|Takhar|Afghanistan": [
+    36.471508,
+    69.714649
+  ],
+  "Jaghatu|Wardak|Afghanistan": [
+    33.837467,
+    68.355693
+  ],
+  "Jalrez|Wardak|Afghanistan": [
+    34.525025,
+    68.582346
+  ],
+  "Maidan Shahr|Wardak|Afghanistan": [
+    34.4378512,
+    68.8318959
+  ],
+  "Nerkh|Wardak|Afghanistan": [
+    34.3206,
+    68.764411
+  ],
+  "Shah Joi|Zabul|Afghanistan": [
+    32.521541,
+    67.413151
+  ],
+  "Kufab|Badakhshan|Afghanistan": [
+    37.943122,
+    70.691406
+  ],
+  "Nesay|Badakhshan|Afghanistan": [
+    36.8040254,
+    71.367658
+  ],
+  "Yaftal-e-Sufla|Badakhshan|Afghanistan": [
+    37.311981,
+    70.37097
+  ],
+  "Dahana-e-Ghuri|Baghlan|Afghanistan": [
+    35.906168,
+    68.488694
+  ],
+  "Dushi|Baghlan|Afghanistan": [
+    35.6316059,
+    68.661068
+  ],
+  "Khwaja Hejran|Baghlan|Afghanistan": [
+    35.75,
+    69.0
+  ],
+  "Dehdadi|Balkh|Afghanistan": [
+    36.636876,
+    67.007347
+  ],
+  "Kiti|Daykundi|Afghanistan": [
+    33.5599485,
+    65.6459796
+  ],
+  "Lash-i-Juwayn|Farah|Afghanistan": [
+    31.7399258,
+    61.6342725
+  ],
+  "Pushtrud|Farah|Afghanistan": [
+    32.607111,
+    62.671011
+  ],
+  "Maimana|Faryab|Afghanistan": [
+    36.5268933,
+    65.0327823
+  ],
+  "Qaisar|Faryab|Afghanistan": [
+    35.641366,
+    64.279081
+  ],
+  "Malistan|Ghazni|Afghanistan": [
+    33.298364,
+    67.243225
+  ],
+  "Garm Ser|Helmand|Afghanistan": [
+    30.8523271,
+    64.1717674
+  ],
+  "Nawa-i-Barikzayi|Helmand|Afghanistan": [
+    31.0,
+    64.0
+  ],
+  "Enjil|Herat|Afghanistan": [
+    34.301566,
+    62.2465282
+  ],
+  "Shindand|Herat|Afghanistan": [
+    33.254378,
+    62.380804
+  ],
+  "Chahar Asyab|Kabul|Afghanistan": [
+    34.387098,
+    69.072739
+  ],
+  "Estalef|Kabul|Afghanistan": [
+    34.8514125,
+    69.0275717
+  ],
+  "Guldara|Kabul|Afghanistan": [
+    34.748013,
+    68.995308
+  ],
+  "Surubi|Kabul|Afghanistan": [
+    34.6527692,
+    69.7207148
+  ],
+  "Daman|Kandahar|Afghanistan": [
+    31.2911748,
+    65.783469
+  ],
+  "Reg|Kandahar|Afghanistan": [
+    30.122645,
+    65.173492
+  ],
+  "Zhire|Kandahar|Afghanistan": [
+    30.9910033,
+    65.7068525
+  ],
+  "Mahmood Raqi|Kapisa|Afghanistan": [
+    34.905556,
+    69.741667
+  ],
+  "Kunduz|Kunduz|Afghanistan": [
+    36.796657,
+    68.858742
+  ],
+  "Dawlat Shah|Laghman|Afghanistan": [
+    35.035862,
+    69.99947
+  ],
+  "Azra|Logar|Afghanistan": [
+    34.1078498,
+    69.6028833
+  ],
+  "Khoshi|Logar|Afghanistan": [
+    34.001255,
+    69.274821
+  ],
+  "Jalalabad|Nangarhar|Afghanistan": [
+    34.430195,
+    70.460128
+  ],
+  "Lalpoor|Nangarhar|Afghanistan": [
+    34.333393,
+    71.024591
+  ],
+  "Mandol|Nuristan|Afghanistan": [
+    35.401354,
+    70.247598
+  ],
+  "Shwak|Paktia|Afghanistan": [
+    33.452098,
+    69.370303
+  ],
+  "Wuza Zadran|Paktia|Afghanistan": [
+    33.373602,
+    69.406975
+  ],
+  "Jani Khel|Paktika|Afghanistan": [
+    32.665123,
+    68.480505
+  ],
+  "Turwo|Paktika|Afghanistan": [
+    31.906198,
+    68.313666
+  ],
+  "Rukha|Panjshir|Afghanistan": [
+    35.4338536,
+    69.7930899
+  ],
+  "Hazrat-e-Sultan|Samangan|Afghanistan": [
+    36.4340924,
+    67.9846745
+  ],
+  "Sozma Qala|Sar-e Pol|Afghanistan": [
+    36.020002,
+    66.23298
+  ],
+  "Khwaja Ghar|Takhar|Afghanistan": [
+    37.018272,
+    69.397963
+  ],
+  "Shahidhassas|Urozgan|Afghanistan": [
+    32.8129681,
+    66.0183185
+  ],
+  "Daimir Dad|Wardak|Afghanistan": [
+    34.3191345,
+    68.3360426
+  ],
+  "Mefou-et-Akono|Centre|Cameroon": [
+    3.611704,
+    11.3666846
+  ],
+  "Bamboutos|Ouest|Cameroon": [
+    5.6677763,
+    10.2926178
+  ],
+  "Mezam|Nord-Ouest|Cameroon": [
+    6.0045045,
+    10.214104
+  ],
+  "Ndian|Sud-Ouest|Cameroon": [
+    4.7252727,
+    8.8862236
+  ],
+  "Kupe-Manenguba|Sud-Ouest|Cameroon": [
+    5.0577606,
+    9.2289407
+  ],
+  "Lom-et-Djerem|Est|Cameroon": [
+    5.2036813,
+    13.689833
+  ],
+  "Boyo|Nord-Ouest|Cameroon": [
+    6.4075757,
+    10.4232866
+  ],
+  "Dja-et-Lobo|Sud|Cameroon": [
+    2.9245794,
+    12.2418916
+  ],
+  "Nyong-et-Kelle|Centre|Cameroon": [
+    3.7712,
+    10.9245771
+  ],
+  "Diamare|Extreme-Nord|Cameroon": [
+    10.6594413,
+    14.4169978
+  ],
+  "Mayo-Tsanaga|Extreme-Nord|Cameroon": [
+    10.6054649,
+    13.8012824
+  ],
+  "Faro-et-Deo|Adamaoua|Cameroon": [
+    7.5329524,
+    12.5969185
+  ],
+  "Mfoundi|Centre|Cameroon": [
+    3.8413093,
+    11.5087322
+  ],
+  "Mvila|Sud|Cameroon": [
+    2.742146,
+    11.4217695
+  ],
+  "Mayo-Sava|Extreme-Nord|Cameroon": [
+    11.1041091,
+    14.2143957
+  ],
+  "Mbam-et-Kim|Centre|Cameroon": [
+    5.3047064,
+    11.9590271
+  ],
+  "Nkam|Littoral|Cameroon": [
+    4.586768,
+    10.0845612
+  ],
+  "Donga-Mantung|Nord-Ouest|Cameroon": [
+    6.6848457,
+    10.7720837
+  ],
+  "Ocean|Sud|Cameroon": [
+    2.8599609,
+    10.1883263
+  ],
+  "Nyong-et-Mfoumou|Centre|Cameroon": [
+    4.686267,
+    11.9414512
+  ],
+  "Lebialem|Sud-Ouest|Cameroon": [
+    5.5592295,
+    9.9131251
+  ],
+  "Mifi|Ouest|Cameroon": [
+    5.5143878,
+    10.4560864
+  ],
+  "Noun|Ouest|Cameroon": [
+    5.5943093,
+    10.8566245
+  ],
+  "Koung-Khi|Ouest|Cameroon": [
+    5.3717708,
+    10.4126455
+  ],
+  "Mayo-Louti|Nord|Cameroon": [
+    9.9125522,
+    13.8857721
+  ],
+  "Menchum|Nord-Ouest|Cameroon": [
+    6.623452,
+    10.0428416
+  ],
+  "Mefou-et-Afamba|Centre|Cameroon": [
+    3.9342711,
+    11.7912111
+  ],
+  "Nyong-et-So'o|Centre|Cameroon": [
+    3.4666101,
+    11.6722281
+  ],
+  "Benoue|Nord|Cameroon": [
+    9.1775586,
+    13.4378888
+  ],
+  "Vina|Adamaoua|Cameroon": [
+    7.2489776,
+    13.6449086
+  ],
+  "Wouri|Littoral|Cameroon": [
+    3.9417046,
+    9.5704377
+  ],
+  "Menoua|Ouest|Cameroon": [
+    5.4068206,
+    10.1132808
+  ],
+  "Meme|Sud-Ouest|Cameroon": [
+    4.6616987,
+    9.3926117
+  ],
+  "Haut-Nyong|Est|Cameroon": [
+    3.3680856,
+    13.5385805
+  ],
+  "Ngo-Ketunjia|Nord-Ouest|Cameroon": [
+    6.3775255,
+    10.3864171
+  ],
+  "Mayo-Banyo|Adamaoua|Cameroon": [
+    6.6161625,
+    11.7830925
+  ],
+  "Mayo-Danay|Extreme-Nord|Cameroon": [
+    10.5108254,
+    15.0437681
+  ],
+  "Boumba-et-Ngoko|Est|Cameroon": [
+    2.8374746,
+    15.2071481
+  ],
+  "Mayo-Kani|Extreme-Nord|Cameroon": [
+    10.2911494,
+    14.4591944
+  ],
+  "Bui|Nord-Ouest|Cameroon": [
+    6.2280285,
+    10.7153053
+  ],
+  "Manyu|Sud-Ouest|Cameroon": [
+    5.9081999,
+    9.262181
+  ],
+  "Vallee-du-Ntem|Sud|Cameroon": [
+    2.4784998,
+    10.9718305
+  ],
+  "Mbam-et-Inoubou|Centre|Cameroon": [
+    4.7249043,
+    10.9418227
+  ],
+  "Hauts-Plateaux|Ouest|Cameroon": [
+    5.301998,
+    10.3420466
+  ],
+  "Kadey|Est|Cameroon": [
+    4.4774043,
+    14.4108998
+  ],
+  "Fako|Sud-Ouest|Cameroon": [
+    4.1021851,
+    9.1849225
+  ],
+  "Nde|Ouest|Cameroon": [
+    5.0409266,
+    10.5975923
+  ],
+  "Moungo|Littoral|Cameroon": [
+    4.7001467,
+    9.7735621
+  ],
+  "Momo|Nord-Ouest|Cameroon": [
+    5.999764,
+    9.8331338
+  ],
+  "Logone-et-Chari|Extreme-Nord|Cameroon": [
+    12.0409551,
+    14.839836
+  ],
+  "Djerem|Adamaoua|Cameroon": [
+    6.5303568,
+    12.7386135
+  ],
+  "Haut-Nkam|Ouest|Cameroon": [
+    5.1485099,
+    10.1749352
+  ],
+  "Lekie|Centre|Cameroon": [
+    4.1487554,
+    11.364384
+  ],
+  "Faro|Nord|Cameroon": [
+    8.4125462,
+    12.8246575
+  ],
+  "Haute-Sanaga|Centre|Cameroon": [
+    4.6552251,
+    12.5810067
+  ],
+  "Sanaga-Maritime|Littoral|Cameroon": [
+    3.8996954,
+    10.1567672
+  ],
+  "Mbere|Adamaoua|Cameroon": [
+    6.6121969,
+    14.380606
+  ],
+  "Mayo-Rey|Nord|Cameroon": [
+    8.1952431,
+    14.3411846
+  ],
+  "Mbres|Nana-Grebizi|Central African Republic": [
+    6.6707252,
+    19.7977333
+  ],
+  "Birao|Vakaga|Central African Republic": [
+    10.2961965,
+    22.7809907
+  ],
+  "Ouango|Mbomou|Central African Republic": [
+    4.3118795,
+    22.5523782
+  ],
+  "Ippy|Ouaka|Central African Republic": [
+    6.2605641,
+    21.2000369
+  ],
+  "Mingala|Basse-Kotto|Central African Republic": [
+    5.101097,
+    21.8057021
+  ],
+  "Kaga-Bandoro|Nana-Grebizi|Central African Republic": [
+    6.9993145,
+    19.182305
+  ],
+  "Nana-Bakassa|Ouham|Central African Republic": [
+    6.9910168,
+    17.2762599
+  ],
+  "Sosso-Nakombo|Mambere-Kadei|Central African Republic": [
+    3.9175622,
+    15.5011498
+  ],
+  "Baboua|Nana-Mambere|Central African Republic": [
+    5.8055823,
+    14.8327321
+  ],
+  "Gadzi|Mambere-Kadei|Central African Republic": [
+    4.7812482,
+    16.7059952
+  ],
+  "Ngaoundaye|Ouham-Pende|Central African Republic": [
+    7.476419,
+    15.60212
+  ],
+  "Ndele|Bamingui-Bangoran|Central African Republic": [
+    8.4111477,
+    20.648473
+  ],
+  "Bambouti|Haut-Mbomou|Central African Republic": [
+    5.3996702,
+    27.204695
+  ],
+  "Boali|Ombella-M'Poko|Central African Republic": [
+    4.8092828,
+    18.1139613
+  ],
+  "Koui|Ouham-Pende|Central African Republic": [
+    6.9368005,
+    15.4480861
+  ],
+  "Dede-Mokouba|Mambere-Kadei|Central African Republic": [
+    3.9337477,
+    15.2402971
+  ],
+  "Mbaiki|Lobaye|Central African Republic": [
+    3.8728278,
+    17.9860847
+  ],
+  "Boda|Lobaye|Central African Republic": [
+    4.3197665,
+    17.4669538
+  ],
+  "Mongoumba|Lobaye|Central African Republic": [
+    3.6382754,
+    18.5948982
+  ],
+  "Carnot|Mambere-Kadei|Central African Republic": [
+    4.9418234,
+    15.8688285
+  ],
+  "Abba|Nana-Mambere|Central African Republic": [
+    5.3314081,
+    15.1505607
+  ],
+  "Bouca|Ouham|Central African Republic": [
+    6.5086131,
+    18.2758627
+  ],
+  "Batangafo|Ouham|Central African Republic": [
+    7.3039831,
+    18.2910914
+  ],
+  "Bria|Haute-Kotto|Central African Republic": [
+    6.5392451,
+    21.98698
+  ],
+  "Yalinga|Haute-Kotto|Central African Republic": [
+    6.5103137,
+    23.2500743
+  ],
+  "Zemio|Haut-Mbomou|Central African Republic": [
+    5.0247528,
+    25.1292659
+  ],
+  "Satema|Basse-Kotto|Central African Republic": [
+    4.3095951,
+    21.6852457
+  ],
+  "Bakouma|Mbomou|Central African Republic": [
+    5.6982151,
+    22.7852158
+  ],
+  "Kembe|Basse-Kotto|Central African Republic": [
+    4.6110899,
+    21.8803537
+  ],
+  "Gambo|Mbomou|Central African Republic": [
+    4.7300048,
+    22.7961433
+  ],
+  "Mobaye|Basse-Kotto|Central African Republic": [
+    4.3254367,
+    21.1778122
+  ],
+  "Bakala|Ouaka|Central African Republic": [
+    6.1966141,
+    20.387883
+  ],
+  "Gamboula|Mambere-Kadei|Central African Republic": [
+    4.1199652,
+    15.1362145
+  ],
+  "Bambio|Sangha-Mbaere|Central African Republic": [
+    3.9498972,
+    16.9576789
+  ],
+  "Boganda|Lobaye|Central African Republic": [
+    4.2737257,
+    17.0475023
+  ],
+  "Baoro|Nana-Mambere|Central African Republic": [
+    5.694576,
+    15.953318
+  ],
+  "Paoua|Ouham-Pende|Central African Republic": [
+    7.2407,
+    16.432496
+  ],
+  "Bozoum|Ouham-Pende|Central African Republic": [
+    6.3147379,
+    16.3806392
+  ],
+  "Nola|Sangha-Mbaere|Central African Republic": [
+    3.5224201,
+    16.0535833
+  ],
+  "Ouanda-Djalle|Vakaga|Central African Republic": [
+    8.9006573,
+    22.8025341
+  ],
+  "Ndjoukou|Kemo|Central African Republic": [
+    5.9480074,
+    19.2158871
+  ],
+  "Alindao|Basse-Kotto|Central African Republic": [
+    5.0421303,
+    21.2109342
+  ],
+  "Berberati|Mambere-Kadei|Central African Republic": [
+    4.2593379,
+    15.7877826
+  ],
+  "Obo|Haut-Mbomou|Central African Republic": [
+    5.3940869,
+    26.4927242
+  ],
+  "Mala|Kemo|Central African Republic": [
+    6.1137083,
+    19.5052166
+  ],
+  "Amada-Gaza|Mambere-Kadei|Central African Republic": [
+    4.7730308,
+    15.1960719
+  ],
+  "Bangui|Bangui|Central African Republic": [
+    4.3635118,
+    18.5835913
+  ],
+  "Bouar|Nana-Mambere|Central African Republic": [
+    5.9354018,
+    15.5921894
+  ],
+  "Bayanga|Sangha-Mbaere|Central African Republic": [
+    2.912403,
+    16.2611354
+  ],
+  "Ouadda|Haute-Kotto|Central African Republic": [
+    8.0715808,
+    22.3962224
+  ],
+  "Bossembele|Ombella-M'Poko|Central African Republic": [
+    5.2678614,
+    17.6432208
+  ],
+  "Damara|Ombella-M'Poko|Central African Republic": [
+    4.9561279,
+    18.6977075
+  ],
+  "Dekoa|Kemo|Central African Republic": [
+    6.3241784,
+    19.075473
+  ],
+  "Nangha Boguila|Ouham|Central African Republic": [
+    7.1314008,
+    17.7041361
+  ],
+  "Bossangoa|Ouham|Central African Republic": [
+    6.4924441,
+    17.4463162
+  ],
+  "Bocaranga|Ouham-Pende|Central African Republic": [
+    6.995897,
+    15.638835
+  ],
+  "Boganangone|Lobaye|Central African Republic": [
+    4.7387081,
+    17.2068214
+  ],
+  "Bogangolo|Ombella-M'Poko|Central African Republic": [
+    5.0726761,
+    18.1717789
+  ],
+  "Yaloke|Ombella-M'Poko|Central African Republic": [
+    5.3165124,
+    17.1019118
+  ],
+  "Grimari|Ouaka|Central African Republic": [
+    5.740166,
+    20.0580918
+  ],
+  "Rafai|Mbomou|Central African Republic": [
+    4.9712472,
+    23.9320764
+  ],
+  "Zangba|Basse-Kotto|Central African Republic": [
+    4.4428438,
+    20.9743405
+  ],
+  "Kabo|Ouham|Central African Republic": [
+    7.6920799,
+    18.6243422
+  ],
+  "Sibut|Kemo|Central African Republic": [
+    5.7350828,
+    19.0850538
+  ],
+  "Bossemtele|Ouham-Pende|Central African Republic": [
+    5.7963084,
+    16.5157065
+  ],
+  "Bangassou|Mbomou|Central African Republic": [
+    4.743526,
+    22.8232963
+  ],
+  "Bimbo|Ombella-M'Poko|Central African Republic": [
+    4.3228138,
+    18.5248788
+  ],
+  "Bambari|Ouaka|Central African Republic": [
+    5.7680014,
+    20.6755705
+  ],
+  "Kouango|Ouaka|Central African Republic": [
+    4.994105,
+    19.9766951
+  ],
+  "Bamingui|Bamingui-Bangoran|Central African Republic": [
+    7.5595396,
+    20.1773437
+  ],
+  "Markounda|Ouham|Central African Republic": [
+    7.6186416,
+    16.9616699
+  ],
+  "Djema|Haut-Mbomou|Central African Republic": [
+    6.3497929,
+    25.6508738
+  ],
+  "Mekelle Tigray|Tigray|ETH": [
+    13.50188,
+    39.4800524
+  ],
+  "Kilbati-Zone 2|Afar|Ethiopia": [
+    11.7108206,
+    41.0330866
+  ],
+  "North Shewa|Amhara|Ethiopia": [
+    9.7307309,
+    39.5793948
+  ],
+  "South Gondar|Amhara|Ethiopia": [
+    11.5,
+    38.5
+  ],
+  "South Wello|Amhara|Ethiopia": [
+    11.5,
+    38.5
+  ],
+  "Kemashi|Benshangul/Gumuz|Ethiopia": [
+    10.1258519,
+    35.3093636
+  ],
+  "Majang|Gambela|Ethiopia": [
+    7.4233939,
+    35.14809
+  ],
+  "Guji|Oromia|Ethiopia": [
+    5.5501401,
+    39.2030529
+  ],
+  "Horo Gudru Wellega|Oromia|Ethiopia": [
+    7.6721644,
+    40.0299727
+  ],
+  "North Shewa|Oromia|Ethiopia": [
+    9.6514595,
+    38.8510611
+  ],
+  "Sidama|Sidama|Ethiopia": [
+    6.6507504,
+    38.4796794
+  ],
+  "Basketo|SNNP|Ethiopia": [
+    6.2659302,
+    36.5677664
+  ],
+  "Kefa|South West|Ethiopia": [
+    7.0,
+    36.25
+  ],
+  "South Omo|SNNP|Ethiopia": [
+    5.4574969,
+    36.4003795
+  ],
+  "Jarar|Somali|Ethiopia": [
+    8.0735213,
+    44.0954224
+  ],
+  "North Western Tigray|Tigray|Ethiopia": [
+    13.9483381,
+    38.1832992
+  ],
+  "Western Tigray|Tigray|Ethiopia": [
+    13.8524521,
+    37.1235436
+  ],
+  "Wag Hamra|Amhara|Ethiopia": [
+    11.5,
+    38.5
+  ],
+  "Agnewak|Gambela|Ethiopia": [
+    7.8102647,
+    34.1822172
+  ],
+  "West Wellega|Oromia|Ethiopia": [
+    9.3309102,
+    35.3439961
+  ],
+  "Gofa|SNNP|Ethiopia": [
+    6.1701144,
+    37.2620697
+  ],
+  "Hadiya|SNNP|Ethiopia": [
+    7.5895649,
+    37.7979379
+  ],
+  "Gabi-Zone 3|Afar|Ethiopia": [
+    11.7108206,
+    41.0330866
+  ],
+  "Mao Komo Special|Benshangul/Gumuz|Ethiopia": [
+    10.3778251,
+    35.5084442
+  ],
+  "Itang Special woreda|Gambela|Ethiopia": [
+    7.8102647,
+    34.1822172
+  ],
+  "Harari|Harari|Ethiopia": [
+    9.3106088,
+    42.1378356
+  ],
+  "Bale|Oromia|Ethiopia": [
+    6.7516328,
+    40.8458829
+  ],
+  "East Bale|Oromia|Ethiopia": [
+    7.1953399,
+    39.7644413
+  ],
+  "Finfine Special|Oromia|Ethiopia": [
+    7.6721644,
+    40.0299727
+  ],
+  "Burji|SNNP|Ethiopia": [
+    5.4703345,
+    37.822593
+  ],
+  "Dawuro|South West|Ethiopia": [
+    6.9686438,
+    37.1047636
+  ],
+  "Derashe|SNNP|Ethiopia": [
+    5.587719,
+    37.2587717
+  ],
+  "Konso|SNNP|Ethiopia": [
+    5.410504,
+    37.4077108
+  ],
+  "Konta Special|South West|Ethiopia": [
+    6.8941256,
+    36.6064376
+  ],
+  "Erer|Somali|Ethiopia": [
+    8.4392817,
+    42.1142323
+  ],
+  "Korahe|Somali|Ethiopia": [
+    6.7007374,
+    44.3213179
+  ],
+  "Shabelle|Somali|Ethiopia": [
+    6.1338461,
+    43.3687113
+  ],
+  "Fanti-Zone 4|Afar|Ethiopia": [
+    11.7108206,
+    41.0330866
+  ],
+  "Awi|Amhara|Ethiopia": [
+    11.2519242,
+    36.7044862
+  ],
+  "Asosa|Benshangul/Gumuz|Ethiopia": [
+    10.2225469,
+    34.7712323
+  ],
+  "Nuwer|Gambela|Ethiopia": [
+    7.8102647,
+    34.1822172
+  ],
+  "Arsi|Oromia|Ethiopia": [
+    8.0101011,
+    39.6716774
+  ],
+  "Ilu Aba Bora|Oromia|Ethiopia": [
+    7.6721644,
+    40.0299727
+  ],
+  "Jimma|Oromia|Ethiopia": [
+    8.0494818,
+    37.1273298
+  ],
+  "Amaro|SNNP|Ethiopia": [
+    5.8200135,
+    37.7930038
+  ],
+  "Gedeo|SNNP|Ethiopia": [
+    6.1300117,
+    38.2234772
+  ],
+  "Liban|Somali|Ethiopia": [
+    5.21667,
+    39.96667
+  ],
+  "Nogob|Somali|Ethiopia": [
+    7.8378977,
+    42.3247242
+  ],
+  "Hari-Zone 5|Afar|Ethiopia": [
+    11.7108206,
+    41.0330866
+  ],
+  "East Gojam|Amhara|Ethiopia": [
+    11.5,
+    38.5
+  ],
+  "North Gondar|Amhara|Ethiopia": [
+    12.7119412,
+    37.3001961
+  ],
+  "Dire Dawa rural|Dire Dawa|Ethiopia": [
+    9.5912196,
+    41.9797191
+  ],
+  "Fafan|Somali|Ethiopia": [
+    9.4080362,
+    43.0298469
+  ],
+  "Central Tigray|Tigray|Ethiopia": [
+    13.9117104,
+    38.890012
+  ],
+  "Metekel|Benshangul/Gumuz|Ethiopia": [
+    10.9630277,
+    35.7838685
+  ],
+  "Dire Dawa urban|Dire Dawa|Ethiopia": [
+    9.5912196,
+    41.9797191
+  ],
+  "Buno Bedele|Oromia|Ethiopia": [
+    8.16667,
+    36.33333
+  ],
+  "South West Shewa|Oromia|Ethiopia": [
+    8.6320905,
+    38.1699398
+  ],
+  "West Guji|Oromia|Ethiopia": [
+    7.6721644,
+    40.0299727
+  ],
+  "West Hararge|Oromia|Ethiopia": [
+    7.6721644,
+    40.0299727
+  ],
+  "Guraghe|SNNP|Ethiopia": [
+    8.1049706,
+    38.0910079
+  ],
+  "Yem Special|SNNP|Ethiopia": [
+    7.7932492,
+    37.4871423
+  ],
+  "Doolo|Somali|Ethiopia": [
+    7.2629844,
+    43.5360531
+  ],
+  "South Eastern Tigray|Tigray|Ethiopia": [
+    13.881273,
+    39.127495
+  ],
+  "Region 14|Addis Ababa|Ethiopia": [
+    8.9579238,
+    38.6711752
+  ],
+  "Awsi-Zone 1|Afar|Ethiopia": [
+    11.7108206,
+    41.0330866
+  ],
+  "Oromia|Amhara|Ethiopia": [
+    10.7490905,
+    39.9046985
+  ],
+  "West Gojam|Amhara|Ethiopia": [
+    11.5,
+    38.5
+  ],
+  "East Wellega|Oromia|Ethiopia": [
+    9.4408741,
+    36.7109409
+  ],
+  "Kellem Wollega|Oromia|Ethiopia": [
+    7.6721644,
+    40.0299727
+  ],
+  "West Arsi|Oromia|Ethiopia": [
+    7.0002243,
+    39.2048411
+  ],
+  "West Shewa|Oromia|Ethiopia": [
+    9.1270693,
+    37.855563
+  ],
+  "Bench Sheko|South West|Ethiopia": [
+    6.9939925,
+    35.5850684
+  ],
+  "Siti|Somali|Ethiopia": [
+    10.2122931,
+    41.9276455
+  ],
+  "Mekelle Tigray|Tigray|Ethiopia": [
+    13.4957844,
+    39.4778499
+  ],
+  "Southern Tigray|Tigray|Ethiopia": [
+    12.9522081,
+    39.511176
+  ],
+  "Central Gondar|Amhara|Ethiopia": [
+    11.5,
+    38.5
+  ],
+  "North Wello|Amhara|Ethiopia": [
+    11.5,
+    38.5
+  ],
+  "West Gondar|Amhara|Ethiopia": [
+    12.4762157,
+    37.8275454
+  ],
+  "Borena|Oromia|Ethiopia": [
+    5.0505914,
+    37.9743045
+  ],
+  "East Hararge|Oromia|Ethiopia": [
+    7.6721644,
+    40.0299727
+  ],
+  "East Shewa|Oromia|Ethiopia": [
+    8.3607724,
+    39.0074478
+  ],
+  "Gamo|SNNP|Ethiopia": [
+    6.1701144,
+    37.2620697
+  ],
+  "Sheka|South West|Ethiopia": [
+    7.5073076,
+    35.3585049
+  ],
+  "Afder|Somali|Ethiopia": [
+    5.4346044,
+    42.7890787
+  ],
+  "Daawa|Somali|Ethiopia": [
+    7.2629844,
+    43.5360531
+  ],
+  "Eastern Tigray|Tigray|Ethiopia": [
+    14.0791446,
+    39.5936329
+  ],
+  "Kamianskyi|Dnipropetrovsk|Ukraine": [
+    48.4812911,
+    34.1160828
+  ],
+  "Pavlohradskyi|Dnipropetrovsk|Ukraine": [
+    48.662589,
+    34.9501715
+  ],
+  "Bohodukhivskyi|Kharkiv|Ukraine": [
+    49.8299582,
+    36.3788957
+  ],
+  "Lozivskyi|Kharkiv|Ukraine": [
+    50.1632577,
+    35.544534
+  ],
+  "Beryslavskyi|Kherson|Ukraine": [
+    46.6794425,
+    32.657599
+  ],
+  "Skadovskyi|Kherson|Ukraine": [
+    46.5421715,
+    33.4079326
+  ],
+  "Kamianets-Podilskyi|Khmelnytskyi|Ukraine": [
+    48.6781294,
+    26.5854027
+  ],
+  "Oleksandriiskyi|Kirovograd|Ukraine": [
+    48.4685795,
+    31.3028529
+  ],
+  "Bilotserkivskyi|Kyiv|Ukraine": [
+    50.4500336,
+    30.5241361
+  ],
+  "Boryspilskyi|Kyiv|Ukraine": [
+    50.4707975,
+    30.9156729
+  ],
+  "Buchanskyi|Kyiv|Ukraine": [
+    50.4500336,
+    30.5241361
+  ],
+  "Fastivskyi|Kyiv|Ukraine": [
+    50.0405839,
+    29.8768629
+  ],
+  "Drohobytskyi|Lviv|Ukraine": [
+    49.6512234,
+    23.8266948
+  ],
+  "Stryiskyi|Lviv|Ukraine": [
+    49.8291484,
+    24.0324317
+  ],
+  "Bilhorod-Dnistrovskyi|Odesa|Ukraine": [
+    46.1909823,
+    30.345784
+  ],
+  "Kremenchutskyi|Poltava|Ukraine": [
+    49.8607809,
+    33.7498787
+  ],
+  "Dubenskyi|Rivne|Ukraine": [
+    51.2074112,
+    26.5208033
+  ],
+  "Rivnenskyi|Rivne|Ukraine": [
+    50.4612186,
+    26.1765805
+  ],
+  "Khmilnytskyi|Vinnytsia|Ukraine": [
+    48.8990315,
+    28.516068
+  ],
+  "Mohyliv-Podilskyi|Vinnytsia|Ukraine": [
+    48.442544,
+    27.7991124
+  ],
+  "Tulchynskyi|Vinnytsia|Ukraine": [
+    48.8990315,
+    28.516068
+  ],
+  "Korostenskyi|Zhytomyr|Ukraine": [
+    50.7543135,
+    28.7270672
+  ],
+  "Umanskyi|Cherkasy|Ukraine": [
+    49.4100378,
+    32.0366879
+  ],
+  "Nizhynskyi|Chernihiv|Ukraine": [
+    51.5108249,
+    31.3156106
+  ],
+  "Dniprovskyi|Dnipropetrovsk|Ukraine": [
+    48.5383501,
+    34.5674561
+  ],
+  "Khmelnytskyi|Khmelnytskyi|Ukraine": [
+    49.4196404,
+    26.9793793
+  ],
+  "Novoukrainskyi|Kirovograd|Ukraine": [
+    48.1916774,
+    31.6902953
+  ],
+  "Vyshhorodskyi|Kyiv|Ukraine": [
+    50.4500336,
+    30.5241361
+  ],
+  "Starobilskyi|Luhansk|Ukraine": [
+    49.2724587,
+    38.9150477
+  ],
+  "Podilskyi|Odesa|Ukraine": [
+    48.8135044,
+    26.8341342
+  ],
+  "Poltavskyi|Poltava|Ukraine": [
+    49.2595423,
+    34.2757566
+  ],
+  "Konotopskyi|Sumy|Ukraine": [
+    50.7696518,
+    34.3289305
+  ],
+  "Vinnytskyi|Vinnytsia|Ukraine": [
+    48.8990315,
+    28.516068
+  ],
+  "Khustskyi|Zakarpattia|Ukraine": [
+    48.2953664,
+    23.4466092
+  ],
+  "Polohivskyi|Zaporizhia|Ukraine": [
+    47.4165079,
+    35.922969
+  ],
+  "Novohrad-Volynskyi|Zhytomyr|Ukraine": [
+    50.5917622,
+    27.6066973
+  ],
+  "Zhytomyrskyi|Zhytomyr|Ukraine": [
+    50.2900748,
+    28.5662729
+  ],
+  "Kyiv|Kyiv City|Ukraine": [
+    50.4500336,
+    30.5241361
+  ],
+  "Cherkaskyi|Cherkasy|Ukraine": [
+    49.3968543,
+    32.0924602
+  ],
+  "Vyzhnytskyi|Chernivtsi|Ukraine": [
+    48.2801034,
+    25.8807883
+  ],
+  "Kryvorizkyi|Dnipropetrovsk|Ukraine": [
+    48.5213014,
+    34.5429109
+  ],
+  "Pokrovskyi|Donetsk|Ukraine": [
+    47.9212914,
+    37.7809825
+  ],
+  "Kaluskyi|Ivano-Frankivsk|Ukraine": [
+    48.7481718,
+    24.5207477
+  ],
+  "Nadvirnianskyi|Ivano-Frankivsk|Ukraine": [
+    48.7481718,
+    24.5207477
+  ],
+  "Iziumskyi|Kharkiv|Ukraine": [
+    49.8299582,
+    36.3788957
+  ],
+  "Krasnohradskyi|Kharkiv|Ukraine": [
+    49.8299582,
+    36.3788957
+  ],
+  "Shepetivskyi|Khmelnytskyi|Ukraine": [
+    49.268624,
+    27.0635998
+  ],
+  "Kropyvnytskyi|Kirovograd|Ukraine": [
+    48.5236395,
+    32.2602395
+  ],
+  "Obukhivskyi|Kyiv|Ukraine": [
+    50.4500336,
+    30.5241361
+  ],
+  "Svativskyi|Luhansk|Ukraine": [
+    49.2724587,
+    38.9150477
+  ],
+  "Chervonohradskyi|Lviv|Ukraine": [
+    49.6512234,
+    23.8266948
+  ],
+  "Chortkivskyi|Ternopil|Ukraine": [
+    49.6630002,
+    25.6167516
+  ],
+  "Kremenetskyi|Ternopil|Ukraine": [
+    49.6630002,
+    25.6167516
+  ],
+  "Zhmerynskyi|Vinnytsia|Ukraine": [
+    48.8990315,
+    28.516068
+  ],
+  "Kamin-Kashyrskyi|Volyn|Ukraine": [
+    51.6271153,
+    24.961357
+  ],
+  "Tiachivskyi|Zakarpattia|Ukraine": [
+    48.2953664,
+    23.4466092
+  ],
+  "Vasylivskyi|Zaporizhia|Ukraine": [
+    47.4165079,
+    35.922969
+  ],
+  "Zvenyhorodskyi|Cherkasy|Ukraine": [
+    49.4847669,
+    31.9923178
+  ],
+  "Chernihivskyi|Chernihiv|Ukraine": [
+    51.272593,
+    31.7417235
+  ],
+  "Novhorod-Siverskyi|Chernihiv|Ukraine": [
+    52.004259,
+    33.2779899
+  ],
+  "Yaltynskyi|Crimea|Ukraine": [
+    44.9521138,
+    34.125351
+  ],
+  "Nikopolskyi|Dnipropetrovsk|Ukraine": [
+    47.6668861,
+    34.5846104
+  ],
+  "Verkhovynskyi|Ivano-Frankivsk|Ukraine": [
+    48.7481718,
+    24.5207477
+  ],
+  "Kharkivskyi|Kharkiv|Ukraine": [
+    49.6995267,
+    36.3630363
+  ],
+  "Holovanivskyi|Kirovograd|Ukraine": [
+    48.1916774,
+    31.6902953
+  ],
+  "Alchevskyi|Luhansk|Ukraine": [
+    49.2724587,
+    38.9150477
+  ],
+  "Rovenkivskyi|Luhansk|Ukraine": [
+    49.2724587,
+    38.9150477
+  ],
+  "Lvivskyi|Lviv|Ukraine": [
+    49.6512234,
+    23.8266948
+  ],
+  "Sambirskyi|Lviv|Ukraine": [
+    49.3590403,
+    23.4957157
+  ],
+  "Romenskyi|Sumy|Ukraine": [
+    50.7696518,
+    34.3289305
+  ],
+  "Melitopolskyi|Zaporizhia|Ukraine": [
+    47.804047,
+    35.2046263
+  ],
+  "Berdychivskyi|Zhytomyr|Ukraine": [
+    50.2357028,
+    28.6746973
+  ],
+  "Prylutskyi|Chernihiv|Ukraine": [
+    51.272593,
+    31.7417235
+  ],
+  "Dnistrovskyi|Chernivtsi|Ukraine": [
+    48.4199457,
+    26.5284293
+  ],
+  "Horlivskyi|Donetsk|Ukraine": [
+    47.1016642,
+    37.6668262
+  ],
+  "Kosivskyi|Ivano-Frankivsk|Ukraine": [
+    48.7481718,
+    24.5207477
+  ],
+  "Dovzhanskyi|Luhansk|Ukraine": [
+    49.2724587,
+    38.9150477
+  ],
+  "Yavorivskyi|Lviv|Ukraine": [
+    49.996353,
+    23.6787744
+  ],
+  "Bashtanskyi|Mykolaiv|Ukraine": [
+    46.9630064,
+    32.0522824
+  ],
+  "Bolhradskyi|Odesa|Ukraine": [
+    45.377618,
+    28.7831001
+  ],
+  "Ternopilskyi|Ternopil|Ukraine": [
+    49.6630002,
+    25.6167516
+  ],
+  "Haisynskyi|Vinnytsia|Ukraine": [
+    49.2339216,
+    29.0617636
+  ],
+  "Volodymyr-Volynskyi|Volyn|Ukraine": [
+    50.8474669,
+    24.319319
+  ],
+  "Berehivskyi|Zakarpattia|Ukraine": [
+    48.4263067,
+    22.7028794
+  ],
+  "Mukachivskyi|Zakarpattia|Ukraine": [
+    48.2953664,
+    23.4466092
+  ],
+  "Rakhivskyi|Zakarpattia|Ukraine": [
+    48.0194715,
+    24.1443209
+  ],
+  "Zaporizkyi|Zaporizhia|Ukraine": [
+    47.4951211,
+    34.3999123
+  ],
+  "Chernivetskyi|Chernivtsi|Ukraine": [
+    48.3810791,
+    26.1081673
+  ],
+  "Kerchenskyi|Crimea|Ukraine": [
+    45.0616007,
+    35.3795479
+  ],
+  "Novomoskovskyi|Dnipropetrovsk|Ukraine": [
+    48.662589,
+    34.9501715
+  ],
+  "Synelnykivskyi|Dnipropetrovsk|Ukraine": [
+    48.662589,
+    34.9501715
+  ],
+  "Bakhmutskyi|Donetsk|Ukraine": [
+    48.0592358,
+    37.7691313
+  ],
+  "Volnovaskyi|Donetsk|Ukraine": [
+    47.9212914,
+    37.7809825
+  ],
+  "Ivano-Frankivskyi|Ivano-Frankivsk|Ukraine": [
+    48.7481718,
+    24.5207477
+  ],
+  "Kolomyiskyi|Ivano-Frankivsk|Ukraine": [
+    48.7481718,
+    24.5207477
+  ],
+  "Henicheskyi|Kherson|Ukraine": [
+    46.5421715,
+    33.4079326
+  ],
+  "Luhanskyi|Luhansk|Ukraine": [
+    48.57947,
+    39.3185151
+  ],
+  "Zolochivskyi|Lviv|Ukraine": [
+    49.6512234,
+    23.8266948
+  ],
+  "Voznesenskyi|Mykolaiv|Ukraine": [
+    47.4204676,
+    31.3196615
+  ],
+  "Izmailskyi|Odesa|Ukraine": [
+    45.3535091,
+    28.7275398
+  ],
+  "Sumskyi|Sumy|Ukraine": [
+    50.9146888,
+    34.7975262
+  ],
+  "Uzhhorodskyi|Zakarpattia|Ukraine": [
+    48.2953664,
+    23.4466092
+  ],
+  "Zolotoniskyi|Cherkasy|Ukraine": [
+    49.1460165,
+    31.2271744
+  ],
+  "Koriukivskyi|Chernihiv|Ukraine": [
+    51.272593,
+    31.7417235
+  ],
+  "Kalmiuskyi|Donetsk|Ukraine": [
+    47.1344005,
+    37.6019482
+  ],
+  "Chuguivskyi|Kharkiv|Ukraine": [
+    49.8299582,
+    36.3788957
+  ],
+  "Kupianskyi|Kharkiv|Ukraine": [
+    49.8299582,
+    36.3788957
+  ],
+  "Kakhovskyi|Kherson|Ukraine": [
+    46.68054,
+    32.6582922
+  ],
+  "Khersonskyi|Kherson|Ukraine": [
+    46.5141888,
+    32.1898834
+  ],
+  "Shchastynskyi|Luhansk|Ukraine": [
+    49.2724587,
+    38.9150477
+  ],
+  "Sievierodonetskyi|Luhansk|Ukraine": [
+    49.2724587,
+    38.9150477
+  ],
+  "Pervomaiskyi|Mykolaiv|Ukraine": [
+    47.3886032,
+    31.9442334
+  ],
+  "Lubenskyi|Poltava|Ukraine": [
+    49.8607809,
+    33.7498787
+  ],
+  "Kovelskyi|Volyn|Ukraine": [
+    51.6070625,
+    24.9556489
+  ],
+  "Berdianskyi|Zaporizhia|Ukraine": [
+    47.8813981,
+    35.0600678
+  ],
+  "Donetskyi|Donetsk|Ukraine": [
+    48.8634869,
+    37.6474992
+  ],
+  "Kramatorskyi|Donetsk|Ukraine": [
+    48.7348495,
+    37.6149418
+  ],
+  "Mariupolskyi|Donetsk|Ukraine": [
+    47.976427,
+    37.7775609
+  ],
+  "Brovarskyi|Kyiv|Ukraine": [
+    50.488424,
+    30.7309246
+  ],
+  "Mykolaivskyi|Mykolaiv|Ukraine": [
+    46.9405737,
+    31.953888
+  ],
+  "Odeskyi|Odesa|Ukraine": [
+    46.4899458,
+    30.7331621
+  ],
+  "Myrhorodskyi|Poltava|Ukraine": [
+    49.5862188,
+    34.5197984
+  ],
+  "Sarnenskyi|Rivne|Ukraine": [
+    51.2074112,
+    26.5208033
+  ],
+  "Varaskyi|Rivne|Ukraine": [
+    51.2074112,
+    26.5208033
+  ],
+  "Okhtyrskyi|Sumy|Ukraine": [
+    50.7696518,
+    34.3289305
+  ],
+  "Shostkynskyi|Sumy|Ukraine": [
+    50.7696518,
+    34.3289305
+  ],
+  "Lutskyi|Volyn|Ukraine": [
+    50.7645536,
+    25.357858
+  ],
+  "Bukavu|Sud-Kivu|Democratic Republic of Congo": [
+    -2.4982396,
+    28.8549055
+  ],
+  "Feodosiiskyi|Crimea|Ukraine": [
+    45.034,
+    35.379
+  ],
+  "Perekopskyi|Crimea|Ukraine": [
+    45.967,
+    33.8
+  ],
+  "Dzhankoiskyi|Crimea|Ukraine": [
+    45.533,
+    34.35
+  ],
+  "Kurmanskyi|Crimea|Ukraine": [
+    45.402,
+    34.255
+  ],
+  "Bakhchysaraiskyi|Crimea|Ukraine": [
+    44.75,
+    33.9
+  ],
+  "Simferopolskyi|Crimea|Ukraine": [
+    44.952,
+    34.102
+  ],
+  "Bilohirskyi|Crimea|Ukraine": [
+    45.017,
+    34.717
+  ],
+  "Yevpatoriiskyi|Crimea|Ukraine": [
+    45.19,
+    33.37
+  ],
+  "Berezivskyi|Odesa|Ukraine": [
+    47.183,
+    30.917
+  ],
+  "Rozdilnianskyi|Odesa|Ukraine": [
+    46.807,
+    30.176
+  ],
+  "Hopang|Shan|Myanmar": [
+    23.4248,
+    98.7523
+  ],
+  "Pa Laung Self-Administered Zone|Shan|Myanmar": [
+    23.3707,
+    97.3072
+  ],
+  "Pyay|Bago|Myanmar": [
+    18.8246,
+    95.2222
+  ],
+  "Tachileik|Shan|Myanmar": [
+    20.4528,
+    99.8958
+  ],
+  "Kokang Self-Administered Zone|Shan|Myanmar": [
+    23.7,
+    98.75
+  ],
+  "Muse|Shan|Myanmar": [
+    23.9792,
+    97.9047
+  ],
+  "Mongmit|Shan|Myanmar": [
+    23.1075,
+    96.6718
+  ],
+  "Kasenga|Haut-Katanga|Democratic Republic of the Congo": [
+    -11.6136143,
+    27.5581407
+  ],
+  "Kaniama|Haut-Lomami|Democratic Republic of the Congo": [
+    -7.5094813,
+    24.1715794
+  ],
+  "Niangara|Haut-Uele|Democratic Republic of the Congo": [
+    3.6905911,
+    27.8974119
+  ],
+  "Bunia|Ituri|Democratic Republic of the Congo": [
+    1.5620529,
+    30.2478844
+  ],
+  "Mweka|Kasai|Democratic Republic of the Congo": [
+    -4.8475599,
+    21.5612885
+  ],
+  "Dibaya|Kasai-Central|Democratic Republic of the Congo": [
+    -6.4873146,
+    22.943906
+  ],
+  "Luiza|Kasai-Central|Democratic Republic of the Congo": [
+    -7.1965439,
+    22.3971878
+  ],
+  "Kabeya-Kamwanga|Kasai-Oriental|Democratic Republic of the Congo": [
+    -5.970614,
+    23.1881295
+  ],
+  "Kinshasa|Kinshasa|Democratic Republic of the Congo": [
+    -4.32171,
+    15.3122511
+  ],
+  "Songololo|Kongo-Central|Democratic Republic of the Congo": [
+    -5.4196318,
+    13.9963582
+  ],
+  "Kahemba|Kwango|Democratic Republic of the Congo": [
+    -7.2919121,
+    18.9582005
+  ],
+  "Bulungu|Kwilu|Democratic Republic of the Congo": [
+    -4.5358781,
+    18.6005309
+  ],
+  "Mangai|Kwilu|Democratic Republic of the Congo": [
+    -4.073071,
+    19.5888434
+  ],
+  "Masi-Manimba|Kwilu|Democratic Republic of the Congo": [
+    -4.9345234,
+    17.7947772
+  ],
+  "Kamiji|Lomami|Democratic Republic of the Congo": [
+    -6.6603427,
+    23.2803699
+  ],
+  "Lubao|Lomami|Democratic Republic of the Congo": [
+    -5.386666,
+    25.7490365
+  ],
+  "Ngandajika|Lomami|Democratic Republic of the Congo": [
+    -6.7342539,
+    23.9514378
+  ],
+  "Kasaji|Lualaba|Democratic Republic of the Congo": [
+    -10.3834167,
+    23.4498695
+  ],
+  "Bongandanga|Mongala|Democratic Republic of the Congo": [
+    1.5048009,
+    21.074106
+  ],
+  "Nyiragongo|Nord-Kivu|Democratic Republic of the Congo": [
+    -1.5499601,
+    29.2459519
+  ],
+  "Mobayi-Mbongo|Nord-Ubangi|Democratic Republic of the Congo": [
+    4.3,
+    21.1833331
+  ],
+  "Yakoma|Nord-Ubangi|Democratic Republic of the Congo": [
+    4.106114,
+    22.4449881
+  ],
+  "Budjala|Sud-Ubangi|Democratic Republic of the Congo": [
+    2.6472081,
+    19.7024405
+  ],
+  "Kaoze|Tanganyika|Democratic Republic of the Congo": [
+    -7.0729345,
+    29.7418604
+  ],
+  "Basoko|Tshopo|Democratic Republic of the Congo": [
+    1.6216166,
+    23.8986299
+  ],
+  "Yangambi|Tshopo|Democratic Republic of the Congo": [
+    0.7658281,
+    24.4733629
+  ],
+  "Boende|Tshuapa|Democratic Republic of the Congo": [
+    -0.2836634,
+    20.8826368
+  ],
+  "Ikela|Tshuapa|Democratic Republic of the Congo": [
+    -1.0533987,
+    23.3587707
+  ],
+  "Makanza|Equateur|Democratic Republic of the Congo": [
+    1.6084795,
+    19.1034796
+  ],
+  "Kipushi|Haut-Katanga|Democratic Republic of the Congo": [
+    -11.621882,
+    28.025415
+  ],
+  "Likasi|Haut-Katanga|Democratic Republic of the Congo": [
+    -10.9891601,
+    26.7397418
+  ],
+  "Pweto|Haut-Katanga|Democratic Republic of the Congo": [
+    -8.4741061,
+    28.8987099
+  ],
+  "Faradje|Haut-Uele|Democratic Republic of the Congo": [
+    3.7318588,
+    29.7064664
+  ],
+  "Wamba|Haut-Uele|Democratic Republic of the Congo": [
+    2.1435115,
+    27.9938589
+  ],
+  "Djugu|Ituri|Democratic Republic of the Congo": [
+    1.8747968,
+    30.3928689
+  ],
+  "Ingbokolo|Ituri|Democratic Republic of the Congo": [
+    3.4011966,
+    30.7613064
+  ],
+  "Tshimbulu|Kasai-Central|Democratic Republic of the Congo": [
+    -6.4795473,
+    22.861045
+  ],
+  "Bangu|Kongo-Central|Democratic Republic of the Congo": [
+    -5.2250556,
+    14.8219444
+  ],
+  "Luozi|Kongo-Central|Democratic Republic of the Congo": [
+    -4.8051106,
+    13.9921569
+  ],
+  "Mbanza-Ngungu|Kongo-Central|Democratic Republic of the Congo": [
+    -5.330696,
+    14.7994206
+  ],
+  "Moanda|Kongo-Central|Democratic Republic of the Congo": [
+    -5.9282219,
+    12.378028
+  ],
+  "Lubudi|Lualaba|Democratic Republic of the Congo": [
+    -10.3578216,
+    26.4464939
+  ],
+  "Mutshatsha|Lualaba|Democratic Republic of the Congo": [
+    -10.8615669,
+    25.163762
+  ],
+  "Sandoa|Lualaba|Democratic Republic of the Congo": [
+    -9.3863556,
+    22.9715887
+  ],
+  "Bolobo|Mai-Ndombe|Democratic Republic of the Congo": [
+    -2.166682,
+    16.23333
+  ],
+  "Kasongo|Maniema|Democratic Republic of the Congo": [
+    -4.1751013,
+    26.5409549
+  ],
+  "Kibombo|Maniema|Democratic Republic of the Congo": [
+    -4.0816247,
+    25.4898832
+  ],
+  "Namoya|Maniema|Democratic Republic of the Congo": [
+    -4.0458404,
+    27.5368974
+  ],
+  "Beni|Nord-Kivu|Democratic Republic of the Congo": [
+    0.3974023,
+    29.2117178
+  ],
+  "Masisi|Nord-Kivu|Democratic Republic of the Congo": [
+    -1.3972123,
+    28.8170537
+  ],
+  "Walikale|Nord-Kivu|Democratic Republic of the Congo": [
+    -1.0728008,
+    27.9753698
+  ],
+  "Lubefu|Sankuru|Democratic Republic of the Congo": [
+    -4.1263148,
+    23.0431585
+  ],
+  "Tshumbe|Sankuru|Democratic Republic of the Congo": [
+    -4.7217057,
+    24.6620708
+  ],
+  "Fizi|Sud-Kivu|Democratic Republic of the Congo": [
+    -4.2696783,
+    28.8806316
+  ],
+  "Idjwi|Sud-Kivu|Democratic Republic of the Congo": [
+    -2.0419986,
+    29.0679765
+  ],
+  "Kalehe|Sud-Kivu|Democratic Republic of the Congo": [
+    -2.0518682,
+    28.5686692
+  ],
+  "Shabunda|Sud-Kivu|Democratic Republic of the Congo": [
+    -2.993575,
+    27.4702053
+  ],
+  "Kungu|Sud-Ubangi|Democratic Republic of the Congo": [
+    2.7807164,
+    19.2040667
+  ],
+  "Kongolo|Tanganyika|Democratic Republic of the Congo": [
+    -5.3856439,
+    26.9992427
+  ],
+  "Ubundu|Tshopo|Democratic Republic of the Congo": [
+    -0.357654,
+    25.43209
+  ],
+  "Monkoto|Tshuapa|Democratic Republic of the Congo": [
+    -1.743868,
+    20.687038
+  ],
+  "Ango|Bas-Uele|Democratic Republic of the Congo": [
+    4.03855,
+    25.8401167
+  ],
+  "Basankusu|Equateur|Democratic Republic of the Congo": [
+    1.2191683,
+    19.8013697
+  ],
+  "Mbandaka|Equateur|Democratic Republic of the Congo": [
+    0.0470732,
+    18.2564803
+  ],
+  "Lubumbashi|Haut-Katanga|Democratic Republic of the Congo": [
+    -11.6642316,
+    27.4826264
+  ],
+  "Mitwaba|Haut-Katanga|Democratic Republic of the Congo": [
+    -8.626463,
+    27.3415298
+  ],
+  "Aba|Haut-Uele|Democratic Republic of the Congo": [
+    3.8627171,
+    30.2355777
+  ],
+  "Irumu|Ituri|Democratic Republic of the Congo": [
+    1.2701851,
+    30.0166393
+  ],
+  "Mambasa|Ituri|Democratic Republic of the Congo": [
+    1.5353045,
+    28.7584771
+  ],
+  "Demba|Kasai-Central|Democratic Republic of the Congo": [
+    -5.4689534,
+    22.2732951
+  ],
+  "Kasangulu|Kongo-Central|Democratic Republic of the Congo": [
+    -4.5900244,
+    15.1676574
+  ],
+  "Matadi|Kongo-Central|Democratic Republic of the Congo": [
+    -5.7974,
+    13.4948203
+  ],
+  "Kasongo-Lunda|Kwango|Democratic Republic of the Congo": [
+    -6.4786095,
+    16.8168133
+  ],
+  "Dibaya-Lubwe|Kwilu|Democratic Republic of the Congo": [
+    -4.1567969,
+    19.8624716
+  ],
+  "Kapanga|Lualaba|Democratic Republic of the Congo": [
+    -8.4990274,
+    22.7949128
+  ],
+  "Kolwezi|Lualaba|Democratic Republic of the Congo": [
+    -10.738642,
+    25.4948244
+  ],
+  "Kwamouth|Mai-Ndombe|Democratic Republic of the Congo": [
+    -3.1820727,
+    16.2044968
+  ],
+  "Oshwe|Mai-Ndombe|Democratic Republic of the Congo": [
+    -3.4183714,
+    19.4336118
+  ],
+  "Kailo|Maniema|Democratic Republic of the Congo": [
+    -2.9493766,
+    25.9184499
+  ],
+  "Kalima|Maniema|Democratic Republic of the Congo": [
+    -2.5649518,
+    26.6242198
+  ],
+  "Bena-Dibele|Sankuru|Democratic Republic of the Congo": [
+    -4.0981776,
+    22.8313069
+  ],
+  "Kamituga|Sud-Kivu|Democratic Republic of the Congo": [
+    -3.0648932,
+    28.186972
+  ],
+  "Befale|Tshuapa|Democratic Republic of the Congo": [
+    0.3924105,
+    20.843124
+  ],
+  "Watsa|Haut-Uele|Democratic Republic of the Congo": [
+    3.0398758,
+    29.5328413
+  ],
+  "Luebo|Kasai|Democratic Republic of the Congo": [
+    -5.3535845,
+    21.4197459
+  ],
+  "Lupatapata|Kasai-Oriental|Democratic Republic of the Congo": [
+    -6.0263656,
+    23.6091605
+  ],
+  "Miabi|Kasai-Oriental|Democratic Republic of the Congo": [
+    -6.2882281,
+    23.2880174
+  ],
+  "Madimba|Kongo-Central|Democratic Republic of the Congo": [
+    -5.3655176,
+    15.5469709
+  ],
+  "Seke-Banza|Kongo-Central|Democratic Republic of the Congo": [
+    -5.3077358,
+    13.4117155
+  ],
+  "Tshela|Kongo-Central|Democratic Republic of the Congo": [
+    -5.0093031,
+    12.9602161
+  ],
+  "Gungu|Kwilu|Democratic Republic of the Congo": [
+    -5.7381679,
+    19.3078106
+  ],
+  "Nioki|Mai-Ndombe|Democratic Republic of the Congo": [
+    -2.720373,
+    17.685412
+  ],
+  "Yumbi|Mai-Ndombe|Democratic Republic of the Congo": [
+    -1.90318,
+    16.556062
+  ],
+  "Kabambare|Maniema|Democratic Republic of the Congo": [
+    -4.4142078,
+    27.7764193
+  ],
+  "Goma|Nord-Kivu|Democratic Republic of the Congo": [
+    -1.6665685,
+    29.225652
+  ],
+  "Katako-Kombe|Sankuru|Democratic Republic of the Congo": [
+    -3.3981629,
+    24.4213923
+  ],
+  "Baraka|Sud-Kivu|Democratic Republic of the Congo": [
+    -4.1056132,
+    29.0950688
+  ],
+  "Kalemie|Tanganyika|Democratic Republic of the Congo": [
+    -5.9460209,
+    29.1967172
+  ],
+  "Nyunzu|Tanganyika|Democratic Republic of the Congo": [
+    -5.9577181,
+    28.0117894
+  ],
+  "Isangi|Tshopo|Democratic Republic of the Congo": [
+    0.7795426,
+    24.2690944
+  ],
+  "Opala|Tshopo|Democratic Republic of the Congo": [
+    -0.5096558,
+    24.2298322
+  ],
+  "Bokungu|Tshuapa|Democratic Republic of the Congo": [
+    -0.609586,
+    22.312214
+  ],
+  "Ingende|Equateur|Democratic Republic of the Congo": [
+    -0.3092522,
+    18.9661639
+  ],
+  "Malemba-Nkulu|Haut-Lomami|Democratic Republic of the Congo": [
+    -8.0413219,
+    26.7909208
+  ],
+  "Dekese|Kasai|Democratic Republic of the Congo": [
+    -3.4925965,
+    21.3772071
+  ],
+  "Ilebo|Kasai|Democratic Republic of the Congo": [
+    -4.3316446,
+    20.5882508
+  ],
+  "Kamonia|Kasai|Democratic Republic of the Congo": [
+    -6.8792355,
+    20.9296344
+  ],
+  "Kenge|Kwango|Democratic Republic of the Congo": [
+    -4.7175981,
+    17.2717234
+  ],
+  "Dilolo|Lualaba|Democratic Republic of the Congo": [
+    -10.5460322,
+    23.3058794
+  ],
+  "Mushie|Mai-Ndombe|Democratic Republic of the Congo": [
+    -3.0154526,
+    16.9232711
+  ],
+  "Lisala|Mongala|Democratic Republic of the Congo": [
+    2.5496178,
+    21.3037272
+  ],
+  "Rutshuru|Nord-Kivu|Democratic Republic of the Congo": [
+    -1.1869031,
+    29.4461316
+  ],
+  "Gbadolite|Nord-Ubangi|Democratic Republic of the Congo": [
+    4.2812396,
+    20.9999077
+  ],
+  "Lodja|Sankuru|Democratic Republic of the Congo": [
+    -3.5241628,
+    23.5995098
+  ],
+  "Lusambo|Sankuru|Democratic Republic of the Congo": [
+    -4.9736384,
+    23.4432792
+  ],
+  "Bukavu|Sud-Kivu|Democratic Republic of the Congo": [
+    -2.5055839,
+    28.8594885
+  ],
+  "Mwenga|Sud-Kivu|Democratic Republic of the Congo": [
+    -3.0408087,
+    28.4315154
+  ],
+  "Gemena|Sud-Ubangi|Democratic Republic of the Congo": [
+    3.2549286,
+    19.7750831
+  ],
+  "Kabalo|Tanganyika|Democratic Republic of the Congo": [
+    -6.0500915,
+    26.9160693
+  ],
+  "Banalia|Tshopo|Democratic Republic of the Congo": [
+    1.5564193,
+    25.3200682
+  ],
+  "Kisangani|Tshopo|Democratic Republic of the Congo": [
+    0.5184021,
+    25.2057292
+  ],
+  "Aketi|Bas-Uele|Democratic Republic of the Congo": [
+    2.9313002,
+    23.7439575
+  ],
+  "Bolomba|Equateur|Democratic Republic of the Congo": [
+    0.3482931,
+    19.2289249
+  ],
+  "Bomongo|Equateur|Democratic Republic of the Congo": [
+    1.3801715,
+    18.3512875
+  ],
+  "Kambove|Haut-Katanga|Democratic Republic of the Congo": [
+    -10.8760688,
+    26.5959708
+  ],
+  "Bukama|Haut-Lomami|Democratic Republic of the Congo": [
+    -8.8535039,
+    26.1179557
+  ],
+  "Kamina|Haut-Lomami|Democratic Republic of the Congo": [
+    -8.7351826,
+    25.0032201
+  ],
+  "Isiro|Haut-Uele|Democratic Republic of the Congo": [
+    2.7742702,
+    27.6208169
+  ],
+  "Ariwara|Ituri|Democratic Republic of the Congo": [
+    3.1340398,
+    30.6979912
+  ],
+  "Aru|Ituri|Democratic Republic of the Congo": [
+    3.0321244,
+    30.4840084
+  ],
+  "Mongwalu|Ituri|Democratic Republic of the Congo": [
+    2.1015973,
+    29.0559738
+  ],
+  "Katanda|Kasai-Oriental|Democratic Republic of the Congo": [
+    -6.0809369,
+    23.9278807
+  ],
+  "Tshilenge|Kasai-Oriental|Democratic Republic of the Congo": [
+    -6.4694501,
+    23.6295922
+  ],
+  "Inkisi|Kongo-Central|Democratic Republic of the Congo": [
+    -5.1283631,
+    15.0659185
+  ],
+  "Kimvula|Kongo-Central|Democratic Republic of the Congo": [
+    -5.4313246,
+    16.028658
+  ],
+  "Lukula|Kongo-Central|Democratic Republic of the Congo": [
+    -5.3907317,
+    12.8656785
+  ],
+  "Bandundu|Kwilu|Democratic Republic of the Congo": [
+    -3.3201862,
+    17.3774958
+  ],
+  "Kikwit|Kwilu|Democratic Republic of the Congo": [
+    -5.0610453,
+    18.8087443
+  ],
+  "Kabinda|Lomami|Democratic Republic of the Congo": [
+    -6.4044023,
+    24.6475773
+  ],
+  "Inongo|Mai-Ndombe|Democratic Republic of the Congo": [
+    -1.9253353,
+    18.2863998
+  ],
+  "Kutu|Mai-Ndombe|Democratic Republic of the Congo": [
+    -2.725003,
+    18.147696
+  ],
+  "Kindu|Maniema|Democratic Republic of the Congo": [
+    -2.9493766,
+    25.9184499
+  ],
+  "Pangi|Maniema|Democratic Republic of the Congo": [
+    -3.1359015,
+    26.6024543
+  ],
+  "Punia|Maniema|Democratic Republic of the Congo": [
+    -1.7030109,
+    26.9225194
+  ],
+  "Lubero|Nord-Kivu|Democratic Republic of the Congo": [
+    -0.0623332,
+    28.7540799
+  ],
+  "Walungu|Sud-Kivu|Democratic Republic of the Congo": [
+    -2.7708003,
+    28.6000504
+  ],
+  "Libenge|Sud-Ubangi|Democratic Republic of the Congo": [
+    3.7613847,
+    18.9675717
+  ],
+  "Moba|Tanganyika|Democratic Republic of the Congo": [
+    -7.0427487,
+    29.7737268
+  ],
+  "Bafwasende|Tshopo|Democratic Republic of the Congo": [
+    0.9988842,
+    27.1572905
+  ],
+  "Djolu|Tshuapa|Democratic Republic of the Congo": [
+    0.6779431,
+    22.4603878
+  ],
+  "Buta|Bas-Uele|Democratic Republic of the Congo": [
+    2.7932581,
+    24.7287054
+  ],
+  "Poko|Bas-Uele|Democratic Republic of the Congo": [
+    3.1381313,
+    26.8946317
+  ],
+  "Sakania|Haut-Katanga|Democratic Republic of the Congo": [
+    -12.6013289,
+    29.1606239
+  ],
+  "Kabongo|Haut-Lomami|Democratic Republic of the Congo": [
+    -7.1089854,
+    25.5061798
+  ],
+  "Rungu|Haut-Uele|Democratic Republic of the Congo": [
+    3.1862338,
+    27.8738324
+  ],
+  "Mahagi|Ituri|Democratic Republic of the Congo": [
+    2.3371604,
+    30.5812005
+  ],
+  "Tshikapa|Kasai|Democratic Republic of the Congo": [
+    -6.6399268,
+    20.5405413
+  ],
+  "Popokabaka|Kwango|Democratic Republic of the Congo": [
+    -5.6931949,
+    16.5841079
+  ],
+  "Idiofa|Kwilu|Democratic Republic of the Congo": [
+    -4.9699217,
+    19.5885243
+  ],
+  "Mwene-Ditu|Lomami|Democratic Republic of the Congo": [
+    -6.9357235,
+    23.3919448
+  ],
+  "Kiri|Mai-Ndombe|Democratic Republic of the Congo": [
+    -1.495603,
+    18.928388
+  ],
+  "Butembo|Nord-Kivu|Democratic Republic of the Congo": [
+    0.1246035,
+    29.289273
+  ],
+  "Kole|Sankuru|Democratic Republic of the Congo": [
+    -3.4633994,
+    22.4456268
+  ],
+  "Lomela|Sankuru|Democratic Republic of the Congo": [
+    -2.2799144,
+    23.3656817
+  ],
+  "Zongo|Sud-Ubangi|Democratic Republic of the Congo": [
+    4.1761197,
+    18.7153481
+  ],
+  "Yahuma|Tshopo|Democratic Republic of the Congo": [
+    0.9555088,
+    23.571918
+  ],
+  "Bambesa|Bas-Uele|Democratic Republic of the Congo": [
+    3.4490912,
+    25.6944046
+  ],
+  "Bondo|Bas-Uele|Democratic Republic of the Congo": [
+    3.8130096,
+    23.6887171
+  ],
+  "Dingila|Bas-Uele|Democratic Republic of the Congo": [
+    3.6505745,
+    26.056213
+  ],
+  "Bikoro|Equateur|Democratic Republic of the Congo": [
+    -0.7367073,
+    18.1338714
+  ],
+  "Lukolela|Equateur|Democratic Republic of the Congo": [
+    -1.0646958,
+    17.1709475
+  ],
+  "Dungu|Haut-Uele|Democratic Republic of the Congo": [
+    3.6195433,
+    28.5699237
+  ],
+  "Dimbelenge|Kasai-Central|Democratic Republic of the Congo": [
+    -5.5582871,
+    23.1145547
+  ],
+  "Kananga|Kasai-Central|Democratic Republic of the Congo": [
+    -5.8951725,
+    22.408589
+  ],
+  "Kazumba|Kasai-Central|Democratic Republic of the Congo": [
+    -6.4164282,
+    22.0343824
+  ],
+  "Lukalaba|Kasai-Oriental|Democratic Republic of the Congo": [
+    -6.4911771,
+    23.6501573
+  ],
+  "Mbuji-Mayi|Kasai-Oriental|Democratic Republic of the Congo": [
+    -6.1258942,
+    23.5998111
+  ],
+  "Boma|Kongo-Central|Democratic Republic of the Congo": [
+    -5.85,
+    13.05
+  ],
+  "Feshi|Kwango|Democratic Republic of the Congo": [
+    -6.1311665,
+    18.1496197
+  ],
+  "Bagata|Kwilu|Democratic Republic of the Congo": [
+    -3.9385365,
+    17.9265742
+  ],
+  "Luilu|Lomami|Democratic Republic of the Congo": [
+    -7.0470937,
+    23.6076339
+  ],
+  "Lubutu|Maniema|Democratic Republic of the Congo": [
+    -0.7403356,
+    26.5815525
+  ],
+  "Bumba|Mongala|Democratic Republic of the Congo": [
+    2.1837441,
+    22.466526
+  ],
+  "Bosobolo|Nord-Ubangi|Democratic Republic of the Congo": [
+    4.5212385,
+    19.9379004
+  ],
+  "Businga|Nord-Ubangi|Democratic Republic of the Congo": [
+    3.3411745,
+    20.8881923
+  ],
+  "Kabare|Sud-Kivu|Democratic Republic of the Congo": [
+    -2.4089028,
+    28.7497468
+  ],
+  "Uvira|Sud-Kivu|Democratic Republic of the Congo": [
+    -3.1982504,
+    29.0071409
+  ],
+  "Manono|Tanganyika|Democratic Republic of the Congo": [
+    -7.2981166,
+    27.396517
+  ]
+}

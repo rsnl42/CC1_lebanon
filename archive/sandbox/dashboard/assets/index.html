@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Education Crisis Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg: #0E1117; --surface: #161B27; --accent: #E07B3B; --text: #E8E6E0; --muted: #6B7A99; }
+        body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; font-weight: 300; margin: 0; padding: 40px; }
+        .container { max-width: 1100px; margin: auto; }
+        h1 { text-align: center; color: var(--accent); margin-bottom: 40px; font-weight: 700; font-family: 'Playfair Display', serif; }
+        h1 em { font-style: italic; font-weight: 400; }
+        .nav-section { margin-bottom: 50px; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: var(--surface); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px; transition: all 0.3s; text-decoration: none; color: inherit; display: flex; flex-direction: column; }
+        .card:hover { border-color: var(--accent); transform: translateY(-5px); }
+        .card h2 { color: var(--accent); margin-top: 0; font-size: 1.3em; font-family: 'DM Sans', sans-serif; font-weight: 600; }
+        .btn { display: inline-block; background: #1A1A2E; color: white; padding: 10px 20px; border-radius: 6px; text-align: center; margin-top: auto; font-weight: 500; font-family: 'DM Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; }
+        .card:hover .btn { background: var(--accent); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Education <em>Crisis</em> Dashboard</h1>
+        
+        <div class="nav-section">
+            <h2 style="color:var(--muted); font-size: 11px; font-family: 'DM Mono', monospace; text-transform: uppercase; letter-spacing: 0.18em; margin-bottom: 30px;">Available Analytics</h2>
+            <div class="grid">
+                <!-- Geospatial Section -->
+                <div class="card" style="border-color:var(--accent);">
+                    <h2>Geospatial Analysis</h2>
+                    <p style="font-weight:400; font-size: 14px; color:var(--muted); margin-bottom: 15px;">Select year and analysis type.</p>
+
+                    <div id="year-btns" style="display:grid; grid-template-columns: repeat(5, 1fr); gap: 5px; margin-bottom: 10px;">
+                        <script>
+                            let selectedYear = '2020';
+                            let selectedType = 'density';
+
+                            function setYear(year, btn) {
+                                document.querySelectorAll('#year-btns .btn').forEach(b => b.style.background = '#1A1A2E');
+                                btn.style.background = '#E07B3B';
+                                selectedYear = year;
+                                updateFinalLink();
+                            }
+
+                            function setType(type, btn) {
+                                document.querySelectorAll('#type-btns .btn').forEach(b => b.style.background = '#1A1A2E');
+                                btn.style.background = '#E07B3B';
+                                selectedType = type;
+                                updateFinalLink();
+                            }
+
+                            function updateFinalLink() {
+                                const link = document.getElementById('final-map-link');
+                                link.style.opacity = '1';
+                                link.style.pointerEvents = 'auto';
+                                if (selectedType === 'density') {
+                                    link.href = `../visualizations/maps/PWD_${selectedYear}_sub_national_100m_map.html`;
+                                } else {
+                                    link.href = `../visualizations/maps/PWD_${selectedYear}_Global_Events.html`;
+                                }
+                            }
+                        </script>
+                        <button class="btn" style="padding:5px; font-size:9px; background:#1A1A2E;" onclick="setYear(2000, this)">2000</button>
+                        <button class="btn" style="padding:5px; font-size:9px; background:#1A1A2E;" onclick="setYear(2005, this)">2005</button>
+                        <button class="btn" style="padding:5px; font-size:9px; background:#1A1A2E;" onclick="setYear(2010, this)">2010</button>
+                        <button class="btn" style="padding:5px; font-size:9px; background:#1A1A2E;" onclick="setYear(2015, this)">2015</button>
+                        <button class="btn" style="padding:5px; font-size:9px; background:#1A1A2E;" onclick="setYear(2020, this)">2020</button>
+                    </div>
+
+                    <div id="type-btns" style="display:grid; grid-template-columns: 1fr 1fr; gap: 5px; margin-bottom: 15px;">
+                        <button class="btn" style="padding:5px; font-size:9px; background:#1A1A2E;" onclick="setType('density', this)">PWD Density</button>
+                        <button class="btn" style="padding:5px; font-size:9px; background:#1A1A2E;" onclick="setType('both', this)">PWD+Events</button>
+                    </div>
+                    <div style="margin-top:auto;">
+                        <a id="final-map-link" href="#" target="_blank" class="btn" style="display:block; width:100%; padding:12px 0; margin-top:0; text-decoration:none;">View Selected Map</a>
+                    </div>
+                </div>
+
+                <a href="country_insights.html" class="card">
+                    <h2>Country Strategic Insights</h2>
+                    <p style="font-weight:400; font-size: 14px; color:var(--muted);">Evidence-based insights & recommended actions per country.</p>
+                    <div class="btn">Explore Country Data</div>
+                </a>
+                <a href="../../timeline_map/index.html" class="card">
+                    <h2>Vulnerability Timeline</h2>
+                    <p style="font-weight:400; font-size: 14px; color:var(--muted);">Geospatial journey 1997-2024.</p>
+                    <div class="btn">Launch Timeline</div>
+                </a>
+                <a href="conflict_edu_analysis.html" class="card">
+                    <h2>Conflict vs Education</h2>
+                    <p style="font-weight:400; font-size: 14px; color:var(--muted);">Impact of fatalities/events on survival rates.</p>
+                    <div class="btn">View Chart</div>
+                </a>
+                <a href="conflict_edu_gender_analysis.html" class="card">
+                    <h2>Gendered Impact</h2>
+                    <p style="font-weight:400; font-size: 14px; color:var(--muted);">Boys vs Girls enrollment survival analysis.</p>
+                    <div class="btn">View Chart</div>
+                </a>
+                <a href="oos_profile.html" class="card">
+                    <h2>OOS Profile</h2>
+                    <p style="font-weight:400; font-size: 14px; color:var(--muted);">Out-of-school children, gender-disaggregated.</p>
+                    <div class="btn">View Profile</div>
+                </a>
+            </div>        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,514 @@
+Country,Year,Events,Fatalities
+Afghanistan,2017,644,1434
+Afghanistan,2018,688,1585
+Afghanistan,2019,872,1482
+Afghanistan,2020,1583,2356
+Afghanistan,2021,1619,2221
+Afghanistan,2022,1242,1357
+Afghanistan,2023,625,462
+Afghanistan,2024,559,407
+Afghanistan,2025,401,250
+Afghanistan,2026,154,426
+Burkina Faso,1997,0,0
+Burkina Faso,1998,1,4
+Burkina Faso,1999,2,2
+Burkina Faso,2000,1,0
+Burkina Faso,2001,1,0
+Burkina Faso,2002,5,106
+Burkina Faso,2003,1,1
+Burkina Faso,2004,1,3
+Burkina Faso,2005,0,0
+Burkina Faso,2006,1,1
+Burkina Faso,2007,0,0
+Burkina Faso,2008,0,0
+Burkina Faso,2009,0,0
+Burkina Faso,2010,0,0
+Burkina Faso,2011,6,1
+Burkina Faso,2012,6,6
+Burkina Faso,2013,4,7
+Burkina Faso,2014,9,5
+Burkina Faso,2015,11,4
+Burkina Faso,2016,18,41
+Burkina Faso,2017,51,67
+Burkina Faso,2018,132,177
+Burkina Faso,2019,367,1348
+Burkina Faso,2020,362,1076
+Burkina Faso,2021,694,762
+Burkina Faso,2022,709,1418
+Burkina Faso,2023,699,2398
+Burkina Faso,2024,436,2353
+Burkina Faso,2025,197,881
+Burkina Faso,2026,88,175
+Burundi,1997,111,2214
+Burundi,1998,58,575
+Burundi,1999,91,815
+Burundi,2000,145,1587
+Burundi,2001,231,747
+Burundi,2002,187,736
+Burundi,2003,134,910
+Burundi,2004,27,237
+Burundi,2005,45,422
+Burundi,2006,46,49
+Burundi,2007,11,11
+Burundi,2008,28,26
+Burundi,2009,47,40
+Burundi,2010,69,126
+Burundi,2011,11,62
+Burundi,2012,8,19
+Burundi,2013,6,16
+Burundi,2014,35,11
+Burundi,2015,723,541
+Burundi,2016,779,402
+Burundi,2017,656,266
+Burundi,2018,731,266
+Burundi,2019,517,161
+Burundi,2020,433,189
+Burundi,2021,492,229
+Burundi,2022,306,152
+Burundi,2023,252,111
+Burundi,2024,258,126
+Burundi,2025,244,107
+Burundi,2026,44,19
+Cameroon,1997,2,0
+Cameroon,1998,3,1
+Cameroon,1999,0,0
+Cameroon,2000,4,16
+Cameroon,2001,2,4
+Cameroon,2002,1,4
+Cameroon,2003,2,3
+Cameroon,2004,4,10
+Cameroon,2005,3,5
+Cameroon,2006,2,2
+Cameroon,2007,6,25
+Cameroon,2008,5,103
+Cameroon,2009,9,18
+Cameroon,2010,8,2
+Cameroon,2011,6,8
+Cameroon,2012,1,0
+Cameroon,2013,10,14
+Cameroon,2014,29,132
+Cameroon,2015,54,423
+Cameroon,2016,120,330
+Cameroon,2017,198,420
+Cameroon,2018,370,575
+Cameroon,2019,453,605
+Cameroon,2020,702,808
+Cameroon,2021,566,546
+Cameroon,2022,893,720
+Cameroon,2023,1608,972
+Cameroon,2024,2006,821
+Cameroon,2025,2575,680
+Cameroon,2026,879,190
+Central African Republic,1997,7,0
+Central African Republic,1998,3,40
+Central African Republic,1999,4,2
+Central African Republic,2000,5,9
+Central African Republic,2001,15,35
+Central African Republic,2002,20,235
+Central African Republic,2003,22,70
+Central African Republic,2004,10,52
+Central African Republic,2005,5,1
+Central African Republic,2006,15,64
+Central African Republic,2007,56,189
+Central African Republic,2008,59,116
+Central African Republic,2009,51,83
+Central African Republic,2010,109,195
+Central African Republic,2011,24,40
+Central African Republic,2012,59,61
+Central African Republic,2013,268,1224
+Central African Republic,2014,570,2397
+Central African Republic,2015,156,300
+Central African Republic,2016,136,291
+Central African Republic,2017,175,565
+Central African Republic,2018,246,512
+Central African Republic,2019,111,245
+Central African Republic,2020,228,115
+Central African Republic,2021,439,980
+Central African Republic,2022,156,554
+Central African Republic,2023,158,159
+Central African Republic,2024,245,472
+Central African Republic,2025,469,695
+Central African Republic,2026,130,102
+Chad,1997,9,109
+Chad,1998,7,39
+Chad,1999,1,26
+Chad,2000,3,12
+Chad,2001,5,7
+Chad,2002,2,1
+Chad,2003,5,1
+Chad,2004,25,113
+Chad,2005,16,204
+Chad,2006,42,627
+Chad,2007,43,56
+Chad,2008,9,64
+Chad,2009,10,2
+Chad,2010,3,0
+Chad,2011,3,10
+Chad,2012,5,1
+Chad,2013,0,0
+Chad,2014,7,12
+Chad,2015,12,150
+Chad,2016,7,12
+Chad,2017,11,14
+Chad,2018,23,41
+Chad,2019,55,75
+Chad,2020,49,113
+Chad,2021,66,64
+Chad,2022,63,92
+Chad,2023,62,135
+Chad,2024,71,122
+Chad,2025,112,176
+Chad,2026,48,58
+Colombia,2018,1087,1025
+Colombia,2019,1049,987
+Colombia,2020,1183,1280
+Colombia,2021,1559,1526
+Colombia,2022,1742,1713
+Colombia,2023,1881,1543
+Colombia,2024,1507,1190
+Colombia,2025,1535,1375
+Colombia,2026,386,337
+Democratic Republic of Congo,1997,39,1144
+Democratic Republic of Congo,1998,22,1323
+Democratic Republic of Congo,1999,52,1751
+Democratic Republic of Congo,2000,37,592
+Democratic Republic of Congo,2001,83,1379
+Democratic Republic of Congo,2002,80,1406
+Democratic Republic of Congo,2003,50,659
+Democratic Republic of Congo,2004,54,153
+Democratic Republic of Congo,2005,101,282
+Democratic Republic of Congo,2006,91,71
+Democratic Republic of Congo,2007,52,106
+Democratic Republic of Congo,2008,113,2028
+Democratic Republic of Congo,2009,324,2071
+Democratic Republic of Congo,2010,201,864
+Democratic Republic of Congo,2011,348,196
+Democratic Republic of Congo,2012,378,638
+Democratic Republic of Congo,2013,288,813
+Democratic Republic of Congo,2014,369,588
+Democratic Republic of Congo,2015,259,948
+Democratic Republic of Congo,2016,279,699
+Democratic Republic of Congo,2017,307,1671
+Democratic Republic of Congo,2018,845,1398
+Democratic Republic of Congo,2019,1446,1979
+Democratic Republic of Congo,2020,1872,2948
+Democratic Republic of Congo,2021,2178,3446
+Democratic Republic of Congo,2022,2380,4339
+Democratic Republic of Congo,2023,1407,3578
+Democratic Republic of Congo,2024,1049,3459
+Democratic Republic of Congo,2025,1315,3861
+Democratic Republic of Congo,2026,369,590
+Ethiopia,1997,14,31
+Ethiopia,1998,23,131
+Ethiopia,1999,17,988
+Ethiopia,2000,5,20
+Ethiopia,2001,10,46
+Ethiopia,2002,42,438
+Ethiopia,2003,18,135
+Ethiopia,2004,11,34
+Ethiopia,2005,25,153
+Ethiopia,2006,21,11
+Ethiopia,2007,7,131
+Ethiopia,2008,27,35
+Ethiopia,2009,14,25
+Ethiopia,2010,54,115
+Ethiopia,2011,14,152
+Ethiopia,2012,37,213
+Ethiopia,2013,24,133
+Ethiopia,2014,26,82
+Ethiopia,2015,120,215
+Ethiopia,2016,374,1211
+Ethiopia,2017,143,398
+Ethiopia,2018,320,664
+Ethiopia,2019,72,340
+Ethiopia,2020,243,2455
+Ethiopia,2021,446,3478
+Ethiopia,2022,498,2885
+Ethiopia,2023,521,1302
+Ethiopia,2024,748,2104
+Ethiopia,2025,558,1296
+Ethiopia,2026,129,239
+Haiti,2018,111,160
+Haiti,2019,199,207
+Haiti,2020,360,360
+Haiti,2021,424,257
+Haiti,2022,519,669
+Haiti,2023,676,1009
+Haiti,2024,690,1597
+Haiti,2025,814,1674
+Haiti,2026,112,154
+Lebanon,2016,100,35
+Lebanon,2017,58,25
+Lebanon,2018,30,9
+Lebanon,2019,45,5
+Lebanon,2020,75,5
+Lebanon,2021,66,7
+Lebanon,2022,50,3
+Lebanon,2023,113,53
+Lebanon,2024,875,2132
+Lebanon,2025,301,83
+Lebanon,2026,618,1315
+Mali,1997,2,0
+Mali,1998,1,0
+Mali,1999,2,9
+Mali,2000,3,8
+Mali,2001,2,2
+Mali,2002,1,5
+Mali,2003,1,13
+Mali,2004,1,0
+Mali,2005,0,0
+Mali,2006,0,0
+Mali,2007,2,0
+Mali,2008,4,10
+Mali,2009,3,10
+Mali,2010,4,3
+Mali,2011,9,19
+Mali,2012,96,98
+Mali,2013,73,195
+Mali,2014,35,49
+Mali,2015,35,74
+Mali,2016,42,89
+Mali,2017,147,252
+Mali,2018,299,871
+Mali,2019,322,876
+Mali,2020,463,962
+Mali,2021,526,531
+Mali,2022,668,2232
+Mali,2023,865,1992
+Mali,2024,751,1796
+Mali,2025,625,1230
+Mali,2026,186,227
+Mozambique,1997,3,0
+Mozambique,1998,1,0
+Mozambique,1999,1,0
+Mozambique,2000,5,2
+Mozambique,2001,0,0
+Mozambique,2002,2,0
+Mozambique,2003,13,0
+Mozambique,2004,23,2
+Mozambique,2005,7,0
+Mozambique,2006,4,2
+Mozambique,2007,4,0
+Mozambique,2008,7,2
+Mozambique,2009,26,0
+Mozambique,2010,9,3
+Mozambique,2011,5,4
+Mozambique,2012,15,7
+Mozambique,2013,40,27
+Mozambique,2014,35,13
+Mozambique,2015,5,4
+Mozambique,2016,56,58
+Mozambique,2017,69,83
+Mozambique,2018,83,171
+Mozambique,2019,252,378
+Mozambique,2020,398,827
+Mozambique,2021,189,516
+Mozambique,2022,333,460
+Mozambique,2023,132,96
+Mozambique,2024,246,259
+Mozambique,2025,260,344
+Mozambique,2026,36,27
+Myanmar,2010,66,69
+Myanmar,2011,136,132
+Myanmar,2012,119,181
+Myanmar,2013,111,113
+Myanmar,2014,107,101
+Myanmar,2015,124,173
+Myanmar,2016,205,301
+Myanmar,2017,222,1090
+Myanmar,2018,192,101
+Myanmar,2019,375,196
+Myanmar,2020,512,267
+Myanmar,2021,2786,2545
+Myanmar,2022,3531,3372
+Myanmar,2023,3625,3465
+Myanmar,2024,3899,4152
+Myanmar,2025,3678,3408
+Myanmar,2026,995,1018
+Niger,1997,7,13
+Niger,1998,4,151
+Niger,1999,3,0
+Niger,2000,1,0
+Niger,2001,2,0
+Niger,2002,4,73
+Niger,2003,0,0
+Niger,2004,3,0
+Niger,2005,2,1
+Niger,2006,2,0
+Niger,2007,10,12
+Niger,2008,8,4
+Niger,2009,4,5
+Niger,2010,4,1
+Niger,2011,0,0
+Niger,2012,5,8
+Niger,2013,3,4
+Niger,2014,3,0
+Niger,2015,20,164
+Niger,2016,7,29
+Niger,2017,13,38
+Niger,2018,67,152
+Niger,2019,192,202
+Niger,2020,288,420
+Niger,2021,214,765
+Niger,2022,406,391
+Niger,2023,277,418
+Niger,2024,191,406
+Niger,2025,262,823
+Niger,2026,87,296
+Nigeria,1997,42,83
+Nigeria,1998,49,898
+Nigeria,1999,58,463
+Nigeria,2000,45,195
+Nigeria,2001,52,322
+Nigeria,2002,63,283
+Nigeria,2003,87,423
+Nigeria,2004,101,2204
+Nigeria,2005,54,51
+Nigeria,2006,46,53
+Nigeria,2007,123,152
+Nigeria,2008,79,98
+Nigeria,2009,70,1051
+Nigeria,2010,190,1444
+Nigeria,2011,180,1888
+Nigeria,2012,404,1948
+Nigeria,2013,395,2126
+Nigeria,2014,606,7004
+Nigeria,2015,560,6995
+Nigeria,2016,359,2201
+Nigeria,2017,487,2352
+Nigeria,2018,784,3084
+Nigeria,2019,867,2424
+Nigeria,2020,1503,2809
+Nigeria,2021,1917,4117
+Nigeria,2022,2236,4004
+Nigeria,2023,2074,2981
+Nigeria,2024,2393,3750
+Nigeria,2025,3353,4977
+Nigeria,2026,1053,1783
+Palestine,2016,216,46
+Palestine,2017,225,21
+Palestine,2018,1497,71
+Palestine,2019,1060,64
+Palestine,2020,884,16
+Palestine,2021,1664,212
+Palestine,2022,1895,54
+Palestine,2023,4235,19430
+Palestine,2024,6925,20395
+Palestine,2025,7761,14371
+Palestine,2026,1499,267
+Somalia,1997,16,15
+Somalia,1998,12,4
+Somalia,1999,29,46
+Somalia,2000,47,31
+Somalia,2001,26,40
+Somalia,2002,36,65
+Somalia,2003,202,398
+Somalia,2004,179,243
+Somalia,2005,180,60
+Somalia,2006,129,53
+Somalia,2007,468,452
+Somalia,2008,418,506
+Somalia,2009,179,343
+Somalia,2010,280,732
+Somalia,2011,322,561
+Somalia,2012,578,641
+Somalia,2013,835,771
+Somalia,2014,746,839
+Somalia,2015,577,669
+Somalia,2016,743,932
+Somalia,2017,914,1849
+Somalia,2018,751,749
+Somalia,2019,730,1003
+Somalia,2020,596,696
+Somalia,2021,473,649
+Somalia,2022,558,916
+Somalia,2023,605,796
+Somalia,2024,479,512
+Somalia,2025,767,534
+Somalia,2026,301,202
+South Sudan,2011,27,1363
+South Sudan,2012,112,3532
+South Sudan,2013,216,2920
+South Sudan,2014,293,1910
+South Sudan,2015,337,1247
+South Sudan,2016,428,981
+South Sudan,2017,441,1422
+South Sudan,2018,330,558
+South Sudan,2019,312,963
+South Sudan,2020,440,705
+South Sudan,2021,1022,1767
+South Sudan,2022,973,1760
+South Sudan,2023,919,1485
+South Sudan,2024,703,1037
+South Sudan,2025,852,1051
+South Sudan,2026,159,294
+Sudan,1997,28,493
+Sudan,1998,33,427
+Sudan,1999,38,125
+Sudan,2000,83,172
+Sudan,2001,47,81
+Sudan,2002,91,1506
+Sudan,2003,111,3620
+Sudan,2004,365,6421
+Sudan,2005,195,903
+Sudan,2006,111,928
+Sudan,2007,63,1141
+Sudan,2008,121,911
+Sudan,2009,145,414
+Sudan,2010,100,275
+Sudan,2011,98,1341
+Sudan,2012,358,371
+Sudan,2013,494,938
+Sudan,2014,764,985
+Sudan,2015,799,1010
+Sudan,2016,715,895
+Sudan,2017,419,408
+Sudan,2018,330,325
+Sudan,2019,347,419
+Sudan,2020,275,377
+Sudan,2021,460,594
+Sudan,2022,670,641
+Sudan,2023,1478,3926
+Sudan,2024,2395,6537
+Sudan,2025,1646,7165
+Sudan,2026,333,1197
+Syria,2017,7938,19593
+Syria,2018,5000,10049
+Syria,2019,3665,4330
+Syria,2020,2204,2004
+Syria,2021,2501,1637
+Syria,2022,2394,1321
+Syria,2023,2769,1581
+Syria,2024,2821,1817
+Syria,2025,3780,4830
+Syria,2026,655,558
+Ukraine,2018,271,62
+Ukraine,2019,218,54
+Ukraine,2020,150,20
+Ukraine,2021,84,10
+Ukraine,2022,4223,5809
+Ukraine,2023,3231,2004
+Ukraine,2024,3929,2184
+Ukraine,2025,5442,2587
+Ukraine,2026,1867,854
+Venezuela,2018,970,1262
+Venezuela,2019,1316,1583
+Venezuela,2020,812,870
+Venezuela,2021,586,597
+Venezuela,2022,351,318
+Venezuela,2023,277,253
+Venezuela,2024,206,179
+Venezuela,2025,131,96
+Venezuela,2026,54,32
+Yemen,2015,1050,4405
+Yemen,2016,769,2162
+Yemen,2017,634,1826
+Yemen,2018,1349,2374
+Yemen,2019,1158,1244
+Yemen,2020,1178,1222
+Yemen,2021,977,796
+Yemen,2022,1049,1199
+Yemen,2023,1173,739
+Yemen,2024,905,399
+Yemen,2025,1013,594
+Yemen,2026,253,123
